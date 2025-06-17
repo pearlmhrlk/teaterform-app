@@ -2,7 +2,7 @@ services:
   - type: web
     name: teaterform-app
     runtime: php
-    buildCommand: ""
+    buildCommand: | chmod -R 777 writable
     startCommand: php -S 0.0.0.0:10000 -t ./
     plan: free
     envVars:
