@@ -1,0 +1,84 @@
+INFO - 2025-04-12 02:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-12 02:24:18 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/listPenampilan]
+in APPPATH\Views\templates\headerAdmin.php on line 88.
+ 1 APPPATH\Views\templates\headerAdmin.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 88)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(1332): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-12 02:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-12 02:24:25 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Views\templates\headerAdmin.php on line 88.
+ 1 APPPATH\Views\templates\headerAdmin.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 88)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(87): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-12 02:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-12 02:28:27 --> Last Query: NULL
+DEBUG - 2025-04-12 02:28:28 --> Poster uploaded: uploads/posters/1744424908_6da1ea36ae6d29d2d068.jpeg
+DEBUG - 2025-04-12 02:28:28 --> Request data: {"csrf_test_name":"3ce58fe487618441b2d5fb2a5e785985","id_teater":"","tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"Kurcaci kurcaci","hidden_schedule":"[{\"tanggal\":\"2025-04-05\",\"waktu_mulai\":\"09:30\",\"waktu_selesai\":\"11:30\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-04-05\",\"waktu_mulai\":\"09:30\",\"waktu_selesai\":\"11:30\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 50000\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-04-05\",\"waktu_mulai\":\"09:30\",\"waktu_selesai\":\"11:30\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","url_pendaftaran":"www.form-pendaftaran.com","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"],"mitra_teater":"5","id_platform_sosmed":["2"],"acc_name":[""],"hidden_accounts":"[{\"platformId\":\"2\",\"platformName\":\"twitter\",\"account\":\"omas\"}]","judul_web":[""],"url_web":[""],"hidden_web":""}
+DEBUG - 2025-04-12 02:28:28 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1744424908_6da1ea36ae6d29d2d068.jpeg","sinopsis":"Kurcaci kurcaci","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-04-12 02:28:28 --> ID Teater yang dibuat: 65
+DEBUG - 2025-04-12 02:28:28 --> ID Penampilan yang dibuat: 55
+DEBUG - 2025-04-12 02:28:28 --> Jadwal ke-0: Tanggal: 2025-04-05, Mulai: 09:30, Selesai: 11:30, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-04-12 02:28:28 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-04-12 02:28:28 --> ID Location yang didapat setelah insert: 78
+DEBUG - 2025-04-12 02:28:28 --> Data jadwal diterima: [{"tanggal":"2025-04-05","waktu_mulai":"09:30","waktu_selesai":"11:30","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"None"},{"tanggal":"2025-04-05","waktu_mulai":"09:30","waktu_selesai":"11:30","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 50000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"Uploaded"},{"tanggal":"2025-04-05","waktu_mulai":"09:30","waktu_selesai":"11:30","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"None"}]
+DEBUG - 2025-04-12 02:28:28 --> Jadwal ke-1: Tanggal: 2025-04-05, Mulai: 09:30, Selesai: 11:30, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-04-12 02:28:28 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-04-12 02:28:28 --> ID Location yang didapat setelah insert: 79
+DEBUG - 2025-04-12 02:28:28 --> Data jadwal diterima: [{"tanggal":"2025-04-05","waktu_mulai":"09:30","waktu_selesai":"11:30","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"None"},{"tanggal":"2025-04-05","waktu_mulai":"09:30","waktu_selesai":"11:30","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 50000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"Uploaded"},{"tanggal":"2025-04-05","waktu_mulai":"09:30","waktu_selesai":"11:30","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"None"}]
+DEBUG - 2025-04-12 02:28:28 --> Jadwal ke-2: Tanggal: 2025-04-05, Mulai: 09:30, Selesai: 11:30, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-04-12 02:28:28 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-04-12 02:28:28 --> ID Location yang didapat setelah insert: 80
+DEBUG - 2025-04-12 02:28:28 --> Data jadwal diterima: [{"tanggal":"2025-04-05","waktu_mulai":"09:30","waktu_selesai":"11:30","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"None"},{"tanggal":"2025-04-05","waktu_mulai":"09:30","waktu_selesai":"11:30","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 50000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"Uploaded"},{"tanggal":"2025-04-05","waktu_mulai":"09:30","waktu_selesai":"11:30","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"None"}]
+DEBUG - 2025-04-12 02:28:28 --> ID Web Teater yang diperoleh: 10
+INFO - 2025-04-12 02:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-12 02:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

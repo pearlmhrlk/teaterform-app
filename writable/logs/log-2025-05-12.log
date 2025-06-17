@@ -1,0 +1,327 @@
+INFO - 2025-05-12 02:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 02:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 02:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 02:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 02:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 02:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 02:58:01 --> Last Query: NULL
+INFO - 2025-05-12 02:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 03:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 03:00:12 --> Last Query: NULL
+DEBUG - 2025-05-12 03:00:12 --> Poster uploaded: uploads/posters/1747018812_e9f079fc2ab3a0e01e26.jpeg
+DEBUG - 2025-05-12 03:00:12 --> Request data: {"csrf_test_name":"8cd4e06e8debbf2990b1c905e9649bbd","id_teater":"","tipe_teater":"penampilan","judul":"Midnight Sun","sinopsis":"Seorang gadis bernama Haena yang menderita penyakit langka dan ditakdirkan jatuh cinta dengan surfer amatir, Jung Haram.","tanggal":"2025-05-03","waktu_mulai":"09:00","waktu_selesai":"11:00","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"Balai Sarbini","hidden_schedule":"[{\"tanggal\":\"2025-05-01\",\"waktu_mulai\":\"09:00\",\"waktu_selesai\":\"11:00\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Surabaya\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":null},{\"tanggal\":\"2025-05-02\",\"waktu_mulai\":\"09:00\",\"waktu_selesai\":\"11:00\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Surabaya\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"\"},{\"tanggal\":\"2025-05-03\",\"waktu_mulai\":\"09:00\",\"waktu_selesai\":\"11:00\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"\"}]","penulis":"Choi Sungyoon","url_pendaftaran":"www.link-pendaftaran.com","sutradara":"Kim Jiyoung","staff":"Lee Changjun","aktor":"Kwon Eunbi","durasi":"120","rating_umur":["13+"],"mitra_teater":"5","id_platform_sosmed":["2"],"acc_name":[""],"hidden_accounts":"[{\"platformId\":\"2\",\"platformName\":\"twitter\",\"account\":\"Kataka\"}]","judul_web":[""],"url_web":[""],"hidden_web":""}
+DEBUG - 2025-05-12 03:00:12 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Midnight Sun","poster":"uploads\/posters\/1747018812_e9f079fc2ab3a0e01e26.jpeg","sinopsis":"Seorang gadis bernama Haena yang menderita penyakit langka dan ditakdirkan jatuh cinta dengan surfer amatir, Jung Haram.","penulis":"Choi Sungyoon","sutradara":"Kim Jiyoung","staff":"Lee Changjun","dibuat_oleh":"BINUS University","dimodif_oleh":null}
+DEBUG - 2025-05-12 03:00:12 --> ID Teater yang dibuat: 83
+DEBUG - 2025-05-12 03:00:12 --> ID Penampilan yang dibuat: 72
+DEBUG - 2025-05-12 03:00:12 --> Jadwal ke-0: Tanggal: 2025-05-01, Mulai: 09:00, Selesai: 11:00, Kota: Surabaya, Tempat: Balai Sarbini
+DEBUG - 2025-05-12 03:00:12 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Surabaya"}
+DEBUG - 2025-05-12 03:00:12 --> ID Location yang didapat setelah insert: 137
+DEBUG - 2025-05-12 03:00:12 --> Data jadwal diterima: [{"tanggal":"2025-05-01","waktu_mulai":"09:00","waktu_selesai":"11:00","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":null},{"tanggal":"2025-05-02","waktu_mulai":"09:00","waktu_selesai":"11:00","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-03","waktu_mulai":"09:00","waktu_selesai":"11:00","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-12 03:00:12 --> Jadwal ke-1: Tanggal: 2025-05-02, Mulai: 09:00, Selesai: 11:00, Kota: Surabaya, Tempat: Balai Sarbini
+DEBUG - 2025-05-12 03:00:12 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Surabaya"}
+DEBUG - 2025-05-12 03:00:12 --> ID Location yang didapat setelah insert: 138
+DEBUG - 2025-05-12 03:00:12 --> Data jadwal diterima: [{"tanggal":"2025-05-01","waktu_mulai":"09:00","waktu_selesai":"11:00","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":null},{"tanggal":"2025-05-02","waktu_mulai":"09:00","waktu_selesai":"11:00","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-03","waktu_mulai":"09:00","waktu_selesai":"11:00","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-12 03:00:12 --> Jadwal ke-2: Tanggal: 2025-05-03, Mulai: 09:00, Selesai: 11:00, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-05-12 03:00:12 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-05-12 03:00:12 --> ID Location yang didapat setelah insert: 139
+DEBUG - 2025-05-12 03:00:12 --> Data jadwal diterima: [{"tanggal":"2025-05-01","waktu_mulai":"09:00","waktu_selesai":"11:00","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":null},{"tanggal":"2025-05-02","waktu_mulai":"09:00","waktu_selesai":"11:00","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-03","waktu_mulai":"09:00","waktu_selesai":"11:00","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-12 03:00:12 --> ID Web Teater yang diperoleh: 27
+INFO - 2025-05-12 03:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 03:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 03:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 04:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 04:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 04:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 04:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 04:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 04:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 05:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 05:09:52 --> Last Query: NULL
+INFO - 2025-05-12 05:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 05:11:23 --> Last Query: NULL
+DEBUG - 2025-05-12 05:11:23 --> Poster uploaded: uploads/posters/1747026683_4783683de9f92860ac24.jpeg
+DEBUG - 2025-05-12 05:11:23 --> Request data: {"csrf_test_name":"8cd4e06e8debbf2990b1c905e9649bbd","id_teater":"","tipe_teater":"penampilan","judul":"American Psycho","sinopsis":"Psikopat asal amerika yang mengedepankan harta dan tahta di kehidupannya.","tanggal":"2025-05-18","waktu_mulai":"12:10","waktu_selesai":"14:10","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"Balai Sarbini","hidden_schedule":"[{\"tanggal\":\"2025-05-16\",\"waktu_mulai\":\"12:10\",\"waktu_selesai\":\"14:10\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Surabaya\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":null},{\"tanggal\":\"2025-05-17\",\"waktu_mulai\":\"12:10\",\"waktu_selesai\":\"14:10\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Surabaya\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"\"},{\"tanggal\":\"2025-05-18\",\"waktu_mulai\":\"12:10\",\"waktu_selesai\":\"14:10\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"\"}]","penulis":"London","url_pendaftaran":"www.link-pendaftaran.com","sutradara":"Lucas","staff":"Lucy","aktor":"Christian Bale","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"[{\"platformId\":\"1\",\"platformName\":\"instagram\",\"account\":\"amepsai\"}]","judul_web":[""],"url_web":[""],"hidden_web":""}
+DEBUG - 2025-05-12 05:11:23 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"American Psycho","poster":"uploads\/posters\/1747026683_4783683de9f92860ac24.jpeg","sinopsis":"Psikopat asal amerika yang mengedepankan harta dan tahta di kehidupannya.","penulis":"London","sutradara":"Lucas","staff":"Lucy","dibuat_oleh":"BINUS University","dimodif_oleh":null}
+DEBUG - 2025-05-12 05:11:23 --> ID Teater yang dibuat: 84
+DEBUG - 2025-05-12 05:11:23 --> ID Penampilan yang dibuat: 73
+DEBUG - 2025-05-12 05:11:23 --> Jadwal ke-0: Tanggal: 2025-05-16, Mulai: 12:10, Selesai: 14:10, Kota: Surabaya, Tempat: Balai Sarbini
+DEBUG - 2025-05-12 05:11:23 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Surabaya"}
+DEBUG - 2025-05-12 05:11:23 --> ID Location yang didapat setelah insert: 140
+DEBUG - 2025-05-12 05:11:23 --> Data jadwal diterima: [{"tanggal":"2025-05-16","waktu_mulai":"12:10","waktu_selesai":"14:10","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":null},{"tanggal":"2025-05-17","waktu_mulai":"12:10","waktu_selesai":"14:10","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-18","waktu_mulai":"12:10","waktu_selesai":"14:10","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-12 05:11:23 --> Jadwal ke-1: Tanggal: 2025-05-17, Mulai: 12:10, Selesai: 14:10, Kota: Surabaya, Tempat: Balai Sarbini
+DEBUG - 2025-05-12 05:11:23 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Surabaya"}
+DEBUG - 2025-05-12 05:11:23 --> ID Location yang didapat setelah insert: 141
+DEBUG - 2025-05-12 05:11:23 --> Data jadwal diterima: [{"tanggal":"2025-05-16","waktu_mulai":"12:10","waktu_selesai":"14:10","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":null},{"tanggal":"2025-05-17","waktu_mulai":"12:10","waktu_selesai":"14:10","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-18","waktu_mulai":"12:10","waktu_selesai":"14:10","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-12 05:11:23 --> Jadwal ke-2: Tanggal: 2025-05-18, Mulai: 12:10, Selesai: 14:10, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-05-12 05:11:23 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-05-12 05:11:23 --> ID Location yang didapat setelah insert: 142
+DEBUG - 2025-05-12 05:11:23 --> Data jadwal diterima: [{"tanggal":"2025-05-16","waktu_mulai":"12:10","waktu_selesai":"14:10","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":null},{"tanggal":"2025-05-17","waktu_mulai":"12:10","waktu_selesai":"14:10","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-18","waktu_mulai":"12:10","waktu_selesai":"14:10","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-12 05:11:23 --> ID Web Teater yang diperoleh: 28
+INFO - 2025-05-12 05:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 05:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 05:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 05:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 05:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 06:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 06:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 06:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 06:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 06:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 06:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 06:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 06:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 06:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 06:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 06:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 06:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 07:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 07:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 07:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 07:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 07:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 07:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 07:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 07:16:58 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Controllers\MitraTeater.php on line 379.
+ 1 [internal function]: App\Controllers\MitraTeater->App\Controllers\{closure}('2025-05-16', '2025-05-17')
+ 2 APPPATH\Controllers\MitraTeater.php(378): usort([...], Object(Closure))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 07:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 07:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 07:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 07:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 07:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 14:01:18 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 127.
+ 1 APPPATH\Views\templates\headerMitra.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 127)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(405): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 14:01:26 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 127.
+ 1 APPPATH\Views\templates\headerMitra.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 127)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 14:01:28 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 127.
+ 1 APPPATH\Views\templates\headerMitra.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 127)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(551): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 14:01:28 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 127.
+ 1 APPPATH\Views\templates\headerMitra.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 127)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(405): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 14:01:29 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 127.
+ 1 APPPATH\Views\templates\headerMitra.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 127)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 14:01:30 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/listAudisi]
+in APPPATH\Views\templates\headerMitra.php on line 127.
+ 1 APPPATH\Views\templates\headerMitra.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 127)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1273): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->AudisiAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 14:01:31 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 127.
+ 1 APPPATH\Views\templates\headerMitra.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 127)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 14:01:32 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 127.
+ 1 APPPATH\Views\templates\headerMitra.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 127)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(405): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 14:01:33 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 127.
+ 1 APPPATH\Views\templates\headerMitra.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 127)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 14:01:34 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 127.
+ 1 APPPATH\Views\templates\headerMitra.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 127)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(551): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 14:01:35 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 127.
+ 1 APPPATH\Views\templates\headerMitra.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 127)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 14:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 15:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 15:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 15:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 15:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 15:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 15:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 15:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 15:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 15:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 15:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

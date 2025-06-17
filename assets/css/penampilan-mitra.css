@@ -1,0 +1,616 @@
+
+        /* Style List Penampilan Start */
+        .list-penampilan-mitra {
+            font-family: 'Lexend Deca', sans-serif;
+            padding: 20px;
+        }
+
+        .list-penampilan-mitra .search-filter {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .list-penampilan-mitra .search-filter .form-select {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .list-penampilan-mitra .search-filter .form-control {
+            flex: 2; /* Ubah dari flex: 1 menjadi flex: 2 agar lebih panjang */
+            min-width: 250px;
+        }
+
+        .list-penampilan-mitra .search-filter .btn {
+            height: 40px;
+            width: 120px;
+            flex-shrink: 0; /* Tombol tidak mengecil */
+        }
+
+        .list-penampilan-mitra .d-flex.gap-2 input {
+            flex: 1;
+        }
+
+        .list-penampilan-mitra #addShowBtn {
+            white-space: nowrap;
+            margin-left: auto;
+            margin-bottom: 15px;
+        }
+
+        .list-penampilan-mitra body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .list-penampilan-mitra .container {
+            max-width: 90%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .list-penampilan-mitra .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px; /* Memberi jarak dari header merah */
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .list-penampilan-mitra .header-actions {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .list-penampilan-mitra .show-item {
+            display: flex;
+            align-items: start;
+            justify-content: flex-start; /* Memberikan ruang antara info dan tombol */
+            gap: 30px; /* Atur jarak antara detail info dan tombol */
+            margin: 0 auto; /* Hindari jarak ekstra */
+            border-bottom: 1px solid #ddd;
+            border-top: 1px solid #ddd;
+            padding: 20px 20px;
+            min-height: 150px; /* Sesuaikan dengan kebutuhan */
+        }
+
+        .list-penampilan-mitra .show-item:last-child {
+            border-bottom: none;
+        }
+
+        .list-penampilan-mitra .poster {
+            flex: 1;
+            max-width: 150px;
+            margin-right: 20px;
+        }
+
+        .list-penampilan-mitra .poster img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .list-penampilan-mitra .show-info {
+            flex-grow: 1;
+            max-width: 70%; /* Atur agar tidak terlalu melebar */
+        }
+
+        .list-penampilan-mitra h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .list-penampilan-mitra .details {
+            flex: 3;
+        }
+
+        .list-penampilan-mitra .details p {
+            margin: 4px 0;
+        }
+
+        .list-penampilan-mitra .details .label {
+            font-weight: bold;
+        }
+
+        .list-penampilan-mitra .actions {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 10px;
+            min-width: 150px; /* Bisa disesuaikan */
+            text-align: left;
+            margin-left: auto;
+        }
+
+        .list-penampilan-mitra .actions button {
+            margin-bottom: 8px;
+            padding: 6px 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            width: 150px;
+            min-width: 150px; /* Sesuaikan dengan kebutuhan */
+        }
+
+        .list-penampilan-mitra .actions button:last-child {
+            margin-bottom: 0;
+        }
+
+        .list-penampilan-mitra .actions button:hover {
+            background-color: #0056b3;
+        }
+
+        .list-penampilan-mitra .show-count {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .list-penampilan-mitra .schedule-table {
+            margin-top: 20px; /* Jarak antara deskripsi dan tabel */
+            width: 100%; /* Pastikan tabel tidak melewati container */
+            border-collapse: collapse;
+        }
+
+        .list-penampilan-mitra .schedule-table h5 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #D8001B;
+            margin-bottom: 10px;
+        }
+
+        .list-penampilan-mitra .schedule-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .list-penampilan-mitra .schedule-table th,
+        .list-penampilan-mitra .schedule-table td {
+            border: 1px solid #D8001B;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .list-penampilan-mitra .schedule-table th {
+            background-color: #D8001B;
+            color: white;
+        }
+
+        .list-penampilan-mitra .schedule-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .list-penampilan-mitra .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .list-penampilan-mitra .modal-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 20px;
+            width: 50%;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .list-penampilan-mitra .close {
+            color: #aaa;
+            float: right;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .list-penampilan-mitra .close:hover {
+            color: black;
+        }
+
+        /* Styles for Popup */
+        .list-penampilan-mitra .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .list-penampilan-mitra .popup-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-height: 90%;
+            max-width: 800px;
+            overflow-y: auto;
+            position: relative;
+            animation: fadeIn 0.3s ease-in-out;
+            height: 90vh; /* Beri tinggi penuh */
+        }
+
+        /* Animasi munculnya popup */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .list-penampilan-mitra .popup h3 {
+            margin-top: 10px;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .list-penampilan-mitra .popup-body {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .list-penampilan-mitra .popup-left,
+        .list-penampilan-mitra .popup-right {
+            width: 50%;
+        }
+
+        .list-penampilan-mitra .form-group {
+            margin-bottom: 15px;
+        }
+
+        .list-penampilan-mitra .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #ff6c7d;
+            margin-bottom: 5px;
+        }
+        
+        .list-penampilan-mitra .form-control {
+            border: 2px solid #ff9fab; /* Border kotak input */
+            border-radius: 0.375rem; /* Sesuaikan dengan sudut */
+            padding: 0.5rem 1rem;
+            width: 100%; /* Memanjang ke samping */
+            max-width: none; /* Maksimal lebar kolom */
+            height: 50px;
+            font-size: 14px;
+            background-color: #f8f9fa;
+            box-shadow: none;
+            margin-bottom: 5px;
+        }
+
+        .list-penampilan-mitra .popup-footer {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        .list-penampilan-mitra .popup-footer .button-group {
+            display: flex;
+            gap: 10px; /* Beri jarak antar tombol */
+        }
+
+        /* Tombol */
+        .list-penampilan-mitra #addSeatCategory,
+        .list-penampilan-mitra #addSchedule,
+        .list-penampilan-mitra #add-account-btn,
+        .list-penampilan-mitra #add-web-btn {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            min-width: 100px;
+            width: auto;
+        }
+
+        .list-penampilan-mitra .popup-footer .button:hover {
+            background-color: #e04d2b;
+        }
+
+        /* Tombol tambah */
+        .list-penampilan-mitra .popup-footer .btn-danger {
+            background-color: #dc3545;
+        }
+
+        .list-penampilan-mitra .popup-footer .btn-danger:hover {
+            background-color: #b02a37;
+        }
+
+        /* Untuk input yang tersembunyi */
+        .list-penampilan-mitra .hidden {
+            display: none;
+        }
+
+        .list-penampilan-mitra .draft-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff7b8; /* Warna lebih lembut */
+            border: 2px solid #d8001b; /* Warna border lebih tegas */
+            border-radius: 6px;
+            padding: 4px 8px;
+            margin: 4px 0;
+            width: 225px;
+            min-height: 30px;
+            gap: 10px; /* Jarak tetap */
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .list-penampilan-mitra .draft-schedule-item {
+            position: relative;
+            border: 2px solid #d32f2f; /* Warna border */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            background: #fff9c4; /* Warna background */
+            display: flex;
+            flex-direction: column; /* Susun elemen ke bawah */
+            align-items: flex-start;
+            max-width: 250px; /* Batasi lebar agar tidak terlalu lebar */
+            word-wrap: break-word;
+            margin-top: 4px;
+        }
+
+        /* Memastikan teks tidak terlalu panjang dan tetap rapi */
+        .list-penampilan-mitra .draft-schedule-item p {
+            margin: 3px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .list-penampilan-mitra .draft-section {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .list-penampilan-mitra .draft-item span{
+            font-weight: bold;
+            color: #d8001b;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 13px;
+        }
+        
+        .list-penampilan-mitra .delete-seat-btn,
+        .list-penampilan-mitra .delete-sosmed-btn,
+        .list-penampilan-mitra .delete-web-btn {
+            background-color: transparent;
+            border: none;
+            color: #d8001b;
+            padding: 0 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: color 0.2s ease-in-out;
+            flex-shrink: 0;
+        }
+
+        .list-penampilan-mitra .delete-schedule-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 20px;
+        }
+        
+        .list-penampilan-mitra .delete-draft-btn:hover {
+            color: #b30015; /* Warna lebih gelap saat hover */
+            transform: scale(1.1);
+        }
+
+        /* Styling untuk popup konfirmasi */
+        .list-penampilan-mitra .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list-penampilan-mitra .popup-box {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .list-penampilan-mitra .popup-box h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .list-penampilan-mitra .popup-box p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .list-penampilan-mitra .popup-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .list-penampilan-mitra .confirm-btn, 
+        .list-penampilan-mitra .cancel-btn {
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .list-penampilan-mitra .confirm-btn {
+            background: red;
+            color: white;
+        }
+
+        .list-penampilan-mitra .cancel-btn {
+            background: #ddd;
+            color: black;
+        }
+
+        .list-penampilan-mitra .confirm-btn:hover {
+            background: darkred;
+        }
+
+        .list-penampilan-mitra .cancel-btn:hover {
+            background: #bbb;
+        }
+
+        /* Animasi Fade In */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .list-penampilan-mitra .popup-audiens {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list-penampilan-mitra .popup-daftar {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .list-penampilan-mitra .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .list-penampilan-mitra .table-container {
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+
+        .list-penampilan-mitra .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .list-penampilan-mitra .table-container th, 
+        .list-penampilan-mitra .table-container td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .list-penampilan-mitra .table-container th {
+            background: #f4f4f4;
+            cursor: pointer;
+        }
+
+        .list-penampilan-mitra .preview-img {
+            width: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .list-penampilan-mitra .preview-img:hover {
+            transform: scale(1.2);
+        }
+
+.list-penampilan-mitra .custom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-penampilan-mitra .custom-modal-content {
+position: relative; 
+padding: 20px; 
+background: white; 
+max-width: 800px; 
+margin: auto; 
+border-radius: 8px;
+}
+
+.list-penampilan-mitra .custom-modal .closePopup {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 10;
+}
+.list-penampilan-mitra .custom-modal .closePopup:hover {
+    color: red;
+}
+        /* Style List Penampilan End */

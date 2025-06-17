@@ -1,0 +1,96 @@
+INFO - 2025-06-08 03:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 03:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 03:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 03:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 03:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-08 03:48:45 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1613): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-08 03:48:45 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 61.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(61): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1613): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 03:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 03:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 03:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 03:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 03:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-08 03:52:36 --> Last Query: NULL
+DEBUG - 2025-06-08 03:52:36 --> Poster name: MV5BNzAyY2JiYWItODU5My00OTc5LTgxODUtZjMyNTdmYzliNGRkXkEyXkFqcGc@._V1_.jpg
+DEBUG - 2025-06-08 03:52:36 --> Poster valid: yes
+DEBUG - 2025-06-08 03:52:36 --> Poster uploaded: uploads/posters/1749354756_569b0ad63657bfe5226c.jpg
+DEBUG - 2025-06-08 03:52:36 --> Request data: {"csrf_test_name":"f7a95a470ade59b7da05354e346c491f","id_teater":"","tipe_teater":"penampilan","judul":"Putri kodok","sinopsis":"nmbjhgj ihbouibvu","tanggal":"2025-06-16","waktu_mulai":"10:50","waktu_selesai":"12:50","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"mhyuyvi iubguf","hidden_schedule":"[{\"id\":1749354629867,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"10:50\",\"waktu_selesai\":\"12:50\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"mhyuyvi iubguf\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}]},{\"id\":1749354663349,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"10:50\",\"waktu_selesai\":\"12:50\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"mhyuyvi iubguf\",\"denah_seat\":null,\"seatDrafts\":[]},{\"id\":1749354676387,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"10:50\",\"waktu_selesai\":\"12:50\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"mhyuyvi iubguf\",\"denah_seat\":null,\"seatDrafts\":[]}]","penulis":"njkbuib ihiuigui","url_pendaftaran":"www.hbtftrxtyjc.com","sutradara":"hbuyguy iuvigiu","staff":"bjugbyivcu ibuifcyu","aktor":"bigutcu iuigyuc","durasi":"120","rating_umur":["13+"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":""}
+DEBUG - 2025-06-08 03:52:36 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Putri kodok","poster":"uploads\/posters\/1749354756_569b0ad63657bfe5226c.jpg","sinopsis":"nmbjhgj ihbouibvu","penulis":"njkbuib ihiuigui","sutradara":"hbuyguy iuvigiu","staff":"bjugbyivcu ibuifcyu","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.hbtftrxtyjc.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-08 03:52:36 --> ID Teater yang dibuat: 103
+DEBUG - 2025-06-08 03:52:36 --> ID relasi user dengan teater yang dibuat: 17
+DEBUG - 2025-06-08 03:52:36 --> Data yang diterima: {"id_teater":103,"aktor":"bigutcu iuigyuc","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-06-08 03:52:36 --> ID Penampilan yang dibuat: 82
+DEBUG - 2025-06-08 03:52:36 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 10:50, Selesai: 12:50, Kota: Jakarta, Tempat: mhyuyvi iubguf
+DEBUG - 2025-06-08 03:52:36 --> Data lokasi yang akan disimpan: {"tempat":"mhyuyvi iubguf","kota":"Jakarta"}
+DEBUG - 2025-06-08 03:52:36 --> ID Location yang didapat setelah insert: 166
+DEBUG - 2025-06-08 03:52:36 --> Data jadwal diterima: [{"id":1749354629867,"tanggal":"2025-06-14","waktu_mulai":"10:50","waktu_selesai":"12:50","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"mhyuyvi iubguf","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}]},{"id":1749354663349,"tanggal":"2025-06-15","waktu_mulai":"10:50","waktu_selesai":"12:50","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"mhyuyvi iubguf","denah_seat":null,"seatDrafts":[]},{"id":1749354676387,"tanggal":"2025-06-16","waktu_mulai":"10:50","waktu_selesai":"12:50","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"mhyuyvi iubguf","denah_seat":null,"seatDrafts":[]}]
+DEBUG - 2025-06-08 03:52:36 --> Jadwal ke-1: Tanggal: 2025-06-15, Mulai: 10:50, Selesai: 12:50, Kota: Jakarta, Tempat: mhyuyvi iubguf
+DEBUG - 2025-06-08 03:52:36 --> Data lokasi yang akan disimpan: {"tempat":"mhyuyvi iubguf","kota":"Jakarta"}
+DEBUG - 2025-06-08 03:52:36 --> Data jadwal diterima: [{"id":1749354629867,"tanggal":"2025-06-14","waktu_mulai":"10:50","waktu_selesai":"12:50","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"mhyuyvi iubguf","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}]},{"id":1749354663349,"tanggal":"2025-06-15","waktu_mulai":"10:50","waktu_selesai":"12:50","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"mhyuyvi iubguf","denah_seat":null,"seatDrafts":[]},{"id":1749354676387,"tanggal":"2025-06-16","waktu_mulai":"10:50","waktu_selesai":"12:50","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"mhyuyvi iubguf","denah_seat":null,"seatDrafts":[]}]
+DEBUG - 2025-06-08 03:52:36 --> Jadwal ke-2: Tanggal: 2025-06-16, Mulai: 10:50, Selesai: 12:50, Kota: Jakarta, Tempat: mhyuyvi iubguf
+DEBUG - 2025-06-08 03:52:36 --> Data lokasi yang akan disimpan: {"tempat":"mhyuyvi iubguf","kota":"Jakarta"}
+DEBUG - 2025-06-08 03:52:36 --> Data jadwal diterima: [{"id":1749354629867,"tanggal":"2025-06-14","waktu_mulai":"10:50","waktu_selesai":"12:50","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"mhyuyvi iubguf","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}]},{"id":1749354663349,"tanggal":"2025-06-15","waktu_mulai":"10:50","waktu_selesai":"12:50","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"mhyuyvi iubguf","denah_seat":null,"seatDrafts":[]},{"id":1749354676387,"tanggal":"2025-06-16","waktu_mulai":"10:50","waktu_selesai":"12:50","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"mhyuyvi iubguf","denah_seat":null,"seatDrafts":[]}]
+INFO - 2025-06-08 03:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 03:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 03:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 16:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 16:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 16:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 16:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 16:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 16:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 16:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-08 16:17:48 --> Last Query: NULL
+DEBUG - 2025-06-08 16:17:49 --> Poster name: MV5BNzAyY2JiYWItODU5My00OTc5LTgxODUtZjMyNTdmYzliNGRkXkEyXkFqcGc@._V1_.jpg
+DEBUG - 2025-06-08 16:17:49 --> Poster valid: yes
+DEBUG - 2025-06-08 16:17:49 --> Poster uploaded: uploads/posters/1749399469_1adde75de3aa7c77d2bc.jpg
+DEBUG - 2025-06-08 16:17:49 --> Request data: {"csrf_test_name":"b8eae2dbf75b68a3582c1c076bff5c9b","id_teater":"","tipe_teater":"penampilan","judul":"Putri Snow","sinopsis":"dji woinewden","tanggal":"2025-06-16","waktu_mulai":"23:15","waktu_selesai":"01:15","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"snjniw iwnix","hidden_schedule":"[{\"id\":1749399395527,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"23:15\",\"waktu_selesai\":\"01:15\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"snjniw iwnix\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}]},{\"id\":1749399413854,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"23:15\",\"waktu_selesai\":\"01:15\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"snjniw iwnix\",\"denah_seat\":null,\"seatDrafts\":[]},{\"id\":1749399422312,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"23:15\",\"waktu_selesai\":\"01:15\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"snjniw iwnix\",\"denah_seat\":null,\"seatDrafts\":[]}]","penulis":"njdkwd wonwo","url_pendaftaran":"www.jxnsiudbsc.com","sutradara":"ndwije winewo","staff":"newond cwoenw","aktor":"noejdw dowieo","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":""}
+DEBUG - 2025-06-08 16:17:49 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Putri Snow","poster":"uploads\/posters\/1749399469_1adde75de3aa7c77d2bc.jpg","sinopsis":"dji woinewden","penulis":"njdkwd wonwo","sutradara":"ndwije winewo","staff":"newond cwoenw","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.jxnsiudbsc.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-08 16:17:49 --> ID Teater yang dibuat: 104
+DEBUG - 2025-06-08 16:17:49 --> ID relasi user dengan teater yang dibuat: 18
+DEBUG - 2025-06-08 16:17:49 --> Data yang diterima: {"id_teater":104,"aktor":"noejdw dowieo","durasi":"120","rating_umur":["Semua Umur (SU)"]}
+DEBUG - 2025-06-08 16:17:49 --> ID Penampilan yang dibuat: 83
+DEBUG - 2025-06-08 16:17:49 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 23:15, Selesai: 01:15, Kota: Jakarta, Tempat: snjniw iwnix
+DEBUG - 2025-06-08 16:17:49 --> Data lokasi yang akan disimpan: {"tempat":"snjniw iwnix","kota":"Jakarta"}
+DEBUG - 2025-06-08 16:17:49 --> ID Location yang didapat setelah insert: 167
+DEBUG - 2025-06-08 16:17:49 --> uploadDenahSeat dipanggil dengan index = 0
+DEBUG - 2025-06-08 16:17:49 --> Semua file di request: Array
+(
+    [0] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 0
+            [originalMimeType:protected] => 
+            [path:protected] => 
+            [clientPath:protected] => 
+            [originalName:protected] => 
+            [name:protected] => 
+            [error:protected] => 4
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => 
+            [fileName:SplFileInfo:private] => 
+        )
+
+)
+

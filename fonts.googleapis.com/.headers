@@ -1,0 +1,11 @@
+[
+  {
+    "applyTo": "css2%3Ffamily=DM+Serif+Display&family=Roboto%3Awght@400;500;700&display=swap",
+    "headers": [
+      {
+        "name": "content-security-policy",
+        "value": "frame-ancestors"
+      }
+    ]
+  }
+]

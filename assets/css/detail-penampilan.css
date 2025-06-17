@@ -1,0 +1,303 @@
+/* Style Detail Penampilan Start */
+
+.detail-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Pastikan ukuran elemen sesuai tanpa ekstra ruang */
+}
+
+.detail-show .show-container {
+    overflow-x: auto;
+    max-width: calc(100% - 20px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff7f7;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-show .show-container .poster {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 200px;
+    align-items: center;
+    text-align: center;
+}
+
+.detail-show .show-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    gap: 25px; /* Atur jarak antara detail info dan tombol */
+}
+
+.detail-show .show-item:last-child {
+    border-bottom: none;
+}
+
+.detail-show .poster img {
+    width: 150px;
+    border-radius: 4px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.detail-show .poster p {
+    width: 150px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.detail-show .show-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+}
+
+.detail-show .show-info h3 {
+    margin-bottom: -10px;
+}
+
+.detail-show .show-info h6 {
+    margin-bottom: -15px;
+}
+
+.detail-show .details {
+    max-width: 100%;
+}
+
+.detail-show .details p {
+    margin: 4px 0;
+}
+
+.detail-show .details .label,
+.detail-show .extra-info .label {
+    font-weight: bold;
+}
+
+.detail-show .extra-info {
+    width: 100%;
+    margin-left: 50px;
+}
+
+.detail-show .extra-info .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Jarak antara ikon dan teks */
+    flex-wrap: wrap; /* Jika layar kecil, akun baru tetap rapi */
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+.detail-show .social-media p {
+    margin-bottom: 0px;
+}
+
+.detail-show .social-media .platform {
+    display: flex;
+    align-items: center; /* Ikon sejajar secara vertikal */
+}
+
+.detail-show .social-media a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: #D8001B; /* Ubah warna menjadi hitam */
+}
+
+.detail-show .social-media i {
+    width: 20px; /* Pastikan semua ikon punya lebar yang sama */
+    text-align: center; /* Agar ikon sejajar */
+    font-size: 18px;
+    margin-right: 8px; /* Jarak ikon dengan teks */
+}
+
+.detail-show .extra-info .web {
+    margin-top: 20px;
+}
+
+.detail-show p a {
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: #D8001B; /* Ubah warna menjadi hitam */
+}
+
+.detail-show .schedule-table {
+    margin-top: 5px; /* Jarak antara deskripsi dan tabel */
+    width: 100%; /* Pastikan tabel tidak melewati container */
+    overflow-x: auto; /* Agar tabel tetap rapi */
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.detail-show .schedule-table h5 {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.detail-show .schedule-table table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Biarkan tabel menyesuaikan lebar */
+}
+
+.detail-show .schedule-table th,
+.detail-show .schedule-table td {
+    border: 1px solid #D8001B;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap; /* Mencegah teks terlalu panjang di satu kolom */
+}
+
+.detail-show .schedule-table th {
+    background-color: #D8001B;
+    color: white;
+}
+
+.detail-show td a {
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-weight: bold; /* Jadikan bold */
+    color: black; /* Ubah warna menjadi hitam */
+}
+
+.detail-show .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.detail-show .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.detail-show .close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.detail-show .close:hover {
+    color: black;
+}
+
+.detail-show .show-container .actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.detail-show .show-container .actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.detail-show .show-container .actions button:hover {
+    background-color: #b22e3c;
+}
+
+.detail-show .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+    width: 320px;
+    border: 1px solid #ddd;
+}
+
+.detail-show .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.detail-show .popup p {
+    color: #666;
+    font-size: 14px;
+}
+
+.detail-show .popup input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.detail-show .popup button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.detail-show .btn-primary {
+    background-color: #28a745;
+    color: white;
+}
+
+.detail-show .btn-primary:hover {
+    background-color: #218838;
+}
+
+.detail-show .btn-secondary {
+    background-color: #dc3545;
+    color: white;
+}
+
+.detail-show .btn-secondary:hover {
+    background-color: #c82333;
+}
+
+.detail-show .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+/* Style Detail Penampilan End */

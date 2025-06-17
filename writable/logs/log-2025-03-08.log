@@ -1,0 +1,260 @@
+INFO - 2025-03-08 03:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 03:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 03:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 03:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 03:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 03:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-08 03:46:14 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/listPenampilan]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(612): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-08 03:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-08 03:46:17 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/listAudisi]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(623): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-08 03:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-08 03:46:18 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/listPenampilan]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(612): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-08 03:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-08 03:46:19 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/listAudisi]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(623): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-08 03:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-08 03:46:21 --> ErrorException: Undefined array key "acc_name"
+[Method: GET, Route: Admin/approveMitra]
+in APPPATH\Controllers\Admin.php on line 639.
+ 1 APPPATH\Controllers\Admin.php(639): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "acc_name"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Admin.php', 639)
+ 2 APPPATH\Controllers\Admin.php(677): App\Controllers\Admin->formatSosmed([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->approveMitraList()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-08 03:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-08 03:46:22 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(69): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-08 03:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 03:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 03:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 03:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 03:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 03:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 03:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 03:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 04:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 04:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 04:06:07 --> Poster uploaded: uploads/posters/1741406767_df843f13697e47732d4c.jpeg
+INFO - 2025-03-08 04:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 04:06:44 --> Poster uploaded: uploads/posters/1741406804_d0b3974e2db7648fadd8.jpeg
+INFO - 2025-03-08 04:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 04:07:43 --> Poster uploaded: uploads/posters/1741406863_22e3cb1faa3ed3c79819.jpeg
+INFO - 2025-03-08 04:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 04:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 04:19:15 --> Poster uploaded: uploads/posters/1741407555_72889efa3d95de250e1e.jpeg
+INFO - 2025-03-08 04:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 04:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-08 04:33:49 --> TypeError: log_message(): Argument #2 ($message) must be of type string, null given, called in C:\xampp\htdocs\CodeIgniter4\app\Controllers\Admin.php on line 77
+[Method: POST, Route: save-show]
+in SYSTEMPATH\Common.php on line 772.
+ 1 APPPATH\Controllers\Admin.php(77): log_message('debug', null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveShow()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-08 04:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-08 04:42:44 --> TypeError: log_message(): Argument #2 ($message) must be of type string, null given, called in C:\xampp\htdocs\CodeIgniter4\app\Controllers\Admin.php on line 77
+[Method: POST, Route: save-show]
+in SYSTEMPATH\Common.php on line 772.
+ 1 APPPATH\Controllers\Admin.php(77): log_message('debug', null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveShow()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-08 04:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 04:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 04:53:01 --> Last Query: NULL
+DEBUG - 2025-03-08 04:53:01 --> Poster uploaded: uploads/posters/1741409581_1b7f40471530ed0f554f.jpeg
+INFO - 2025-03-08 14:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-08 14:25:34 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(69): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-08 14:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 14:26:14 --> Last Query: NULL
+INFO - 2025-03-08 14:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 14:28:07 --> Last Query: NULL
+DEBUG - 2025-03-08 14:28:07 --> Poster uploaded: uploads/posters/1741444087_89286b3d2fcd43164077.jpeg
+INFO - 2025-03-08 14:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 14:29:38 --> Last Query: NULL
+DEBUG - 2025-03-08 14:29:38 --> Poster uploaded: uploads/posters/1741444178_2b8ad4e47e06b76f3b6b.jpeg
+INFO - 2025-03-08 14:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 14:32:00 --> Last Query: NULL
+DEBUG - 2025-03-08 14:32:00 --> Poster uploaded: uploads/posters/1741444320_a09fc5dcd021abe464af.jpeg
+INFO - 2025-03-08 14:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 14:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 15:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 15:00:34 --> Last Query: NULL
+DEBUG - 2025-03-08 15:00:34 --> Poster uploaded: uploads/posters/1741446034_9503cd75b354fc182bd1.jpeg
+INFO - 2025-03-08 15:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 15:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 15:08:07 --> Last Query: NULL
+DEBUG - 2025-03-08 15:08:07 --> Poster uploaded: uploads/posters/1741446487_9affcf3fab03ab7077b8.jpeg
+INFO - 2025-03-08 15:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 15:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 15:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 15:25:25 --> Last Query: NULL
+DEBUG - 2025-03-08 15:25:25 --> Poster uploaded: uploads/posters/1741447525_21af31658cb592a7aa00.jpeg
+DEBUG - 2025-03-08 15:25:25 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"kajbduqi qoibdowihq","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni"}
+DEBUG - 2025-03-08 15:25:25 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741447525_21af31658cb592a7aa00.jpeg","sinopsis":"kajbduqi qoibdowihq","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-08 15:25:25 --> Query terakhir: INSERT INTO `m_teater` (`tipe_teater`, `judul`, `poster`, `sinopsis`, `penulis`, `sutradara`, `staff`, `dibuat_oleh`, `dimodif_oleh`) VALUES ('penampilan', 'Jaya Wijaya Show', 'uploads/posters/1741447525_21af31658cb592a7aa00.jpeg', 'kajbduqi qoibdowihq', 'Jaya Wijaya', 'Willy Santoso', 'Toni Jojoni', 'AdminGNCD', NULL)
+DEBUG - 2025-03-08 15:25:25 --> ID Teater yang dibuat: 1
+INFO - 2025-03-08 15:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 15:30:02 --> Last Query: NULL
+DEBUG - 2025-03-08 15:30:02 --> Poster uploaded: uploads/posters/1741447802_6f87f6f9f86f0b066f98.jpeg
+DEBUG - 2025-03-08 15:30:02 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"kajbduqi qoibdowihq","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni"}
+DEBUG - 2025-03-08 15:30:02 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741447802_6f87f6f9f86f0b066f98.jpeg","sinopsis":"kajbduqi qoibdowihq","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-08 15:30:02 --> Query terakhir: INSERT INTO `m_teater` (`tipe_teater`, `judul`, `poster`, `sinopsis`, `penulis`, `sutradara`, `staff`, `dibuat_oleh`, `dimodif_oleh`) VALUES ('penampilan', 'Jaya Wijaya Show', 'uploads/posters/1741447802_6f87f6f9f86f0b066f98.jpeg', 'kajbduqi qoibdowihq', 'Jaya Wijaya', 'Willy Santoso', 'Toni Jojoni', 'AdminGNCD', NULL)
+DEBUG - 2025-03-08 15:30:02 --> ID Teater yang dibuat: 2
+INFO - 2025-03-08 15:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 15:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 15:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 15:37:35 --> Last Query: NULL
+DEBUG - 2025-03-08 15:37:35 --> Poster uploaded: uploads/posters/1741448255_b4d3a99184f398bad137.jpeg
+DEBUG - 2025-03-08 15:37:35 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"ndoqibq oiewnqo","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni"}
+DEBUG - 2025-03-08 15:37:35 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741448255_b4d3a99184f398bad137.jpeg","sinopsis":"ndoqibq oiewnqo","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-08 15:37:35 --> Query terakhir: INSERT INTO `m_teater` (`tipe_teater`, `judul`, `poster`, `sinopsis`, `penulis`, `sutradara`, `staff`, `dibuat_oleh`, `dimodif_oleh`) VALUES ('penampilan', 'Jaya Wijaya Show', 'uploads/posters/1741448255_b4d3a99184f398bad137.jpeg', 'ndoqibq oiewnqo', 'Jaya Wijaya', 'Willy Santoso', 'Toni Jojoni', 'AdminGNCD', NULL)
+DEBUG - 2025-03-08 15:37:35 --> ID Teater yang dibuat: 3
+INFO - 2025-03-08 15:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 15:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 15:39:16 --> Last Query: NULL
+DEBUG - 2025-03-08 15:39:16 --> Poster uploaded: uploads/posters/1741448356_7e6d044698e6259ce1d5.jpeg
+DEBUG - 2025-03-08 15:39:16 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"nsoiabwqo oqoiwq","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni"}
+DEBUG - 2025-03-08 15:39:16 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741448356_7e6d044698e6259ce1d5.jpeg","sinopsis":"nsoiabwqo oqoiwq","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-08 15:39:16 --> Query terakhir: INSERT INTO `m_teater` (`tipe_teater`, `judul`, `poster`, `sinopsis`, `penulis`, `sutradara`, `staff`, `dibuat_oleh`, `dimodif_oleh`) VALUES ('penampilan', 'Jaya Wijaya Show', 'uploads/posters/1741448356_7e6d044698e6259ce1d5.jpeg', 'nsoiabwqo oqoiwq', 'Jaya Wijaya', 'Willy Santoso', 'Toni Jojoni', 'AdminGNCD', NULL)
+DEBUG - 2025-03-08 15:39:16 --> ID Teater yang dibuat: 4
+INFO - 2025-03-08 15:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 15:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 15:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 15:45:32 --> Last Query: NULL
+DEBUG - 2025-03-08 15:45:32 --> Poster uploaded: uploads/posters/1741448732_ef252425c1222fff8df8.jpeg
+DEBUG - 2025-03-08 15:45:32 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"dnaofioa oaipwab","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-08 15:45:32 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741448732_ef252425c1222fff8df8.jpeg","sinopsis":"dnaofioa oaipwab","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-08 15:45:32 --> Query terakhir: INSERT INTO `m_teater` (`tipe_teater`, `judul`, `poster`, `sinopsis`, `penulis`, `sutradara`, `staff`, `dibuat_oleh`, `dimodif_oleh`) VALUES ('penampilan', 'Jaya Wijaya Show', 'uploads/posters/1741448732_ef252425c1222fff8df8.jpeg', 'dnaofioa oaipwab', 'Jaya Wijaya', 'Willy Santoso', 'Toni Jojoni', 'AdminGNCD', NULL)
+DEBUG - 2025-03-08 15:45:32 --> ID Teater yang dibuat: 5
+INFO - 2025-03-08 15:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 15:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 16:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-08 16:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-08 16:04:25 --> Last Query: NULL
+DEBUG - 2025-03-08 16:04:25 --> Poster uploaded: uploads/posters/1741449865_cecde6d4c7bb5667c6f2.jpeg
+DEBUG - 2025-03-08 16:04:25 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"jsKBS wobqidwq","tanggal":"2025-03-03","waktu_mulai":"23:00","waktu_selesai":"01:00","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["lainnya","Surabaya"],"tempat":"bqowbqod oquwbq","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"23:00\",\"waktu_selesai\":\"01:00\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"bqowbqod oquwbq\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"23:00\",\"waktu_selesai\":\"01:00\",\"harga\":\"VIP, 50000, Premium, 40000\",\"kota\":\"Surabaya\",\"tempat\":\"bqowbqod oquwbq\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-03\",\"waktu_mulai\":\"23:00\",\"waktu_selesai\":\"01:00\",\"harga\":\"Gratis\",\"kota\":\"Surabaya\",\"tempat\":\"bqowbqod oquwbq\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-08 16:04:25 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741449865_cecde6d4c7bb5667c6f2.jpeg","sinopsis":"jsKBS wobqidwq","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-08 16:04:25 --> Query terakhir: INSERT INTO `m_teater` (`tipe_teater`, `judul`, `poster`, `sinopsis`, `penulis`, `sutradara`, `staff`, `dibuat_oleh`, `dimodif_oleh`) VALUES ('penampilan', 'Jaya Wijaya Show', 'uploads/posters/1741449865_cecde6d4c7bb5667c6f2.jpeg', 'jsKBS wobqidwq', 'Jaya Wijaya', 'Willy Santoso', 'Toni Jojoni', 'AdminGNCD', NULL)
+DEBUG - 2025-03-08 16:04:25 --> ID Teater yang dibuat: 6
+DEBUG - 2025-03-08 16:04:25 --> Data lokasi yang akan disimpan: {"tempat":"bqowbqod oquwbq","kota":["lainnya","Surabaya"]}
+ERROR - 2025-03-08 16:04:25 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `m_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `m_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `m_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `m_...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Admin.php(256): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\Admin->saveShow()
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+ERROR - 2025-03-08 16:04:25 --> Gagal menyimpan lokasi: {"CodeIgniter\\Database\\MySQLi\\Connection":"Operand should contain 1 column(s)"}

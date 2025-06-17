@@ -1,0 +1,409 @@
+INFO - 2025-05-18 07:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 07:28:32 --> Last Query: NULL
+INFO - 2025-05-18 07:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 07:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 07:52:07 --> Last Query: NULL
+INFO - 2025-05-18 10:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 10:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 10:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 10:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 10:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 10:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 10:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 10:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 10:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 11:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 11:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 11:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 11:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 11:27:12 --> Last Query: NULL
+DEBUG - 2025-05-18 11:27:13 --> Data yang dikirim: Array
+(
+    [csrf_test_name] => 5cf1ec5051b0a0c88721dac952df6002
+    [tipe_teater] => audisi
+    [id_kategori] => 1
+    [judul] => Cinderella
+    [sinopsis] => alidioew eowihewo
+    [karakter_audisi] => Cinderella
+    [deskripsi_karakter] => Array
+        (
+            [0] => sjdnows eowueow
+        )
+
+    [tanggal] => 2025-05-22
+    [waktu_mulai] => 18:25
+    [waktu_selesai] => 20:25
+    [tipe_harga] => Gratis
+    [harga] => 
+    [kota] => Array
+        (
+            [0] => Jakarta
+            [1] => 
+        )
+
+    [kota_real] => Jakarta
+    [tempat] => hdjbrgfiw ewiuge
+    [hidden_schedule] => [{"tanggal":"2025-05-21","waktu_mulai":"18:25","waktu_selesai":"20:25","tipe_harga":"Bayar","harga":"50000","kota":"Jakarta","tempat":"hdjbrgfiw ewiuge"},{"tanggal":"2025-05-22","waktu_mulai":"18:25","waktu_selesai":"20:25","tipe_harga":"Gratis","harga":null,"kota":"Jakarta","tempat":"hdjbrgfiw ewiuge"}]
+    [penulis] => sjedhwoe wogew
+    [url_pendaftaran] => Array
+        (
+            [0] => www.pendaftaran.com
+        )
+
+    [syarat] => Array
+        (
+            [0] => neoiw eowuewo
+        )
+
+    [syarat_dokumen] => Array
+        (
+            [0] => CV
+        )
+
+    [sutradara] => ndesiojefwbeoihwe
+    [staff] => ndoseiew ewoiheiow
+    [gaji] => Array
+        (
+            [0] => 500000
+        )
+
+    [komitmen] => sbdiufhsi doheb
+    [mitra_teater] => 5
+    [acc_name] => Array
+        (
+            [0] => 
+        )
+
+    [hidden_accounts] => [{"platformId":"1","platformName":"Instagram","account":"omas"}]
+    [judul_web] => Array
+        (
+            [0] => 
+        )
+
+    [url_web] => Array
+        (
+            [0] => 
+        )
+
+    [hidden_web] => 
+)
+
+DEBUG - 2025-05-18 11:27:13 --> Poster name: 2016-cinderella-poster.jpg
+DEBUG - 2025-05-18 11:27:13 --> Poster valid: yes
+INFO - 2025-05-18 11:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 11:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 11:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 11:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 11:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 11:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 11:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 11:41:23 --> Last Query: NULL
+DEBUG - 2025-05-18 11:41:23 --> Data yang dikirim: Array
+(
+    [csrf_test_name] => 5cf1ec5051b0a0c88721dac952df6002
+    [tipe_teater] => audisi
+    [id_kategori] => 1
+    [judul] => Cinderella
+    [sinopsis] => uahdioad eohequo
+    [karakter_audisi] => Cinderella
+    [deskripsi_karakter] => Array
+        (
+            [0] => jdofhs fowihrew
+        )
+
+    [tanggal] => 2025-05-22
+    [waktu_mulai] => 18:45
+    [waktu_selesai] => 20:45
+    [tipe_harga] => Gratis
+    [harga] => 
+    [kota] => Array
+        (
+            [0] => lainnya
+            [1] => Surabaya
+        )
+
+    [kota_real] => Surabaya
+    [tempat] => bhouewuw owuge
+    [hidden_schedule] => [{"tanggal":"2025-05-21","waktu_mulai":"18:45","waktu_selesai":"20:45","tipe_harga":"Bayar","harga":"50000","kota":"Jakarta","tempat":"bhouewuw owuge"},{"tanggal":"2025-05-22","waktu_mulai":"18:45","waktu_selesai":"20:45","tipe_harga":"Gratis","harga":null,"kota":"Surabaya","tempat":"bhouewuw owuge"}]
+    [penulis] => iewhw wiehow
+    [url_pendaftaran] => Array
+        (
+            [0] => www.pendaftaran.com
+        )
+
+    [syarat] => Array
+        (
+            [0] => haieoqieq owiq
+        )
+
+    [syarat_dokumen] => Array
+        (
+            [0] => CV
+        )
+
+    [sutradara] => hiod eoiwh
+    [staff] => sirhow woeiow
+    [gaji] => Array
+        (
+            [0] => 50000
+        )
+
+    [komitmen] => nsiodh eiowheow
+    [mitra_teater] => 
+    [acc_name] => Array
+        (
+            [0] => 
+        )
+
+    [hidden_accounts] => [{"platformId":"1","platformName":"Instagram","account":"smdio eowhief"}]
+    [judul_web] => Array
+        (
+            [0] => 
+        )
+
+    [url_web] => Array
+        (
+            [0] => 
+        )
+
+    [hidden_web] => 
+)
+
+DEBUG - 2025-05-18 11:41:23 --> Poster name: 2016-cinderella-poster.jpg
+DEBUG - 2025-05-18 11:41:23 --> Poster valid: yes
+DEBUG - 2025-05-18 11:41:23 --> Poster uploaded: uploads/posters/1747568483_517cfe5b578363e218b8.jpg
+DEBUG - 2025-05-18 11:41:23 --> Request data: {"csrf_test_name":"5cf1ec5051b0a0c88721dac952df6002","tipe_teater":"audisi","id_kategori":"1","judul":"Cinderella","sinopsis":"uahdioad eohequo","karakter_audisi":"Cinderella","deskripsi_karakter":["jdofhs fowihrew"],"tanggal":"2025-05-22","waktu_mulai":"18:45","waktu_selesai":"20:45","tipe_harga":"Gratis","harga":"","kota":["lainnya","Surabaya"],"kota_real":"Surabaya","tempat":"bhouewuw owuge","hidden_schedule":"[{\"tanggal\":\"2025-05-21\",\"waktu_mulai\":\"18:45\",\"waktu_selesai\":\"20:45\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"bhouewuw owuge\"},{\"tanggal\":\"2025-05-22\",\"waktu_mulai\":\"18:45\",\"waktu_selesai\":\"20:45\",\"tipe_harga\":\"Gratis\",\"harga\":null,\"kota\":\"Surabaya\",\"tempat\":\"bhouewuw owuge\"}]","penulis":"iewhw wiehow","url_pendaftaran":["www.pendaftaran.com"],"syarat":["haieoqieq owiq"],"syarat_dokumen":["CV"],"sutradara":"hiod eoiwh","staff":"sirhow woeiow","gaji":["50000"],"komitmen":"nsiodh eiowheow","mitra_teater":"","acc_name":[""],"hidden_accounts":"[{\"platformId\":\"1\",\"platformName\":\"Instagram\",\"account\":\"smdio eowhief\"}]","judul_web":[""],"url_web":[""],"hidden_web":""}
+DEBUG - 2025-05-18 11:41:23 --> Data yang diterima: {"tipe_teater":"audisi","judul":"Cinderella","poster":"uploads\/posters\/1747568483_517cfe5b578363e218b8.jpg","sinopsis":"uahdioad eohequo","penulis":"iewhw wiehow","sutradara":"hiod eoiwh","staff":"sirhow woeiow","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":["www.pendaftaran.com"]}
+DEBUG - 2025-05-18 11:41:23 --> ID Teater yang dibuat: 87
+ERROR - 2025-05-18 11:41:23 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(1512): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->saveAuditionAktor()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+INFO - 2025-05-18 11:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 11:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 11:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 12:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 12:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 12:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 15:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 15:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 15:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 15:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 15:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 15:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 15:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 15:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 15:51:27 --> Last Query: NULL
+DEBUG - 2025-05-18 15:51:27 --> Poster name: 2016-cinderella-poster.jpg
+DEBUG - 2025-05-18 15:51:27 --> Poster valid: yes
+DEBUG - 2025-05-18 15:51:27 --> Poster uploaded: uploads/posters/1747583487_13654302d3b6140170c9.jpg
+DEBUG - 2025-05-18 15:51:27 --> Request data: {"csrf_test_name":"fc15d8734a396d1c0433ed4c329b9fbb","tipe_teater":"audisi","id_kategori":"1","judul":"Cinderella","sinopsis":"jiosdhs dowhr","karakter_audisi":"Cinderella","deskripsi_karakter":["suihduaeoviwhe pwiej"],"tanggal":"2025-05-22","waktu_mulai":"22:50","waktu_selesai":"00:50","tipe_harga":"Gratis","harga":"","kota":["lainnya","Surabaya"],"kota_real":"Surabaya","tempat":"ahodsa eoheipq","hidden_schedule":"[{\"tanggal\":\"2025-05-21\",\"waktu_mulai\":\"22:50\",\"waktu_selesai\":\"00:50\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"ahodsa eoheipq\"},{\"tanggal\":\"2025-05-22\",\"waktu_mulai\":\"22:50\",\"waktu_selesai\":\"00:50\",\"tipe_harga\":\"Gratis\",\"harga\":null,\"kota\":\"Surabaya\",\"tempat\":\"ahodsa eoheipq\"}]","penulis":"ansdoaide owihqo","url_pendaftaran":["www.pendaftaran.com"],"syarat":["nohewi eohiweqp"],"syarat_dokumen":["CV"],"sutradara":"ndoifhsw oheiow","staff":"ndohe oshdhq8eh","gaji":["500000"],"komitmen":"bskdisi daiehofb","mitra_teater":"5","acc_name":[""],"hidden_accounts":"[{\"platformId\":\"1\",\"platformName\":\"Instagram\",\"account\":\"omas\"}]","judul_web":[""],"url_web":[""],"hidden_web":""}
+DEBUG - 2025-05-18 15:51:27 --> Data yang diterima: {"tipe_teater":"audisi","judul":"Cinderella","poster":"uploads\/posters\/1747583487_13654302d3b6140170c9.jpg","sinopsis":"jiosdhs dowhr","penulis":"ansdoaide owihqo","sutradara":"ndoifhsw oheiow","staff":"ndohe oshdhq8eh","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":["www.pendaftaran.com"]}
+DEBUG - 2025-05-18 15:51:27 --> ID Teater yang dibuat: 88
+DEBUG - 2025-05-18 15:51:27 --> Data user-teater yang akan disimpan: Array
+(
+    [id_user] => 36
+    [id_teater] => 88
+)
+
+DEBUG - 2025-05-18 15:51:27 --> ID relasi user dengan teater yang dibuat: 4
+DEBUG - 2025-05-18 15:51:27 --> Data yang diterima: {"id_teater":88,"id_kategori":"1","syarat":["nohewi eohiweqp"],"syarat_dokumen":["CV"],"gaji":["500000"],"komitmen":"bskdisi daiehofb"}
+DEBUG - 2025-05-18 15:51:27 --> ID Audisi yang dibuat: 6
+DEBUG - 2025-05-18 15:51:27 --> Data yang diterima: {"id_audisi":6,"karakter_audisi":"Cinderella","deskripsi_karakter":["suihduaeoviwhe pwiej"]}
+DEBUG - 2025-05-18 15:51:27 --> Jadwal ke-0: Tanggal: 2025-05-21, Mulai: 22:50, Selesai: 00:50, Kota: Jakarta, Tempat: ahodsa eoheipq, Harga: 50000
+DEBUG - 2025-05-18 15:51:27 --> Data lokasi yang akan disimpan: {"tempat":"ahodsa eoheipq","kota":"Jakarta"}
+DEBUG - 2025-05-18 15:51:27 --> ID Location yang didapat setelah insert: 149
+DEBUG - 2025-05-18 15:51:27 --> Data jadwal diterima: [{"tanggal":"2025-05-21","waktu_mulai":"22:50","waktu_selesai":"00:50","tipe_harga":"Bayar","harga":"50000","kota":"Jakarta","tempat":"ahodsa eoheipq"},{"tanggal":"2025-05-22","waktu_mulai":"22:50","waktu_selesai":"00:50","tipe_harga":"Gratis","harga":null,"kota":"Surabaya","tempat":"ahodsa eoheipq"}]
+DEBUG - 2025-05-18 15:51:27 --> Jadwal ke-1: Tanggal: 2025-05-22, Mulai: 22:50, Selesai: 00:50, Kota: Surabaya, Tempat: ahodsa eoheipq, Harga: 
+DEBUG - 2025-05-18 15:51:27 --> Data lokasi yang akan disimpan: {"tempat":"ahodsa eoheipq","kota":"Surabaya"}
+DEBUG - 2025-05-18 15:51:27 --> ID Location yang didapat setelah insert: 150
+DEBUG - 2025-05-18 15:51:27 --> Data jadwal diterima: [{"tanggal":"2025-05-21","waktu_mulai":"22:50","waktu_selesai":"00:50","tipe_harga":"Bayar","harga":"50000","kota":"Jakarta","tempat":"ahodsa eoheipq"},{"tanggal":"2025-05-22","waktu_mulai":"22:50","waktu_selesai":"00:50","tipe_harga":"Gratis","harga":null,"kota":"Surabaya","tempat":"ahodsa eoheipq"}]
+INFO - 2025-05-18 15:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 15:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 15:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 16:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 16:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 16:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 16:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 16:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 16:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 16:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 16:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 17:14:49 --> Last Query: NULL
+DEBUG - 2025-05-18 17:14:49 --> Poster name: Sleeping_Beauty_(1959_poster_-_Style_A).jpg
+DEBUG - 2025-05-18 17:14:49 --> Poster valid: yes
+DEBUG - 2025-05-18 17:14:49 --> Poster uploaded: uploads/posters/1747588489_eeb8db80f7a341cc1891.jpg
+DEBUG - 2025-05-18 17:14:49 --> Request data: {"csrf_test_name":"fc15d8734a396d1c0433ed4c329b9fbb","tipe_teater":"audisi","id_kategori":"1","judul":"The Sleeping Beauty","sinopsis":"diownfe woeinwoi","tanggal":"2025-05-23","waktu_mulai":"00:15","waktu_selesai":"02:15","tipe_harga":"Gratis","harga":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"buii uoiniu","hidden_schedule":"[{\"tanggal\":\"2025-05-22\",\"waktu_mulai\":\"00:15\",\"waktu_selesai\":\"02:15\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"buii uoiniu\"},{\"tanggal\":\"2025-05-23\",\"waktu_mulai\":\"00:15\",\"waktu_selesai\":\"02:15\",\"tipe_harga\":\"Gratis\",\"harga\":null,\"kota\":\"Jakarta\",\"tempat\":\"buii uoiniu\"}]","penulis":"hjkbui iuboi","url_pendaftaran":["www.sleepingbeauty.com"],"syarat":["ndewiu wieubwi"],"syarat_dokumen":[""],"sutradara":"wueinwu ewinwiu","staff":"","gaji_dirahasiakan":"on","komitmen":"","mitra_teater":"25","acc_name":[""],"hidden_accounts":"[{\"platformId\":\"1\",\"platformName\":\"Instagram\",\"account\":\"aurora\"}]","judul_web":["Aurora"],"url_web":["www.aurora.com"],"hidden_web":""}
+DEBUG - 2025-05-18 17:14:49 --> Data yang diterima: {"tipe_teater":"audisi","judul":"The Sleeping Beauty","poster":"uploads\/posters\/1747588489_eeb8db80f7a341cc1891.jpg","sinopsis":"diownfe woeinwoi","penulis":"hjkbui iuboi","sutradara":"wueinwu ewinwiu","staff":"","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":["www.sleepingbeauty.com"]}
+DEBUG - 2025-05-18 17:14:49 --> ID Teater yang dibuat: 89
+DEBUG - 2025-05-18 17:14:49 --> Data user-teater yang akan disimpan: Array
+(
+    [id_user] => 36
+    [id_teater] => 89
+)
+
+DEBUG - 2025-05-18 17:14:49 --> ID relasi user dengan teater yang dibuat: 5
+ERROR - 2025-05-18 17:14:49 --> Error: Undefined array key "gaji"
+INFO - 2025-05-18 17:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 17:22:13 --> Last Query: NULL
+DEBUG - 2025-05-18 17:22:13 --> Poster name: Sleeping_Beauty_(1959_poster_-_Style_A).jpg
+DEBUG - 2025-05-18 17:22:13 --> Poster valid: yes
+DEBUG - 2025-05-18 17:22:13 --> Poster uploaded: uploads/posters/1747588933_52beb6f5282437d0a871.jpg
+DEBUG - 2025-05-18 17:22:13 --> Request data: {"csrf_test_name":"fc15d8734a396d1c0433ed4c329b9fbb","tipe_teater":"audisi","id_kategori":"1","judul":"Sleeping Beauty","sinopsis":"","tanggal":"2025-05-23","waktu_mulai":"00:25","waktu_selesai":"02:25","tipe_harga":"Gratis","harga":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"wniodew wunw","hidden_schedule":"[{\"tanggal\":\"2025-05-22\",\"waktu_mulai\":\"00:25\",\"waktu_selesai\":\"02:25\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"wniodew wunw\"},{\"tanggal\":\"2025-05-23\",\"waktu_mulai\":\"00:25\",\"waktu_selesai\":\"02:25\",\"tipe_harga\":\"Gratis\",\"harga\":null,\"kota\":\"Jakarta\",\"tempat\":\"wniodew wunw\"}]","penulis":"sdneir rwoji0","url_pendaftaran":["www.sleepingbeauty.com"],"syarat":["neiown eownedioq"],"syarat_dokumen":[""],"sutradara":"ewfgrber eegrgw","staff":"","gaji_dirahasiakan":"on","komitmen":"","mitra_teater":"5","acc_name":[""],"hidden_accounts":"[{\"platformId\":\"1\",\"platformName\":\"Instagram\",\"account\":\"aurora\"}]","judul_web":["Sleeping Beauty Official Web"],"url_web":["www.aurora.com"],"hidden_web":""}
+DEBUG - 2025-05-18 17:22:13 --> Data yang diterima: {"tipe_teater":"audisi","judul":"Sleeping Beauty","poster":"uploads\/posters\/1747588933_52beb6f5282437d0a871.jpg","sinopsis":"","penulis":"sdneir rwoji0","sutradara":"ewfgrber eegrgw","staff":"","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":["www.sleepingbeauty.com"]}
+DEBUG - 2025-05-18 17:22:13 --> ID Teater yang dibuat: 90
+DEBUG - 2025-05-18 17:22:13 --> Data user-teater yang akan disimpan: Array
+(
+    [id_user] => 36
+    [id_teater] => 90
+)
+
+DEBUG - 2025-05-18 17:22:13 --> ID relasi user dengan teater yang dibuat: 6
+DEBUG - 2025-05-18 17:22:13 --> Data yang diterima: {"id_teater":90,"id_kategori":"1","syarat":["neiown eownedioq"],"syarat_dokumen":[""],"gaji":null,"status_gaji":"secret","komitmen":""}
+DEBUG - 2025-05-18 17:22:13 --> ID Audisi yang dibuat: 7
+ERROR - 2025-05-18 17:22:13 --> Error: Undefined array key "karakter_audisi"
+INFO - 2025-05-18 17:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 17:26:57 --> Last Query: NULL
+DEBUG - 2025-05-18 17:26:57 --> Poster name: Sleeping_Beauty_(1959_poster_-_Style_A).jpg
+DEBUG - 2025-05-18 17:26:57 --> Poster valid: yes
+DEBUG - 2025-05-18 17:26:57 --> Poster uploaded: uploads/posters/1747589217_148010276188d8046a06.jpg
+DEBUG - 2025-05-18 17:26:57 --> Request data: {"csrf_test_name":"fc15d8734a396d1c0433ed4c329b9fbb","tipe_teater":"audisi","id_kategori":"1","judul":"Sleeping Beauty","sinopsis":"","tanggal":"2025-05-23","waktu_mulai":"00:30","waktu_selesai":"02:30","tipe_harga":"Gratis","harga":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"ndwoi woeifnw","hidden_schedule":"[{\"tanggal\":\"2025-05-22\",\"waktu_mulai\":\"00:30\",\"waktu_selesai\":\"02:30\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"ndwoi woeifnw\"},{\"tanggal\":\"2025-05-23\",\"waktu_mulai\":\"00:30\",\"waktu_selesai\":\"02:30\",\"tipe_harga\":\"Gratis\",\"harga\":null,\"kota\":\"Jakarta\",\"tempat\":\"ndwoi woeifnw\"}]","penulis":"niduw dwone0w","url_pendaftaran":["www.sleepingbeauty.com"],"syarat":["cdosndw owniewp"],"syarat_dokumen":[""],"sutradara":"ndowj winew0","staff":"","gaji_dirahasiakan":"on","komitmen":"","mitra_teater":"5","acc_name":[""],"hidden_accounts":"[{\"platformId\":\"1\",\"platformName\":\"Instagram\",\"account\":\"aurora\"}]","judul_web":["web"],"url_web":["www.aurora.com"],"hidden_web":""}
+DEBUG - 2025-05-18 17:26:57 --> Data yang diterima: {"tipe_teater":"audisi","judul":"Sleeping Beauty","poster":"uploads\/posters\/1747589217_148010276188d8046a06.jpg","sinopsis":"","penulis":"niduw dwone0w","sutradara":"ndowj winew0","staff":"","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":["www.sleepingbeauty.com"]}
+DEBUG - 2025-05-18 17:26:57 --> ID Teater yang dibuat: 91
+DEBUG - 2025-05-18 17:26:57 --> Data user-teater yang akan disimpan: Array
+(
+    [id_user] => 36
+    [id_teater] => 91
+)
+
+DEBUG - 2025-05-18 17:26:57 --> ID relasi user dengan teater yang dibuat: 7
+DEBUG - 2025-05-18 17:26:57 --> Data yang diterima: {"id_teater":91,"id_kategori":"1","syarat":["cdosndw owniewp"],"syarat_dokumen":[""],"gaji":null,"status_gaji":"secret","komitmen":""}
+DEBUG - 2025-05-18 17:26:57 --> ID Audisi yang dibuat: 8
+ERROR - 2025-05-18 17:26:57 --> Error: Undefined array key "karakter_audisi"
+INFO - 2025-05-18 17:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 17:30:39 --> Last Query: NULL
+DEBUG - 2025-05-18 17:30:39 --> Poster name: Sleeping_Beauty_(1959_poster_-_Style_A).jpg
+DEBUG - 2025-05-18 17:30:39 --> Poster valid: yes
+DEBUG - 2025-05-18 17:30:39 --> Poster uploaded: uploads/posters/1747589439_b2c921cdb79e033ad142.jpg
+DEBUG - 2025-05-18 17:30:39 --> Request data: {"csrf_test_name":"fc15d8734a396d1c0433ed4c329b9fbb","tipe_teater":"audisi","id_kategori":"1","judul":"Sleeping Beauty","sinopsis":"","tanggal":"2025-05-23","waktu_mulai":"00:30","waktu_selesai":"02:30","tipe_harga":"Gratis","harga":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"ndois woneiow","hidden_schedule":"[{\"tanggal\":\"2025-05-22\",\"waktu_mulai\":\"00:30\",\"waktu_selesai\":\"02:30\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"ndois woneiow\"},{\"tanggal\":\"2025-05-23\",\"waktu_mulai\":\"00:30\",\"waktu_selesai\":\"02:30\",\"tipe_harga\":\"Gratis\",\"harga\":null,\"kota\":\"Jakarta\",\"tempat\":\"ndois woneiow\"}]","penulis":"j9ew dwifew","url_pendaftaran":["www.daftarsleepingbeauty.com"],"syarat":["aone efowino"],"syarat_dokumen":[""],"sutradara":"neiwf ewoniods","staff":"","gaji_dirahasiakan":"on","komitmen":"","mitra_teater":"5","acc_name":[""],"hidden_accounts":"[{\"platformId\":\"1\",\"platformName\":\"Instagram\",\"account\":\"aurora\"}]","judul_web":[""],"url_web":[""],"hidden_web":""}
+DEBUG - 2025-05-18 17:30:39 --> Data yang diterima: {"tipe_teater":"audisi","judul":"Sleeping Beauty","poster":"uploads\/posters\/1747589439_b2c921cdb79e033ad142.jpg","sinopsis":"","penulis":"j9ew dwifew","sutradara":"neiwf ewoniods","staff":"","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":["www.daftarsleepingbeauty.com"]}
+DEBUG - 2025-05-18 17:30:39 --> ID Teater yang dibuat: 92
+DEBUG - 2025-05-18 17:30:39 --> Data user-teater yang akan disimpan: Array
+(
+    [id_user] => 36
+    [id_teater] => 92
+)
+
+DEBUG - 2025-05-18 17:30:39 --> ID relasi user dengan teater yang dibuat: 8
+DEBUG - 2025-05-18 17:30:39 --> Data yang diterima: {"id_teater":92,"id_kategori":"1","syarat":["aone efowino"],"syarat_dokumen":[""],"gaji":null,"status_gaji":"secret","komitmen":""}
+DEBUG - 2025-05-18 17:30:39 --> ID Audisi yang dibuat: 9
+DEBUG - 2025-05-18 17:30:39 --> Data yang diterima: {"id_audisi":9,"karakter_audisi":null,"deskripsi_karakter":null}
+DEBUG - 2025-05-18 17:30:39 --> Jadwal ke-0: Tanggal: 2025-05-22, Mulai: 00:30, Selesai: 02:30, Kota: Jakarta, Tempat: ndois woneiow, Harga: 50000
+DEBUG - 2025-05-18 17:30:39 --> Data lokasi yang akan disimpan: {"tempat":"ndois woneiow","kota":"Jakarta"}
+DEBUG - 2025-05-18 17:30:39 --> ID Location yang didapat setelah insert: 151
+DEBUG - 2025-05-18 17:30:39 --> Data jadwal diterima: [{"tanggal":"2025-05-22","waktu_mulai":"00:30","waktu_selesai":"02:30","tipe_harga":"Bayar","harga":"50000","kota":"Jakarta","tempat":"ndois woneiow"},{"tanggal":"2025-05-23","waktu_mulai":"00:30","waktu_selesai":"02:30","tipe_harga":"Gratis","harga":null,"kota":"Jakarta","tempat":"ndois woneiow"}]
+DEBUG - 2025-05-18 17:30:39 --> Jadwal ke-1: Tanggal: 2025-05-23, Mulai: 00:30, Selesai: 02:30, Kota: Jakarta, Tempat: ndois woneiow, Harga: 
+DEBUG - 2025-05-18 17:30:39 --> Data lokasi yang akan disimpan: {"tempat":"ndois woneiow","kota":"Jakarta"}
+ERROR - 2025-05-18 17:30:39 --> Error: Undefined array key "id"
+INFO - 2025-05-18 17:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 17:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 18:01:28 --> Last Query: NULL
+DEBUG - 2025-05-18 18:01:28 --> Poster name: Sleeping_Beauty_(1959_poster_-_Style_A).jpg
+DEBUG - 2025-05-18 18:01:28 --> Poster valid: yes
+DEBUG - 2025-05-18 18:01:28 --> Poster uploaded: uploads/posters/1747591288_a773a848e59550495cd7.jpg
+DEBUG - 2025-05-18 18:01:28 --> Request data: {"csrf_test_name":"772b02975bf26e3ee2363ae22fc2fae1","tipe_teater":"audisi","id_kategori":"1","judul":"Sleeping Beauty","sinopsis":"","tanggal":"2025-05-23","waktu_mulai":"01:00","waktu_selesai":"03:00","tipe_harga":"Gratis","harga":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"nsidw downdo","hidden_schedule":"[{\"tanggal\":\"2025-05-22\",\"waktu_mulai\":\"01:00\",\"waktu_selesai\":\"03:00\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"nsidw downdo\"},{\"tanggal\":\"2025-05-23\",\"waktu_mulai\":\"01:00\",\"waktu_selesai\":\"03:00\",\"tipe_harga\":\"Gratis\",\"harga\":null,\"kota\":\"Jakarta\",\"tempat\":\"nsidw downdo\"}]","penulis":"weiownoe woefn","url_pendaftaran":["www.daftaraurora.com"],"syarat":["neowqnedo qoemo"],"syarat_dokumen":[""],"sutradara":"mdwondewoi womdew","staff":"","gaji_dirahasiakan":"on","komitmen":"","mitra_teater":"5","acc_name":[""],"hidden_accounts":"[{\"platformId\":\"1\",\"platformName\":\"Instagram\",\"account\":\"aurora\"}]","judul_web":[""],"url_web":[""],"hidden_web":""}
+DEBUG - 2025-05-18 18:01:28 --> Data yang diterima: {"tipe_teater":"audisi","judul":"Sleeping Beauty","poster":"uploads\/posters\/1747591288_a773a848e59550495cd7.jpg","sinopsis":"","penulis":"weiownoe woefn","sutradara":"mdwondewoi womdew","staff":"","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":["www.daftaraurora.com"]}
+DEBUG - 2025-05-18 18:01:28 --> ID Teater yang dibuat: 93
+DEBUG - 2025-05-18 18:01:28 --> Data user-teater yang akan disimpan: Array
+(
+    [id_user] => 36
+    [id_teater] => 93
+)
+
+DEBUG - 2025-05-18 18:01:28 --> ID relasi user dengan teater yang dibuat: 9
+DEBUG - 2025-05-18 18:01:28 --> Data yang diterima: {"id_teater":93,"id_kategori":"1","syarat":["neowqnedo qoemo"],"syarat_dokumen":[""],"gaji":null,"status_gaji":"secret","komitmen":""}
+DEBUG - 2025-05-18 18:01:28 --> ID Audisi yang dibuat: 10
+DEBUG - 2025-05-18 18:01:28 --> Data yang diterima: {"id_audisi":10,"karakter_audisi":null,"deskripsi_karakter":null}
+DEBUG - 2025-05-18 18:01:28 --> Jadwal ke-0: Tanggal: 2025-05-22, Mulai: 01:00, Selesai: 03:00, Kota: Jakarta, Tempat: nsidw downdo, Harga: 50000
+DEBUG - 2025-05-18 18:01:28 --> Data lokasi yang akan disimpan: {"tempat":"nsidw downdo","kota":"Jakarta"}
+DEBUG - 2025-05-18 18:01:28 --> ID Location yang didapat setelah insert: 152
+DEBUG - 2025-05-18 18:01:28 --> Data jadwal diterima: [{"tanggal":"2025-05-22","waktu_mulai":"01:00","waktu_selesai":"03:00","tipe_harga":"Bayar","harga":"50000","kota":"Jakarta","tempat":"nsidw downdo"},{"tanggal":"2025-05-23","waktu_mulai":"01:00","waktu_selesai":"03:00","tipe_harga":"Gratis","harga":null,"kota":"Jakarta","tempat":"nsidw downdo"}]
+DEBUG - 2025-05-18 18:01:28 --> Jadwal ke-1: Tanggal: 2025-05-23, Mulai: 01:00, Selesai: 03:00, Kota: Jakarta, Tempat: nsidw downdo, Harga: 
+DEBUG - 2025-05-18 18:01:28 --> Data lokasi yang akan disimpan: {"tempat":"nsidw downdo","kota":"Jakarta"}
+DEBUG - 2025-05-18 18:01:28 --> Data jadwal diterima: [{"tanggal":"2025-05-22","waktu_mulai":"01:00","waktu_selesai":"03:00","tipe_harga":"Bayar","harga":"50000","kota":"Jakarta","tempat":"nsidw downdo"},{"tanggal":"2025-05-23","waktu_mulai":"01:00","waktu_selesai":"03:00","tipe_harga":"Gratis","harga":null,"kota":"Jakarta","tempat":"nsidw downdo"}]
+INFO - 2025-05-18 18:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-18 18:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,10 @@
+CRITICAL - 2024-12-29 13:21:53 --> ErrorException: Undefined variable $accountsData
+[Method: POST, Route: MitraTeater/registration]
+in APPPATH\Controllers\MitraTeater.php on line 63.
+ 1 APPPATH\Controllers\MitraTeater.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $accountsData', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\MitraTeater.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

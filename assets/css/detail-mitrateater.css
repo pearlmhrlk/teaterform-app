@@ -1,0 +1,106 @@
+.detail-mitrateater {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.detail-mitrateater .container {
+    overflow-x: auto;
+    max-width: calc(100% - 20px);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #fff7f7;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-mitrateater .logo {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 200px;
+    align-items: center;
+    text-align: center;
+}
+
+.detail-mitrateater .mitra-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    gap: 25px; /* Atur jarak antara detail info dan tombol */
+}
+
+.detail-mitrateater .mitra-item:last-child {
+    border-bottom: none;
+}
+
+.detail-mitrateater .logo img {
+    width: 150px;
+    border-radius: 4px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.detail-mitrateater .mitra-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+}
+
+.detail-mitrateater .mitra-info h3 {
+    margin-bottom: -10px;
+}
+
+.detail-mitrateater .mitra-info h6 {
+    margin-bottom: -15px;
+}
+
+.detail-mitrateater .details {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.detail-mitrateater .details p {
+    margin: 4px 0;
+}
+
+.detail-mitrateater .details .label {
+    font-weight: bold;
+}
+
+.detail-mitrateater .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Jarak antara ikon dan teks */
+    flex-wrap: wrap; /* Jika layar kecil, akun baru tetap rapi */
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+.detail-mitrateater .social-media p {
+    margin-bottom: 0px;
+}
+
+.detail-mitrateater .social-media .platform {
+    display: flex;
+    align-items: center; /* Ikon sejajar secara vertikal */
+}
+
+.detail-mitrateater .social-media i {
+    width: 20px; /* Pastikan semua ikon punya lebar yang sama */
+    text-align: center; /* Agar ikon sejajar */
+    font-size: 18px;
+    margin-right: 8px; /* Jarak ikon dengan teks */
+}

@@ -1,0 +1,5 @@
+INFO - 2024-12-03 05:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 05:26:26 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-12-03 05:27:09 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+INFO - 2024-12-03 05:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-03 05:27:16 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.

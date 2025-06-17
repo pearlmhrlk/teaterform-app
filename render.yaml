@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: teaterform-app
+    runtime: php
+    buildCommand: ""
+    startCommand: php -S 0.0.0.0:10000 -t ./
+    plan: free
+    envVars:
+      - key: CI_ENVIRONMENT
+        value: production

@@ -1,0 +1,1511 @@
+INFO - 2025-03-18 03:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 03:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 03:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 03:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 03:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-18 03:22:24 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "(:num)"
+[Method: POST, Route: Admin/approveMitra/%28:num%29/8]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('Admin/approveMitra/(:num)/8')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('Admin/approveMitra/(:num)/8')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-18 03:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 03:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 03:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 03:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 03:34:45 --> Reject Mitra: id_mitra=9, alasan=tidak cocok
+INFO - 2025-03-18 03:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 03:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 03:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 03:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 03:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 03:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 03:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 03:41:11 --> Logo name: uploads/logo/1742269271_8a66be53e934b58b17ee.png
+DEBUG - 2025-03-18 03:41:11 --> Form data: {"csrf_test_name":"cd41447b2992ff302fb7f8d269799aec","id_role":"2","username":"BingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","id_platform_sosmed":["1"],"acc_mitra":["","bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"Wadah untuk berekspresi dengan giat.","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 03:41:11 --> Received acc_mitra: Array
+(
+    [0] => 
+    [1] => bingkaiekspresi
+    [2] => bingkaiekspresi
+)
+
+DEBUG - 2025-03-18 03:41:11 --> Hidden Accounts Data: [{"platformId":"2","account":"bingkaiekspresi"},{"platformId":"1","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 03:41:11 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+)
+
+DEBUG - 2025-03-18 03:41:11 --> Account Name Length: 15
+DEBUG - 2025-03-18 03:41:11 --> Account Name Length: 15
+ERROR - 2025-03-18 03:41:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`)) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_...', NULL, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\CodeIgniter4\system\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(960): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(204): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-18 03:41:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+[Method: POST, Route: MitraTeater/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',11), (\'bingkaiekspresi\',11)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\MitraTeater.php(204): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 03:41:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',11), (\'bingkaiekspresi\',11)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',11), (\'bingkaiekspresi\',11)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',11), (\'bingkaiekspresi\',11)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\MitraTeater.php(204): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 03:41:11 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',11), (\'bingkaiekspresi\',11)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',11), (\'bingkaiekspresi\',11)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',11), (\'bingkaiekspresi\',11)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',11), (\'bingkaiekspresi\',11)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\MitraTeater.php(204): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-18 04:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 04:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 04:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 04:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 04:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 04:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 04:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 04:46:22 --> Logo name: uploads/logo/1742273182_cf3ae2e16779fd6bb519.png
+DEBUG - 2025-03-18 04:46:22 --> Form data: {"csrf_test_name":"cd41447b2992ff302fb7f8d269799aec","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","id_platform_sosmed":["2"],"acc_mitra":["","bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 04:46:22 --> Received acc_mitra: Array
+(
+    [0] => 
+    [1] => bingkaiekspresi
+    [2] => bingkaiekspresi
+)
+
+DEBUG - 2025-03-18 04:46:22 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 04:46:22 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 04:46:22 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+DEBUG - 2025-03-18 04:46:22 --> Account Name Length: 15
+DEBUG - 2025-03-18 04:46:22 --> Processing platformId: 1, account: bingkaiekspresi
+DEBUG - 2025-03-18 04:46:22 --> Account Name Length: 15
+DEBUG - 2025-03-18 04:46:22 --> Processing platformId: 2, account: bingkaiekspresi
+DEBUG - 2025-03-18 04:46:22 --> Final Data to Insert: Array
+(
+    [0] => Array
+        (
+            [id_mitra] => 12
+            [id_platform_sosmed] => 1
+            [acc_mitra] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [id_mitra] => 12
+            [id_platform_sosmed] => 2
+            [acc_mitra] => bingkaiekspresi
+        )
+
+)
+
+ERROR - 2025-03-18 04:46:22 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`)) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_...', NULL, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\CodeIgniter4\system\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(960): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(210): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-18 04:46:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+[Method: POST, Route: MitraTeater/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',12), (\'bingkaiekspresi\',12)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\MitraTeater.php(210): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 04:46:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',12), (\'bingkaiekspresi\',12)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',12), (\'bingkaiekspresi\',12)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',12), (\'bingkaiekspresi\',12)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\MitraTeater.php(210): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 04:46:22 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',12), (\'bingkaiekspresi\',12)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',12), (\'bingkaiekspresi\',12)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',12), (\'bingkaiekspresi\',12)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',12), (\'bingkaiekspresi\',12)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\MitraTeater.php(210): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-18 05:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 05:45:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 05:45:08 --> Logo name: uploads/logo/1742276708_c45d38f5977d4545d38f.png
+DEBUG - 2025-03-18 05:45:08 --> Form data: {"csrf_test_name":"cd41447b2992ff302fb7f8d269799aec","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","id_platform_sosmed":["2"],"acc_mitra":["","bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 05:45:08 --> Received acc_mitra: Array
+(
+    [1] => bingkaiekspresi
+    [2] => bingkaiekspresi
+)
+
+DEBUG - 2025-03-18 05:45:08 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 05:45:08 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 05:45:08 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+INFO - 2025-03-18 05:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 05:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 05:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 05:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 05:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 05:47:29 --> Logo name: uploads/logo/1742276849_1c7d91dd5d5836759d72.png
+DEBUG - 2025-03-18 05:47:29 --> Form data: {"csrf_test_name":"db6d7aaf78cb98743bfeae1db5c0c626","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","id_platform_sosmed":["2"],"acc_mitra":["","bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 05:47:29 --> Received acc_mitra: Array
+(
+    [1] => bingkaiekspresi
+    [2] => bingkaiekspresi
+)
+
+DEBUG - 2025-03-18 05:47:29 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 05:47:29 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 05:47:29 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+INFO - 2025-03-18 05:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 05:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 05:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 05:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 06:07:16 --> Logo name: uploads/logo/1742278036_9e5a367e511e2cd71e2e.png
+DEBUG - 2025-03-18 06:07:16 --> Form data: {"csrf_test_name":"db6d7aaf78cb98743bfeae1db5c0c626","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","acc_mitra":["bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 06:07:16 --> Received acc_mitra: Array
+(
+    [0] => bingkaiekspresi
+    [1] => bingkaiekspresi
+)
+
+DEBUG - 2025-03-18 06:07:16 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 06:07:16 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 06:07:16 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+INFO - 2025-03-18 06:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 06:21:14 --> Logo name: uploads/logo/1742278874_dcee26e4ceec8b1035c6.png
+DEBUG - 2025-03-18 06:21:14 --> Form data: {"csrf_test_name":"db6d7aaf78cb98743bfeae1db5c0c626","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","acc_mitra":["bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 06:21:14 --> Received acc_mitra: Array
+(
+    [0] => bingkaiekspresi
+    [1] => bingkaiekspresi
+)
+
+DEBUG - 2025-03-18 06:21:14 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 06:21:14 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 06:21:14 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+DEBUG - 2025-03-18 06:21:14 --> Account Name Length: 15
+DEBUG - 2025-03-18 06:21:14 --> Processing platformId: 1, account: bingkaiekspresi
+DEBUG - 2025-03-18 06:21:14 --> Account Name Length: 15
+DEBUG - 2025-03-18 06:21:14 --> Processing platformId: 2, account: bingkaiekspresi
+DEBUG - 2025-03-18 06:21:14 --> Final Data to Insert: Array
+(
+    [0] => Array
+        (
+            [id_mitra] => 16
+            [id_platform_sosmed] => 1
+            [acc_mitra] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [id_mitra] => 16
+            [id_platform_sosmed] => 2
+            [acc_mitra] => bingkaiekspresi
+        )
+
+)
+
+ERROR - 2025-03-18 06:21:14 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`)) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_...', NULL, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\CodeIgniter4\system\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(960): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(220): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-18 06:21:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+[Method: POST, Route: MitraTeater/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',16), (\'bingkaiekspresi\',16)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\MitraTeater.php(220): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 06:21:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',16), (\'bingkaiekspresi\',16)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',16), (\'bingkaiekspresi\',16)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',16), (\'bingkaiekspresi\',16)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\MitraTeater.php(220): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 06:21:14 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',16), (\'bingkaiekspresi\',16)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',16), (\'bingkaiekspresi\',16)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',16), (\'bingkaiekspresi\',16)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',16), (\'bingkaiekspresi\',16)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\MitraTeater.php(220): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-18 06:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 06:39:44 --> Logo name: uploads/logo/1742279984_f78aeb85c620507d01c2.png
+DEBUG - 2025-03-18 06:39:44 --> Form data: {"csrf_test_name":"db6d7aaf78cb98743bfeae1db5c0c626","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","acc_mitra":["bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 06:39:44 --> Received acc_mitra: Array
+(
+    [0] => bingkaiekspresi
+    [1] => bingkaiekspresi
+)
+
+DEBUG - 2025-03-18 06:39:44 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 06:39:44 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 06:39:44 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+DEBUG - 2025-03-18 06:39:44 --> Account Name Length: 15
+DEBUG - 2025-03-18 06:39:44 --> Processing platformId: 1, account: bingkaiekspresi
+DEBUG - 2025-03-18 06:39:44 --> Account Name Length: 15
+DEBUG - 2025-03-18 06:39:44 --> Processing platformId: 2, account: bingkaiekspresi
+DEBUG - 2025-03-18 06:39:44 --> Final Data to Insert: Array
+(
+    [0] => Array
+        (
+            [id_mitra] => 17
+            [id_platform_sosmed] => 1
+            [acc_mitra] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [id_mitra] => 17
+            [id_platform_sosmed] => 2
+            [acc_mitra] => bingkaiekspresi
+        )
+
+)
+
+ERROR - 2025-03-18 06:39:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`)) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_...', NULL, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\CodeIgniter4\system\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(960): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(220): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-18 06:39:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+[Method: POST, Route: MitraTeater/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',17), (\'bingkaiekspresi\',17)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\MitraTeater.php(220): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 06:39:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',17), (\'bingkaiekspresi\',17)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',17), (\'bingkaiekspresi\',17)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',17), (\'bingkaiekspresi\',17)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\MitraTeater.php(220): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 06:39:44 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',17), (\'bingkaiekspresi\',17)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',17), (\'bingkaiekspresi\',17)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',17), (\'bingkaiekspresi\',17)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',17), (\'bingkaiekspresi\',17)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\MitraTeater.php(220): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-18 06:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 06:49:44 --> Logo name: uploads/logo/1742280584_b41b31b394c3645eb0a5.png
+DEBUG - 2025-03-18 06:49:44 --> Form data: {"csrf_test_name":"db6d7aaf78cb98743bfeae1db5c0c626","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","acc_mitra":["bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 06:49:44 --> Received acc_mitra: Array
+(
+    [0] => bingkaiekspresi
+    [1] => bingkaiekspresi
+)
+
+DEBUG - 2025-03-18 06:49:44 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 06:49:44 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 06:49:44 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+DEBUG - 2025-03-18 06:49:44 --> Account Name Length: 15
+DEBUG - 2025-03-18 06:49:44 --> Processing platformId: 1, account: bingkaiekspresi
+DEBUG - 2025-03-18 06:49:44 --> Account Name Length: 15
+DEBUG - 2025-03-18 06:49:44 --> Processing platformId: 2, account: bingkaiekspresi
+DEBUG - 2025-03-18 06:49:44 --> Final Data to Insert: Array
+(
+    [0] => Array
+        (
+            [id_mitra] => 18
+            [id_platform_sosmed] => 1
+            [acc_mitra] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [id_mitra] => 18
+            [id_platform_sosmed] => 2
+            [acc_mitra] => bingkaiekspresi
+        )
+
+)
+
+ERROR - 2025-03-18 06:49:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`)) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_...', NULL, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\CodeIgniter4\system\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(960): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(237): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-18 06:49:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+[Method: POST, Route: MitraTeater/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',18), (\'bingkaiekspresi\',18)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\MitraTeater.php(237): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 06:49:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',18), (\'bingkaiekspresi\',18)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',18), (\'bingkaiekspresi\',18)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',18), (\'bingkaiekspresi\',18)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\MitraTeater.php(237): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 06:49:44 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',18), (\'bingkaiekspresi\',18)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',18), (\'bingkaiekspresi\',18)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',18), (\'bingkaiekspresi\',18)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',18), (\'bingkaiekspresi\',18)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\MitraTeater.php(237): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-18 06:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 06:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 06:59:43 --> Logo name: uploads/logo/1742281183_921ab4e31551c71d7eb5.png
+DEBUG - 2025-03-18 06:59:43 --> Form data: {"csrf_test_name":"db6d7aaf78cb98743bfeae1db5c0c626","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","acc_mitra":["bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 06:59:43 --> Received acc_mitra: Array
+(
+    [0] => bingkaiekspresi
+    [1] => bingkaiekspresi
+)
+
+DEBUG - 2025-03-18 06:59:43 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 06:59:43 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 06:59:43 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+DEBUG - 2025-03-18 06:59:43 --> Account Name Length: 15
+DEBUG - 2025-03-18 06:59:43 --> Processing platformId: 1, account: bingkaiekspresi
+DEBUG - 2025-03-18 06:59:43 --> Account Name Length: 15
+DEBUG - 2025-03-18 06:59:43 --> Processing platformId: 2, account: bingkaiekspresi
+DEBUG - 2025-03-18 06:59:43 --> Final Data to Insert: Array
+(
+    [0] => Array
+        (
+            [id_mitra] => 19
+            [id_platform_sosmed] => 1
+            [acc_mitra] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [id_mitra] => 19
+            [id_platform_sosmed] => 2
+            [acc_mitra] => bingkaiekspresi
+        )
+
+)
+
+ERROR - 2025-03-18 06:59:43 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`)) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_...', NULL, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\CodeIgniter4\system\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(960): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(239): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-18 06:59:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+[Method: POST, Route: MitraTeater/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',19), (\'bingkaiekspresi\',19)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\MitraTeater.php(239): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 06:59:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',19), (\'bingkaiekspresi\',19)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',19), (\'bingkaiekspresi\',19)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',19), (\'bingkaiekspresi\',19)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\MitraTeater.php(239): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 06:59:43 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',19), (\'bingkaiekspresi\',19)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',19), (\'bingkaiekspresi\',19)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',19), (\'bingkaiekspresi\',19)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',19), (\'bingkaiekspresi\',19)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\MitraTeater.php(239): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-18 07:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 07:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 07:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 07:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 07:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 07:25:24 --> Logo name: uploads/logo/1742282724_a49dba639e1057888630.png
+DEBUG - 2025-03-18 07:25:24 --> Form data: {"csrf_test_name":"db6d7aaf78cb98743bfeae1db5c0c626","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","acc_mitra":["bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 07:25:24 --> Received acc_mitra: Array
+(
+    [0] => bingkaiekspresi
+    [1] => bingkaiekspresi
+)
+
+DEBUG - 2025-03-18 07:25:24 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 07:25:24 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 07:25:24 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+DEBUG - 2025-03-18 07:25:24 --> Account Name Length: 15
+DEBUG - 2025-03-18 07:25:24 --> Processing platformId: 1, account: bingkaiekspresi
+DEBUG - 2025-03-18 07:25:24 --> Account Name Length: 15
+DEBUG - 2025-03-18 07:25:24 --> Processing platformId: 2, account: bingkaiekspresi
+DEBUG - 2025-03-18 07:25:24 --> Final Data to Insert: Array
+(
+    [0] => Array
+        (
+            [id_mitra] => 20
+            [id_platform_sosmed] => 1
+            [acc_mitra] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [id_mitra] => 20
+            [id_platform_sosmed] => 2
+            [acc_mitra] => bingkaiekspresi
+        )
+
+)
+
+ERROR - 2025-03-18 07:25:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`)) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_...', NULL, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\CodeIgniter4\system\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(960): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(239): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-18 07:25:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+[Method: POST, Route: MitraTeater/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',20), (\'bingkaiekspresi\',20)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\MitraTeater.php(239): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 07:25:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',20), (\'bingkaiekspresi\',20)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',20), (\'bingkaiekspresi\',20)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',20), (\'bingkaiekspresi\',20)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\MitraTeater.php(239): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 07:25:24 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',20), (\'bingkaiekspresi\',20)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',20), (\'bingkaiekspresi\',20)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',20), (\'bingkaiekspresi\',20)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',20), (\'bingkaiekspresi\',20)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\MitraTeater.php(239): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-18 07:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 07:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 07:46:48 --> Logo name: uploads/logo/1742284008_6e0c85405cca077e05e1.png
+DEBUG - 2025-03-18 07:46:48 --> Form data: {"csrf_test_name":"db6d7aaf78cb98743bfeae1db5c0c626","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","acc_mitra":["bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 07:46:48 --> Received acc_mitra: Array
+(
+    [0] => bingkaiekspresi
+    [1] => bingkaiekspresi
+)
+
+DEBUG - 2025-03-18 07:46:48 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 07:46:48 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 07:46:48 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+DEBUG - 2025-03-18 07:46:48 --> Account Name Length: 15
+DEBUG - 2025-03-18 07:46:48 --> Processing platformId: 1, account: bingkaiekspresi
+DEBUG - 2025-03-18 07:46:48 --> Account Name Length: 15
+DEBUG - 2025-03-18 07:46:48 --> Processing platformId: 2, account: bingkaiekspresi
+DEBUG - 2025-03-18 07:46:48 --> Final Data to Insert: Array
+(
+    [0] => Array
+        (
+            [id_mitra] => 21
+            [id_platform_sosmed] => 1
+            [acc_mitra] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [id_mitra] => 21
+            [id_platform_sosmed] => 2
+            [acc_mitra] => bingkaiekspresi
+        )
+
+)
+
+ERROR - 2025-03-18 07:46:48 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`)) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_...', NULL, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\CodeIgniter4\system\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(960): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(239): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-18 07:46:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+[Method: POST, Route: MitraTeater/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',21), (\'bingkaiekspresi\',21)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\MitraTeater.php(239): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 07:46:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',21), (\'bingkaiekspresi\',21)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',21), (\'bingkaiekspresi\',21)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',21), (\'bingkaiekspresi\',21)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\MitraTeater.php(239): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 07:46:48 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',21), (\'bingkaiekspresi\',21)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',21), (\'bingkaiekspresi\',21)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',21), (\'bingkaiekspresi\',21)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',21), (\'bingkaiekspresi\',21)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\MitraTeater.php(239): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-18 13:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 13:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 13:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 14:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 14:01:32 --> Logo name: uploads/logo/1742306492_82403bb960f004ea2b7d.png
+DEBUG - 2025-03-18 14:01:32 --> Form data: {"csrf_test_name":"6355aa6841990204306ae7e28de8ec15","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","acc_mitra":["bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 14:01:32 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 14:01:32 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 14:01:32 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+DEBUG - 2025-03-18 14:01:32 --> Account Name Length: 15
+DEBUG - 2025-03-18 14:01:32 --> Processing platformId: 1, account: bingkaiekspresi
+DEBUG - 2025-03-18 14:01:32 --> Account Name Length: 15
+DEBUG - 2025-03-18 14:01:32 --> Processing platformId: 2, account: bingkaiekspresi
+DEBUG - 2025-03-18 14:01:32 --> Final Data to Insert: Array
+(
+    [0] => Array
+        (
+            [id_mitra] => 22
+            [id_platform_sosmed] => 1
+            [acc_mitra] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [id_mitra] => 22
+            [id_platform_sosmed] => 2
+            [acc_mitra] => bingkaiekspresi
+        )
+
+)
+
+ERROR - 2025-03-18 14:01:32 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`)) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_...', NULL, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\CodeIgniter4\system\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(960): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(227): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-18 14:01:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+[Method: POST, Route: MitraTeater/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',22), (\'bingkaiekspresi\',22)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\MitraTeater.php(227): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 14:01:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',22), (\'bingkaiekspresi\',22)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',22), (\'bingkaiekspresi\',22)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',22), (\'bingkaiekspresi\',22)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\MitraTeater.php(227): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 14:01:32 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',22), (\'bingkaiekspresi\',22)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',22), (\'bingkaiekspresi\',22)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',22), (\'bingkaiekspresi\',22)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',22), (\'bingkaiekspresi\',22)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\MitraTeater.php(227): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-18 14:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 14:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 14:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 14:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 14:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 14:25:23 --> Logo name: uploads/logo/1742307923_079fc1957675fb348d63.png
+DEBUG - 2025-03-18 14:25:23 --> Form data: {"csrf_test_name":"6355aa6841990204306ae7e28de8ec15","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","acc_mitra":["bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 14:25:23 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 14:25:23 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 14:25:23 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+DEBUG - 2025-03-18 14:25:23 --> Account Name Length: 15
+DEBUG - 2025-03-18 14:25:23 --> Processing platformId: 1, account: bingkaiekspresi
+DEBUG - 2025-03-18 14:25:23 --> Account Name Length: 15
+DEBUG - 2025-03-18 14:25:23 --> Processing platformId: 2, account: bingkaiekspresi
+DEBUG - 2025-03-18 14:25:23 --> Final Data to Insert: Array
+(
+    [0] => Array
+        (
+            [id_mitra] => 23
+            [id_platform_sosmed] => 1
+            [acc_mitra] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [id_mitra] => 23
+            [id_platform_sosmed] => 2
+            [acc_mitra] => bingkaiekspresi
+        )
+
+)
+
+ERROR - 2025-03-18 14:25:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`)) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_...', NULL, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\CodeIgniter4\system\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(960): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(227): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-18 14:25:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+[Method: POST, Route: MitraTeater/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',23), (\'bingkaiekspresi\',23)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\MitraTeater.php(227): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 14:25:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',23), (\'bingkaiekspresi\',23)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',23), (\'bingkaiekspresi\',23)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',23), (\'bingkaiekspresi\',23)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\MitraTeater.php(227): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 14:25:23 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',23), (\'bingkaiekspresi\',23)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',23), (\'bingkaiekspresi\',23)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',23), (\'bingkaiekspresi\',23)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',23), (\'bingkaiekspresi\',23)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\MitraTeater.php(227): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-18 14:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 14:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 14:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 14:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 14:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 14:54:35 --> Logo name: uploads/logo/1742309675_7495d39b725bd9b1a749.png
+DEBUG - 2025-03-18 14:54:35 --> Form data: {"csrf_test_name":"6355aa6841990204306ae7e28de8ec15","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","acc_mitra":["bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 14:54:35 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 14:54:35 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 14:54:35 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+DEBUG - 2025-03-18 14:54:35 --> Account Name Length: 15
+DEBUG - 2025-03-18 14:54:35 --> Processing platformId: 1, account: bingkaiekspresi
+DEBUG - 2025-03-18 14:54:35 --> Account Name Length: 15
+DEBUG - 2025-03-18 14:54:35 --> Processing platformId: 2, account: bingkaiekspresi
+DEBUG - 2025-03-18 14:54:35 --> Final Data to Insert: Array
+(
+    [0] => Array
+        (
+            [id_mitra] => 24
+            [id_platform_sosmed] => 1
+            [acc_mitra] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [id_mitra] => 24
+            [id_platform_sosmed] => 2
+            [acc_mitra] => bingkaiekspresi
+        )
+
+)
+
+ERROR - 2025-03-18 14:54:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`)) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_...', NULL, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\CodeIgniter4\system\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(960): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(227): CodeIgniter\BaseModel->insertBatch(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-18 14:54:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+[Method: POST, Route: MitraTeater/registration]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',24), (\'bingkaiekspresi\',24)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\MitraTeater.php(227): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 14:54:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',24), (\'bingkaiekspresi\',24)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',24), (\'bingkaiekspresi\',24)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',24), (\'bingkaiekspresi\',24)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\MitraTeater.php(227): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-18 14:54:35 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`r_mitra_sosmed`, CONSTRAINT `r_mitra_sosmed_ibfk_2` FOREIGN KEY (`id_platform_sosmed`) REFERENCES `m_platform_sosmed` (`id_platform_sosmed`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',24), (\'bingkaiekspresi\',24)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',24), (\'bingkaiekspresi\',24)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',24), (\'bingkaiekspresi\',24)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `r_mitra_sosmed` (`acc_mitra`, `id_mitra`)
+VALUES (\'bingkaiekspresi\',24), (\'bingkaiekspresi\',24)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(428): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(960): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\MitraTeater.php(227): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-18 15:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 15:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 15:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-18 15:12:31 --> Logo name: uploads/logo/1742310751_f5531fc4eb6582cc35d5.png
+DEBUG - 2025-03-18 15:12:31 --> Form data: {"csrf_test_name":"6355aa6841990204306ae7e28de8ec15","id_role":"2","username":"bingkaiEkspresi","nama":"Bingkai Ekspresi Teater","email":"hsbwiewe@gmail.com","password":"maharlika","acc_mitra":["bingkaiekspresi","bingkaiekspresi"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"bingkaiekspresi\"},{\"platformId\":\"2\",\"account\":\"bingkaiekspresi\"}]","alamat":"Bekasi","berdiri_sejak":"2025-03-01","deskripsi":"Sebuah komunitas teater","history_show":"","prestasi":""}
+DEBUG - 2025-03-18 15:12:31 --> Hidden Accounts Data: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 15:12:31 --> Raw hidden_accounts from request: [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+DEBUG - 2025-03-18 15:12:31 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => bingkaiekspresi
+        )
+
+)
+
+DEBUG - 2025-03-18 15:12:31 --> Account Name Length: 15
+DEBUG - 2025-03-18 15:12:31 --> Processing platformId: 1, account: bingkaiekspresi
+DEBUG - 2025-03-18 15:12:31 --> Account Name Length: 15
+DEBUG - 2025-03-18 15:12:31 --> Processing platformId: 2, account: bingkaiekspresi
+DEBUG - 2025-03-18 15:12:31 --> Final Data to Insert: Array
+(
+    [0] => Array
+        (
+            [id_mitra] => 25
+            [id_platform_sosmed] => 1
+            [acc_mitra] => bingkaiekspresi
+        )
+
+    [1] => Array
+        (
+            [id_mitra] => 25
+            [id_platform_sosmed] => 2
+            [acc_mitra] => bingkaiekspresi
+        )
+
+)
+
+DEBUG - 2025-03-18 15:12:31 --> All POST Data: Array
+(
+    [csrf_test_name] => 6355aa6841990204306ae7e28de8ec15
+    [id_role] => 2
+    [username] => bingkaiEkspresi
+    [nama] => Bingkai Ekspresi Teater
+    [email] => hsbwiewe@gmail.com
+    [password] => maharlika
+    [acc_mitra] => Array
+        (
+            [0] => bingkaiekspresi
+            [1] => bingkaiekspresi
+        )
+
+    [hidden_accounts] => [{"platformId":"1","account":"bingkaiekspresi"},{"platformId":"2","account":"bingkaiekspresi"}]
+    [alamat] => Bekasi
+    [berdiri_sejak] => 2025-03-01
+    [deskripsi] => Sebuah komunitas teater
+    [history_show] => 
+    [prestasi] => 
+)
+
+INFO - 2025-03-18 15:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 15:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 15:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 15:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 15:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 15:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 15:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 15:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-18 15:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

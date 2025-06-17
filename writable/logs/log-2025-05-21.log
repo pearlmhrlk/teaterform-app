@@ -1,0 +1,1337 @@
+INFO - 2025-05-21 10:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 10:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 10:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 10:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 10:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-21 10:12:43 --> mysqli_sql_exception: Unknown column 'id_user' in 'where clause' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(1412): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-21 10:12:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_user' in 'where clause'
+[Method: GET, Route: MitraTeater/crudAudisi]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `m_teater`
+WHERE `id_user` = :id_user:
+AND `tipe_teater` = :tipe_teater:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(1412): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 10:12:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `m_teater`
+WHERE `id_user` = \'36\'
+AND `tipe_teater` = \'audisi\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `m_teater`
+WHERE `id_user` = \'36\'
+AND `tipe_teater` = \'audisi\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `m_teater`
+WHERE `id_user` = :id_user:
+AND `tipe_teater` = :tipe_teater:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(1412): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 10:12:43 --> [Caused by] mysqli_sql_exception: Unknown column 'id_user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `m_teater`
+WHERE `id_user` = \'36\'
+AND `tipe_teater` = \'audisi\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `m_teater`
+WHERE `id_user` = \'36\'
+AND `tipe_teater` = \'audisi\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `m_teater`
+WHERE `id_user` = \'36\'
+AND `tipe_teater` = \'audisi\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `m_teater`
+WHERE `id_user` = :id_user:
+AND `tipe_teater` = :tipe_teater:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(1412): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 10:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-21 10:40:50 --> mysqli_sql_exception: Unknown column 'm_teater.id_user' in 'on clause' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_audis...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_audis...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_audis...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_audis...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(1441): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-21 10:40:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm_teater.id_user' in 'on clause'
+[Method: GET, Route: MitraTeater/crudAudisi]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = :m_teater.id_teater:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(1441): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 10:40:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm_teater.id_user' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = \'88\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = \'88\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = :m_teater.id_teater:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(1441): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 10:40:50 --> [Caused by] mysqli_sql_exception: Unknown column 'm_teater.id_user' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = \'88\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = \'88\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = \'88\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = :m_teater.id_teater:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(1441): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 10:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-21 10:40:54 --> mysqli_sql_exception: Unknown column 'm_teater.id_user' in 'on clause' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_audis...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_audis...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_audis...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_audis...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(1441): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-21 10:40:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm_teater.id_user' in 'on clause'
+[Method: GET, Route: MitraTeater/crudAudisi]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = :m_teater.id_teater:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(1441): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 10:40:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm_teater.id_user' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = \'88\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = \'88\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = :m_teater.id_teater:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(1441): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 10:40:54 --> [Caused by] mysqli_sql_exception: Unknown column 'm_teater.id_user' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = \'88\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = \'88\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = \'88\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_audisi`.*, `m_teater`.`judul`, `m_user`.`nama`, `m_kategori_audisi`.`nama_kategori`, `m_audisi_aktor`.`karakter_audisi`, `m_audisi_aktor`.`deskripsi_karakter`, `m_audisi_staff`.`jenis_staff`, `m_audisi_staff`.`jobdesc_staff`
+FROM `m_audisi`
+JOIN `m_teater` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_teater`.`id_user` = `m_user`.`id_user`
+JOIN `m_kategori_audisi` ON `m_audisi`.`id_kategori` = `m_kategori_audisi`.`id_kategori`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi`.`id_audisi` = `m_audisi_aktor`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi`.`id_audisi` = `m_audisi_staff`.`id_audisi`
+WHERE `m_teater`.`id_teater` = :m_teater.id_teater:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(1441): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 10:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 10:42:59 --> ErrorException: Undefined array key "nama_user"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Controllers\MitraTeater.php on line 1506.
+ 1 APPPATH\Controllers\MitraTeater.php(1506): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_user"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\MitraTeater.php', 1506)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 10:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 10:49:38 --> ParseError: syntax error, unexpected token "if", expecting ":"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 52.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 3 APPPATH\Controllers\MitraTeater.php(1500): view('templates/bodyAudisiMitra', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 10:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 10:55:27 --> ErrorException: Undefined variable $auditions
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 35.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auditions', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1500): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 11:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 11:11:57 --> ErrorException: Undefined array key "poster"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 38.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "poster"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 38)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 11:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 11:17:06 --> ErrorException: Undefined array key "poster"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 39.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "poster"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:09:49 --> ErrorException: Undefined array key "poster"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 39.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "poster"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:09:53 --> ErrorException: Undefined array key "poster"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 39.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "poster"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:10:55 --> ErrorException: Undefined array key "poster"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 39.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "poster"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1513): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:10:57 --> ErrorException: Undefined array key "poster"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 39.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "poster"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1513): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:10:58 --> ErrorException: Undefined array key "poster"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 39.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "poster"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1513): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:14:40 --> ErrorException: Undefined array key "judul"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 48.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "judul"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:14:59 --> ErrorException: Undefined array key "nama_kategori"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 51.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kategori"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 51)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:20:03 --> ErrorException: Undefined array key "judul"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 53.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "judul"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 53)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:20:24 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 55.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:25:26 --> ErrorException: Undefined array key "nama_komunitas"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 55.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_komunitas"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:26:17 --> ErrorException: Array to string conversion
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 55.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:26:47 --> ErrorException: Undefined array key "id_kategori"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 57.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kategori"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:27:09 --> ErrorException: Undefined array key "id_kategori"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 62.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kategori"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 62)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:27:28 --> ErrorException: Undefined array key "karakter_audisi"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 63.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "karakter_audisi"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 63)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 12:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 12:36:06 --> ErrorException: Undefined array key "syarat"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 65.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "syarat"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 65)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1512): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 14:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 14:01:40 --> ErrorException: Undefined array key "grouped_schedule"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 93.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "grouped_schedule"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 93)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1514): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 15:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 15:44:18 --> ErrorException: Undefined array key "id_teater"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 132.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_teater"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 132)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1516): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 15:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 15:45:48 --> ErrorException: Undefined array key "id_kategori"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\bodyAudisiMitra.php on line 132.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kategori"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php', 132)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1516): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 15:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-21 15:46:06 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1516): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 15:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 15:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 15:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-21 15:54:28 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1516): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 15:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 15:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-21 16:06:15 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1516): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 16:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 16:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-21 17:06:21 --> mysqli_sql_exception: Not unique table/alias: 'm_show_schedule' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_show_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_show_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_show_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_show_...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(558): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-21 17:06:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'm_show_schedule'
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(558): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 17:06:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'm_show_schedule'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(558): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 17:06:21 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'm_show_schedule'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(558): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-21 17:07:49 --> mysqli_sql_exception: Unknown column 'r_show_schedule.id_schedule' in 'on clause' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tan...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tan...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tan...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tan...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(558): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-21 17:07:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.id_schedule' in 'on clause'
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(558): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 17:07:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.id_schedule' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(558): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 17:07:49 --> [Caused by] mysqli_sql_exception: Unknown column 'r_show_schedule.id_schedule' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(558): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:12:40 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Controllers\MitraTeater.php on line 565.
+ 1 APPPATH\Controllers\MitraTeater.php(565): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\MitraTeater.php', 565)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:14:50 --> ErrorException: Undefined array key "denah"
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Controllers\MitraTeater.php on line 570.
+ 1 APPPATH\Controllers\MitraTeater.php(570): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "denah"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\MitraTeater.php', 570)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-21 17:15:03 --> mysqli_sql_exception: Table 'db_teaterform.m_sosmed_platform' doesn't exist in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_sosme...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_sosme...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_sosme...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_sosme...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(578): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-21 17:15:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_teaterform.m_sosmed_platform' doesn't exist
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = :r_teater_sosmed.id_teater:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(578): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 17:15:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_teaterform.m_sosmed_platform' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = :r_teater_sosmed.id_teater:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(578): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 17:15:03 --> [Caused by] mysqli_sql_exception: Table 'db_teaterform.m_sosmed_platform' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = :r_teater_sosmed.id_teater:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(578): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-21 17:15:56 --> mysqli_sql_exception: Unknown column 'm_sosmed_platform.id_platform_sosmed' in 'on clause' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_platf...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_platf...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_platf...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_platf...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(578): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-21 17:15:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm_sosmed_platform.id_platform_sosmed' in 'on clause'
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_platform_sosmed`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_platform_sosmed` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = :r_teater_sosmed.id_teater:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(578): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 17:15:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'm_sosmed_platform.id_platform_sosmed' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_platform_sosmed`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_platform_sosmed` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_platform_sosmed`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_platform_sosmed` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_platform_sosmed`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_platform_sosmed` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = :r_teater_sosmed.id_teater:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(578): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-21 17:15:56 --> [Caused by] mysqli_sql_exception: Unknown column 'm_sosmed_platform.id_platform_sosmed' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_platform_sosmed`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_platform_sosmed` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_platform_sosmed`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_platform_sosmed` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_platform_sosmed`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_platform_sosmed` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_platform_sosmed`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_platform_sosmed` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = :r_teater_sosmed.id_teater:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(578): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:16:16 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Controllers\MitraTeater.php on line 1609.
+ 1 APPPATH\Controllers\MitraTeater.php(1609): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\MitraTeater.php', 1609)
+ 2 APPPATH\Controllers\MitraTeater.php(586): App\Controllers\MitraTeater->formatWeb([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:16:46 --> ErrorException: Undefined array key "rating_usia"
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\bodyPenampilanMitra.php on line 54.
+ 1 APPPATH\Views\templates\bodyPenampilanMitra.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rating_usia"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php', 54)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(615): view('templates/bodyPenampilanMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:20:06 --> ErrorException: Undefined array key "id_teater"
+[Method: GET, Route: Audiens/penampilanAudiens]
+in APPPATH\Views\templates\bodyListPenampilan.php on line 41.
+ 1 APPPATH\Views\templates\bodyListPenampilan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_teater"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyListPenampilan', [], true)
+ 5 APPPATH\Controllers\Audiens.php(577): view('templates/bodyListPenampilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:29:13 --> ErrorException: Undefined variable $scheduleData
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Controllers\MitraTeater.php on line 563.
+ 1 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $scheduleData', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\MitraTeater.php', 563)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:30:11 --> ErrorException: Undefined array key "nama_kategori"
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Controllers\MitraTeater.php on line 571.
+ 1 APPPATH\Controllers\MitraTeater.php(571): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kategori"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\MitraTeater.php', 571)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:31:23 --> ErrorException: Undefined variable $groupedSchedule
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\bodyPenampilanMitra.php on line 77.
+ 1 APPPATH\Views\templates\bodyPenampilanMitra.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedSchedule', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(620): view('templates/bodyPenampilanMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:31:44 --> ErrorException: Undefined variable $groupedSchedule
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\bodyPenampilanMitra.php on line 77.
+ 1 APPPATH\Views\templates\bodyPenampilanMitra.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedSchedule', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(620): view('templates/bodyPenampilanMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:31:46 --> ErrorException: Undefined variable $groupedSchedule
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\bodyPenampilanMitra.php on line 77.
+ 1 APPPATH\Views\templates\bodyPenampilanMitra.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedSchedule', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(620): view('templates/bodyPenampilanMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:31:47 --> ErrorException: Undefined variable $groupedSchedule
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\bodyPenampilanMitra.php on line 77.
+ 1 APPPATH\Views\templates\bodyPenampilanMitra.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedSchedule', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(620): view('templates/bodyPenampilanMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:31:49 --> ErrorException: Undefined variable $groupedSchedule
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\bodyPenampilanMitra.php on line 77.
+ 1 APPPATH\Views\templates\bodyPenampilanMitra.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedSchedule', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(620): view('templates/bodyPenampilanMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:32:04 --> ErrorException: Undefined variable $groupedSchedule
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\bodyPenampilanMitra.php on line 77.
+ 1 APPPATH\Views\templates\bodyPenampilanMitra.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedSchedule', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(620): view('templates/bodyPenampilanMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:32:04 --> ErrorException: Undefined variable $groupedSchedule
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\bodyPenampilanMitra.php on line 77.
+ 1 APPPATH\Views\templates\bodyPenampilanMitra.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedSchedule', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(620): view('templates/bodyPenampilanMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:32:04 --> ErrorException: Undefined variable $groupedSchedule
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\bodyPenampilanMitra.php on line 77.
+ 1 APPPATH\Views\templates\bodyPenampilanMitra.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedSchedule', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(620): view('templates/bodyPenampilanMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:32:05 --> ErrorException: Undefined variable $groupedSchedule
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\bodyPenampilanMitra.php on line 77.
+ 1 APPPATH\Views\templates\bodyPenampilanMitra.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedSchedule', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(620): view('templates/bodyPenampilanMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-21 17:32:05 --> ErrorException: Undefined variable $groupedSchedule
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\bodyPenampilanMitra.php on line 77.
+ 1 APPPATH\Views\templates\bodyPenampilanMitra.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedSchedule', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(620): view('templates/bodyPenampilanMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-21 17:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-21 17:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

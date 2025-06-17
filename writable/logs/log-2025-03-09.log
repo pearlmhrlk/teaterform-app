@@ -1,0 +1,153 @@
+INFO - 2025-03-09 03:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-09 03:42:57 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/listPenampilan]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(639): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-09 03:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-09 03:43:00 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(69): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-09 03:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 03:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 03:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 03:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 04:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 04:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-09 04:38:59 --> Last Query: NULL
+DEBUG - 2025-03-09 04:38:59 --> Poster uploaded: uploads/posters/1741495139_d5908c8c58dce859207f.jpeg
+DEBUG - 2025-03-09 04:38:59 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"nsaiw qiw","tanggal":"2025-03-02","waktu_mulai":"11:40","waktu_selesai":"13:40","tipe_harga":"Bayar","harga":"","nama_kategori":"","seat_kategori":["VIP","Premium"],"seat_harga":["500000","250000"],"kota":["lainnya","Surabaya"],"kota_real":"Surabaya","tempat":"nibs euibwe","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"11:40\",\"waktu_selesai\":\"13:40\",\"harga\":\"Gratis\",\"kota\":\"Jakarta\",\"tempat\":\"nibs euibwe\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"11:40\",\"waktu_selesai\":\"13:40\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"nibs euibwe\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"11:40\",\"waktu_selesai\":\"13:40\",\"harga\":\"VIP, 500000, Premium, 250000\",\"kota\":\"Surabaya\",\"tempat\":\"nibs euibwe\",\"denah_seat\":\"Uploaded\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-09 04:38:59 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741495139_d5908c8c58dce859207f.jpeg","sinopsis":"nsaiw qiw","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-09 04:38:59 --> Query terakhir: INSERT INTO `m_teater` (`tipe_teater`, `judul`, `poster`, `sinopsis`, `penulis`, `sutradara`, `staff`, `dibuat_oleh`, `dimodif_oleh`) VALUES ('penampilan', 'Jaya Wijaya Show', 'uploads/posters/1741495139_d5908c8c58dce859207f.jpeg', 'nsaiw qiw', 'Jaya Wijaya', 'Willy Santoso', 'Toni Jojoni', 'AdminGNCD', NULL)
+DEBUG - 2025-03-09 04:38:59 --> ID Teater yang dibuat: 7
+ERROR - 2025-03-09 04:38:59 --> Error: Array to string conversion
+INFO - 2025-03-09 04:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 04:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 04:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-09 04:47:02 --> Last Query: NULL
+DEBUG - 2025-03-09 04:47:02 --> Poster uploaded: uploads/posters/1741495622_b1c7204205bdfe95f9a9.jpeg
+DEBUG - 2025-03-09 04:47:02 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"klno iahoeq","tanggal":"2025-03-03","waktu_mulai":"11:50","waktu_selesai":"13:50","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Bogor",""],"kota_real":"Surabaya","tempat":"masinhiaqw qubiw","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"11:50\",\"waktu_selesai\":\"13:50\",\"harga\":\"50000\",\"kota\":\"Surabaya\",\"tempat\":\"masinhiaqw qubiw\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"11:50\",\"waktu_selesai\":\"13:50\",\"harga\":\"VIP, 500000, Premium, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"masinhiaqw qubiw\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-03\",\"waktu_mulai\":\"11:50\",\"waktu_selesai\":\"13:50\",\"harga\":\"Gratis\",\"kota\":\"Bogor\",\"tempat\":\"masinhiaqw qubiw\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-09 04:47:02 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741495622_b1c7204205bdfe95f9a9.jpeg","sinopsis":"klno iahoeq","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-09 04:47:02 --> Query terakhir: INSERT INTO `m_teater` (`tipe_teater`, `judul`, `poster`, `sinopsis`, `penulis`, `sutradara`, `staff`, `dibuat_oleh`, `dimodif_oleh`) VALUES ('penampilan', 'Jaya Wijaya Show', 'uploads/posters/1741495622_b1c7204205bdfe95f9a9.jpeg', 'klno iahoeq', 'Jaya Wijaya', 'Willy Santoso', 'Toni Jojoni', 'AdminGNCD', NULL)
+DEBUG - 2025-03-09 04:47:02 --> ID Teater yang dibuat: 8
+ERROR - 2025-03-09 04:47:02 --> Error: Array to string conversion
+INFO - 2025-03-09 06:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 06:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-09 06:09:06 --> Last Query: NULL
+DEBUG - 2025-03-09 06:09:07 --> Poster uploaded: uploads/posters/1741500547_982f0fdd0b6742f7aeb2.jpeg
+DEBUG - 2025-03-09 06:09:07 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"minow eouwbo","tanggal":"2025-03-02","waktu_mulai":"13:10","waktu_selesai":"15:10","tipe_harga":"Bayar","harga":"","nama_kategori":"","seat_kategori":["VIP","Premium"],"seat_harga":["500000","250000"],"kota":["lainnya","Surabaya"],"kota_real":"Surabaya","tempat":"jakbwiuqid mnqwklq","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"13:10\",\"waktu_selesai\":\"15:10\",\"harga\":\"Gratis\",\"kota\":\"Bogor\",\"tempat\":\"jakbwiuqid mnqwklq\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"13:10\",\"waktu_selesai\":\"15:10\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"jakbwiuqid mnqwklq\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"13:10\",\"waktu_selesai\":\"15:10\",\"harga\":\"VIP, 500000, Premium, 250000\",\"kota\":\"Surabaya\",\"tempat\":\"jakbwiuqid mnqwklq\",\"denah_seat\":\"Uploaded\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-09 06:09:07 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741500547_982f0fdd0b6742f7aeb2.jpeg","sinopsis":"minow eouwbo","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-09 06:09:07 --> Query terakhir: INSERT INTO `m_teater` (`tipe_teater`, `judul`, `poster`, `sinopsis`, `penulis`, `sutradara`, `staff`, `dibuat_oleh`, `dimodif_oleh`) VALUES ('penampilan', 'Jaya Wijaya Show', 'uploads/posters/1741500547_982f0fdd0b6742f7aeb2.jpeg', 'minow eouwbo', 'Jaya Wijaya', 'Willy Santoso', 'Toni Jojoni', 'AdminGNCD', NULL)
+DEBUG - 2025-03-09 06:09:07 --> ID Teater yang dibuat: 9
+ERROR - 2025-03-09 06:09:07 --> Error: Array to string conversion
+INFO - 2025-03-09 06:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 06:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-09 06:33:32 --> Last Query: NULL
+DEBUG - 2025-03-09 06:33:32 --> Poster uploaded: uploads/posters/1741502012_6c41b65a9891b360907f.jpeg
+DEBUG - 2025-03-09 06:33:32 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"knSIQB IBbsuibdiw","tanggal":"2025-03-03","waktu_mulai":"13:30","waktu_selesai":"15:30","tipe_harga":"Gratis","harga":"50000","nama_kategori":"","kota":["lainnya","Surabaya"],"kota_real":"Surabaya","tempat":"aknsubaiw diwbeuq","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"13:30\",\"waktu_selesai\":\"15:30\",\"harga\":\"VIP, 500000, Premium, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"aknsubaiw diwbeuq\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"13:30\",\"waktu_selesai\":\"15:30\",\"harga\":\"50000\",\"kota\":\"Bogor\",\"tempat\":\"aknsubaiw diwbeuq\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-03\",\"waktu_mulai\":\"13:30\",\"waktu_selesai\":\"15:30\",\"harga\":\"Gratis\",\"kota\":\"Surabaya\",\"tempat\":\"aknsubaiw diwbeuq\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-09 06:33:32 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741502012_6c41b65a9891b360907f.jpeg","sinopsis":"knSIQB IBbsuibdiw","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-09 06:33:32 --> ID Teater yang dibuat: 10
+ERROR - 2025-03-09 06:33:32 --> Error: Array to string conversion
+INFO - 2025-03-09 06:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 06:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 06:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-09 06:57:59 --> Last Query: NULL
+DEBUG - 2025-03-09 06:57:59 --> Poster uploaded: uploads/posters/1741503479_f162f8e02e24a61320d8.jpeg
+DEBUG - 2025-03-09 06:57:59 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"kwndoiw owneio","tanggal":"2025-03-01","waktu_mulai":"13:00","waktu_selesai":"15:00","tipe_harga":"Gratis","harga":"50000","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Surabaya","tempat":"wkeo3ino 3oinoe","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"13:00\",\"waktu_selesai\":\"15:00\",\"harga\":\"VIP, 500000, Premium, 250000\",\"kota\":\"Surabaya\",\"tempat\":\"wkeo3ino 3oinoe\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"13:00\",\"waktu_selesai\":\"15:00\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"wkeo3ino 3oinoe\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"13:00\",\"waktu_selesai\":\"15:00\",\"harga\":\"Gratis\",\"kota\":\"Jakarta\",\"tempat\":\"wkeo3ino 3oinoe\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-09 06:57:59 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741503479_f162f8e02e24a61320d8.jpeg","sinopsis":"kwndoiw owneio","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-09 06:57:59 --> ID Teater yang dibuat: 11
+ERROR - 2025-03-09 06:57:59 --> Error: Array to string conversion
+INFO - 2025-03-09 07:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 07:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-09 07:35:07 --> Last Query: NULL
+DEBUG - 2025-03-09 07:35:07 --> Poster uploaded: uploads/posters/1741505707_20db3cbe460e73501e24.jpeg
+DEBUG - 2025-03-09 07:35:07 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"nosonwjwk owndeinos","tanggal":"2025-03-01","waktu_mulai":"14:30","waktu_selesai":"16:30","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["lainnya","Surabaya"],"kota_real":"Surabaya","tempat":"kalsdnka dwlwe","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"14:30\",\"waktu_selesai\":\"16:30\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"kalsdnka dwlwe\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"14:30\",\"waktu_selesai\":\"16:30\",\"harga\":\"VIP, 500000, Premium, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"kalsdnka dwlwe\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"14:30\",\"waktu_selesai\":\"16:30\",\"harga\":null,\"kota\":\"Surabaya\",\"tempat\":\"kalsdnka dwlwe\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-09 07:35:07 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741505707_20db3cbe460e73501e24.jpeg","sinopsis":"nosonwjwk owndeinos","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-09 07:35:07 --> ID Teater yang dibuat: 12
+ERROR - 2025-03-09 07:35:07 --> Error: Array to string conversion
+INFO - 2025-03-09 07:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 10:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-09 10:08:03 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/listPenampilan]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(670): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-09 10:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-09 10:08:06 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(69): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-09 10:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-09 10:08:18 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(69): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-09 10:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 10:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 10:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 10:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 10:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 10:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-09 10:12:04 --> Last Query: NULL
+DEBUG - 2025-03-09 10:12:04 --> Poster uploaded: uploads/posters/1741515124_f8629370f81f5a5bdc58.jpeg
+DEBUG - 2025-03-09 10:12:04 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"lasmdioanwe odwwqniweo","tanggal":"2025-03-02","waktu_mulai":"17:15","waktu_selesai":"19:15","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["lainnya","Surabaya"],"kota_real":"Surabaya","tempat":"ndoiwmdeow ewnmodew","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"17:15\",\"waktu_selesai\":\"19:15\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"ndoiwmdeow ewnmodew\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"17:15\",\"waktu_selesai\":\"19:15\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"ndoiwmdeow ewnmodew\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"17:15\",\"waktu_selesai\":\"19:15\",\"nama_kategori\":\"\",\"harga\":0,\"kota\":\"Surabaya\",\"tempat\":\"ndoiwmdeow ewnmodew\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-09 10:12:04 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741515124_f8629370f81f5a5bdc58.jpeg","sinopsis":"lasmdioanwe odwwqniweo","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-09 10:12:04 --> ID Teater yang dibuat: 13
+ERROR - 2025-03-09 10:12:04 --> Error: Array to string conversion
+INFO - 2025-03-09 10:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-09 10:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-09 10:28:02 --> Last Query: NULL
+DEBUG - 2025-03-09 10:28:02 --> Poster uploaded: uploads/posters/1741516082_64df5f997e83aab230ad.jpeg
+DEBUG - 2025-03-09 10:28:02 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"ksoanoia faoneioa","tanggal":"2025-03-03","waktu_mulai":"17:30","waktu_selesai":"19:30","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Surabaya","tempat":"jkbkbgiu kubiu","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"17:30\",\"waktu_selesai\":\"19:30\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Surabaya\",\"tempat\":\"jkbkbgiu kubiu\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"17:30\",\"waktu_selesai\":\"19:30\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Surabaya\",\"tempat\":\"jkbkbgiu kubiu\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-03\",\"waktu_mulai\":\"17:30\",\"waktu_selesai\":\"19:30\",\"nama_kategori\":\"\",\"harga\":\"0\",\"kota\":\"Jakarta\",\"tempat\":\"jkbkbgiu kubiu\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-09 10:28:02 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741516082_64df5f997e83aab230ad.jpeg","sinopsis":"ksoanoia faoneioa","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-09 10:28:02 --> ID Teater yang dibuat: 14
+ERROR - 2025-03-09 10:28:02 --> Error: Array to string conversion

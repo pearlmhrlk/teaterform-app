@@ -1,0 +1,214 @@
+CRITICAL - 2025-03-16 06:24:25 --> ParseError: syntax error, unexpected token "="
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Controllers\Admin.php on line 252.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-16 06:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 06:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 06:24:28 --> ParseError: syntax error, unexpected token "="
+[Method: GET, Route: Admin/listPenampilan]
+in APPPATH\Controllers\Admin.php on line 252.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-16 06:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 06:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 06:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 06:24:36 --> ParseError: syntax error, unexpected token "="
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Controllers\Admin.php on line 252.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-16 06:32:18 --> ParseError: syntax error, unexpected token "="
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Controllers\Admin.php on line 252.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-16 06:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 06:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 07:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 07:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 07:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 07:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 07:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 07:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 07:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 07:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 07:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 07:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 07:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 07:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 07:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 09:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 09:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 09:07:14 --> Last Query: NULL
+INFO - 2025-03-16 09:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 09:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 09:14:02 --> Last Query: NULL
+DEBUG - 2025-03-16 09:14:02 --> Poster uploaded: uploads/posters/1742116442_ea0043d678e782d826d4.jpeg
+DEBUG - 2025-03-16 09:14:02 --> Request data: {"csrf_test_name":"1d3a31b2108426894999291f4c7786e3","tipe_teater":"audisi","judul":"Jaya Wijaya Show","sinopsis":"boneka kayu yang suka berbohong","karakter_audisi":"Pinokio","deskripsi_karakter":"hidungnya panjang jika berbohong","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"16:15\",\"waktu_selesai\":\"18:15\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"jnkniuhi iniubi\"},{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"19:15\",\"waktu_selesai\":\"21:15\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"jnkniuhi iniubi\"}]","penulis":"Jaya Wijaya","syarat":"Pandai berbohong","syarat_dokumen":"","sutradara":"Willy Santoso","staff":"Toni Jojoni","gaji":"500000","komitmen":"Harus disiplin"}
+DEBUG - 2025-03-16 09:14:02 --> Data yang diterima: {"tipe_teater":"audisi","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1742116442_ea0043d678e782d826d4.jpeg","sinopsis":"boneka kayu yang suka berbohong","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-16 09:14:02 --> ID Teater yang dibuat: 39
+ERROR - 2025-03-16 09:14:02 --> Error: Undefined array key "id_kategori"
+INFO - 2025-03-16 09:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 09:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 09:21:19 --> Last Query: NULL
+DEBUG - 2025-03-16 09:21:19 --> Poster uploaded: uploads/posters/1742116879_332fa0cc397ff8912e81.jpeg
+DEBUG - 2025-03-16 09:21:19 --> Request data: {"csrf_test_name":"1d3a31b2108426894999291f4c7786e3","tipe_teater":"audisi","id_kategori":"1","judul":"Jaya Wijaya Show","sinopsis":"Boneka kayu yang suka berbohong","karakter_audisi":"Pinokio","deskripsi_karakter":"hidungnya panjang jika berbohong","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"16:20\",\"waktu_selesai\":\"18:20\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"dnksnfdjksj kjwbeowi\"},{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"19:20\",\"waktu_selesai\":\"21:20\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"dnksnfdjksj kjwbeowi\"}]","penulis":"Jaya Wijaya","syarat":"Harus pandai berbohong","syarat_dokumen":"","sutradara":"Willy Santoso","staff":"Toni Jojoni","gaji":"500000","komitmen":"Harus disiplin"}
+DEBUG - 2025-03-16 09:21:19 --> Data yang diterima: {"tipe_teater":"audisi","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1742116879_332fa0cc397ff8912e81.jpeg","sinopsis":"Boneka kayu yang suka berbohong","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-16 09:21:19 --> ID Teater yang dibuat: 40
+DEBUG - 2025-03-16 09:21:19 --> ID Audisi yang dibuat: 1
+DEBUG - 2025-03-16 09:21:19 --> ID Aktor yang dibuat: 1
+DEBUG - 2025-03-16 09:21:19 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 16:20, Selesai: 18:20, Kota: Jakarta, Tempat: dnksnfdjksj kjwbeowi
+DEBUG - 2025-03-16 09:21:19 --> Data lokasi yang akan disimpan: {"tempat":"dnksnfdjksj kjwbeowi","kota":"Jakarta"}
+DEBUG - 2025-03-16 09:21:19 --> ID Location yang didapat setelah insert: 35
+INFO - 2025-03-16 09:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 09:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 09:40:21 --> Last Query: NULL
+DEBUG - 2025-03-16 09:40:21 --> Poster uploaded: uploads/posters/1742118021_5e5a1c7340f13d743430.jpeg
+DEBUG - 2025-03-16 09:40:21 --> Request data: {"csrf_test_name":"1d3a31b2108426894999291f4c7786e3","tipe_teater":"audisi","id_kategori":"1","judul":"Jaya Wijaya Show","sinopsis":"smndkwjne wkjenwo","karakter_audisi":"Pinokio","deskripsi_karakter":"wklemw ewomeow","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"16:35\",\"waktu_selesai\":\"18:35\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"sjkndie winewo\"},{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"19:40\",\"waktu_selesai\":\"21:40\",\"tipe_harga\":\"Gratis\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"sjkndie winewo\"}]","penulis":"Jaya Wijaya","syarat":"klsdna dkadao","syarat_dokumen":"","sutradara":"Willy Santoso","staff":"Toni Jojoni","gaji":"500000","komitmen":"askjbakd kabsa"}
+DEBUG - 2025-03-16 09:40:21 --> Data yang diterima: {"tipe_teater":"audisi","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1742118021_5e5a1c7340f13d743430.jpeg","sinopsis":"smndkwjne wkjenwo","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-16 09:40:21 --> ID Teater yang dibuat: 41
+DEBUG - 2025-03-16 09:40:21 --> ID Audisi yang dibuat: 2
+DEBUG - 2025-03-16 09:40:21 --> ID Aktor yang dibuat: 2
+DEBUG - 2025-03-16 09:40:21 --> Decoded schedule: Array
+(
+    [0] => Array
+        (
+            [tanggal] => 2025-03-01
+            [waktu_mulai] => 16:35
+            [waktu_selesai] => 18:35
+            [tipe_harga] => Bayar
+            [harga] => 50000
+            [kota] => Jakarta
+            [tempat] => sjkndie winewo
+        )
+
+    [1] => Array
+        (
+            [tanggal] => 2025-03-01
+            [waktu_mulai] => 19:40
+            [waktu_selesai] => 21:40
+            [tipe_harga] => Gratis
+            [harga] => 
+            [kota] => Jakarta
+            [tempat] => sjkndie winewo
+        )
+
+)
+
+DEBUG - 2025-03-16 09:40:21 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 16:35, Selesai: 18:35, Kota: Jakarta, Tempat: sjkndie winewo
+DEBUG - 2025-03-16 09:40:21 --> Harga dari schedule: 50000
+DEBUG - 2025-03-16 09:40:21 --> Data lokasi yang akan disimpan: {"tempat":"sjkndie winewo","kota":"Jakarta"}
+DEBUG - 2025-03-16 09:40:21 --> ID Location yang didapat setelah insert: 36
+ERROR - 2025-03-16 09:40:21 --> Error: Undefined variable $sch
+INFO - 2025-03-16 09:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 09:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 09:43:11 --> Last Query: NULL
+DEBUG - 2025-03-16 09:43:11 --> Poster uploaded: uploads/posters/1742118191_1b34e9623a3f3f706a4f.jpeg
+DEBUG - 2025-03-16 09:43:11 --> Request data: {"csrf_test_name":"1d3a31b2108426894999291f4c7786e3","tipe_teater":"audisi","id_kategori":"1","judul":"Jaya Wijaya Show","sinopsis":"laksjdasa knaosn","karakter_audisi":"Pinokio","deskripsi_karakter":"kaklsdiaj skansaod","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"16:45\",\"waktu_selesai\":\"18:45\",\"tipe_harga\":\"Gratis\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"ajkdeoie woewo\"},{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"19:45\",\"waktu_selesai\":\"21:45\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"ajkdeoie woewo\"}]","penulis":"Jaya Wijaya","syarat":"aksa skajbqiuw","syarat_dokumen":"","sutradara":"Willy Santoso","staff":"Toni Jojoni","gaji":"500000","komitmen":"dkhd eknwlenlwq"}
+DEBUG - 2025-03-16 09:43:11 --> Data yang diterima: {"tipe_teater":"audisi","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1742118191_1b34e9623a3f3f706a4f.jpeg","sinopsis":"laksjdasa knaosn","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-16 09:43:11 --> ID Teater yang dibuat: 42
+DEBUG - 2025-03-16 09:43:11 --> ID Audisi yang dibuat: 3
+DEBUG - 2025-03-16 09:43:11 --> ID Aktor yang dibuat: 3
+DEBUG - 2025-03-16 09:43:11 --> Decoded schedule: Array
+(
+    [0] => Array
+        (
+            [tanggal] => 2025-03-01
+            [waktu_mulai] => 16:45
+            [waktu_selesai] => 18:45
+            [tipe_harga] => Gratis
+            [harga] => 
+            [kota] => Jakarta
+            [tempat] => ajkdeoie woewo
+        )
+
+    [1] => Array
+        (
+            [tanggal] => 2025-03-01
+            [waktu_mulai] => 19:45
+            [waktu_selesai] => 21:45
+            [tipe_harga] => Bayar
+            [harga] => 50000
+            [kota] => Jakarta
+            [tempat] => ajkdeoie woewo
+        )
+
+)
+
+DEBUG - 2025-03-16 09:43:11 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 16:45, Selesai: 18:45, Kota: Jakarta, Tempat: ajkdeoie woewo
+DEBUG - 2025-03-16 09:43:11 --> Harga dari schedule: 
+DEBUG - 2025-03-16 09:43:11 --> Data lokasi yang akan disimpan: {"tempat":"ajkdeoie woewo","kota":"Jakarta"}
+DEBUG - 2025-03-16 09:43:11 --> ID Location yang didapat setelah insert: 37
+INFO - 2025-03-16 09:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 10:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 10:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-16 10:21:25 --> Last Query: NULL
+DEBUG - 2025-03-16 10:21:25 --> Poster uploaded: uploads/posters/1742120485_08c5c18ab8a53bb95072.jpeg
+DEBUG - 2025-03-16 10:21:25 --> Request data: {"csrf_test_name":"1d3a31b2108426894999291f4c7786e3","tipe_teater":"audisi","id_kategori":"1","judul":"Jaya Wijaya Show","sinopsis":"xjkznkxs dsndo","karakter_audisi":"Pinokio","deskripsi_karakter":"nxjkds disdosu","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"17:20\",\"waktu_selesai\":\"19:20\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"nskbbwbeiwub diwbe\"},{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"20:20\",\"waktu_selesai\":\"22:20\",\"tipe_harga\":\"Gratis\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"nskbbwbeiwub diwbe\"}]","penulis":"Jaya Wijaya","syarat":"hbiu iuohou","syarat_dokumen":"","sutradara":"Willy Santoso","staff":"Toni Jojoni","gaji":"500000","komitmen":"bhjbi ibuiui"}
+DEBUG - 2025-03-16 10:21:25 --> Data yang diterima: {"tipe_teater":"audisi","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1742120485_08c5c18ab8a53bb95072.jpeg","sinopsis":"xjkznkxs dsndo","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-16 10:21:25 --> ID Teater yang dibuat: 43
+DEBUG - 2025-03-16 10:21:25 --> ID Audisi yang dibuat: 4
+DEBUG - 2025-03-16 10:21:25 --> ID Aktor yang dibuat: 4
+DEBUG - 2025-03-16 10:21:25 --> Decoded schedule: Array
+(
+    [0] => Array
+        (
+            [tanggal] => 2025-03-01
+            [waktu_mulai] => 17:20
+            [waktu_selesai] => 19:20
+            [tipe_harga] => Bayar
+            [harga] => 50000
+            [kota] => Jakarta
+            [tempat] => nskbbwbeiwub diwbe
+        )
+
+    [1] => Array
+        (
+            [tanggal] => 2025-03-01
+            [waktu_mulai] => 20:20
+            [waktu_selesai] => 22:20
+            [tipe_harga] => Gratis
+            [harga] => 
+            [kota] => Jakarta
+            [tempat] => nskbbwbeiwub diwbe
+        )
+
+)
+
+DEBUG - 2025-03-16 10:21:25 --> Isi schedule: [{"tanggal":"2025-03-01","waktu_mulai":"17:20","waktu_selesai":"19:20","tipe_harga":"Bayar","harga":"50000","kota":"Jakarta","tempat":"nskbbwbeiwub diwbe"},{"tanggal":"2025-03-01","waktu_mulai":"20:20","waktu_selesai":"22:20","tipe_harga":"Gratis","harga":"","kota":"Jakarta","tempat":"nskbbwbeiwub diwbe"}]
+DEBUG - 2025-03-16 10:21:25 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 17:20, Selesai: 19:20, Kota: Jakarta, Tempat: nskbbwbeiwub diwbe
+DEBUG - 2025-03-16 10:21:25 --> Harga dari schedule: 50000
+DEBUG - 2025-03-16 10:21:25 --> Data lokasi yang akan disimpan: {"tempat":"nskbbwbeiwub diwbe","kota":"Jakarta"}
+DEBUG - 2025-03-16 10:21:25 --> ID Location yang didapat setelah insert: 38
+DEBUG - 2025-03-16 10:21:25 --> Harga sebelum validasi: 50000
+DEBUG - 2025-03-16 10:21:25 --> Data jadwal diterima: [{"tanggal":"2025-03-01","waktu_mulai":"17:20","waktu_selesai":"19:20","tipe_harga":"Bayar","harga":"50000","kota":"Jakarta","tempat":"nskbbwbeiwub diwbe"},{"tanggal":"2025-03-01","waktu_mulai":"20:20","waktu_selesai":"22:20","tipe_harga":"Gratis","harga":"","kota":"Jakarta","tempat":"nskbbwbeiwub diwbe"}]
+INFO - 2025-03-16 10:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

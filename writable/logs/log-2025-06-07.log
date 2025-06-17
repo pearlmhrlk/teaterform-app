@@ -1,0 +1,153 @@
+INFO - 2025-06-07 06:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 06:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 06:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 06:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 06:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-07 06:18:42 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1586): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-07 06:18:42 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 61.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(61): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1586): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-07 06:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 06:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 06:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 06:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 06:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 06:21:31 --> Last Query: NULL
+INFO - 2025-06-07 07:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 07:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 07:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 07:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 07:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 10:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 10:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 10:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 10:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 10:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 10:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-07 10:03:31 --> ErrorException: Undefined variable $id_teater
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\bodyPenampilanMitra.php on line 235.
+ 1 APPPATH\Views\templates\bodyPenampilanMitra.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_teater', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php', 235)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(624): view('templates/bodyPenampilanMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-07 10:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 10:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 10:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 14:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 14:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 14:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 14:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 14:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 14:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 14:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 15:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 15:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 15:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 15:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 15:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 15:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 15:30:52 --> Last Query: NULL
+DEBUG - 2025-06-07 15:30:52 --> Poster name: MV5BNzAyY2JiYWItODU5My00OTc5LTgxODUtZjMyNTdmYzliNGRkXkEyXkFqcGc@._V1_.jpg
+DEBUG - 2025-06-07 15:30:52 --> Poster valid: yes
+DEBUG - 2025-06-07 15:30:52 --> Poster uploaded: uploads/posters/1749310252_c4fb096b4d142cf9ee74.jpg
+DEBUG - 2025-06-07 15:30:52 --> Request data: {"csrf_test_name":"940f13121242200e24e56cc34da41cbb","id_teater":"","tipe_teater":"penampilan","judul":"Putri Salju","sinopsis":"Putri tercantik dengan kulit seputih salju.","tanggal":"2025-06-16","waktu_mulai":"22:25","waktu_selesai":"00:25","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"Balai Sarbini","hidden_schedule":"[{\"id\":1749309987422,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"22:25\",\"waktu_selesai\":\"00:25\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}]},{\"id\":1749310046204,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"22:25\",\"waktu_selesai\":\"00:25\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":null,\"seatDrafts\":[]},{\"id\":1749310058880,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"22:25\",\"waktu_selesai\":\"00:25\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":null,\"seatDrafts\":[]}]","penulis":"Yuto Nakajima","url_pendaftaran":"www.snowwhiteregistration.com","sutradara":"Sungyun","staff":"pearl","aktor":"rachel zegler, galgadot","durasi":"120","rating_umur":["13+"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"[]","daftar_mulai":"","daftar_berakhir":""}
+DEBUG - 2025-06-07 15:30:52 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Putri Salju","poster":"uploads\/posters\/1749310252_c4fb096b4d142cf9ee74.jpg","sinopsis":"Putri tercantik dengan kulit seputih salju.","penulis":"Yuto Nakajima","sutradara":"Sungyun","staff":"pearl","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.snowwhiteregistration.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-07 15:30:52 --> ID Teater yang dibuat: 100
+DEBUG - 2025-06-07 15:30:52 --> ID relasi user dengan teater yang dibuat: 14
+DEBUG - 2025-06-07 15:30:52 --> Data yang diterima: {"id_teater":100,"aktor":"rachel zegler, galgadot","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-06-07 15:30:52 --> ID Penampilan yang dibuat: 79
+DEBUG - 2025-06-07 15:30:52 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 22:25, Selesai: 00:25, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-06-07 15:30:52 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-06-07 15:30:52 --> Data jadwal diterima: [{"id":1749309987422,"tanggal":"2025-06-14","waktu_mulai":"22:25","waktu_selesai":"00:25","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}]},{"id":1749310046204,"tanggal":"2025-06-15","waktu_mulai":"22:25","waktu_selesai":"00:25","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":null,"seatDrafts":[]},{"id":1749310058880,"tanggal":"2025-06-16","waktu_mulai":"22:25","waktu_selesai":"00:25","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":null,"seatDrafts":[]}]
+DEBUG - 2025-06-07 15:30:52 --> Jadwal ke-1: Tanggal: 2025-06-15, Mulai: 22:25, Selesai: 00:25, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-06-07 15:30:52 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-06-07 15:30:52 --> Data jadwal diterima: [{"id":1749309987422,"tanggal":"2025-06-14","waktu_mulai":"22:25","waktu_selesai":"00:25","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}]},{"id":1749310046204,"tanggal":"2025-06-15","waktu_mulai":"22:25","waktu_selesai":"00:25","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":null,"seatDrafts":[]},{"id":1749310058880,"tanggal":"2025-06-16","waktu_mulai":"22:25","waktu_selesai":"00:25","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":null,"seatDrafts":[]}]
+DEBUG - 2025-06-07 15:30:52 --> Jadwal ke-2: Tanggal: 2025-06-16, Mulai: 22:25, Selesai: 00:25, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-06-07 15:30:52 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-06-07 15:30:52 --> Data jadwal diterima: [{"id":1749309987422,"tanggal":"2025-06-14","waktu_mulai":"22:25","waktu_selesai":"00:25","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}]},{"id":1749310046204,"tanggal":"2025-06-15","waktu_mulai":"22:25","waktu_selesai":"00:25","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":null,"seatDrafts":[]},{"id":1749310058880,"tanggal":"2025-06-16","waktu_mulai":"22:25","waktu_selesai":"00:25","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":null,"seatDrafts":[]}]
+INFO - 2025-06-07 15:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 15:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 16:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 16:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 16:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 16:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 16:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 16:16:20 --> Last Query: NULL
+DEBUG - 2025-06-07 16:16:20 --> Poster name: MV5BNzAyY2JiYWItODU5My00OTc5LTgxODUtZjMyNTdmYzliNGRkXkEyXkFqcGc@._V1_.jpg
+DEBUG - 2025-06-07 16:16:20 --> Poster valid: yes
+DEBUG - 2025-06-07 16:16:20 --> Poster uploaded: uploads/posters/1749312980_962fe4ba018c95f6b8a8.jpg
+DEBUG - 2025-06-07 16:16:20 --> Request data: {"csrf_test_name":"940f13121242200e24e56cc34da41cbb","id_teater":"","tipe_teater":"penampilan","judul":"Snow White","sinopsis":"The most beautiful princess with fair skin like snow.","tanggal":"2025-06-16","waktu_mulai":"23:15","waktu_selesai":"01:15","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"nsudeiuwevi eiuw","hidden_schedule":"[{\"id\":1749312807687,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"23:15\",\"waktu_selesai\":\"01:15\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"nsudeiuwevi eiuw\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}]},{\"id\":1749312836744,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"23:15\",\"waktu_selesai\":\"01:15\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"nsudeiuwevi eiuw\",\"denah_seat\":null,\"seatDrafts\":[]},{\"id\":1749312849521,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"23:15\",\"waktu_selesai\":\"01:15\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"nsudeiuwevi eiuw\",\"denah_seat\":null,\"seatDrafts\":[]}]","penulis":"ksndqjaw wqiewiqo","url_pendaftaran":"www.putrisnow.com","sutradara":"klamdso oniowew","staff":"nskjw owneipw","aktor":"kdnowe wowinpew","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":""}
+DEBUG - 2025-06-07 16:16:20 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Snow White","poster":"uploads\/posters\/1749312980_962fe4ba018c95f6b8a8.jpg","sinopsis":"The most beautiful princess with fair skin like snow.","penulis":"ksndqjaw wqiewiqo","sutradara":"klamdso oniowew","staff":"nskjw owneipw","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.putrisnow.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-07 16:16:20 --> ID Teater yang dibuat: 101
+DEBUG - 2025-06-07 16:16:20 --> ID relasi user dengan teater yang dibuat: 15
+DEBUG - 2025-06-07 16:16:20 --> Data yang diterima: {"id_teater":101,"aktor":"kdnowe wowinpew","durasi":"120","rating_umur":["Semua Umur (SU)"]}
+DEBUG - 2025-06-07 16:16:20 --> ID Penampilan yang dibuat: 80
+DEBUG - 2025-06-07 16:16:20 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 23:15, Selesai: 01:15, Kota: Jakarta, Tempat: nsudeiuwevi eiuw
+DEBUG - 2025-06-07 16:16:20 --> Data lokasi yang akan disimpan: {"tempat":"nsudeiuwevi eiuw","kota":"Jakarta"}
+DEBUG - 2025-06-07 16:16:20 --> ID Location yang didapat setelah insert: 164
+DEBUG - 2025-06-07 16:16:20 --> Data jadwal diterima: [{"id":1749312807687,"tanggal":"2025-06-14","waktu_mulai":"23:15","waktu_selesai":"01:15","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"nsudeiuwevi eiuw","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}]},{"id":1749312836744,"tanggal":"2025-06-15","waktu_mulai":"23:15","waktu_selesai":"01:15","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"nsudeiuwevi eiuw","denah_seat":null,"seatDrafts":[]},{"id":1749312849521,"tanggal":"2025-06-16","waktu_mulai":"23:15","waktu_selesai":"01:15","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"nsudeiuwevi eiuw","denah_seat":null,"seatDrafts":[]}]
+DEBUG - 2025-06-07 16:16:20 --> Jadwal ke-1: Tanggal: 2025-06-15, Mulai: 23:15, Selesai: 01:15, Kota: Jakarta, Tempat: nsudeiuwevi eiuw
+DEBUG - 2025-06-07 16:16:20 --> Data lokasi yang akan disimpan: {"tempat":"nsudeiuwevi eiuw","kota":"Jakarta"}
+DEBUG - 2025-06-07 16:16:20 --> Data jadwal diterima: [{"id":1749312807687,"tanggal":"2025-06-14","waktu_mulai":"23:15","waktu_selesai":"01:15","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"nsudeiuwevi eiuw","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}]},{"id":1749312836744,"tanggal":"2025-06-15","waktu_mulai":"23:15","waktu_selesai":"01:15","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"nsudeiuwevi eiuw","denah_seat":null,"seatDrafts":[]},{"id":1749312849521,"tanggal":"2025-06-16","waktu_mulai":"23:15","waktu_selesai":"01:15","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"nsudeiuwevi eiuw","denah_seat":null,"seatDrafts":[]}]
+DEBUG - 2025-06-07 16:16:20 --> Jadwal ke-2: Tanggal: 2025-06-16, Mulai: 23:15, Selesai: 01:15, Kota: Jakarta, Tempat: nsudeiuwevi eiuw
+DEBUG - 2025-06-07 16:16:20 --> Data lokasi yang akan disimpan: {"tempat":"nsudeiuwevi eiuw","kota":"Jakarta"}
+DEBUG - 2025-06-07 16:16:20 --> Data jadwal diterima: [{"id":1749312807687,"tanggal":"2025-06-14","waktu_mulai":"23:15","waktu_selesai":"01:15","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"nsudeiuwevi eiuw","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}]},{"id":1749312836744,"tanggal":"2025-06-15","waktu_mulai":"23:15","waktu_selesai":"01:15","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"nsudeiuwevi eiuw","denah_seat":null,"seatDrafts":[]},{"id":1749312849521,"tanggal":"2025-06-16","waktu_mulai":"23:15","waktu_selesai":"01:15","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"nsudeiuwevi eiuw","denah_seat":null,"seatDrafts":[]}]
+INFO - 2025-06-07 16:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 16:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 17:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 17:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 17:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 17:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 17:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 17:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-07 17:10:37 --> Last Query: NULL
+DEBUG - 2025-06-07 17:10:37 --> Poster name: download (1).jpeg
+DEBUG - 2025-06-07 17:10:37 --> Poster valid: yes
+DEBUG - 2025-06-07 17:10:37 --> Poster uploaded: uploads/posters/1749316237_b1e8cc9eafbacdc36c04.jpeg
+DEBUG - 2025-06-07 17:10:37 --> Request data: {"csrf_test_name":"42ffb6c3fe03b8220bc5a16145a391a6","id_teater":"","tipe_teater":"penampilan","judul":"Psikopat Amerika","sinopsis":"nsjfow owijeow","tanggal":"2025-06-16","waktu_mulai":"00:10","waktu_selesai":"02:10","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"aklsndoa eownei","hidden_schedule":"[{\"id\":1749316131909,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"00:10\",\"waktu_selesai\":\"02:10\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"aklsndoa eownei\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}]},{\"id\":1749316170795,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"00:10\",\"waktu_selesai\":\"02:10\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"aklsndoa eownei\",\"denah_seat\":null,\"seatDrafts\":[]},{\"id\":1749316180705,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"00:10\",\"waktu_selesai\":\"02:10\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"aklsndoa eownei\",\"denah_seat\":null,\"seatDrafts\":[]}]","penulis":"jkshda iuewei","url_pendaftaran":"www.amerikapsiko.com","sutradara":"mdwir eirui","staff":"gnkorijgt wiuwo","aktor":"nroerw oiewo","durasi":"120","rating_umur":["21+"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":""}
+DEBUG - 2025-06-07 17:10:37 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Psikopat Amerika","poster":"uploads\/posters\/1749316237_b1e8cc9eafbacdc36c04.jpeg","sinopsis":"nsjfow owijeow","penulis":"jkshda iuewei","sutradara":"mdwir eirui","staff":"gnkorijgt wiuwo","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.amerikapsiko.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-07 17:10:37 --> ID Teater yang dibuat: 102
+DEBUG - 2025-06-07 17:10:37 --> ID relasi user dengan teater yang dibuat: 16
+DEBUG - 2025-06-07 17:10:37 --> Data yang diterima: {"id_teater":102,"aktor":"nroerw oiewo","durasi":"120","rating_umur":["21+"]}
+DEBUG - 2025-06-07 17:10:37 --> ID Penampilan yang dibuat: 81
+DEBUG - 2025-06-07 17:10:37 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 00:10, Selesai: 02:10, Kota: Jakarta, Tempat: aklsndoa eownei
+DEBUG - 2025-06-07 17:10:37 --> Data lokasi yang akan disimpan: {"tempat":"aklsndoa eownei","kota":"Jakarta"}
+DEBUG - 2025-06-07 17:10:37 --> ID Location yang didapat setelah insert: 165
+DEBUG - 2025-06-07 17:10:37 --> Data jadwal diterima: [{"id":1749316131909,"tanggal":"2025-06-14","waktu_mulai":"00:10","waktu_selesai":"02:10","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"aklsndoa eownei","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}]},{"id":1749316170795,"tanggal":"2025-06-15","waktu_mulai":"00:10","waktu_selesai":"02:10","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"aklsndoa eownei","denah_seat":null,"seatDrafts":[]},{"id":1749316180705,"tanggal":"2025-06-16","waktu_mulai":"00:10","waktu_selesai":"02:10","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"aklsndoa eownei","denah_seat":null,"seatDrafts":[]}]
+DEBUG - 2025-06-07 17:10:37 --> Jadwal ke-1: Tanggal: 2025-06-15, Mulai: 00:10, Selesai: 02:10, Kota: Jakarta, Tempat: aklsndoa eownei
+DEBUG - 2025-06-07 17:10:37 --> Data lokasi yang akan disimpan: {"tempat":"aklsndoa eownei","kota":"Jakarta"}
+DEBUG - 2025-06-07 17:10:37 --> Data jadwal diterima: [{"id":1749316131909,"tanggal":"2025-06-14","waktu_mulai":"00:10","waktu_selesai":"02:10","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"aklsndoa eownei","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}]},{"id":1749316170795,"tanggal":"2025-06-15","waktu_mulai":"00:10","waktu_selesai":"02:10","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"aklsndoa eownei","denah_seat":null,"seatDrafts":[]},{"id":1749316180705,"tanggal":"2025-06-16","waktu_mulai":"00:10","waktu_selesai":"02:10","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"aklsndoa eownei","denah_seat":null,"seatDrafts":[]}]
+DEBUG - 2025-06-07 17:10:37 --> Jadwal ke-2: Tanggal: 2025-06-16, Mulai: 00:10, Selesai: 02:10, Kota: Jakarta, Tempat: aklsndoa eownei
+DEBUG - 2025-06-07 17:10:37 --> Data lokasi yang akan disimpan: {"tempat":"aklsndoa eownei","kota":"Jakarta"}
+DEBUG - 2025-06-07 17:10:37 --> Data jadwal diterima: [{"id":1749316131909,"tanggal":"2025-06-14","waktu_mulai":"00:10","waktu_selesai":"02:10","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"aklsndoa eownei","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}]},{"id":1749316170795,"tanggal":"2025-06-15","waktu_mulai":"00:10","waktu_selesai":"02:10","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"aklsndoa eownei","denah_seat":null,"seatDrafts":[]},{"id":1749316180705,"tanggal":"2025-06-16","waktu_mulai":"00:10","waktu_selesai":"02:10","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"aklsndoa eownei","denah_seat":null,"seatDrafts":[]}]
+INFO - 2025-06-07 17:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 17:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-07 17:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

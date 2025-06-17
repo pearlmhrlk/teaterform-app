@@ -1,0 +1,1067 @@
+INFO - 2025-06-06 06:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-06 06:24:25 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1556): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-06 06:24:25 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1556): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-06 06:24:25 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 61.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(61): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1556): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 06:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:25:33 --> Last Query: NULL
+DEBUG - 2025-06-06 06:25:34 --> Poster name: 
+DEBUG - 2025-06-06 06:25:34 --> Poster valid: no
+DEBUG - 2025-06-06 06:25:34 --> Request data: {"csrf_test_name":"0e71988a0b1a734eb1c0d8c66287a97a","id_teater":"98","tipe_teater":"audisi","id_kategori":"1","id_aktor_audisi":"10","id_user":"36","id_audisi":"12","judul":"American Psycho","sinopsis":"","karakter_audisi":"Patrick Bateman","deskripsi_karakter":"Psikopat elit","id_schedule":["undefined"],"tanggal":"","waktu_mulai":"","waktu_selesai":"","tipe_harga":"Gratis","harga":"","kota":[""],"kota_real":"","tempat":"","hidden_schedule":"[{\"id\":\"165\",\"tanggal\":\"2025-05-28\",\"waktu_mulai\":\"14:00\",\"waktu_selesai\":\"16:00\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"jiwoe dwoieow\"},{\"id\":\"166\",\"tanggal\":\"2025-05-29\",\"waktu_mulai\":\"14:00\",\"waktu_selesai\":\"16:00\",\"tipe_harga\":\"Gratis\",\"harga\":null,\"kota\":\"Jakarta\",\"tempat\":\"jiwoe dwoieow\"}]","deleted_schedules":"[]","penulis":"uhidew iwueh","url_pendaftaran":"www.pendaftaran.com","syarat":"nsdie iebuiew","syarat_dokumen":"CV","sutradara":"Nakajima Yuto","staff":"","gaji":"500000","komitmen":"","id_teater_sosmed":[""],"acc_name":[""],"hidden_accounts":"","id_teater_web":[""],"judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":""}
+DEBUG - 2025-06-06 06:25:34 --> Data yang diterima: {"tipe_teater":"audisi","judul":"American Psycho","poster":"uploads\/posters\/1748073774_c344e3195c4cb5c444b9.jpeg","sinopsis":"","penulis":"uhidew iwueh","sutradara":"Nakajima Yuto","staff":"","dibuat_oleh":"BINUS University","dimodif_oleh":"BINUS University","url_pendaftaran":"www.pendaftaran.com","daftar_mulai":null,"daftar_berakhir":null,"id_teater":"98"}
+DEBUG - 2025-06-06 06:25:34 --> ID Teater yang dibuat: 98
+DEBUG - 2025-06-06 06:25:34 --> Data yang diterima: {"id_teater":"98","id_kategori":"1","syarat":"nsdie iebuiew","syarat_dokumen":"CV","gaji":"500000","status_gaji":"shown","komitmen":"","id_audisi":"12"}
+DEBUG - 2025-06-06 06:25:34 --> Update data Audisi ID: 12
+DEBUG - 2025-06-06 06:25:34 --> Data yang diterima: {"id_audisi":"12","karakter_audisi":"Patrick Bateman","deskripsi_karakter":"Psikopat elit","id":"10"}
+DEBUG - 2025-06-06 06:25:34 --> Update data Audisi Aktor ID: 10
+ERROR - 2025-06-06 06:25:34 --> mysqli_sql_exception: Unknown column 'mas.id' in 'on clause' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `ra`.`id...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ra`.`id...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ra`.`id...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `ra`.`id...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(1911): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->saveAuditionAktor()
+#6 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-06 06:25:34 --> Error: Call to a member function getResult() on bool
+[Method: POST, Route: MitraTeater/saveAuditionAktor]
+in APPPATH\Controllers\MitraTeater.php on line 1912.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->saveAuditionAktor()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 06:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-06 06:31:01 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1556): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-06 06:31:01 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1556): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-06 06:31:01 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 61.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(61): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1556): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 06:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 06:31:18 --> Last Query: NULL
+DEBUG - 2025-06-06 06:31:18 --> Poster name: 
+DEBUG - 2025-06-06 06:31:18 --> Poster valid: no
+DEBUG - 2025-06-06 06:31:18 --> Request data: {"csrf_test_name":"0e71988a0b1a734eb1c0d8c66287a97a","id_teater":"98","tipe_teater":"audisi","id_kategori":"1","id_aktor_audisi":"10","id_user":"36","id_audisi":"12","judul":"American Psycho","sinopsis":"","karakter_audisi":"Patrick Bateman","deskripsi_karakter":"Psikopat elit","id_schedule":["undefined"],"tanggal":"","waktu_mulai":"","waktu_selesai":"","tipe_harga":"Gratis","harga":"","kota":[""],"kota_real":"","tempat":"","hidden_schedule":"[{\"id\":\"165\",\"tanggal\":\"2025-05-28\",\"waktu_mulai\":\"14:00\",\"waktu_selesai\":\"16:00\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"jiwoe dwoieow\"},{\"id\":\"166\",\"tanggal\":\"2025-05-29\",\"waktu_mulai\":\"14:00\",\"waktu_selesai\":\"16:00\",\"tipe_harga\":\"Gratis\",\"harga\":null,\"kota\":\"Jakarta\",\"tempat\":\"jiwoe dwoieow\"}]","deleted_schedules":"[]","penulis":"uhidew iwueh","url_pendaftaran":"www.pendaftaran.com","syarat":"nsdie iebuiew","syarat_dokumen":"CV","sutradara":"Nakajima Yuto","staff":"","gaji":"500000","komitmen":"","id_teater_sosmed":[""],"acc_name":[""],"hidden_accounts":"","id_teater_web":[""],"judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":""}
+DEBUG - 2025-06-06 06:31:18 --> Data yang diterima: {"tipe_teater":"audisi","judul":"American Psycho","poster":"uploads\/posters\/1748073774_c344e3195c4cb5c444b9.jpeg","sinopsis":"","penulis":"uhidew iwueh","sutradara":"Nakajima Yuto","staff":"","dibuat_oleh":"BINUS University","dimodif_oleh":"BINUS University","url_pendaftaran":"www.pendaftaran.com","daftar_mulai":null,"daftar_berakhir":null,"id_teater":"98"}
+DEBUG - 2025-06-06 06:31:18 --> ID Teater yang dibuat: 98
+DEBUG - 2025-06-06 06:31:18 --> Data yang diterima: {"id_teater":"98","id_kategori":"1","syarat":"nsdie iebuiew","syarat_dokumen":"CV","gaji":"500000","status_gaji":"shown","komitmen":"","id_audisi":"12"}
+DEBUG - 2025-06-06 06:31:18 --> Update data Audisi ID: 12
+DEBUG - 2025-06-06 06:31:18 --> Data yang diterima: {"id_audisi":"12","karakter_audisi":"Patrick Bateman","deskripsi_karakter":"Psikopat elit","id":"10"}
+DEBUG - 2025-06-06 06:31:18 --> Update data Audisi Aktor ID: 10
+INFO - 2025-06-06 06:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-06 06:31:20 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1556): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-06 06:31:20 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1556): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-06 06:31:20 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 61.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(61): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1556): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 06:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-06 06:34:43 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1556): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-06 06:34:43 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 61.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(61): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1556): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 06:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 06:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 08:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 08:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 08:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 08:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 08:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-06 08:38:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1585): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-06 08:38:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 61.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(61): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1585): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 08:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 08:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 08:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 13:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 13:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 13:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 13:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 13:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-06 13:47:24 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1585): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-06 13:47:24 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 61.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(61): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1585): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 13:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 13:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 13:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-06 13:47:28 --> mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tan...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tan...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tan...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tan...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-06 13:47:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 13:47:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 13:47:28 --> [Caused by] mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 14:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-06 14:21:42 --> mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tan...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tan...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tan...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tan...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-06 14:21:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:21:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:21:42 --> [Caused by] mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 14:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-06 14:21:51 --> mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tan...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tan...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tan...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tan...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-06 14:21:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:21:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:21:51 --> [Caused by] mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 14:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-06 14:21:54 --> mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tan...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tan...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tan...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tan...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-06 14:21:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:21:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:21:54 --> [Caused by] mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 14:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-06 14:21:55 --> mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tan...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tan...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tan...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tan...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-06 14:21:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:21:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:21:55 --> [Caused by] mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 14:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-06 14:21:56 --> mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tan...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tan...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tan...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tan...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-06 14:21:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:21:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:21:56 --> [Caused by] mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 14:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-06 14:21:58 --> mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tan...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tan...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tan...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tan...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-06 14:21:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:21:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:21:58 --> [Caused by] mysqli_sql_exception: Unknown column 'r_show_schedule.denah_seat' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `r_show_schedule`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(563): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 14:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-06 14:22:46 --> mysqli_sql_exception: Unknown column 'r_show_schedule.id_denah' in 'on clause' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tan...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tan...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tan...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tan...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\MitraTeater.php(564): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-06 14:22:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.id_denah' in 'on clause'
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `m_denah_seat`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+LEFT JOIN `m_denah_seat` ON `r_show_schedule`.`id_denah` = `m_denah_seat`.`id_denah`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MitraTeater.php(564): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:22:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r_show_schedule.id_denah' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `m_denah_seat`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+LEFT JOIN `m_denah_seat` ON `r_show_schedule`.`id_denah` = `m_denah_seat`.`id_denah`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `m_denah_seat`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+LEFT JOIN `m_denah_seat` ON `r_show_schedule`.`id_denah` = `m_denah_seat`.`id_denah`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `m_denah_seat`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+LEFT JOIN `m_denah_seat` ON `r_show_schedule`.`id_denah` = `m_denah_seat`.`id_denah`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MitraTeater.php(564): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 14:22:46 --> [Caused by] mysqli_sql_exception: Unknown column 'r_show_schedule.id_denah' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `m_denah_seat`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+LEFT JOIN `m_denah_seat` ON `r_show_schedule`.`id_denah` = `m_denah_seat`.`id_denah`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `m_denah_seat`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+LEFT JOIN `m_denah_seat` ON `r_show_schedule`.`id_denah` = `m_denah_seat`.`id_denah`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `m_denah_seat`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+LEFT JOIN `m_denah_seat` ON `r_show_schedule`.`id_denah` = `m_denah_seat`.`id_denah`
+WHERE `m_seat_pricing`.`id_penampilan` = \'73\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`tanggal`, CONCAT(DATE_FORMAT(s.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(s.waktu_selesai, "%H:%i")) AS waktu, `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_pricing`.`nama_kategori`, `m_denah_seat`.`denah_seat`
+FROM `r_show_schedule`
+JOIN `m_show_schedule` AS `s` ON `r_show_schedule`.`id_schedule` = `s`.`id_schedule`
+JOIN `m_lokasi_teater` ON `s`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+LEFT JOIN `m_denah_seat` ON `r_show_schedule`.`id_denah` = `m_denah_seat`.`id_denah`
+WHERE `m_seat_pricing`.`id_penampilan` = :m_seat_pricing.id_penampilan:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MitraTeater.php(564): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-06 14:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 14:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 14:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 14:38:33 --> Last Query: NULL
+INFO - 2025-06-06 15:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 15:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-06 15:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 15:12:05 --> Last Query: NULL

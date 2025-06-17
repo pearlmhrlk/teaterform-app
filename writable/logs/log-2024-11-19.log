@@ -1,0 +1,1504 @@
+CRITICAL - 2024-11-19 06:57:42 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 06:57:44 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 06:59:01 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 06:59:30 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 06:59:32 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 06:59:37 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 06:59:44 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 06:59:53 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:00:30 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:00:32 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:06:26 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:06:38 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:06:47 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:08:45 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:08:47 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:08:54 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:09:36 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:12:33 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:12:36 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:12:36 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:12:36 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:12:36 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:13:00 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:13:00 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:13:00 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:13:00 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:13:01 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:13:01 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:13:01 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:13:01 --> ParseError: syntax error, unexpected identifier "view", expecting ";"
+[Method: GET, Route: Audiens/index]
+in APPPATH\Controllers\Audiens.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:55:49 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:55:51 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:55:51 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:55:51 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:55:51 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:55:52 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:55:52 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:55:53 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:55:53 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:55:53 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:55:53 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 07:55:54 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:19:01 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:19:03 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:19:03 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:19:04 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:27 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:28 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:28 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:28 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:29 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:29 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:30 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:30 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:30 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:30 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:31 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:31 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:31 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:42 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:42 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:42 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:42 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:42 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:42 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:27:45 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:33:43 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:33:45 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:33:46 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:33:53 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:39:11 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:39:13 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:40:21 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 08:42:32 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:42:33 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:42:34 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:42:34 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:42:34 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:42:35 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:53:04 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 08:53:46 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:53:47 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:53:48 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:53:48 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:53:48 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:53:48 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:53:48 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:53:49 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 08:53:49 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:06:15 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:06:16 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:06:17 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:06:17 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:06:17 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:06:22 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:08:32 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:08:36 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:08:39 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:16:51 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:16:55 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:17:01 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:17:04 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:17:04 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:19:34 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:19:37 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:19:38 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:19:38 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:19:38 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:19:39 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:20:27 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:20:32 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:20:32 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: Audiens/login]
+in APPPATH\Controllers\Audiens.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Audiens')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Audiens')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Audiens', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-19 09:21:44 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 09:25:08 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 09:26:29 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 09:30:31 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 09:30:35 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 09:30:37 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 09:30:52 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 09:31:50 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 09:31:52 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 09:32:05 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 09:32:07 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 09:38:47 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 09:40:33 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:23:44 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:28:53 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:29:08 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:37:19 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:38:06 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:38:50 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:42:29 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:42:56 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:43:26 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:43:48 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:44:06 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:45:55 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:45:59 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:47:40 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 13:59:44 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:00:09 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:00:23 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:01:25 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:01:28 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:01:40 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:02:12 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:03:02 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:03:18 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:04:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:04:27 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:05:14 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:05:21 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:05:39 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:05:41 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:06:33 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:06:35 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:06:38 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:07:44 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:14:49 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:15:23 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:19:44 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:22:34 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:23:31 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:24:23 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:25:04 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:26:18 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:26:39 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:27:49 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:28:23 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:28:37 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:38:52 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:40:31 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:41:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:41:18 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:41:27 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:46:08 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:50:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:51:19 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:53:09 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:53:52 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:56:03 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:56:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:56:58 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:57:22 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:59:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 14:59:58 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:07:26 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:07:30 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:07:50 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:08:03 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:23:36 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:23:49 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:25:11 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:27:04 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:28:58 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:39:21 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:40:13 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:40:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:41:09 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:41:24 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:41:41 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:42:20 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:42:43 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:42:56 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:43:07 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:46:20 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:46:34 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:48:12 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:48:26 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:58:27 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 15:58:45 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:00:02 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:02:49 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:10:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:10:51 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:12:08 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:12:24 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:12:38 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:12:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:12:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:13:19 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:13:36 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:13:44 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:13:58 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:20:39 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:20:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:22:50 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:23:48 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:25:23 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:29:19 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:32:18 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:39:24 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:44:04 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:44:23 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:46:16 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:47:53 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 16:53:21 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:02:49 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:03:59 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:04:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:06:40 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:08:05 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:08:13 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:09:16 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:09:18 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:09:21 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:09:42 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:09:50 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:09:52 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:10:16 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:10:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:10:51 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:11:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:11:25 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:14:03 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:14:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:14:11 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:15:28 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:15:29 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:15:39 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:15:55 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:15:57 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:22:04 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:23:34 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:24:50 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:24:52 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:25:33 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:28:23 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:28:26 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:29:21 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:29:38 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:30:18 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:30:22 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:35:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:36:50 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:36:53 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:37:43 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:37:51 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:04 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:08 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:10 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:12 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:14 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:17 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:21 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:40 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:42 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:44 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:46 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:50 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:52 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:54 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:56 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.
+CRITICAL - 2024-11-19 17:39:59 --> Toolbar collector does not exist (CodeIgniter\Debug\Toolbar\Collectors\Cache). Please check $collectors in the app/Config/Toolbar.php file.

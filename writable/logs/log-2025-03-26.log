@@ -1,0 +1,90 @@
+INFO - 2025-03-26 02:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-26 02:29:35 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Views\templates\headerAdmin.php on line 88.
+ 1 APPPATH\Views\templates\headerAdmin.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 88)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(87): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 02:29:35 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/listAudisi]
+in APPPATH\Views\templates\headerAdmin.php on line 88.
+ 1 APPPATH\Views\templates\headerAdmin.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 88)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(1372): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-26 02:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 02:34:48 --> Last Query: NULL
+DEBUG - 2025-03-26 02:34:48 --> Poster uploaded: uploads/posters/1742956488_cdf6f8d7f668e57f0c3e.jpeg
+DEBUG - 2025-03-26 02:34:48 --> Request data: {"csrf_test_name":"cf1470117f96e90efcc6337122fcf1c7","id_teater":"","tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"Keseharian tujuh kurcaci dalam hutan","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"09:30\",\"waktu_selesai\":\"11:30\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"09:30\",\"waktu_selesai\":\"11:30\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-03\",\"waktu_mulai\":\"09:30\",\"waktu_selesai\":\"11:30\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Surabaya\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","url_pendaftaran":"www.form-pendaftaran.com","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"],"mitra_teater":"5","id_platform_sosmed":["2"],"acc_name":[""],"hidden_accounts":"[{\"platformId\":\"1\",\"platformName\":\"instagram\",\"account\":\"pearlmhrlk\"},{\"platformId\":\"2\",\"platformName\":\"twitter\",\"account\":\"omas\"}]","judul_web":[""],"url_web":[""],"hidden_web":"[{\"title\":\"Binus Teater\",\"url\":\"www.binusteater.com\"},{\"title\":\"Kurcaci official website\",\"url\":\"www.kurcaci.com\"}]"}
+DEBUG - 2025-03-26 02:34:48 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1742956488_cdf6f8d7f668e57f0c3e.jpeg","sinopsis":"Keseharian tujuh kurcaci dalam hutan","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-26 02:34:48 --> ID Teater yang dibuat: 62
+DEBUG - 2025-03-26 02:34:48 --> ID Penampilan yang dibuat: 52
+DEBUG - 2025-03-26 02:34:48 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 09:30, Selesai: 11:30, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-03-26 02:34:48 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-03-26 02:34:48 --> ID Location yang didapat setelah insert: 70
+DEBUG - 2025-03-26 02:34:48 --> Data sebelum pemrosesan - Nama Kategori: , Harga: 50000
+ERROR - 2025-03-26 02:34:48 --> Kategori atau harga kosong setelah konversi.
+INFO - 2025-03-26 02:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:03:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:03:43 --> Last Query: NULL
+DEBUG - 2025-03-26 03:03:43 --> Poster uploaded: uploads/posters/1742958223_b0353cb51402eea254da.jpeg
+DEBUG - 2025-03-26 03:03:43 --> Request data: {"csrf_test_name":"cf1470117f96e90efcc6337122fcf1c7","id_teater":"","tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"Keseharian tujuh kurcaci dalam hutan","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"09:00\",\"waktu_selesai\":\"11:00\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"09:00\",\"waktu_selesai\":\"11:00\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-03\",\"waktu_mulai\":\"09:00\",\"waktu_selesai\":\"11:00\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Surabaya\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","url_pendaftaran":"www.form-pendaftaran.com","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"],"mitra_teater":"5","id_platform_sosmed":["2"],"acc_name":[""],"hidden_accounts":"[{\"platformId\":\"1\",\"platformName\":\"instagram\",\"account\":\"pearlmhrlk\"},{\"platformId\":\"2\",\"platformName\":\"twitter\",\"account\":\"omas\"}]","judul_web":[""],"url_web":[""],"hidden_web":""}
+DEBUG - 2025-03-26 03:03:43 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1742958223_b0353cb51402eea254da.jpeg","sinopsis":"Keseharian tujuh kurcaci dalam hutan","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-26 03:03:43 --> ID Teater yang dibuat: 63
+DEBUG - 2025-03-26 03:03:43 --> ID Penampilan yang dibuat: 53
+DEBUG - 2025-03-26 03:03:43 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 09:00, Selesai: 11:00, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-03-26 03:03:43 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-03-26 03:03:43 --> ID Location yang didapat setelah insert: 74
+INFO - 2025-03-26 03:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-26 03:51:16 --> Last Query: NULL
+DEBUG - 2025-03-26 03:51:16 --> Poster uploaded: uploads/posters/1742961076_b8d95294812e919faf20.jpeg
+DEBUG - 2025-03-26 03:51:16 --> Request data: {"csrf_test_name":"cf1470117f96e90efcc6337122fcf1c7","id_teater":"","tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"Keseharian tujuh kurcaci dalam hutan","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"10:45\",\"waktu_selesai\":\"12:45\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"10:45\",\"waktu_selesai\":\"12:45\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"Premium, VIP\",\"harga\":\"250000, 500000\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-03\",\"waktu_mulai\":\"10:45\",\"waktu_selesai\":\"12:45\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Surabaya\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","url_pendaftaran":"www.form-pendaftaran.com","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"],"mitra_teater":"5","id_platform_sosmed":["2"],"acc_name":[""],"hidden_accounts":"[{\"platformId\":\"2\",\"platformName\":\"twitter\",\"account\":\"omas\"},{\"platformId\":\"1\",\"platformName\":\"instagram\",\"account\":\"pearlmhrlk\"}]","judul_web":[""],"url_web":[""],"hidden_web":""}
+DEBUG - 2025-03-26 03:51:16 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1742961076_b8d95294812e919faf20.jpeg","sinopsis":"Keseharian tujuh kurcaci dalam hutan","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-26 03:51:16 --> ID Teater yang dibuat: 64
+DEBUG - 2025-03-26 03:51:16 --> ID Penampilan yang dibuat: 54
+DEBUG - 2025-03-26 03:51:16 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 10:45, Selesai: 12:45, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-03-26 03:51:16 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-03-26 03:51:16 --> ID Location yang didapat setelah insert: 75
+DEBUG - 2025-03-26 03:51:16 --> Data jadwal diterima: [{"tanggal":"2025-03-01","waktu_mulai":"10:45","waktu_selesai":"12:45","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"None"},{"tanggal":"2025-03-02","waktu_mulai":"10:45","waktu_selesai":"12:45","tipe_harga":"Bayar","nama_kategori":"Premium, VIP","harga":"250000, 500000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"Uploaded"},{"tanggal":"2025-03-03","waktu_mulai":"10:45","waktu_selesai":"12:45","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":"None"}]
+DEBUG - 2025-03-26 03:51:16 --> Jadwal ke-1: Tanggal: 2025-03-02, Mulai: 10:45, Selesai: 12:45, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-03-26 03:51:16 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-03-26 03:51:16 --> ID Location yang didapat setelah insert: 76
+DEBUG - 2025-03-26 03:51:16 --> Data jadwal diterima: [{"tanggal":"2025-03-01","waktu_mulai":"10:45","waktu_selesai":"12:45","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"None"},{"tanggal":"2025-03-02","waktu_mulai":"10:45","waktu_selesai":"12:45","tipe_harga":"Bayar","nama_kategori":"Premium, VIP","harga":"250000, 500000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"Uploaded"},{"tanggal":"2025-03-03","waktu_mulai":"10:45","waktu_selesai":"12:45","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":"None"}]
+DEBUG - 2025-03-26 03:51:16 --> Jadwal ke-2: Tanggal: 2025-03-03, Mulai: 10:45, Selesai: 12:45, Kota: Surabaya, Tempat: Balai Sarbini
+DEBUG - 2025-03-26 03:51:16 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Surabaya"}
+DEBUG - 2025-03-26 03:51:16 --> ID Location yang didapat setelah insert: 77
+DEBUG - 2025-03-26 03:51:17 --> Data jadwal diterima: [{"tanggal":"2025-03-01","waktu_mulai":"10:45","waktu_selesai":"12:45","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"None"},{"tanggal":"2025-03-02","waktu_mulai":"10:45","waktu_selesai":"12:45","tipe_harga":"Bayar","nama_kategori":"Premium, VIP","harga":"250000, 500000","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":"Uploaded"},{"tanggal":"2025-03-03","waktu_mulai":"10:45","waktu_selesai":"12:45","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":"None"}]

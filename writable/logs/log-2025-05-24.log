@@ -1,0 +1,147 @@
+INFO - 2025-05-24 07:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 07:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 07:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 07:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 07:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-24 07:55:37 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1574): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-24 07:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 07:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 07:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-24 07:56:01 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1574): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-24 07:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 07:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 07:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-24 07:56:09 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1574): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-24 07:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 07:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 08:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-24 08:02:53 --> Last Query: NULL
+DEBUG - 2025-05-24 08:02:54 --> Poster name: download (1).jpeg
+DEBUG - 2025-05-24 08:02:54 --> Poster valid: yes
+DEBUG - 2025-05-24 08:02:54 --> Poster uploaded: uploads/posters/1748073774_c344e3195c4cb5c444b9.jpeg
+DEBUG - 2025-05-24 08:02:54 --> Request data: {"csrf_test_name":"cac2c2d8696e79e4428fd7985bd27484","tipe_teater":"audisi","id_kategori":"1","judul":"American Psycho","sinopsis":"","karakter_audisi":"Patrick Bateman","deskripsi_karakter":"Psikopat elit","tanggal":"2025-05-29","waktu_mulai":"14:00","waktu_selesai":"16:00","tipe_harga":"Gratis","harga":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"jiwoe dwoieow","hidden_schedule":"[{\"tanggal\":\"2025-05-28\",\"waktu_mulai\":\"14:00\",\"waktu_selesai\":\"16:00\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"jiwoe dwoieow\"},{\"tanggal\":\"2025-05-29\",\"waktu_mulai\":\"14:00\",\"waktu_selesai\":\"16:00\",\"tipe_harga\":\"Gratis\",\"harga\":null,\"kota\":\"Jakarta\",\"tempat\":\"jiwoe dwoieow\"}]","penulis":"uhidew iwueh","url_pendaftaran":"www.pendaftaran.com","syarat":"nsdie iebuiew","syarat_dokumen":"CV","sutradara":"njwkenw eibwu","staff":"","gaji":"500000","komitmen":"","mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":["kaomas"],"hidden_accounts":"[]","judul_web":["Teater Web"],"url_web":["www.amesai.com"],"hidden_web":"","atur_periode":"1","daftar_mulai":"2025-05-22","daftar_berakhir":"2025-05-27"}
+DEBUG - 2025-05-24 08:02:54 --> Data yang diterima: {"tipe_teater":"audisi","judul":"American Psycho","poster":"uploads\/posters\/1748073774_c344e3195c4cb5c444b9.jpeg","sinopsis":"","penulis":"uhidew iwueh","sutradara":"njwkenw eibwu","staff":"","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.pendaftaran.com","daftar_mulai":"2025-05-22","daftar_berakhir":"2025-05-27"}
+DEBUG - 2025-05-24 08:02:54 --> ID Teater yang dibuat: 98
+DEBUG - 2025-05-24 08:02:54 --> ID relasi user dengan teater yang dibuat: 12
+DEBUG - 2025-05-24 08:02:54 --> Data yang diterima: {"id_teater":98,"id_kategori":"1","syarat":"nsdie iebuiew","syarat_dokumen":"CV","gaji":"500000","status_gaji":"shown","komitmen":""}
+DEBUG - 2025-05-24 08:02:54 --> ID Audisi yang dibuat: 12
+DEBUG - 2025-05-24 08:02:54 --> Data yang diterima: {"id_audisi":12,"karakter_audisi":"Patrick Bateman","deskripsi_karakter":"Psikopat elit"}
+DEBUG - 2025-05-24 08:02:54 --> Jadwal ke-0: Tanggal: 2025-05-28, Mulai: 14:00, Selesai: 16:00, Kota: Jakarta, Tempat: jiwoe dwoieow, Harga: 50000
+DEBUG - 2025-05-24 08:02:54 --> Data lokasi yang akan disimpan: {"tempat":"jiwoe dwoieow","kota":"Jakarta"}
+DEBUG - 2025-05-24 08:02:54 --> ID Location yang didapat setelah insert: 161
+DEBUG - 2025-05-24 08:02:54 --> Data jadwal diterima: [{"tanggal":"2025-05-28","waktu_mulai":"14:00","waktu_selesai":"16:00","tipe_harga":"Bayar","harga":"50000","kota":"Jakarta","tempat":"jiwoe dwoieow"},{"tanggal":"2025-05-29","waktu_mulai":"14:00","waktu_selesai":"16:00","tipe_harga":"Gratis","harga":null,"kota":"Jakarta","tempat":"jiwoe dwoieow"}]
+DEBUG - 2025-05-24 08:02:54 --> Jadwal ke-1: Tanggal: 2025-05-29, Mulai: 14:00, Selesai: 16:00, Kota: Jakarta, Tempat: jiwoe dwoieow, Harga: 
+DEBUG - 2025-05-24 08:02:54 --> Data lokasi yang akan disimpan: {"tempat":"jiwoe dwoieow","kota":"Jakarta"}
+DEBUG - 2025-05-24 08:02:54 --> Data jadwal diterima: [{"tanggal":"2025-05-28","waktu_mulai":"14:00","waktu_selesai":"16:00","tipe_harga":"Bayar","harga":"50000","kota":"Jakarta","tempat":"jiwoe dwoieow"},{"tanggal":"2025-05-29","waktu_mulai":"14:00","waktu_selesai":"16:00","tipe_harga":"Gratis","harga":null,"kota":"Jakarta","tempat":"jiwoe dwoieow"}]
+INFO - 2025-05-24 08:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-24 08:02:56 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1574): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-24 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 08:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 08:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 08:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 08:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-24 08:04:01 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1574): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-24 08:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 08:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 08:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 08:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-24 08:27:48 --> Last Query: NULL
+DEBUG - 2025-05-24 08:27:48 --> Poster uploaded: uploads/posters/1748075268_6d85713310c50d8d7087.jpg
+DEBUG - 2025-05-24 08:27:48 --> Request data: {"csrf_test_name":"cac2c2d8696e79e4428fd7985bd27484","tipe_teater":"audisi","id_kategori":"2","judul":"Sleeping Beauty","sinopsis":"","jenis_staff":"Tata Lampu","jobdesc_staff":"jsbdewi iwbi","tanggal":"2025-05-29","waktu_mulai":"15:30","waktu_selesai":"17:30","tipe_harga":"Gratis","harga":"","kota":["lainnya","Surabaya"],"kota_real":"Surabaya","tempat":"sjduiw wiueow","hidden_schedule":"[{\"tanggal\":\"2025-05-28\",\"waktu_mulai\":\"15:30\",\"waktu_selesai\":\"17:30\",\"tipe_harga\":\"Bayar\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"sjduiw wiueow\"},{\"tanggal\":\"2025-05-29\",\"waktu_mulai\":\"15:30\",\"waktu_selesai\":\"17:30\",\"tipe_harga\":\"Gratis\",\"harga\":null,\"kota\":\"Surabaya\",\"tempat\":\"sjduiw wiueow\"}]","penulis":"ejwoihf wouhew","url_pendaftaran":"www.link-pendaftaran.com","syarat":"nsdjiu owbouw","syarat_dokumen":"CV","sutradara":"nsdfiude rfeoubfr","gaji_dirahasiakan":"on","komitmen":"sndiue reiubru","mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":["pearlmhrlk"],"hidden_accounts":"[]","judul_web":["Aurora"],"url_web":["www.cindereater.com"],"hidden_web":"","atur_periode":"1","daftar_mulai":"2025-05-22","daftar_berakhir":"2025-05-27"}
+DEBUG - 2025-05-24 08:27:48 --> Data yang diterima: {"tipe_teater":"audisi","judul":"Sleeping Beauty","poster":"uploads\/posters\/1748075268_6d85713310c50d8d7087.jpg","sinopsis":"","penulis":"ejwoihf wouhew","sutradara":"nsdfiude rfeoubfr","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.link-pendaftaran.com","daftar_mulai":"2025-05-22","daftar_berakhir":"2025-05-27"}
+DEBUG - 2025-05-24 08:27:48 --> ID Teater yang dibuat: 99
+DEBUG - 2025-05-24 08:27:48 --> ID relasi user dengan teater yang dibuat: 13
+DEBUG - 2025-05-24 08:27:48 --> Data yang diterima: {"id_teater":99,"id_kategori":"2","syarat":"nsdjiu owbouw","syarat_dokumen":"CV","gaji":null,"status_gaji":"secret","komitmen":"sndiue reiubru"}
+DEBUG - 2025-05-24 08:27:48 --> ID Audisi yang dibuat: 13
+DEBUG - 2025-05-24 08:27:48 --> Data yang diterima: {"id_audisi":13,"jenis_staff":"Tata Lampu","jobdesc_staff":"jsbdewi iwbi"}
+DEBUG - 2025-05-24 08:27:48 --> Jadwal ke-0: Tanggal: 2025-05-28, Mulai: 15:30, Selesai: 17:30, Kota: Jakarta, Tempat: sjduiw wiueow, Harga: 50000
+DEBUG - 2025-05-24 08:27:48 --> Data lokasi yang akan disimpan: {"tempat":"sjduiw wiueow","kota":"Jakarta"}
+DEBUG - 2025-05-24 08:27:48 --> ID Location yang didapat setelah insert: 162
+DEBUG - 2025-05-24 08:27:48 --> Data jadwal diterima: [{"tanggal":"2025-05-28","waktu_mulai":"15:30","waktu_selesai":"17:30","tipe_harga":"Bayar","harga":"50000","kota":"Jakarta","tempat":"sjduiw wiueow"},{"tanggal":"2025-05-29","waktu_mulai":"15:30","waktu_selesai":"17:30","tipe_harga":"Gratis","harga":null,"kota":"Surabaya","tempat":"sjduiw wiueow"}]
+DEBUG - 2025-05-24 08:27:48 --> Jadwal ke-1: Tanggal: 2025-05-29, Mulai: 15:30, Selesai: 17:30, Kota: Surabaya, Tempat: sjduiw wiueow, Harga: 
+DEBUG - 2025-05-24 08:27:48 --> Data lokasi yang akan disimpan: {"tempat":"sjduiw wiueow","kota":"Surabaya"}
+DEBUG - 2025-05-24 08:27:48 --> ID Location yang didapat setelah insert: 163
+DEBUG - 2025-05-24 08:27:48 --> Data jadwal diterima: [{"tanggal":"2025-05-28","waktu_mulai":"15:30","waktu_selesai":"17:30","tipe_harga":"Bayar","harga":"50000","kota":"Jakarta","tempat":"sjduiw wiueow"},{"tanggal":"2025-05-29","waktu_mulai":"15:30","waktu_selesai":"17:30","tipe_harga":"Gratis","harga":null,"kota":"Surabaya","tempat":"sjduiw wiueow"}]
+INFO - 2025-05-24 08:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-05-24 08:27:50 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1574): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-05-24 08:27:50 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 61.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(61): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1574): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-24 08:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-24 08:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,566 @@
+INFO - 2025-05-13 13:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 13:17:37 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-13 13:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 13:36:47 --> Last Query: NULL
+INFO - 2025-05-13 13:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 13:39:13 --> Last Query: NULL
+DEBUG - 2025-05-13 13:39:13 --> Poster uploaded: uploads/posters/1747143553_838f7f47e6257113174a.jpg
+DEBUG - 2025-05-13 13:39:13 --> Request data: {"csrf_test_name":"1cac6774563ac17a792306f6a409a64d","id_teater":"","tipe_teater":"penampilan","judul":"Petualangan Sherina","sinopsis":"Sherina yang suka berpetualang","tanggal":"2025-05-15","waktu_mulai":"20:40","waktu_selesai":"22:40","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"Balai Sarbini","hidden_schedule":"[{\"tanggal\":\"2025-05-12\",\"waktu_mulai\":\"20:40\",\"waktu_selesai\":\"22:40\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Surabaya\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":null},{\"tanggal\":\"2025-05-14\",\"waktu_mulai\":\"20:40\",\"waktu_selesai\":\"22:40\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Surabaya\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"\"},{\"tanggal\":\"2025-05-15\",\"waktu_mulai\":\"20:40\",\"waktu_selesai\":\"22:40\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"\"}]","penulis":"Sherina","url_pendaftaran":"www.pendaftaran.com","sutradara":"Jojon","staff":"Lili","aktor":"Sherina","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":["sherina"],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":""}
+DEBUG - 2025-05-13 13:39:13 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Petualangan Sherina","poster":"uploads\/posters\/1747143553_838f7f47e6257113174a.jpg","sinopsis":"Sherina yang suka berpetualang","penulis":"Sherina","sutradara":"Jojon","staff":"Lili","dibuat_oleh":"BINUS University","dimodif_oleh":null}
+DEBUG - 2025-05-13 13:39:13 --> ID Teater yang dibuat: 85
+DEBUG - 2025-05-13 13:39:13 --> ID Penampilan yang dibuat: 74
+DEBUG - 2025-05-13 13:39:13 --> Jadwal ke-0: Tanggal: 2025-05-12, Mulai: 20:40, Selesai: 22:40, Kota: Surabaya, Tempat: Balai Sarbini
+DEBUG - 2025-05-13 13:39:13 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Surabaya"}
+DEBUG - 2025-05-13 13:39:13 --> ID Location yang didapat setelah insert: 143
+DEBUG - 2025-05-13 13:39:13 --> Data jadwal diterima: [{"tanggal":"2025-05-12","waktu_mulai":"20:40","waktu_selesai":"22:40","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":null},{"tanggal":"2025-05-14","waktu_mulai":"20:40","waktu_selesai":"22:40","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-15","waktu_mulai":"20:40","waktu_selesai":"22:40","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-13 13:39:13 --> Jadwal ke-1: Tanggal: 2025-05-14, Mulai: 20:40, Selesai: 22:40, Kota: Surabaya, Tempat: Balai Sarbini
+DEBUG - 2025-05-13 13:39:13 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Surabaya"}
+DEBUG - 2025-05-13 13:39:13 --> ID Location yang didapat setelah insert: 144
+DEBUG - 2025-05-13 13:39:13 --> Data jadwal diterima: [{"tanggal":"2025-05-12","waktu_mulai":"20:40","waktu_selesai":"22:40","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":null},{"tanggal":"2025-05-14","waktu_mulai":"20:40","waktu_selesai":"22:40","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-15","waktu_mulai":"20:40","waktu_selesai":"22:40","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-13 13:39:13 --> Jadwal ke-2: Tanggal: 2025-05-15, Mulai: 20:40, Selesai: 22:40, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-05-13 13:39:13 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-05-13 13:39:13 --> ID Location yang didapat setelah insert: 145
+DEBUG - 2025-05-13 13:39:13 --> Data jadwal diterima: [{"tanggal":"2025-05-12","waktu_mulai":"20:40","waktu_selesai":"22:40","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":null},{"tanggal":"2025-05-14","waktu_mulai":"20:40","waktu_selesai":"22:40","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-15","waktu_mulai":"20:40","waktu_selesai":"22:40","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-13 13:39:13 --> ID Web Teater yang diperoleh: 29
+INFO - 2025-05-13 13:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:26:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 15:54:52 --> ErrorException: Undefined variable $user
+[Method: GET, Route: Audiens/listPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\Audiens.php(248): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->listPenampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-13 15:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 16:04:01 --> ErrorException: Undefined array key "id_teater"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\bodyListPenampilan.php on line 41.
+ 1 APPPATH\Views\templates\bodyListPenampilan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_teater"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyListPenampilan', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(401): view('templates/bodyListPenampilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-13 16:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 16:04:10 --> ErrorException: Undefined array key "id_teater"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\bodyListPenampilan.php on line 41.
+ 1 APPPATH\Views\templates\bodyListPenampilan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_teater"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyListPenampilan', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(401): view('templates/bodyListPenampilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-13 16:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 16:35:14 --> ErrorException: Undefined array key "id_teater"
+[Method: GET, Route: Audiens/listPenampilan]
+in APPPATH\Views\templates\bodyListPenampilan.php on line 41.
+ 1 APPPATH\Views\templates\bodyListPenampilan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_teater"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyListPenampilan', [], true)
+ 5 APPPATH\Controllers\Audiens.php(261): view('templates/bodyListPenampilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->listPenampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-13 16:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 16:37:42 --> ErrorException: Undefined array key "id_teater"
+[Method: GET, Route: Audiens/listPenampilan]
+in APPPATH\Views\templates\bodyListPenampilan.php on line 41.
+ 1 APPPATH\Views\templates\bodyListPenampilan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_teater"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyListPenampilan', [], true)
+ 5 APPPATH\Controllers\Audiens.php(261): view('templates/bodyListPenampilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->listPenampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-13 16:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 16:37:57 --> ErrorException: Undefined array key "id_teater"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\bodyListPenampilan.php on line 41.
+ 1 APPPATH\Views\templates\bodyListPenampilan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_teater"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyListPenampilan', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(401): view('templates/bodyListPenampilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-13 16:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 16:38:01 --> ErrorException: Undefined array key "id_teater"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\bodyListPenampilan.php on line 41.
+ 1 APPPATH\Views\templates\bodyListPenampilan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_teater"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyListPenampilan', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(401): view('templates/bodyListPenampilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-13 16:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 16:46:42 --> ErrorException: Undefined array key "id_teater"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\bodyListPenampilan.php on line 41.
+ 1 APPPATH\Views\templates\bodyListPenampilan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_teater"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyListPenampilan', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(401): view('templates/bodyListPenampilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-13 16:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-13 16:58:03 --> mysqli_sql_exception: Table 'db_teaterform.m_sosmed_platform' doesn't exist in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_sosme...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_sosme...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_sosme...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_sosme...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Audiens.php(421): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('84')
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-13 16:58:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_teaterform.m_sosmed_platform' doesn't exist
+[Method: GET, Route: Audiens/detailPenampilan/84]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = :r_teater_sosmed.id_teater:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Audiens.php(421): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('84')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-13 16:58:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_teaterform.m_sosmed_platform' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = :r_teater_sosmed.id_teater:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Audiens.php(421): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('84')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-13 16:58:03 --> [Caused by] mysqli_sql_exception: Table 'db_teaterform.m_sosmed_platform' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'84\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = :r_teater_sosmed.id_teater:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Audiens.php(421): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('84')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-13 16:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-13 16:58:51 --> mysqli_sql_exception: Table 'db_teaterform.m_sosmed_platform' doesn't exist in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_sosme...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_sosme...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_sosme...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_sosme...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Audiens.php(421): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-13 16:58:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_teaterform.m_sosmed_platform' doesn't exist
+[Method: GET, Route: Audiens/detailPenampilan/85]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = :r_teater_sosmed.id_teater:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Audiens.php(421): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-13 16:58:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_teaterform.m_sosmed_platform' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'85\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'85\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = :r_teater_sosmed.id_teater:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Audiens.php(421): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-13 16:58:51 --> [Caused by] mysqli_sql_exception: Table 'db_teaterform.m_sosmed_platform' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'85\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'85\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = \'85\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_sosmed_platform`.`platform_name`, `r_teater_sosmed`.`acc_teater`
+FROM `r_teater_sosmed`
+JOIN `m_sosmed_platform` ON `r_teater_sosmed`.`id_platform_sosmed` = `m_sosmed_platform`.`id_platform_sosmed`
+WHERE `r_teater_sosmed`.`id_teater` = :r_teater_sosmed.id_teater:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Audiens.php(421): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-13 17:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-13 17:01:12 --> mysqli_sql_exception: Not unique table/alias: 'm_show_schedule' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_lokas...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_lokas...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_lokas...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokas...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Audiens.php(451): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-13 17:01:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'm_show_schedule'
+[Method: GET, Route: Audiens/detailPenampilan/85]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = :m_penampilan.id_teater:
+ORDER BY `m_lokasi_teater`.`kota`', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Audiens.php(451): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-13 17:01:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'm_show_schedule'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = :m_penampilan.id_teater:
+ORDER BY `m_lokasi_teater`.`kota`', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Audiens.php(451): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-13 17:01:12 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'm_show_schedule'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = :m_penampilan.id_teater:
+ORDER BY `m_lokasi_teater`.`kota`', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Audiens.php(451): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

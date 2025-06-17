@@ -1,0 +1,1272 @@
+INFO - 2025-05-14 03:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-14 03:11:01 --> mysqli_sql_exception: Not unique table/alias: 'm_show_schedule' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_lokas...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_lokas...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_lokas...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokas...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Audiens.php(451): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-14 03:11:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'm_show_schedule'
+[Method: GET, Route: Audiens/detailPenampilan/85]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = :m_penampilan.id_teater:
+ORDER BY `m_lokasi_teater`.`kota`', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Audiens.php(451): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 03:11:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'm_show_schedule'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = :m_penampilan.id_teater:
+ORDER BY `m_lokasi_teater`.`kota`', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Audiens.php(451): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 03:11:01 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'm_show_schedule'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = :m_penampilan.id_teater:
+ORDER BY `m_lokasi_teater`.`kota`', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Audiens.php(451): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 03:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-14 03:11:06 --> mysqli_sql_exception: Not unique table/alias: 'm_show_schedule' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_lokas...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_lokas...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_lokas...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokas...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Audiens.php(451): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-14 03:11:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'm_show_schedule'
+[Method: GET, Route: Audiens/detailPenampilan/85]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = :m_penampilan.id_teater:
+ORDER BY `m_lokasi_teater`.`kota`', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Audiens.php(451): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 03:11:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'm_show_schedule'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = :m_penampilan.id_teater:
+ORDER BY `m_lokasi_teater`.`kota`', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Audiens.php(451): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 03:11:06 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'm_show_schedule'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `m_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = :m_penampilan.id_teater:
+ORDER BY `m_lokasi_teater`.`kota`', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Audiens.php(451): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 03:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-14 03:19:24 --> mysqli_sql_exception: Table 'db_teaterform.m_seat_category' doesn't exist in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_lokas...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_lokas...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_lokas...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokas...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Audiens.php(452): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-14 03:19:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_teaterform.m_seat_category' doesn't exist
+[Method: GET, Route: Audiens/detailPenampilan/85]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `r_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = :m_penampilan.id_teater:
+ORDER BY `m_lokasi_teater`.`kota`', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Audiens.php(452): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 03:19:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_teaterform.m_seat_category' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `r_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `r_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `r_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = :m_penampilan.id_teater:
+ORDER BY `m_lokasi_teater`.`kota`', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Audiens.php(452): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 03:19:24 --> [Caused by] mysqli_sql_exception: Table 'db_teaterform.m_seat_category' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `r_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `r_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `r_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = \'85\'
+ORDER BY `m_lokasi_teater`.`kota`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_lokasi_teater`.`kota`, `m_lokasi_teater`.`tempat`, `m_show_schedule`.`tanggal`, CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu, `m_seat_pricing`.`harga`, `m_seat_pricing`.`tipe_harga`, `m_seat_category`.`denah_seat`, `m_seat_category`.`nama_kategori`
+FROM `m_show_schedule`
+JOIN `r_show_schedule` ON `r_show_schedule`.`id_schedule` = `m_show_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_show_schedule`.`id_location` = `m_lokasi_teater`.`id_location`
+JOIN `m_seat_pricing` ON `r_show_schedule`.`id_pricing` = `m_seat_pricing`.`id_pricing`
+JOIN `m_seat_category` ON `m_seat_pricing`.`id_kategori_seat` = `m_seat_category`.`id_kategori_seat`
+JOIN `m_penampilan` ON `m_seat_pricing`.`id_penampilan` = `m_penampilan`.`id_penampilan`
+WHERE `m_penampilan`.`id_teater` = :m_penampilan.id_teater:
+ORDER BY `m_lokasi_teater`.`kota`', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Audiens.php(452): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 03:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 03:21:12 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: Audiens/detailPenampilan/85]
+in APPPATH\Controllers\Audiens.php on line 457.
+ 1 APPPATH\Controllers\Audiens.php(457): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php', 457)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 03:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 03:23:59 --> ErrorException: Undefined array key "denah"
+[Method: GET, Route: Audiens/detailPenampilan/85]
+in APPPATH\Controllers\Audiens.php on line 462.
+ 1 APPPATH\Controllers\Audiens.php(462): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "denah"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php', 462)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 03:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 03:24:18 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Audiens/detailPenampilan/85]
+in APPPATH\Views\templates\headerAudiens.php on line 132.
+ 1 APPPATH\Views\templates\headerAudiens.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAudiens.php', 132)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAudiens.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAudiens', [], true)
+ 5 APPPATH\Controllers\Audiens.php(466): view('templates/headerAudiens', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 03:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 03:24:23 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(400): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 03:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 03:24:24 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 03:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 03:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 03:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 03:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 03:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 03:24:46 --> ErrorException: Undefined variable $teater
+[Method: GET, Route: Audiens/detailPenampilan/84]
+in APPPATH\Views\templates\bodyDetailPenampilan.php on line 9.
+ 1 APPPATH\Views\templates\bodyDetailPenampilan.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $teater', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyDetailPenampilan.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyDetailPenampilan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyDetailPenampilan', [], true)
+ 5 APPPATH\Controllers\Audiens.php(467): view('templates/bodyDetailPenampilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('84')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 03:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 03:28:52 --> ErrorException: Undefined array key "nama_komunitas"
+[Method: GET, Route: Audiens/detailPenampilan/84]
+in APPPATH\Views\templates\bodyDetailPenampilan.php on line 10.
+ 1 APPPATH\Views\templates\bodyDetailPenampilan.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_komunitas"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyDetailPenampilan.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyDetailPenampilan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyDetailPenampilan', [], true)
+ 5 APPPATH\Controllers\Audiens.php(467): view('templates/bodyDetailPenampilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('84')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 03:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 03:29:23 --> ErrorException: Undefined array key "sutradara"
+[Method: GET, Route: Audiens/detailPenampilan/84]
+in APPPATH\Views\templates\bodyDetailPenampilan.php on line 17.
+ 1 APPPATH\Views\templates\bodyDetailPenampilan.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sutradara"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyDetailPenampilan.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyDetailPenampilan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyDetailPenampilan', [], true)
+ 5 APPPATH\Controllers\Audiens.php(467): view('templates/bodyDetailPenampilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('84')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 03:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 03:30:02 --> ErrorException: Undefined array key "link"
+[Method: GET, Route: Audiens/detailPenampilan/84]
+in APPPATH\Views\templates\bodyDetailPenampilan.php on line 43.
+ 1 APPPATH\Views\templates\bodyDetailPenampilan.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "link"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyDetailPenampilan.php', 43)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyDetailPenampilan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyDetailPenampilan', [], true)
+ 5 APPPATH\Controllers\Audiens.php(467): view('templates/bodyDetailPenampilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('84')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 03:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 03:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 03:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 03:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 04:02:36 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 10.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 04:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 04:14:19 --> Last Query: NULL
+INFO - 2025-05-14 04:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 04:15:44 --> Last Query: NULL
+DEBUG - 2025-05-14 04:15:44 --> Poster uploaded: uploads/posters/1747196144_3f5d1a696f2268adac44.jpeg
+DEBUG - 2025-05-14 04:15:44 --> Request data: {"csrf_test_name":"553fb6c4e2259fd83c5864739f69ab4b","id_teater":"","tipe_teater":"penampilan","judul":"Snow White","sinopsis":"Putri salju","tanggal":"2025-05-24","waktu_mulai":"11:15","waktu_selesai":"13:15","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"Teater Koma","hidden_schedule":"[{\"tanggal\":\"2025-05-23\",\"waktu_mulai\":\"11:15\",\"waktu_selesai\":\"13:15\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"Teater Koma\",\"denah_seat\":null},{\"tanggal\":\"2025-05-24\",\"waktu_mulai\":\"11:15\",\"waktu_selesai\":\"13:15\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"Teater Koma\",\"denah_seat\":\"\"},{\"tanggal\":\"2025-05-24\",\"waktu_mulai\":\"11:15\",\"waktu_selesai\":\"13:15\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"Teater Koma\",\"denah_seat\":\"\"}]","penulis":"Komeng","url_pendaftaran":"www.pelajaran.com","sutradara":"Kokom","staff":"Lidya","aktor":"Pentung","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"[{\"platformId\":\"1\",\"platformName\":\"instagram\",\"account\":\"Pentungtungtung\"}]","judul_web":[""],"url_web":[""],"hidden_web":""}
+DEBUG - 2025-05-14 04:15:44 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Snow White","poster":"uploads\/posters\/1747196144_3f5d1a696f2268adac44.jpeg","sinopsis":"Putri salju","penulis":"Komeng","sutradara":"Kokom","staff":"Lidya","dibuat_oleh":"BINUS University","dimodif_oleh":null}
+DEBUG - 2025-05-14 04:15:44 --> ID Teater yang dibuat: 86
+DEBUG - 2025-05-14 04:15:44 --> ID Penampilan yang dibuat: 75
+DEBUG - 2025-05-14 04:15:44 --> Jadwal ke-0: Tanggal: 2025-05-23, Mulai: 11:15, Selesai: 13:15, Kota: Jakarta, Tempat: Teater Koma
+DEBUG - 2025-05-14 04:15:44 --> Data lokasi yang akan disimpan: {"tempat":"Teater Koma","kota":"Jakarta"}
+DEBUG - 2025-05-14 04:15:44 --> ID Location yang didapat setelah insert: 146
+DEBUG - 2025-05-14 04:15:44 --> Data jadwal diterima: [{"tanggal":"2025-05-23","waktu_mulai":"11:15","waktu_selesai":"13:15","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"Teater Koma","denah_seat":null},{"tanggal":"2025-05-24","waktu_mulai":"11:15","waktu_selesai":"13:15","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"Teater Koma","denah_seat":""},{"tanggal":"2025-05-24","waktu_mulai":"11:15","waktu_selesai":"13:15","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Teater Koma","denah_seat":""}]
+DEBUG - 2025-05-14 04:15:44 --> Jadwal ke-1: Tanggal: 2025-05-24, Mulai: 11:15, Selesai: 13:15, Kota: Jakarta, Tempat: Teater Koma
+DEBUG - 2025-05-14 04:15:44 --> Data lokasi yang akan disimpan: {"tempat":"Teater Koma","kota":"Jakarta"}
+DEBUG - 2025-05-14 04:15:44 --> ID Location yang didapat setelah insert: 147
+DEBUG - 2025-05-14 04:15:44 --> Data jadwal diterima: [{"tanggal":"2025-05-23","waktu_mulai":"11:15","waktu_selesai":"13:15","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"Teater Koma","denah_seat":null},{"tanggal":"2025-05-24","waktu_mulai":"11:15","waktu_selesai":"13:15","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"Teater Koma","denah_seat":""},{"tanggal":"2025-05-24","waktu_mulai":"11:15","waktu_selesai":"13:15","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Teater Koma","denah_seat":""}]
+DEBUG - 2025-05-14 04:15:44 --> Jadwal ke-2: Tanggal: 2025-05-24, Mulai: 11:15, Selesai: 13:15, Kota: Jakarta, Tempat: Teater Koma
+DEBUG - 2025-05-14 04:15:44 --> Data lokasi yang akan disimpan: {"tempat":"Teater Koma","kota":"Jakarta"}
+DEBUG - 2025-05-14 04:15:44 --> ID Location yang didapat setelah insert: 148
+DEBUG - 2025-05-14 04:15:44 --> Data jadwal diterima: [{"tanggal":"2025-05-23","waktu_mulai":"11:15","waktu_selesai":"13:15","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"Teater Koma","denah_seat":null},{"tanggal":"2025-05-24","waktu_mulai":"11:15","waktu_selesai":"13:15","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"Teater Koma","denah_seat":""},{"tanggal":"2025-05-24","waktu_mulai":"11:15","waktu_selesai":"13:15","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Teater Koma","denah_seat":""}]
+DEBUG - 2025-05-14 04:15:44 --> ID Web Teater yang diperoleh: 30
+INFO - 2025-05-14 04:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 04:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:35:57 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:36:00 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/crudAudisi]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1350): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:36:01 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(400): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:36:03 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:36:04 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/listAudisi]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1273): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->AudisiAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:36:05 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:36:06 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(400): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:36:07 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:36:08 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(547): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:36:08 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(400): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:36:09 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:36:11 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(547): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:36:11 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(400): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:36:12 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:55:05 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 10.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 08:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 08:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 08:57:15 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 10.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:02:15 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 10.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:05:53 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 10.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:05:55 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 10.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:05:57 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 10.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:06:00 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 10.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:15:56 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 10.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:16:47 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 10.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:19:00 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 10.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:19:02 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 10.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:21:18 --> ErrorException: Undefined variable $namaKomunitas
+[Method: GET, Route: MitraTeater/detailMitraTeater/5]
+in APPPATH\Views\templates\detailMitraTeater.php on line 14.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namaKomunitas', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:21:38 --> ErrorException: Undefined variable $namaKomunitas
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 14.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namaKomunitas', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:23:00 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 14.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:23:07 --> ErrorException: Undefined array key "nama_mitra"
+[Method: GET, Route: MitraTeater/detailMitraTeater/5]
+in APPPATH\Views\templates\detailMitraTeater.php on line 14.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_mitra"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:23:57 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 14.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:31:45 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 14.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:31:47 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 14.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:31:47 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 14.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:31:48 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 14.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:32:26 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 14.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 09:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 09:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 09:32:45 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Views\templates\detailMitraTeater.php on line 14.
+ 1 APPPATH\Views\templates\detailMitraTeater.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\detailMitraTeater.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/detailMitraTeater', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1857): view('templates/detailMitraTeater', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 15:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 15:01:38 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Controllers\MitraTeater.php on line 1854.
+ 1 APPPATH\Controllers\MitraTeater.php(1854): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\MitraTeater.php', 1854)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 15:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 15:01:42 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Controllers\MitraTeater.php on line 1854.
+ 1 APPPATH\Controllers\MitraTeater.php(1854): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\MitraTeater.php', 1854)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 15:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 15:01:45 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Controllers\MitraTeater.php on line 1854.
+ 1 APPPATH\Controllers\MitraTeater.php(1854): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\MitraTeater.php', 1854)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 15:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 15:02:18 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Audiens/detailPenampilan/85]
+in APPPATH\Views\templates\headerAudiens.php on line 132.
+ 1 APPPATH\Views\templates\headerAudiens.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAudiens.php', 132)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAudiens.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAudiens', [], true)
+ 5 APPPATH\Controllers\Audiens.php(489): view('templates/headerAudiens', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->DetailPenampilan('85')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 15:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 15:02:20 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: MitraTeater/listPenampilan]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(400): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 15:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 15:02:21 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Mitra/homepage]
+in APPPATH\Views\templates\headerMitra.php on line 128.
+ 1 APPPATH\Views\templates\headerMitra.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(306): view('templates/headerMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-14 15:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 15:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 15:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 15:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 15:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 15:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 15:02:35 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: MitraTeater/detailMitraTeater/36]
+in APPPATH\Controllers\MitraTeater.php on line 1854.
+ 1 APPPATH\Controllers\MitraTeater.php(1854): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\MitraTeater.php', 1854)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->detailMitra('36')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

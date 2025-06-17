@@ -1,0 +1,42 @@
+/* Style Navigation Bar Start */
+.navbar-area {
+    padding: 5px 15px; /* Mengurangi padding untuk header agar lebih rapi */
+}
+
+.navbar {
+    background-color: #D8001B;
+    padding: 5px 15px; /* Mengurangi padding untuk header */
+    height: 60px; /* Membuat tinggi otomatis */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Sebar elemen secara merata */
+    flex-wrap: wrap; /* Mengatasi elemen bertumpuk ketika ruang tidak mencukupi */
+}
+
+.navbar .logo img {
+    width: 100px; /* Mengurangi ukuran logo agar lebih proporsional */
+    height: auto; /* Memastikan proporsi gambar tetap */
+    margin-right: 200px; /* Mengurangi jarak pada logo */
+}
+
+.navbar .navbar-nav {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 40px; /* Mengurangi jarak antar menu agar lebih rapi */
+}
+
+.navbar .navbar-nav a {
+    text-decoration: none;
+    font-size: 16px; /* Mengurangi ukuran font menu */
+    color: #fff; /* Warna font putih */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600; /* Membuat font lebih tebal */
+    transition: color 0.3s;
+    padding: 8px 10px; /* Mengurangi padding agar tidak bertumpuk */
+}
+
+.navbar .navbar-nav a:hover {
+    color: #FF9FAB; /* Warna saat hover */
+}
+/* Style Navigation Bar End */

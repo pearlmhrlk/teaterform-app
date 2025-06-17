@@ -1,0 +1,184 @@
+/* Style Slide Homepage Start */
+.homepage .slider-section-two .slider-single-item {
+    height: 500px; /* Atur tinggi secara otomatis agar konten lebih fleksibel */
+    min-height: 400px; /* Berikan tinggi minimum agar tetap proporsional */
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage .slider-section-two .main-slider-active .slider-single-item img {
+    width: 100%;
+    height: auto;
+    position: absolute; /* Menempatkan gambar secara absolut di dalam slider */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Pastikan gambar berada di belakang */
+}
+
+/* Overlay merah */
+.homepage .slider-section-two .slider-single-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.5); /* Warna merah dengan transparansi */
+    z-index: 1;
+}
+
+/* Kontainer untuk teks dan tombol */
+.homepage .slider-section-two .container {
+    position: relative; /* Tambahkan ini agar z-index pada .slide-content berfungsi */
+    z-index: 2;
+}
+
+.homepage .slider-section-two .slide-content {
+    position: relative;
+    z-index: 3; /* Naikkan z-index agar di atas overlay */
+    text-align: center; /* Memusatkan teks */
+    color: #fff; /* Warna teks putih untuk kontras */
+    padding-top: 20px; /* Tambahkan padding atas */
+    padding-bottom: 20px; /* Tambahkan padding bawah */
+    max-width: 800px; /* Batas lebar teks agar tidak terlalu panjang */
+    margin: 0 auto; /* Pusatkan teks di tengah */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memastikan semua elemen berada di tengah */
+    justify-content: center; /* Memastikan teks berada di tengah secara vertikal */
+    height: 100%; /* Menggunakan seluruh tinggi slide */
+}
+
+.homepage .slider-section-two .theme-btn {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    background-color: #fff; /* Warna oranye */
+    color: #D8001B;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block; /* Pastikan tombol ditampilkan sebagai elemen blok inline */
+}
+
+.homepage .slider-section-two .slide-content h1 {
+    font-size: 48px; /* Sesuaikan ukuran font */
+    margin-top: 80px;
+    margin-bottom: 20px; /* Memberikan jarak antara judul dan paragraf */
+    font-weight: 500;
+    font-family: 'Finger Paint', sans-serif; /* Ganti dengan font yang diinginkan */
+}
+
+.homepage .slider-section-two .slide-content p {
+    font-size: 18px; /* Sesuaikan ukuran font */
+    margin-bottom: 30px; /* Memberikan jarak antara paragraf dan tombol */
+    line-height: 1.6; /* Mengatur jarak antar baris */
+    max-width: 500px; /* Membatasi lebar teks agar lebih proporsional */
+}
+
+.homepage .slider-section-two .slider-btns {
+    display: flex;
+    justify-content: center; /* Memusatkan tombol */
+    gap: 20px; /* Memberikan jarak antar tombol */
+}
+
+.homepage .slider-section-two .theme-btn:hover {
+    background-color: #C94E2C; /* Warna lebih gelap saat dihover */
+    color: #fff;
+}
+
+.homepage .slider-section-two .slide-content p,
+.homepage .slider-section-two .theme-btn {
+    font-family: 'Playpen Sans', sans-serif; /* Ganti dengan font yang diinginkan */
+}
+
+.homepage .slider-section-two .slick-dots {
+    list-style: none !important; /* Menghilangkan angka */
+    position: absolute; /* Memposisikan di dalam slide */
+    bottom: 20px; /* Posisikan di bagian bawah slide */
+    width: 100%; /* Membuatnya selaras dengan lebar slider */
+    text-align: center;
+    z-index: 5; /* Pastikan z-index lebih tinggi agar terlihat di atas gambar */
+}
+
+.homepage .slider-section-two .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.homepage .slider-section-two .slick-dots li button {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #FF9FAB; /* Warna dasar dot */
+    border: none;
+    border-radius: 50%; /* Membuat titik bulat */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0; /* Menghilangkan tampilan angka */
+}
+
+.homepage .slider-section-two .slick-dots li button:before {
+    content: ""; /* Mengosongkan angka yang mungkin ditampilkan melalui pseudo-elemen */
+}
+
+.homepage .slider-section-two .slick-dots li.slick-active button {
+    background: #fff; /* Warna dot saat aktif */
+}
+
+.homepage .main-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px; /* 20px di kiri dan kanan */
+}
+
+.homepage .main-content .page-content {
+    flex: 1; /* Konten utama fleksibel */
+    padding-top: 30px; /* Beri jarak dari header */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+}
+
+.homepage .main-content .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Beri sedikit jarak antar kartu */
+}
+
+.homepage .main-content .card {
+    padding: 15px; /* Kurangi padding */
+    margin: 0px;
+    cursor: pointer; /* Buat menu bisa diklik */
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+}
+
+.homepage .main-content .col-xl-4 {
+    flex: 1 1 300px; /* Memberikan fleksibilitas */
+    max-width: 350px; /* Batasi ukuran maksimum */
+}
+
+.homepage .main-content a.card {
+    display: block; /* Agar <a> tidak menyebabkan elemen turun */
+    text-decoration: none; /* Hilangkan underline */
+    color: inherit; /* Warna teks tetap mengikuti parent */
+}
+
+.homepage .main-content .card:hover {
+    transform: scale(1.05); /* Efek hover */
+}
+
+/* Mengatur jarak ikon dan teks dalam menu */
+.homepage .main-content .avatar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,57 @@
+INFO - 2025-03-15 06:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-15 06:20:47 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(69): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-15 06:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-15 06:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-15 06:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-15 06:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-15 06:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-15 06:24:09 --> Last Query: NULL
+DEBUG - 2025-03-15 06:24:09 --> Poster uploaded: uploads/posters/1742019849_8451bebd400c2413d84d.jpeg
+DEBUG - 2025-03-15 06:24:09 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"xkdnskjf dskbdos","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"13:25\",\"waktu_selesai\":\"15:25\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"ndkdsnd skjsnfds\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"13:25\",\"waktu_selesai\":\"15:25\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"ndkdsnd skjsnfds\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-03\",\"waktu_mulai\":\"13:25\",\"waktu_selesai\":\"15:25\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"ndkdsnd skjsnfds\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-15 06:24:09 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1742019849_8451bebd400c2413d84d.jpeg","sinopsis":"xkdnskjf dskbdos","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-15 06:24:09 --> ID Teater yang dibuat: 36
+DEBUG - 2025-03-15 06:24:09 --> ID Penampilan yang dibuat: 32
+DEBUG - 2025-03-15 06:24:09 --> Data jadwal diterima: [{"tanggal":"2025-03-01","waktu_mulai":"13:25","waktu_selesai":"15:25","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"ndkdsnd skjsnfds","denah_seat":"None"},{"tanggal":"2025-03-02","waktu_mulai":"13:25","waktu_selesai":"15:25","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"ndkdsnd skjsnfds","denah_seat":"Uploaded"},{"tanggal":"2025-03-03","waktu_mulai":"13:25","waktu_selesai":"15:25","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"ndkdsnd skjsnfds","denah_seat":"None"}]
+DEBUG - 2025-03-15 06:24:09 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 13:25, Selesai: 15:25, Kota: Jakarta, Tempat: ndkdsnd skjsnfds
+DEBUG - 2025-03-15 06:24:09 --> Data lokasi yang akan disimpan: {"tempat":"ndkdsnd skjsnfds","kota":"Jakarta"}
+DEBUG - 2025-03-15 06:24:09 --> ID Location yang didapat setelah insert: 32
+DEBUG - 2025-03-15 06:24:09 --> Kategori: , Harga: 50000
+INFO - 2025-03-15 07:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-15 07:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-15 07:25:12 --> Last Query: NULL
+DEBUG - 2025-03-15 07:25:12 --> Poster uploaded: uploads/posters/1742023512_fe4e7094d3f572aa6749.jpeg
+DEBUG - 2025-03-15 07:25:12 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"jnisds iandjw","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"14:25\",\"waktu_selesai\":\"16:25\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"ksndjas dssswne\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"14:25\",\"waktu_selesai\":\"16:25\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"ksndjas dssswne\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-03\",\"waktu_mulai\":\"14:25\",\"waktu_selesai\":\"16:25\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"ksndjas dssswne\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-15 07:25:12 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1742023512_fe4e7094d3f572aa6749.jpeg","sinopsis":"jnisds iandjw","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-15 07:25:12 --> ID Teater yang dibuat: 37
+DEBUG - 2025-03-15 07:25:12 --> ID Penampilan yang dibuat: 33
+DEBUG - 2025-03-15 07:25:12 --> Data jadwal diterima: [{"tanggal":"2025-03-01","waktu_mulai":"14:25","waktu_selesai":"16:25","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"ksndjas dssswne","denah_seat":"None"},{"tanggal":"2025-03-02","waktu_mulai":"14:25","waktu_selesai":"16:25","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"ksndjas dssswne","denah_seat":"Uploaded"},{"tanggal":"2025-03-03","waktu_mulai":"14:25","waktu_selesai":"16:25","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"ksndjas dssswne","denah_seat":"None"}]
+DEBUG - 2025-03-15 07:25:12 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 14:25, Selesai: 16:25, Kota: Jakarta, Tempat: ksndjas dssswne
+DEBUG - 2025-03-15 07:25:12 --> Data lokasi yang akan disimpan: {"tempat":"ksndjas dssswne","kota":"Jakarta"}
+DEBUG - 2025-03-15 07:25:12 --> ID Location yang didapat setelah insert: 33
+INFO - 2025-03-15 07:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-15 07:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-15 07:41:31 --> Last Query: NULL
+DEBUG - 2025-03-15 07:41:31 --> Poster uploaded: uploads/posters/1742024491_41fb304a8b5284471bea.jpeg
+DEBUG - 2025-03-15 07:41:31 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"bhjui ibiiu","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"14:45\",\"waktu_selesai\":\"16:45\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"jnkho oio\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"14:45\",\"waktu_selesai\":\"16:45\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"jnkho oio\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-03\",\"waktu_mulai\":\"14:45\",\"waktu_selesai\":\"16:45\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"jnkho oio\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-15 07:41:31 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1742024491_41fb304a8b5284471bea.jpeg","sinopsis":"bhjui ibiiu","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-15 07:41:31 --> ID Teater yang dibuat: 38
+DEBUG - 2025-03-15 07:41:31 --> ID Penampilan yang dibuat: 34
+DEBUG - 2025-03-15 07:41:31 --> Data jadwal diterima: [{"tanggal":"2025-03-01","waktu_mulai":"14:45","waktu_selesai":"16:45","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"jnkho oio","denah_seat":"None"},{"tanggal":"2025-03-02","waktu_mulai":"14:45","waktu_selesai":"16:45","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"jnkho oio","denah_seat":"Uploaded"},{"tanggal":"2025-03-03","waktu_mulai":"14:45","waktu_selesai":"16:45","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"jnkho oio","denah_seat":"None"}]
+DEBUG - 2025-03-15 07:41:31 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 14:45, Selesai: 16:45, Kota: Jakarta, Tempat: jnkho oio
+DEBUG - 2025-03-15 07:41:31 --> Data lokasi yang akan disimpan: {"tempat":"jnkho oio","kota":"Jakarta"}
+DEBUG - 2025-03-15 07:41:31 --> ID Location yang didapat setelah insert: 34
+DEBUG - 2025-03-15 07:41:31 --> Data sebelum pemrosesan - Nama Kategori: , Harga: 50000
+ERROR - 2025-03-15 07:41:31 --> Kategori atau harga kosong setelah konversi.

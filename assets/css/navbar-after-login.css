@@ -1,0 +1,203 @@
+/* Style Navigation Bar Start */
+.navbar-area {
+    padding: 0; /* Menghapus padding ekstra */
+}
+
+.navbar {
+    background-color: #D8001B;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Sebar elemen kiri dan kanan */
+    padding: 0 15px; /* Tambahkan ruang di kedua sisi */
+    flex-wrap: nowrap; /* Hindari elemen bertumpuk */
+}
+
+/* Logo */
+.navbar .logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 125px; /* Kurangi jarak untuk proporsi yang lebih baik */
+}
+
+/* Menu navigasi */
+.navbar .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 100px; /* Sesuaikan jarak antar menu */
+}
+
+.navbar .navbar-nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    transition: color 0.3s;
+    padding: 8px 10px;
+}
+
+.navbar .navbar-nav a:hover {
+    color: #FF9FAB;
+}
+
+/* Header styling */
+.navbar .dropdown-menu .bg-info {
+    background-color: #17a2b8 !important;
+    padding: 12px 16px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.navbar .dropdown-menu .bg-info h6 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Scrollable content */
+.navbar .dropdown-menu > div {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+/* Custom scrollbar */
+.navbar .dropdown-menu > div::-webkit-scrollbar {
+    width: 6px;
+}
+
+.navbar .dropdown-menu > div::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.navbar .dropdown-menu > div::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+/* Footer */
+.navbar .dropdown-menu .border-top {
+    background: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar .dropdown-menu .border-top a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #007bff;
+}
+
+.navbar .dropdown-menu .border-top a:hover {
+    text-decoration: underline;
+}
+
+/* Styling Dropdown Avatar */
+.navbar #page-header-user-dropdown img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar #page-header-user-dropdown:hover img {
+    transform: scale(1.1);
+}
+
+/* Dropdown Menu */
+.navbar .dropdown-menu {
+    min-width: 270px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+}
+
+/* Header Profil */
+.navbar .card-header {
+    background-color: #007bff; /* Biru bootstrap */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .card-header .avatar {
+    width: 45px;
+    height: 45px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #007bff;
+}
+
+.navbar .card-header .rich-list-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.navbar .card-header .rich-list-content span {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Badge Notifikasi */
+.navbar .rich-list-append .badge {
+    background: #ffc107;
+    color: #333;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.navbar .grid-nav-icon {
+    margin-right: 15px;
+}
+
+/* Link dalam dropdown */
+.navbar .card-body a {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s;
+}
+
+.navbar .card-body a:hover {
+    background: #f8f9fa;
+}
+
+/* Tombol Logout */
+.navbar .card-footer {
+    padding: 12px;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+.navbar .card-footer a {
+    display: block;
+    background: #dc3545;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.navbar .card-footer a:hover {
+    background: #c82333;
+}
+
+/* Style Navigation Bar End */

@@ -1,0 +1,254 @@
+
+        /* Style Approve Mitra Start */
+        .approve-admin{
+            font-family: 'Lexend Deca', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        .approve-admin .container {
+            max-width: 90%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .approve-admin .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .approve-admin .account-card {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            padding: 20px;
+            align-items: center; /* Agar teks dan tombol sejajar di atas */
+            justify-content: space-between; /* Memberikan ruang antara info dan tombol */
+            gap: 20px; /* Atur jarak antara detail info dan tombol */
+            margin: 0 auto; /* Hindari jarak ekstra */
+        }
+
+        .approve-admin .account-card:last-child {
+            border-bottom: none;
+        }
+
+        .approve-admin .logo {
+            flex: 0 0 120px;
+            margin-right: 20px;
+        }
+
+        .approve-admin .logo img {
+            width: 120px; /* Atur ukuran gambar agar seragam */
+            height: 120px;
+            object-fit: cover; /* Pastikan gambar tetap proporsional tanpa melar */
+            border-radius: 4px;
+        }
+
+        .approve-admin h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .approve-admin .acc-info {
+            flex: 1; /* Memastikan teks tidak menyempit */
+            max-width: 60%; /* Atur agar tidak terlalu melebar */
+        }
+
+        .approve-admin .details {
+            flex: 3;
+        }
+
+        .approve-admin .details p {
+            margin: 4px 0;
+        }
+
+        .approve-admin .details .label {
+            font-weight: bold;
+        }
+
+        .approve-admin .actions {
+            flex: 0 0 150px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: flex-end;
+        }
+
+        .approve-admin .actions button {
+            margin-bottom: 8px;
+            padding: 6px 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%; /* Sesuaikan dengan ukuran yang diinginkan */
+            min-width: 150px;
+            text-align: center;
+        }
+
+        .approve-admin .actions button:last-child {
+            margin-bottom: 0;
+        }
+
+        .approve-admin .actions button:hover {
+            background-color: #0056b3;
+        }
+
+        .approve-admin .pagination,
+        .approve-admin .pagination-info {
+            margin-top: 15px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .approve-admin .pagination a {
+            font-weight: bold;
+            text-decoration: none; /* Hilangkan garis bawah */
+            margin: 0 10px; /* Beri jarak antar angka */
+            color: black; /* Ubah warna teks */
+        }
+        .approve-admin .pagination a:hover {
+            color: #007bff; /* Warna biru saat hover */
+        }
+
+        .approve-admin .popup-container {
+            display: none; /* Awalnya disembunyikan */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .approve-admin .popup-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.3s ease-in-out;
+            position: relative;
+        }
+    
+        .approve-admin .popup-content h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+    
+        .approve-admin .popup-content p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        /* Popup Actions */
+        .approve-admin .popup-actions {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Button Styles */
+        .approve-admin .btn-approve {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .approve-admin .btn-approve:hover {
+            background: #45a049;
+        }
+
+        .approve-admin .btn-cancel {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .approve-admin .btn-cancel:hover {
+            background: #d32f2f;
+        }
+    
+        .approve-admin .popup-content label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+    
+        .approve-admin .popup-content textarea {
+            width: 100%;
+            height: 80px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+    
+        .approve-admin .popup-buttons {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .approve-admin .btn-primary {
+            background-color: #d9534f;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    
+        .approve-admin .btn-primary:hover {
+            background-color: #c9302c;
+        }
+    
+        .approve-admin .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    
+        .approve-admin .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }   
+
+        body.modal-open {
+            overflow: hidden;
+        }        
+        /* Style Approve Mitra End */

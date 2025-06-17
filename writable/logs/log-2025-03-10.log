@@ -1,0 +1,201 @@
+INFO - 2025-03-10 02:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-10 02:44:30 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(69): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-10 02:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 02:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 02:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 02:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 02:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 02:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 02:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-10 02:47:48 --> Last Query: NULL
+DEBUG - 2025-03-10 02:47:49 --> Poster uploaded: uploads/posters/1741574869_b11dc26d599c6ccf350c.jpeg
+DEBUG - 2025-03-10 02:47:49 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"msopaodp weowmned","tanggal":"2025-03-01","waktu_mulai":"09:45","waktu_selesai":"11:45","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["lainnya","Surabaya"],"kota_real":"Surabaya","tempat":"ksaldns elwope","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"09:45\",\"waktu_selesai\":\"11:45\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"ksaldns elwope\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"09:45\",\"waktu_selesai\":\"11:45\",\"nama_kategori\":\"VIP, Regular\",\"harga\":\"500000, 150000\",\"kota\":\"Jakarta\",\"tempat\":\"ksaldns elwope\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"09:45\",\"waktu_selesai\":\"11:45\",\"nama_kategori\":\"\",\"harga\":null,\"kota\":\"Surabaya\",\"tempat\":\"ksaldns elwope\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-10 02:47:49 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741574869_b11dc26d599c6ccf350c.jpeg","sinopsis":"msopaodp weowmned","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-10 02:47:49 --> ID Teater yang dibuat: 15
+ERROR - 2025-03-10 02:47:49 --> Error: Array to string conversion
+INFO - 2025-03-10 03:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 03:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-10 03:44:35 --> Last Query: NULL
+DEBUG - 2025-03-10 03:44:35 --> Poster uploaded: uploads/posters/1741578275_19af7e564aabfdcc6d1e.jpeg
+DEBUG - 2025-03-10 03:44:35 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"kndbdksbd wnoewbdw","tanggal":"2025-03-02","waktu_mulai":"10:45","waktu_selesai":"12:45","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["lainnya","Surabaya"],"kota_real":"Surabaya","tempat":"ksdfsbef skeniw","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"10:45\",\"waktu_selesai\":\"12:45\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"ksdfsbef skeniw\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"10:45\",\"waktu_selesai\":\"12:45\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"ksdfsbef skeniw\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"10:45\",\"waktu_selesai\":\"12:45\",\"nama_kategori\":\"\",\"harga\":null,\"kota\":\"Surabaya\",\"tempat\":\"ksdfsbef skeniw\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-10 03:44:35 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741578275_19af7e564aabfdcc6d1e.jpeg","sinopsis":"kndbdksbd wnoewbdw","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-10 03:44:35 --> ID Teater yang dibuat: 16
+DEBUG - 2025-03-10 03:44:35 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 10:45, Selesai: 12:45, Kota: Jakarta, Tempat: ksdfsbef skeniw
+DEBUG - 2025-03-10 03:44:35 --> Data lokasi yang akan disimpan: {"tempat":"ksdfsbef skeniw","kota":"Jakarta"}
+DEBUG - 2025-03-10 03:44:35 --> ID Location yang didapat setelah insert: 2
+ERROR - 2025-03-10 03:44:35 --> mysqli_sql_exception: Column 'id_kategori_seat' cannot be null in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `m_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `m_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `m_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `m_...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Admin.php(458): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\Admin->saveShow()
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+INFO - 2025-03-10 03:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 03:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 03:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-10 03:55:07 --> Last Query: NULL
+DEBUG - 2025-03-10 03:55:07 --> Poster uploaded: uploads/posters/1741578907_525735aa20499342ed79.jpeg
+DEBUG - 2025-03-10 03:55:07 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"ndjsoia oeiano","tanggal":"2025-03-02","waktu_mulai":"10:55","waktu_selesai":"12:55","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["lainnya","Surabaya"],"kota_real":"Surabaya","tempat":"njasdhai iaubiusa","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"10:55\",\"waktu_selesai\":\"12:55\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"njasdhai iaubiusa\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"10:55\",\"waktu_selesai\":\"12:55\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"njasdhai iaubiusa\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"10:55\",\"waktu_selesai\":\"12:55\",\"nama_kategori\":\"\",\"harga\":null,\"kota\":\"Surabaya\",\"tempat\":\"njasdhai iaubiusa\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-10 03:55:07 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741578907_525735aa20499342ed79.jpeg","sinopsis":"ndjsoia oeiano","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-10 03:55:07 --> ID Teater yang dibuat: 17
+DEBUG - 2025-03-10 03:55:07 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 10:55, Selesai: 12:55, Kota: Jakarta, Tempat: njasdhai iaubiusa
+DEBUG - 2025-03-10 03:55:07 --> Data lokasi yang akan disimpan: {"tempat":"njasdhai iaubiusa","kota":"Jakarta"}
+DEBUG - 2025-03-10 03:55:07 --> ID Location yang didapat setelah insert: 3
+DEBUG - 2025-03-10 03:55:07 --> Jadwal ke-1: Tanggal: 2025-03-02, Mulai: 10:55, Selesai: 12:55, Kota: Jakarta, Tempat: njasdhai iaubiusa
+DEBUG - 2025-03-10 03:55:07 --> Data lokasi yang akan disimpan: {"tempat":"njasdhai iaubiusa","kota":"Jakarta"}
+DEBUG - 2025-03-10 03:55:07 --> ID Location yang didapat setelah insert: 4
+DEBUG - 2025-03-10 03:55:07 --> Jadwal ke-2: Tanggal: 2025-03-02, Mulai: 10:55, Selesai: 12:55, Kota: Surabaya, Tempat: njasdhai iaubiusa
+DEBUG - 2025-03-10 03:55:07 --> Data lokasi yang akan disimpan: {"tempat":"njasdhai iaubiusa","kota":"Surabaya"}
+DEBUG - 2025-03-10 03:55:07 --> ID Location yang didapat setelah insert: 5
+INFO - 2025-03-10 03:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 04:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 04:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-10 04:32:56 --> Last Query: NULL
+DEBUG - 2025-03-10 04:32:57 --> Poster uploaded: uploads/posters/1741581177_b55f551f79ea1787a955.jpeg
+DEBUG - 2025-03-10 04:32:57 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"nsiahdiua eiuwh9a","tanggal":"2025-03-03","waktu_mulai":"11:30","waktu_selesai":"13:30","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Surabaya","tempat":"jsahiuhwwe deiwhe","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"11:30\",\"waktu_selesai\":\"13:30\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"jsahiuhwwe deiwhe\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"11:30\",\"waktu_selesai\":\"13:30\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"jsahiuhwwe deiwhe\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-03\",\"waktu_mulai\":\"11:30\",\"waktu_selesai\":\"13:30\",\"nama_kategori\":\"\",\"harga\":null,\"kota\":\"Jakarta\",\"tempat\":\"jsahiuhwwe deiwhe\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-10 04:32:57 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741581177_b55f551f79ea1787a955.jpeg","sinopsis":"nsiahdiua eiuwh9a","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-10 04:32:57 --> ID Teater yang dibuat: 18
+DEBUG - 2025-03-10 04:32:57 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 11:30, Selesai: 13:30, Kota: Jakarta, Tempat: jsahiuhwwe deiwhe
+DEBUG - 2025-03-10 04:32:57 --> Data lokasi yang akan disimpan: {"tempat":"jsahiuhwwe deiwhe","kota":"Jakarta"}
+DEBUG - 2025-03-10 04:32:57 --> ID Location yang didapat setelah insert: 6
+ERROR - 2025-03-10 04:32:57 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`m_seat_pricing`, CONSTRAINT `fk_m_seat_pricing_penampilan` FOREIGN KEY (`id_penampilan`) REFERENCES `m_penampilan` (`id_penampilan`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `m_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `m_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `m_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `m_...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Admin.php(458): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\Admin->saveShow()
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+INFO - 2025-03-10 04:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 05:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 05:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-10 05:51:25 --> Last Query: NULL
+DEBUG - 2025-03-10 05:51:26 --> Poster uploaded: uploads/posters/1741585886_c24a95806332fc9c7e85.jpeg
+DEBUG - 2025-03-10 05:51:26 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"jsndowhneow eowboie","tanggal":"2025-03-02","waktu_mulai":"12:50","waktu_selesai":"14:50","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"","tempat":"kslndoa oanoiew","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"12:50\",\"waktu_selesai\":\"14:50\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"kslndoa oanoiew\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"12:50\",\"waktu_selesai\":\"14:50\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"kslndoa oanoiew\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"12:50\",\"waktu_selesai\":\"14:50\",\"nama_kategori\":\"\",\"harga\":null,\"kota\":\"Jakarta\",\"tempat\":\"kslndoa oanoiew\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-10 05:51:26 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741585886_c24a95806332fc9c7e85.jpeg","sinopsis":"jsndowhneow eowboie","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-10 05:51:26 --> ID Teater yang dibuat: 19
+DEBUG - 2025-03-10 05:51:26 --> ID Penampilan yang dibuat: 15
+DEBUG - 2025-03-10 05:51:26 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 12:50, Selesai: 14:50, Kota: Jakarta, Tempat: kslndoa oanoiew
+DEBUG - 2025-03-10 05:51:26 --> Data lokasi yang akan disimpan: {"tempat":"kslndoa oanoiew","kota":"Jakarta"}
+DEBUG - 2025-03-10 05:51:26 --> ID Location yang didapat setelah insert: 7
+ERROR - 2025-03-10 05:51:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_teaterform`.`m_seat_pricing`, CONSTRAINT `fk_m_seat_pricing_penampilan` FOREIGN KEY (`id_penampilan`) REFERENCES `m_penampilan` (`id_penampilan`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `m_...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `m_...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `m_...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `m_...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Admin.php(460): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\Admin->saveShow()
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\CodeIgniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+INFO - 2025-03-10 06:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 06:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-10 06:10:37 --> Last Query: NULL
+DEBUG - 2025-03-10 06:10:37 --> Poster uploaded: uploads/posters/1741587037_b8191843093357722e20.jpeg
+DEBUG - 2025-03-10 06:10:37 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"snajidow dewndeow","tanggal":"2025-03-03","waktu_mulai":"13:10","waktu_selesai":"15:10","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"","tempat":"jsnodinao dowine","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"13:10\",\"waktu_selesai\":\"15:10\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"jsnodinao dowine\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"13:10\",\"waktu_selesai\":\"15:10\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"jsnodinao dowine\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-03\",\"waktu_mulai\":\"13:10\",\"waktu_selesai\":\"15:10\",\"nama_kategori\":\"\",\"harga\":null,\"kota\":\"Jakarta\",\"tempat\":\"jsnodinao dowine\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-10 06:10:37 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741587037_b8191843093357722e20.jpeg","sinopsis":"snajidow dewndeow","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-10 06:10:37 --> ID Teater yang dibuat: 20
+DEBUG - 2025-03-10 06:10:37 --> ID Penampilan yang dibuat: 16
+DEBUG - 2025-03-10 06:10:37 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 13:10, Selesai: 15:10, Kota: Jakarta, Tempat: jsnodinao dowine
+DEBUG - 2025-03-10 06:10:37 --> Data lokasi yang akan disimpan: {"tempat":"jsnodinao dowine","kota":"Jakarta"}
+DEBUG - 2025-03-10 06:10:37 --> ID Location yang didapat setelah insert: 8
+DEBUG - 2025-03-10 06:10:37 --> Jadwal ke-1: Tanggal: 2025-03-02, Mulai: 13:10, Selesai: 15:10, Kota: Jakarta, Tempat: jsnodinao dowine
+DEBUG - 2025-03-10 06:10:37 --> Data lokasi yang akan disimpan: {"tempat":"jsnodinao dowine","kota":"Jakarta"}
+DEBUG - 2025-03-10 06:10:37 --> ID Location yang didapat setelah insert: 9
+DEBUG - 2025-03-10 06:10:37 --> Jadwal ke-2: Tanggal: 2025-03-03, Mulai: 13:10, Selesai: 15:10, Kota: Jakarta, Tempat: jsnodinao dowine
+DEBUG - 2025-03-10 06:10:37 --> Data lokasi yang akan disimpan: {"tempat":"jsnodinao dowine","kota":"Jakarta"}
+DEBUG - 2025-03-10 06:10:37 --> ID Location yang didapat setelah insert: 10
+INFO - 2025-03-10 06:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 08:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-10 08:34:25 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/listPenampilan]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(690): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-10 08:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-10 08:34:46 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Views\templates\headerAdmin.php on line 211.
+ 1 APPPATH\Views\templates\headerAdmin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 211)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(69): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-10 08:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 08:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 08:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 08:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-10 08:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-10 08:39:02 --> Last Query: NULL
+DEBUG - 2025-03-10 08:39:03 --> Poster uploaded: uploads/posters/1741595943_4d3d61ca039761e95636.jpeg
+DEBUG - 2025-03-10 08:39:03 --> Request data: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"jiosnduw euwiheq","tanggal":"2025-03-03","waktu_mulai":"15:40","waktu_selesai":"17:40","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"","tempat":"nsoahiodsa oewipeq","hidden_schedule":"[{\"tanggal\":\"2025-03-01\",\"waktu_mulai\":\"15:40\",\"waktu_selesai\":\"17:40\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"nsoahiodsa oewipeq\",\"denah_seat\":\"None\"},{\"tanggal\":\"2025-03-02\",\"waktu_mulai\":\"15:40\",\"waktu_selesai\":\"17:40\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"nsoahiodsa oewipeq\",\"denah_seat\":\"Uploaded\"},{\"tanggal\":\"2025-03-03\",\"waktu_mulai\":\"15:40\",\"waktu_selesai\":\"17:40\",\"nama_kategori\":\"\",\"harga\":null,\"kota\":\"Jakarta\",\"tempat\":\"nsoahiodsa oewipeq\",\"denah_seat\":\"None\"}]","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"]}
+DEBUG - 2025-03-10 08:39:03 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1741595943_4d3d61ca039761e95636.jpeg","sinopsis":"jiosnduw euwiheq","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-03-10 08:39:03 --> ID Teater yang dibuat: 21
+DEBUG - 2025-03-10 08:39:03 --> ID Penampilan yang dibuat: 17
+DEBUG - 2025-03-10 08:39:03 --> Jadwal ke-0: Tanggal: 2025-03-01, Mulai: 15:40, Selesai: 17:40, Kota: Jakarta, Tempat: nsoahiodsa oewipeq
+DEBUG - 2025-03-10 08:39:03 --> Data lokasi yang akan disimpan: {"tempat":"nsoahiodsa oewipeq","kota":"Jakarta"}
+DEBUG - 2025-03-10 08:39:03 --> ID Location yang didapat setelah insert: 11
+DEBUG - 2025-03-10 08:39:03 --> Jadwal ke-1: Tanggal: 2025-03-02, Mulai: 15:40, Selesai: 17:40, Kota: Jakarta, Tempat: nsoahiodsa oewipeq
+DEBUG - 2025-03-10 08:39:03 --> Data lokasi yang akan disimpan: {"tempat":"nsoahiodsa oewipeq","kota":"Jakarta"}
+DEBUG - 2025-03-10 08:39:03 --> ID Location yang didapat setelah insert: 12
+DEBUG - 2025-03-10 08:39:03 --> Jadwal ke-2: Tanggal: 2025-03-03, Mulai: 15:40, Selesai: 17:40, Kota: Jakarta, Tempat: nsoahiodsa oewipeq
+DEBUG - 2025-03-10 08:39:03 --> Data lokasi yang akan disimpan: {"tempat":"nsoahiodsa oewipeq","kota":"Jakarta"}
+DEBUG - 2025-03-10 08:39:03 --> ID Location yang didapat setelah insert: 13
+INFO - 2025-03-10 08:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,294 @@
+/* Style Slide Homepage Start */
+.homepage .slider-section-two .slider-single-item {
+    height: 500px; /* Atur tinggi secara otomatis agar konten lebih fleksibel */
+    min-height: 400px; /* Berikan tinggi minimum agar tetap proporsional */
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage .slider-section-two .main-slider-active .slider-single-item img {
+    width: 100%;
+    height: auto;
+    position: absolute; /* Menempatkan gambar secara absolut di dalam slider */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Pastikan gambar berada di belakang */
+}
+
+/* Overlay merah */
+.homepage .slider-section-two .slider-single-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.5); /* Warna merah dengan transparansi */
+    z-index: 1;
+}
+
+/* Kontainer untuk teks dan tombol */
+.homepage .slider-section-two .container {
+    position: relative; /* Tambahkan ini agar z-index pada .slide-content berfungsi */
+    z-index: 2;
+}
+
+.homepage .slider-section-two .slide-content {
+    position: relative;
+    z-index: 3; /* Naikkan z-index agar di atas overlay */
+    text-align: center; /* Memusatkan teks */
+    color: #fff; /* Warna teks putih untuk kontras */
+    padding-top: 20px; /* Tambahkan padding atas */
+    padding-bottom: 20px; /* Tambahkan padding bawah */
+    max-width: 800px; /* Batas lebar teks agar tidak terlalu panjang */
+    margin: 0 auto; /* Pusatkan teks di tengah */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memastikan semua elemen berada di tengah */
+    justify-content: center; /* Memastikan teks berada di tengah secara vertikal */
+    height: 100%; /* Menggunakan seluruh tinggi slide */
+}
+
+.homepage .slider-section-two .theme-btn {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    background-color: #fff; /* Warna oranye */
+    color: #D8001B;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block; /* Pastikan tombol ditampilkan sebagai elemen blok inline */
+}
+
+.homepage .slider-section-two .slide-content h1 {
+    font-size: 48px; /* Sesuaikan ukuran font */
+    margin-top: 80px;
+    margin-bottom: 20px; /* Memberikan jarak antara judul dan paragraf */
+    font-weight: 500;
+    font-family: 'Finger Paint', sans-serif; /* Ganti dengan font yang diinginkan */
+}
+
+.homepage .slider-section-two .slide-content p {
+    font-size: 18px; /* Sesuaikan ukuran font */
+    margin-bottom: 30px; /* Memberikan jarak antara paragraf dan tombol */
+    line-height: 1.6; /* Mengatur jarak antar baris */
+    max-width: 500px; /* Membatasi lebar teks agar lebih proporsional */
+}
+
+.homepage .slider-section-two .slider-btns {
+    display: flex;
+    justify-content: center; /* Memusatkan tombol */
+    gap: 20px; /* Memberikan jarak antar tombol */
+}
+
+.homepage .slider-section-two .theme-btn:hover {
+    background-color: #C94E2C; /* Warna lebih gelap saat dihover */
+    color: #fff;
+}
+
+.homepage .slider-section-two .slide-content p,
+.homepage .slider-section-two .theme-btn {
+    font-family: 'Playpen Sans', sans-serif; /* Ganti dengan font yang diinginkan */
+}
+
+.homepage .slider-section-two .slick-dots {
+    list-style: none !important; /* Menghilangkan angka */
+    position: absolute; /* Memposisikan di dalam slide */
+    bottom: 20px; /* Posisikan di bagian bawah slide */
+    width: 100%; /* Membuatnya selaras dengan lebar slider */
+    text-align: center;
+    z-index: 5; /* Pastikan z-index lebih tinggi agar terlihat di atas gambar */
+}
+
+.homepage .slider-section-two .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.homepage .slider-section-two .slick-dots li button {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #FF9FAB; /* Warna dasar dot */
+    border: none;
+    border-radius: 50%; /* Membuat titik bulat */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0; /* Menghilangkan tampilan angka */
+}
+
+.homepage .slider-section-two .slick-dots li button:before {
+    content: ""; /* Mengosongkan angka yang mungkin ditampilkan melalui pseudo-elemen */
+}
+
+.homepage .slider-section-two .slick-dots li.slick-active button {
+    background: #fff; /* Warna dot saat aktif */
+}
+
+.homepage .about-three-area {
+    padding-top: 30px;
+}
+
+.homepage .about-three-area .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fbe6d9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pastikan row bekerja dengan baik */
+.about-three-area .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Pusatkan konten */
+}
+
+.homepage .about-three-images {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.homepage .about-three-images .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+
+.homepage .about-three-images .col-6 {
+    display: flex;
+    flex-direction: column;
+    margin: -15px;
+    width: 48%;
+}
+
+.homepage .about-three-images img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Sesuaikan ukuran teks agar tidak terlalu besar */
+.homepage .about-three-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* List styling untuk lebih rapih */
+.homepage .list-style-two {
+    padding-left: 20px;
+}
+
+.homepage .list-style-two li {
+    font-size: 16px;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 25px;
+}
+
+.homepage .list-style-two li::before {
+    position: absolute;
+    left: 0;
+    color: #007bff; /* Warna ikon checklist */
+    font-weight: bold;
+}
+
+/* Container khusus untuk FAQ */
+.homepage .faq-area-three {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.homepage .faq-container {
+    max-width: 1200px;
+    background: #fae1eb; /* Warna latar belakang agar lebih menonjol */
+    padding: 40px;
+    border-radius: 10px; /* Efek lengkung di sudut */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek mengambang */
+}
+
+/* Atur FAQ menjadi lebih proporsional */
+.homepage .faq-area-three .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Ukuran gambar lebih kecil agar proporsional */
+.homepage .faq-three-image {
+    flex: 1;
+    max-width: 40%; /* Sesuaikan ukuran gambar */
+}
+
+.homepage .faq-three-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Bagian FAQ lebih besar agar sejajar */
+.homepage .faq-content-part {
+    flex: 1;
+    max-width: 55%;
+}
+
+/* Memberikan lebih banyak jarak antar opsi FAQ */
+.homepage .accordion-item {
+    border: none;
+    background: #fff;
+    margin-bottom: 15px; /* Tambah jarak antar item */
+    padding: 15px 0; /* Beri jarak dalam setiap item */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Tambah padding pada tombol FAQ agar lebih nyaman */
+.homepage .accordion-header button {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover untuk efek lebih jelas */
+.homepage .accordion-header button:hover {
+    background-color: #f1f1f1;
+    color: #0056b3;
+}
+
+/* Ukuran FAQ agar lebih responsif */
+.homepage .accordion {
+    width: 100%; /* Lebar penuh agar sejajar dengan title */
+    max-width: 600px; /* Membatasi lebar maksimum */
+}
+
+/* Ikon plus & minus */
+.homepage .accordion-button::after {
+    background-image: none !important;
+    content: '\002B'; /* Ikon plus */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 20px;
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.homepage .accordion-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.homepage .accordion-button[aria-expanded="true"]::after {
+    content: ''; /* Ubah ke ikon minus saat dibuka */
+}
+
+/* Style Slide Homepage End */

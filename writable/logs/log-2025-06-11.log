@@ -1,0 +1,749 @@
+INFO - 2025-06-11 04:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 04:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 04:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 04:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 04:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 04:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 04:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 04:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 05:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 05:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 05:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 05:08:00 --> Last Query: NULL
+DEBUG - 2025-06-11 05:08:01 --> Poster name: Sleeping_Beauty_(1959_poster_-_Style_A).jpg
+DEBUG - 2025-06-11 05:08:01 --> Poster valid: yes
+DEBUG - 2025-06-11 05:08:01 --> Poster uploaded: uploads/posters/1749618481_c2c1f9d864a8445f69a4.jpg
+DEBUG - 2025-06-11 05:08:01 --> Request data: {"csrf_test_name":"8b7e1fb15a253a679a45adef4be547cb","id_teater":"","tipe_teater":"penampilan","judul":"kjhiu sndwuehiw","sinopsis":"dksnhei fiuewo","tanggal":"2025-06-16","waktu_mulai":"12:05","waktu_selesai":"14:05","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"akjehdiw friwuthro","hidden_schedule":"[{\"id\":1749618261082,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"12:05\",\"waktu_selesai\":\"14:05\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"akjehdiw friwuthro\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}],\"denah_filename\":\"456692073_3508642322776413_1712171767507578024_n.jpg\"},{\"id\":1749618284213,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"12:05\",\"waktu_selesai\":\"14:05\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"akjehdiw friwuthro\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"},{\"id\":1749618290946,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"12:05\",\"waktu_selesai\":\"14:05\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"akjehdiw friwuthro\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"}]","penulis":"jkshiud wibrwi","url_pendaftaran":"www.kdnsiubds.com","sutradara":"dkjsbiuew ieubwi","staff":"jwieie ifubeiwbf","aktor":"niwbrif eniwubr","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":""}
+DEBUG - 2025-06-11 05:08:01 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"kjhiu sndwuehiw","poster":"uploads\/posters\/1749618481_c2c1f9d864a8445f69a4.jpg","sinopsis":"dksnhei fiuewo","penulis":"jkshiud wibrwi","sutradara":"dkjsbiuew ieubwi","staff":"jwieie ifubeiwbf","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.kdnsiubds.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-11 05:08:01 --> ID Teater yang dibuat: 115
+DEBUG - 2025-06-11 05:08:01 --> ID relasi user dengan teater yang dibuat: 29
+DEBUG - 2025-06-11 05:08:01 --> Data yang diterima: {"id_teater":115,"aktor":"niwbrif eniwubr","durasi":"120","rating_umur":["Semua Umur (SU)"]}
+DEBUG - 2025-06-11 05:08:01 --> ID Penampilan yang dibuat: 94
+DEBUG - 2025-06-11 05:08:01 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 12:05, Selesai: 14:05, Kota: Jakarta, Tempat: akjehdiw friwuthro
+DEBUG - 2025-06-11 05:08:01 --> Data lokasi yang akan disimpan: {"tempat":"akjehdiw friwuthro","kota":"Jakarta"}
+DEBUG - 2025-06-11 05:08:01 --> ID Location yang didapat setelah insert: 178
+DEBUG - 2025-06-11 05:08:01 --> Semua file di request: Array
+(
+    [0] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 0
+            [originalMimeType:protected] => 
+            [path:protected] => 
+            [clientPath:protected] => 
+            [originalName:protected] => 
+            [name:protected] => 
+            [error:protected] => 4
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => 
+            [fileName:SplFileInfo:private] => 
+        )
+
+)
+
+DEBUG - 2025-06-11 05:08:01 --> Data jadwal diterima: [{"id":1749618261082,"tanggal":"2025-06-14","waktu_mulai":"12:05","waktu_selesai":"14:05","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"akjehdiw friwuthro","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749618284213,"tanggal":"2025-06-15","waktu_mulai":"12:05","waktu_selesai":"14:05","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"akjehdiw friwuthro","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749618290946,"tanggal":"2025-06-16","waktu_mulai":"12:05","waktu_selesai":"14:05","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"akjehdiw friwuthro","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+DEBUG - 2025-06-11 05:08:01 --> Jadwal ke-1: Tanggal: 2025-06-15, Mulai: 12:05, Selesai: 14:05, Kota: Jakarta, Tempat: akjehdiw friwuthro
+DEBUG - 2025-06-11 05:08:01 --> Data lokasi yang akan disimpan: {"tempat":"akjehdiw friwuthro","kota":"Jakarta"}
+DEBUG - 2025-06-11 05:08:01 --> Semua file di request: Array
+(
+    [0] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 0
+            [originalMimeType:protected] => 
+            [path:protected] => 
+            [clientPath:protected] => 
+            [originalName:protected] => 
+            [name:protected] => 
+            [error:protected] => 4
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => 
+            [fileName:SplFileInfo:private] => 
+        )
+
+)
+
+DEBUG - 2025-06-11 05:08:01 --> Data jadwal diterima: [{"id":1749618261082,"tanggal":"2025-06-14","waktu_mulai":"12:05","waktu_selesai":"14:05","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"akjehdiw friwuthro","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749618284213,"tanggal":"2025-06-15","waktu_mulai":"12:05","waktu_selesai":"14:05","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"akjehdiw friwuthro","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749618290946,"tanggal":"2025-06-16","waktu_mulai":"12:05","waktu_selesai":"14:05","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"akjehdiw friwuthro","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+DEBUG - 2025-06-11 05:08:01 --> Jadwal ke-2: Tanggal: 2025-06-16, Mulai: 12:05, Selesai: 14:05, Kota: Jakarta, Tempat: akjehdiw friwuthro
+DEBUG - 2025-06-11 05:08:01 --> Data lokasi yang akan disimpan: {"tempat":"akjehdiw friwuthro","kota":"Jakarta"}
+DEBUG - 2025-06-11 05:08:01 --> Data jadwal diterima: [{"id":1749618261082,"tanggal":"2025-06-14","waktu_mulai":"12:05","waktu_selesai":"14:05","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"akjehdiw friwuthro","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749618284213,"tanggal":"2025-06-15","waktu_mulai":"12:05","waktu_selesai":"14:05","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"akjehdiw friwuthro","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749618290946,"tanggal":"2025-06-16","waktu_mulai":"12:05","waktu_selesai":"14:05","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"akjehdiw friwuthro","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+INFO - 2025-06-11 05:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 05:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 06:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 06:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 06:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 06:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 06:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 06:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 06:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 06:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 06:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 06:38:31 --> Last Query: NULL
+DEBUG - 2025-06-11 06:38:31 --> Poster name: Sleeping_Beauty_(1959_poster_-_Style_A).jpg
+DEBUG - 2025-06-11 06:38:31 --> Poster valid: yes
+DEBUG - 2025-06-11 06:38:31 --> Poster uploaded: uploads/posters/1749623911_19230caad134daaf367f.jpg
+DEBUG - 2025-06-11 06:38:31 --> Request data: {"csrf_test_name":"8b7e1fb15a253a679a45adef4be547cb","id_teater":"","tipe_teater":"penampilan","judul":"jkfbiwur oidwneu","sinopsis":"jkndcuis ifughrye","tanggal":"2025-06-16","waktu_mulai":"13:40","waktu_selesai":"15:40","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"oisdjui iruhiuwo","hidden_schedule":"[{\"id\":1749623765983,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"13:40\",\"waktu_selesai\":\"15:40\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"oisdjui iruhiuwo\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}],\"denah_filename\":\"456692073_3508642322776413_1712171767507578024_n.jpg\"},{\"id\":1749623791345,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"13:40\",\"waktu_selesai\":\"15:40\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"oisdjui iruhiuwo\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"},{\"id\":1749623800544,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"13:40\",\"waktu_selesai\":\"15:40\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"oisdjui iruhiuwo\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"}]","penulis":"kjsdhuis frhureiu","url_pendaftaran":"www.kdlsnhuidbs.com","sutradara":"ndekwje kwjbew","staff":"dwieu wehwiu","aktor":"ndubiwgfe iuhewu","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":"","denah_mapping":["1749623765983"]}
+DEBUG - 2025-06-11 06:38:31 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"jkfbiwur oidwneu","poster":"uploads\/posters\/1749623911_19230caad134daaf367f.jpg","sinopsis":"jkndcuis ifughrye","penulis":"kjsdhuis frhureiu","sutradara":"ndekwje kwjbew","staff":"dwieu wehwiu","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.kdlsnhuidbs.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-11 06:38:31 --> ID Teater yang dibuat: 116
+DEBUG - 2025-06-11 06:38:31 --> ID relasi user dengan teater yang dibuat: 30
+DEBUG - 2025-06-11 06:38:31 --> Data yang diterima: {"id_teater":116,"aktor":"ndubiwgfe iuhewu","durasi":"120","rating_umur":["Semua Umur (SU)"]}
+DEBUG - 2025-06-11 06:38:31 --> ID Penampilan yang dibuat: 95
+DEBUG - 2025-06-11 06:38:31 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 13:40, Selesai: 15:40, Kota: Jakarta, Tempat: oisdjui iruhiuwo
+DEBUG - 2025-06-11 06:38:31 --> Data lokasi yang akan disimpan: {"tempat":"oisdjui iruhiuwo","kota":"Jakarta"}
+DEBUG - 2025-06-11 06:38:31 --> ID Location yang didapat setelah insert: 179
+DEBUG - 2025-06-11 06:38:31 --> Mapping ID yang diterima: Array
+(
+    [0] => 1749623765983
+)
+
+DEBUG - 2025-06-11 06:38:31 --> Semua file di request: Array
+(
+    [0] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 0
+            [originalMimeType:protected] => 
+            [path:protected] => 
+            [clientPath:protected] => 
+            [originalName:protected] => 
+            [name:protected] => 
+            [error:protected] => 4
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => 
+            [fileName:SplFileInfo:private] => 
+        )
+
+    [1] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 217045
+            [originalMimeType:protected] => image/jpeg
+            [path:protected] => C:\xampp\tmp\phpF04D.tmp
+            [clientPath:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [originalName:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [name:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [error:protected] => 0
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp\tmp\phpF04D.tmp
+            [fileName:SplFileInfo:private] => phpF04D.tmp
+        )
+
+)
+
+DEBUG - 2025-06-11 06:38:31 --> Data jadwal diterima: [{"id":1749623765983,"tanggal":"2025-06-14","waktu_mulai":"13:40","waktu_selesai":"15:40","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"oisdjui iruhiuwo","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749623791345,"tanggal":"2025-06-15","waktu_mulai":"13:40","waktu_selesai":"15:40","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"oisdjui iruhiuwo","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749623800544,"tanggal":"2025-06-16","waktu_mulai":"13:40","waktu_selesai":"15:40","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"oisdjui iruhiuwo","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+DEBUG - 2025-06-11 06:38:31 --> Jadwal ke-1: Tanggal: 2025-06-15, Mulai: 13:40, Selesai: 15:40, Kota: Jakarta, Tempat: oisdjui iruhiuwo
+DEBUG - 2025-06-11 06:38:31 --> Data lokasi yang akan disimpan: {"tempat":"oisdjui iruhiuwo","kota":"Jakarta"}
+DEBUG - 2025-06-11 06:38:31 --> Mapping ID yang diterima: Array
+(
+    [0] => 1749623765983
+)
+
+DEBUG - 2025-06-11 06:38:31 --> Semua file di request: Array
+(
+    [0] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 0
+            [originalMimeType:protected] => 
+            [path:protected] => 
+            [clientPath:protected] => 
+            [originalName:protected] => 
+            [name:protected] => 
+            [error:protected] => 4
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => 
+            [fileName:SplFileInfo:private] => 
+        )
+
+    [1] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 217045
+            [originalMimeType:protected] => image/jpeg
+            [path:protected] => C:\xampp\tmp\phpF04D.tmp
+            [clientPath:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [originalName:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [name:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [error:protected] => 0
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp\tmp\phpF04D.tmp
+            [fileName:SplFileInfo:private] => phpF04D.tmp
+        )
+
+)
+
+ERROR - 2025-06-11 06:38:31 --> Schedule ID 1749623791345 tidak ditemukan dalam mapping denah.
+DEBUG - 2025-06-11 06:38:31 --> Jadwal ke-2: Tanggal: 2025-06-16, Mulai: 13:40, Selesai: 15:40, Kota: Jakarta, Tempat: oisdjui iruhiuwo
+DEBUG - 2025-06-11 06:38:31 --> Data lokasi yang akan disimpan: {"tempat":"oisdjui iruhiuwo","kota":"Jakarta"}
+DEBUG - 2025-06-11 06:38:31 --> Data jadwal diterima: [{"id":1749623765983,"tanggal":"2025-06-14","waktu_mulai":"13:40","waktu_selesai":"15:40","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"oisdjui iruhiuwo","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749623791345,"tanggal":"2025-06-15","waktu_mulai":"13:40","waktu_selesai":"15:40","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"oisdjui iruhiuwo","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749623800544,"tanggal":"2025-06-16","waktu_mulai":"13:40","waktu_selesai":"15:40","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"oisdjui iruhiuwo","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+INFO - 2025-06-11 06:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 06:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 07:17:39 --> Last Query: NULL
+DEBUG - 2025-06-11 07:17:39 --> Poster name: 2016-cinderella-poster.jpg
+DEBUG - 2025-06-11 07:17:39 --> Poster valid: yes
+DEBUG - 2025-06-11 07:17:39 --> Poster uploaded: uploads/posters/1749626259_606841f57b824a3b1e99.jpg
+DEBUG - 2025-06-11 07:17:39 --> Request data: {"csrf_test_name":"6fde454e962c283a91b5807f187f81c5","id_teater":"","tipe_teater":"penampilan","judul":"skjfjeo fknoreihig","sinopsis":"kshiu eowroiwj","tanggal":"2025-06-16","waktu_mulai":"14:15","waktu_selesai":"16:15","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"sldknoiw wohriu","hidden_schedule":"[{\"id\":1749626189451,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"14:15\",\"waktu_selesai\":\"16:15\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"sldknoiw wohriu\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}],\"denah_filename\":\"456692073_3508642322776413_1712171767507578024_n.jpg\"},{\"id\":1749626205139,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"14:15\",\"waktu_selesai\":\"16:15\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"sldknoiw wohriu\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"},{\"id\":1749626219439,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"14:15\",\"waktu_selesai\":\"16:15\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"sldknoiw wohriu\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"}]","penulis":"uiwheriuw iruh3iru3","url_pendaftaran":"www.dkfnienrfeip.com","sutradara":"dojsifeo oieowhf","staff":"sndiewo soienwio","aktor":"doiwioew oiwheiwof","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":"","denah_mapping":["1749626189451"]}
+DEBUG - 2025-06-11 07:17:39 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"skjfjeo fknoreihig","poster":"uploads\/posters\/1749626259_606841f57b824a3b1e99.jpg","sinopsis":"kshiu eowroiwj","penulis":"uiwheriuw iruh3iru3","sutradara":"dojsifeo oieowhf","staff":"sndiewo soienwio","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.dkfnienrfeip.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-11 07:17:39 --> ID Teater yang dibuat: 117
+DEBUG - 2025-06-11 07:17:39 --> ID relasi user dengan teater yang dibuat: 31
+DEBUG - 2025-06-11 07:17:39 --> Data yang diterima: {"id_teater":117,"aktor":"doiwioew oiwheiwof","durasi":"120","rating_umur":["Semua Umur (SU)"]}
+DEBUG - 2025-06-11 07:17:39 --> ID Penampilan yang dibuat: 96
+DEBUG - 2025-06-11 07:17:39 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 14:15, Selesai: 16:15, Kota: Jakarta, Tempat: sldknoiw wohriu
+DEBUG - 2025-06-11 07:17:39 --> Data lokasi yang akan disimpan: {"tempat":"sldknoiw wohriu","kota":"Jakarta"}
+DEBUG - 2025-06-11 07:17:39 --> ID Location yang didapat setelah insert: 180
+DEBUG - 2025-06-11 07:17:39 --> Mapping ID yang diterima: Array
+(
+    [0] => 1749626189451
+)
+
+DEBUG - 2025-06-11 07:17:39 --> Semua file di request: Array
+(
+    [0] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 0
+            [originalMimeType:protected] => 
+            [path:protected] => 
+            [clientPath:protected] => 
+            [originalName:protected] => 
+            [name:protected] => 
+            [error:protected] => 4
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => 
+            [fileName:SplFileInfo:private] => 
+        )
+
+    [1] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 217045
+            [originalMimeType:protected] => image/jpeg
+            [path:protected] => C:\xampp\tmp\phpC392.tmp
+            [clientPath:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [originalName:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [name:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [error:protected] => 0
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp\tmp\phpC392.tmp
+            [fileName:SplFileInfo:private] => phpC392.tmp
+        )
+
+)
+
+DEBUG - 2025-06-11 07:17:39 --> Data jadwal diterima: [{"id":1749626189451,"tanggal":"2025-06-14","waktu_mulai":"14:15","waktu_selesai":"16:15","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"sldknoiw wohriu","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749626205139,"tanggal":"2025-06-15","waktu_mulai":"14:15","waktu_selesai":"16:15","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"sldknoiw wohriu","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749626219439,"tanggal":"2025-06-16","waktu_mulai":"14:15","waktu_selesai":"16:15","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"sldknoiw wohriu","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+DEBUG - 2025-06-11 07:17:39 --> Jadwal ke-1: Tanggal: 2025-06-15, Mulai: 14:15, Selesai: 16:15, Kota: Jakarta, Tempat: sldknoiw wohriu
+DEBUG - 2025-06-11 07:17:39 --> Data lokasi yang akan disimpan: {"tempat":"sldknoiw wohriu","kota":"Jakarta"}
+DEBUG - 2025-06-11 07:17:39 --> Mapping ID yang diterima: Array
+(
+    [0] => 1749626189451
+)
+
+DEBUG - 2025-06-11 07:17:39 --> Semua file di request: Array
+(
+    [0] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 0
+            [originalMimeType:protected] => 
+            [path:protected] => 
+            [clientPath:protected] => 
+            [originalName:protected] => 
+            [name:protected] => 
+            [error:protected] => 4
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => 
+            [fileName:SplFileInfo:private] => 
+        )
+
+    [1] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 217045
+            [originalMimeType:protected] => image/jpeg
+            [path:protected] => C:\xampp\tmp\phpC392.tmp
+            [clientPath:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [originalName:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [name:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [error:protected] => 0
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp\tmp\phpC392.tmp
+            [fileName:SplFileInfo:private] => phpC392.tmp
+        )
+
+)
+
+ERROR - 2025-06-11 07:17:39 --> Schedule ID 1749626205139 tidak ditemukan dalam mapping denah.
+DEBUG - 2025-06-11 07:17:39 --> Jadwal ke-2: Tanggal: 2025-06-16, Mulai: 14:15, Selesai: 16:15, Kota: Jakarta, Tempat: sldknoiw wohriu
+DEBUG - 2025-06-11 07:17:39 --> Data lokasi yang akan disimpan: {"tempat":"sldknoiw wohriu","kota":"Jakarta"}
+DEBUG - 2025-06-11 07:17:39 --> Data jadwal diterima: [{"id":1749626189451,"tanggal":"2025-06-14","waktu_mulai":"14:15","waktu_selesai":"16:15","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"sldknoiw wohriu","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749626205139,"tanggal":"2025-06-15","waktu_mulai":"14:15","waktu_selesai":"16:15","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"sldknoiw wohriu","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749626219439,"tanggal":"2025-06-16","waktu_mulai":"14:15","waktu_selesai":"16:15","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"sldknoiw wohriu","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+INFO - 2025-06-11 07:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 07:22:50 --> Last Query: NULL
+DEBUG - 2025-06-11 07:22:50 --> Poster name: 2016-cinderella-poster.jpg
+DEBUG - 2025-06-11 07:22:50 --> Poster valid: yes
+DEBUG - 2025-06-11 07:22:50 --> Poster uploaded: uploads/posters/1749626570_771b0684ddf4c7a4b19d.jpg
+DEBUG - 2025-06-11 07:22:50 --> Request data: {"csrf_test_name":"6fde454e962c283a91b5807f187f81c5","id_teater":"","tipe_teater":"penampilan","judul":"jksehduw ewiheioeq","sinopsis":"ndiur whewo","tanggal":"2025-06-16","waktu_mulai":"14:20","waktu_selesai":"16:20","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"kjehw rwuheowu","hidden_schedule":"[{\"id\":1749626485127,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"14:20\",\"waktu_selesai\":\"16:20\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"kjehw rwuheowu\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}],\"denah_filename\":\"2016-cinderella-poster.jpg\"},{\"id\":1749626519921,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"14:20\",\"waktu_selesai\":\"16:20\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"kjehw rwuheowu\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"},{\"id\":1749626532595,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"14:20\",\"waktu_selesai\":\"16:20\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"kjehw rwuheowu\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"}]","penulis":"kdljwoire wrbwuo","url_pendaftaran":"www.niodfhosie.com","sutradara":"skledwio iwhoiw","staff":"kfrhowie owehwo","aktor":"keowhie weihwoi","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":"","denah_mapping":["1749626485127"]}
+DEBUG - 2025-06-11 07:22:50 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"jksehduw ewiheioeq","poster":"uploads\/posters\/1749626570_771b0684ddf4c7a4b19d.jpg","sinopsis":"ndiur whewo","penulis":"kdljwoire wrbwuo","sutradara":"skledwio iwhoiw","staff":"kfrhowie owehwo","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.niodfhosie.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-11 07:22:50 --> ID Teater yang dibuat: 118
+DEBUG - 2025-06-11 07:22:50 --> ID relasi user dengan teater yang dibuat: 32
+DEBUG - 2025-06-11 07:22:50 --> Data yang diterima: {"id_teater":118,"aktor":"keowhie weihwoi","durasi":"120","rating_umur":["Semua Umur (SU)"]}
+DEBUG - 2025-06-11 07:22:50 --> ID Penampilan yang dibuat: 97
+DEBUG - 2025-06-11 07:22:50 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 14:20, Selesai: 16:20, Kota: Jakarta, Tempat: kjehw rwuheowu
+DEBUG - 2025-06-11 07:22:50 --> Data lokasi yang akan disimpan: {"tempat":"kjehw rwuheowu","kota":"Jakarta"}
+DEBUG - 2025-06-11 07:22:50 --> ID Location yang didapat setelah insert: 181
+DEBUG - 2025-06-11 07:22:50 --> Mapping ID yang diterima: Array
+(
+    [0] => 1749626485127
+)
+
+DEBUG - 2025-06-11 07:22:50 --> Semua file di request: Array
+(
+    [0] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 0
+            [originalMimeType:protected] => 
+            [path:protected] => 
+            [clientPath:protected] => 
+            [originalName:protected] => 
+            [name:protected] => 
+            [error:protected] => 4
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => 
+            [fileName:SplFileInfo:private] => 
+        )
+
+)
+
+DEBUG - 2025-06-11 07:22:50 --> Data jadwal diterima: [{"id":1749626485127,"tanggal":"2025-06-14","waktu_mulai":"14:20","waktu_selesai":"16:20","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"kjehw rwuheowu","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"2016-cinderella-poster.jpg"},{"id":1749626519921,"tanggal":"2025-06-15","waktu_mulai":"14:20","waktu_selesai":"16:20","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"kjehw rwuheowu","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749626532595,"tanggal":"2025-06-16","waktu_mulai":"14:20","waktu_selesai":"16:20","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"kjehw rwuheowu","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+DEBUG - 2025-06-11 07:22:50 --> Jadwal ke-1: Tanggal: 2025-06-15, Mulai: 14:20, Selesai: 16:20, Kota: Jakarta, Tempat: kjehw rwuheowu
+DEBUG - 2025-06-11 07:22:50 --> Data lokasi yang akan disimpan: {"tempat":"kjehw rwuheowu","kota":"Jakarta"}
+DEBUG - 2025-06-11 07:22:50 --> Mapping ID yang diterima: Array
+(
+    [0] => 1749626485127
+)
+
+DEBUG - 2025-06-11 07:22:50 --> Semua file di request: Array
+(
+    [0] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 0
+            [originalMimeType:protected] => 
+            [path:protected] => 
+            [clientPath:protected] => 
+            [originalName:protected] => 
+            [name:protected] => 
+            [error:protected] => 4
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => 
+            [fileName:SplFileInfo:private] => 
+        )
+
+)
+
+ERROR - 2025-06-11 07:22:50 --> Schedule ID 1749626519921 tidak ditemukan dalam mapping denah.
+DEBUG - 2025-06-11 07:22:50 --> Jadwal ke-2: Tanggal: 2025-06-16, Mulai: 14:20, Selesai: 16:20, Kota: Jakarta, Tempat: kjehw rwuheowu
+DEBUG - 2025-06-11 07:22:50 --> Data lokasi yang akan disimpan: {"tempat":"kjehw rwuheowu","kota":"Jakarta"}
+DEBUG - 2025-06-11 07:22:50 --> Data jadwal diterima: [{"id":1749626485127,"tanggal":"2025-06-14","waktu_mulai":"14:20","waktu_selesai":"16:20","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"kjehw rwuheowu","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"2016-cinderella-poster.jpg"},{"id":1749626519921,"tanggal":"2025-06-15","waktu_mulai":"14:20","waktu_selesai":"16:20","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"kjehw rwuheowu","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749626532595,"tanggal":"2025-06-16","waktu_mulai":"14:20","waktu_selesai":"16:20","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"kjehw rwuheowu","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+INFO - 2025-06-11 07:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 07:36:06 --> Last Query: NULL
+DEBUG - 2025-06-11 07:36:06 --> Poster name: download (1).jpeg
+DEBUG - 2025-06-11 07:36:06 --> Poster valid: yes
+DEBUG - 2025-06-11 07:36:06 --> Poster uploaded: uploads/posters/1749627366_c49ab649e30ad3f36a74.jpeg
+DEBUG - 2025-06-11 07:36:06 --> Request data: {"csrf_test_name":"6fde454e962c283a91b5807f187f81c5","id_teater":"","tipe_teater":"penampilan","judul":"niu hwsfubei","sinopsis":"skjdhui euwhegwi","tanggal":"2025-06-16","waktu_mulai":"14:40","waktu_selesai":"16:40","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"dkshue wehurw","hidden_schedule":"[{\"id\":1749627304713,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"14:40\",\"waktu_selesai\":\"16:40\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"dkshue wehurw\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}],\"denah_filename\":\"456692073_3508642322776413_1712171767507578024_n.jpg\"},{\"id\":1749627318717,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"14:40\",\"waktu_selesai\":\"16:40\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"dkshue wehurw\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"},{\"id\":1749627326159,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"14:40\",\"waktu_selesai\":\"16:40\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"dkshue wehurw\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"}]","penulis":"jakshdiau saohsaoi","url_pendaftaran":"www.sjdgiwve.com","sutradara":"snkihaude oeihqoi","staff":"nkhwuode qwbqoueqo","aktor":"nduoheq qoihdqip","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":"","denah_mapping":["1749627304713"]}
+DEBUG - 2025-06-11 07:36:06 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"niu hwsfubei","poster":"uploads\/posters\/1749627366_c49ab649e30ad3f36a74.jpeg","sinopsis":"skjdhui euwhegwi","penulis":"jakshdiau saohsaoi","sutradara":"snkihaude oeihqoi","staff":"nkhwuode qwbqoueqo","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.sjdgiwve.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-11 07:36:06 --> ID Teater yang dibuat: 119
+DEBUG - 2025-06-11 07:36:06 --> ID relasi user dengan teater yang dibuat: 33
+DEBUG - 2025-06-11 07:36:06 --> Data yang diterima: {"id_teater":119,"aktor":"nduoheq qoihdqip","durasi":"120","rating_umur":["Semua Umur (SU)"]}
+DEBUG - 2025-06-11 07:36:06 --> ID Penampilan yang dibuat: 98
+DEBUG - 2025-06-11 07:36:06 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 14:40, Selesai: 16:40, Kota: Jakarta, Tempat: dkshue wehurw
+DEBUG - 2025-06-11 07:36:06 --> Data lokasi yang akan disimpan: {"tempat":"dkshue wehurw","kota":"Jakarta"}
+DEBUG - 2025-06-11 07:36:06 --> ID Location yang didapat setelah insert: 182
+DEBUG - 2025-06-11 07:36:06 --> Mapping ID yang diterima: Array
+(
+    [0] => 1749627304713
+)
+
+DEBUG - 2025-06-11 07:36:06 --> Semua file di request: Array
+(
+    [0] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 0
+            [originalMimeType:protected] => 
+            [path:protected] => 
+            [clientPath:protected] => 
+            [originalName:protected] => 
+            [name:protected] => 
+            [error:protected] => 4
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => 
+            [fileName:SplFileInfo:private] => 
+        )
+
+)
+
+DEBUG - 2025-06-11 07:36:06 --> Data jadwal diterima: [{"id":1749627304713,"tanggal":"2025-06-14","waktu_mulai":"14:40","waktu_selesai":"16:40","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"dkshue wehurw","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749627318717,"tanggal":"2025-06-15","waktu_mulai":"14:40","waktu_selesai":"16:40","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"dkshue wehurw","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749627326159,"tanggal":"2025-06-16","waktu_mulai":"14:40","waktu_selesai":"16:40","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"dkshue wehurw","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+DEBUG - 2025-06-11 07:36:06 --> Jadwal ke-1: Tanggal: 2025-06-15, Mulai: 14:40, Selesai: 16:40, Kota: Jakarta, Tempat: dkshue wehurw
+DEBUG - 2025-06-11 07:36:06 --> Data lokasi yang akan disimpan: {"tempat":"dkshue wehurw","kota":"Jakarta"}
+DEBUG - 2025-06-11 07:36:06 --> Mapping ID yang diterima: Array
+(
+    [0] => 1749627304713
+)
+
+DEBUG - 2025-06-11 07:36:06 --> Semua file di request: Array
+(
+    [0] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 0
+            [originalMimeType:protected] => 
+            [path:protected] => 
+            [clientPath:protected] => 
+            [originalName:protected] => 
+            [name:protected] => 
+            [error:protected] => 4
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => 
+            [fileName:SplFileInfo:private] => 
+        )
+
+)
+
+ERROR - 2025-06-11 07:36:06 --> Schedule ID 1749627318717 tidak ditemukan dalam mapping denah.
+DEBUG - 2025-06-11 07:36:06 --> Jadwal ke-2: Tanggal: 2025-06-16, Mulai: 14:40, Selesai: 16:40, Kota: Jakarta, Tempat: dkshue wehurw
+DEBUG - 2025-06-11 07:36:06 --> Data lokasi yang akan disimpan: {"tempat":"dkshue wehurw","kota":"Jakarta"}
+DEBUG - 2025-06-11 07:36:06 --> Data jadwal diterima: [{"id":1749627304713,"tanggal":"2025-06-14","waktu_mulai":"14:40","waktu_selesai":"16:40","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"dkshue wehurw","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749627318717,"tanggal":"2025-06-15","waktu_mulai":"14:40","waktu_selesai":"16:40","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"dkshue wehurw","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749627326159,"tanggal":"2025-06-16","waktu_mulai":"14:40","waktu_selesai":"16:40","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"dkshue wehurw","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+INFO - 2025-06-11 07:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 07:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 07:50:25 --> Last Query: NULL
+DEBUG - 2025-06-11 07:50:25 --> Poster name: download (1).jpeg
+DEBUG - 2025-06-11 07:50:25 --> Poster valid: yes
+DEBUG - 2025-06-11 07:50:25 --> Poster uploaded: uploads/posters/1749628225_a3364e4520a93c5c6d79.jpeg
+DEBUG - 2025-06-11 07:50:25 --> Request data: {"csrf_test_name":"6fde454e962c283a91b5807f187f81c5","id_teater":"","tipe_teater":"penampilan","judul":"jkgi eiwhro43","sinopsis":"jkshuew wiehow","tanggal":"2025-06-16","waktu_mulai":"14:50","waktu_selesai":"14:50","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"sdhoiw eowhroiw","hidden_schedule":"[{\"id\":1749628121786,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"14:50\",\"waktu_selesai\":\"14:50\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"sdhoiw eowhroiw\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}],\"denah_filename\":\"456692073_3508642322776413_1712171767507578024_n.jpg\"},{\"id\":1749628146085,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"14:50\",\"waktu_selesai\":\"14:50\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"sdhoiw eowhroiw\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"},{\"id\":1749628156206,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"14:50\",\"waktu_selesai\":\"14:50\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"sdhoiw eowhroiw\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"}]","penulis":"kerhiewr owheowih","url_pendaftaran":"www.ihfr9wg0r.com","sutradara":"ewiheiuw iwuhie","staff":"riwehu uwewihu","aktor":"iuehwu qiuhqeo","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":"","denah_mapping":["1749628121786"]}
+DEBUG - 2025-06-11 07:50:25 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"jkgi eiwhro43","poster":"uploads\/posters\/1749628225_a3364e4520a93c5c6d79.jpeg","sinopsis":"jkshuew wiehow","penulis":"kerhiewr owheowih","sutradara":"ewiheiuw iwuhie","staff":"riwehu uwewihu","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.ihfr9wg0r.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-11 07:50:25 --> ID Teater yang dibuat: 120
+DEBUG - 2025-06-11 07:50:25 --> ID relasi user dengan teater yang dibuat: 34
+DEBUG - 2025-06-11 07:50:25 --> Data yang diterima: {"id_teater":120,"aktor":"iuehwu qiuhqeo","durasi":"120","rating_umur":["Semua Umur (SU)"]}
+DEBUG - 2025-06-11 07:50:25 --> ID Penampilan yang dibuat: 99
+DEBUG - 2025-06-11 07:50:25 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 14:50, Selesai: 14:50, Kota: Jakarta, Tempat: sdhoiw eowhroiw
+DEBUG - 2025-06-11 07:50:25 --> Data lokasi yang akan disimpan: {"tempat":"sdhoiw eowhroiw","kota":"Jakarta"}
+DEBUG - 2025-06-11 07:50:25 --> ID Location yang didapat setelah insert: 183
+INFO - 2025-06-11 08:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 08:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 08:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 08:03:18 --> Last Query: NULL
+DEBUG - 2025-06-11 08:03:18 --> Poster name: 2016-cinderella-poster.jpg
+DEBUG - 2025-06-11 08:03:18 --> Poster valid: yes
+DEBUG - 2025-06-11 08:03:18 --> Poster uploaded: uploads/posters/1749628998_2ffeb2925d3569236b6d.jpg
+DEBUG - 2025-06-11 08:03:18 --> Request data: {"csrf_test_name":"6fde454e962c283a91b5807f187f81c5","id_teater":"","tipe_teater":"penampilan","judul":"eirjo ofiorjiow","sinopsis":"ksdjwi eoweoiw","tanggal":"2025-06-16","waktu_mulai":"15:00","waktu_selesai":"17:00","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"njksiud oeijwoie","hidden_schedule":"[{\"id\":1749628910180,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"15:00\",\"waktu_selesai\":\"17:00\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"njksiud oeijwoie\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}],\"denah_filename\":\"456692073_3508642322776413_1712171767507578024_n.jpg\"},{\"id\":1749628935234,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"15:00\",\"waktu_selesai\":\"17:00\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"njksiud oeijwoie\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"},{\"id\":1749628950691,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"15:00\",\"waktu_selesai\":\"17:00\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"njksiud oeijwoie\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"}]","penulis":"nkwdehi iwhewieu","url_pendaftaran":"www.kdjoiwdbeo.com","sutradara":"wejwoifw woejiwo","staff":"ekowjio eoijwo","aktor":"neoiwjio weowijio","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":"","denah_mapping":["1749628910180"]}
+DEBUG - 2025-06-11 08:03:18 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"eirjo ofiorjiow","poster":"uploads\/posters\/1749628998_2ffeb2925d3569236b6d.jpg","sinopsis":"ksdjwi eoweoiw","penulis":"nkwdehi iwhewieu","sutradara":"wejwoifw woejiwo","staff":"ekowjio eoijwo","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.kdjoiwdbeo.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-11 08:03:18 --> ID Teater yang dibuat: 121
+DEBUG - 2025-06-11 08:03:18 --> ID relasi user dengan teater yang dibuat: 35
+DEBUG - 2025-06-11 08:03:18 --> Data yang diterima: {"id_teater":121,"aktor":"neoiwjio weowijio","durasi":"120","rating_umur":["Semua Umur (SU)"]}
+DEBUG - 2025-06-11 08:03:18 --> ID Penampilan yang dibuat: 100
+DEBUG - 2025-06-11 08:03:18 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 15:00, Selesai: 17:00, Kota: Jakarta, Tempat: njksiud oeijwoie
+DEBUG - 2025-06-11 08:03:18 --> Data lokasi yang akan disimpan: {"tempat":"njksiud oeijwoie","kota":"Jakarta"}
+DEBUG - 2025-06-11 08:03:18 --> ID Location yang didapat setelah insert: 184
+DEBUG - 2025-06-11 08:03:18 --> Mapping ID yang diterima: Array
+(
+    [0] => 1749628910180
+)
+
+DEBUG - 2025-06-11 08:03:18 --> Semua file di request: Array
+(
+    [0] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 217045
+            [originalMimeType:protected] => image/jpeg
+            [path:protected] => C:\xampp\tmp\php9027.tmp
+            [clientPath:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [originalName:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [name:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [error:protected] => 0
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp\tmp\php9027.tmp
+            [fileName:SplFileInfo:private] => php9027.tmp
+        )
+
+)
+
+DEBUG - 2025-06-11 08:03:18 --> Hasil uploadDenah: ID = 1, Nama File = uploads/denah/1749628998_51cff5e699578792e25f.jpg
+DEBUG - 2025-06-11 08:03:18 --> Data jadwal diterima: [{"id":1749628910180,"tanggal":"2025-06-14","waktu_mulai":"15:00","waktu_selesai":"17:00","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"njksiud oeijwoie","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749628935234,"tanggal":"2025-06-15","waktu_mulai":"15:00","waktu_selesai":"17:00","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"njksiud oeijwoie","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749628950691,"tanggal":"2025-06-16","waktu_mulai":"15:00","waktu_selesai":"17:00","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"njksiud oeijwoie","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+DEBUG - 2025-06-11 08:03:18 --> Jadwal ke-1: Tanggal: 2025-06-15, Mulai: 15:00, Selesai: 17:00, Kota: Jakarta, Tempat: njksiud oeijwoie
+DEBUG - 2025-06-11 08:03:18 --> Data lokasi yang akan disimpan: {"tempat":"njksiud oeijwoie","kota":"Jakarta"}
+INFO - 2025-06-11 09:22:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 09:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 09:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 09:30:15 --> Last Query: NULL
+DEBUG - 2025-06-11 09:30:15 --> Poster name: download (1).jpeg
+DEBUG - 2025-06-11 09:30:15 --> Poster valid: yes
+DEBUG - 2025-06-11 09:30:15 --> Poster uploaded: uploads/posters/1749634215_981ff253c93d3ba620fb.jpeg
+DEBUG - 2025-06-11 09:30:15 --> Request data: {"csrf_test_name":"3e556972240f38a8222f2841f8917e23","id_teater":"","tipe_teater":"penampilan","judul":"huouhire orijeorij","sinopsis":"kljior eoiroehh","tanggal":"2025-06-16","waktu_mulai":"16:30","waktu_selesai":"18:30","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"nduiwh iuwheiw","hidden_schedule":"[{\"id\":1749634083124,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"16:30\",\"waktu_selesai\":\"18:30\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"nduiwh iuwheiw\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}],\"denah_filename\":\"456692073_3508642322776413_1712171767507578024_n.jpg\"},{\"id\":1749634115249,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"16:30\",\"waktu_selesai\":\"18:30\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"nduiwh iuwheiw\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"},{\"id\":1749634127531,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"16:30\",\"waktu_selesai\":\"18:30\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"nduiwh iuwheiw\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"}]","penulis":"jkenhwi iwebwiu","url_pendaftaran":"www.jiduibrie.com","sutradara":"iehwiue iuewh4","staff":"euiwhuew iwuh39w","aktor":"iebuw quhq93","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":"","denah_mapping":["1749634083124"]}
+DEBUG - 2025-06-11 09:30:15 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"huouhire orijeorij","poster":"uploads\/posters\/1749634215_981ff253c93d3ba620fb.jpeg","sinopsis":"kljior eoiroehh","penulis":"jkenhwi iwebwiu","sutradara":"iehwiue iuewh4","staff":"euiwhuew iwuh39w","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.jiduibrie.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-11 09:30:15 --> ID Teater yang dibuat: 122
+DEBUG - 2025-06-11 09:30:15 --> ID relasi user dengan teater yang dibuat: 36
+DEBUG - 2025-06-11 09:30:15 --> Data yang diterima: {"id_teater":122,"aktor":"iebuw quhq93","durasi":"120","rating_umur":["Semua Umur (SU)"]}
+DEBUG - 2025-06-11 09:30:15 --> ID Penampilan yang dibuat: 101
+DEBUG - 2025-06-11 09:30:15 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 16:30, Selesai: 18:30, Kota: Jakarta, Tempat: nduiwh iuwheiw
+DEBUG - 2025-06-11 09:30:15 --> Data lokasi yang akan disimpan: {"tempat":"nduiwh iuwheiw","kota":"Jakarta"}
+DEBUG - 2025-06-11 09:30:15 --> ID Location yang didapat setelah insert: 185
+DEBUG - 2025-06-11 09:30:15 --> Mapping ID yang diterima: Array
+(
+    [0] => 1749634083124
+)
+
+DEBUG - 2025-06-11 09:30:15 --> Semua file di request: Array
+(
+    [0] => CodeIgniter\HTTP\Files\UploadedFile Object
+        (
+            [size:protected] => 217045
+            [originalMimeType:protected] => image/jpeg
+            [path:protected] => C:\xampp\tmp\php28FE.tmp
+            [clientPath:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [originalName:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [name:protected] => 456692073_3508642322776413_1712171767507578024_n.jpg
+            [error:protected] => 0
+            [hasMoved:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp\tmp\php28FE.tmp
+            [fileName:SplFileInfo:private] => php28FE.tmp
+        )
+
+)
+
+DEBUG - 2025-06-11 09:30:15 --> Hasil uploadDenah: ID = 2, Nama File = uploads/denah/1749634215_e9054c0ddbb1b77bc6c1.jpg
+DEBUG - 2025-06-11 09:30:15 --> Data jadwal diterima: [{"id":1749634083124,"tanggal":"2025-06-14","waktu_mulai":"16:30","waktu_selesai":"18:30","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"nduiwh iuwheiw","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749634115249,"tanggal":"2025-06-15","waktu_mulai":"16:30","waktu_selesai":"18:30","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"nduiwh iuwheiw","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749634127531,"tanggal":"2025-06-16","waktu_mulai":"16:30","waktu_selesai":"18:30","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"nduiwh iuwheiw","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+DEBUG - 2025-06-11 09:30:15 --> Jadwal ke-1: Tanggal: 2025-06-15, Mulai: 16:30, Selesai: 18:30, Kota: Jakarta, Tempat: nduiwh iuwheiw
+DEBUG - 2025-06-11 09:30:15 --> Data lokasi yang akan disimpan: {"tempat":"nduiwh iuwheiw","kota":"Jakarta"}
+INFO - 2025-06-11 10:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 10:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 10:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 10:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 10:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 10:51:57 --> Last Query: NULL
+DEBUG - 2025-06-11 10:51:58 --> Poster name: 2016-cinderella-poster.jpg
+DEBUG - 2025-06-11 10:51:58 --> Poster valid: yes
+DEBUG - 2025-06-11 10:51:58 --> Poster uploaded: uploads/posters/1749639118_e2c64a47170e928f3cd2.jpg
+DEBUG - 2025-06-11 10:51:58 --> Request data: {"csrf_test_name":"3e556972240f38a8222f2841f8917e23","id_teater":"","tipe_teater":"penampilan","judul":"nuwifhi oerfhneiu","sinopsis":"dojior ojtiorhfio","tanggal":"2025-06-16","waktu_mulai":"17:45","waktu_selesai":"19:45","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"nigutr iutriubgit","hidden_schedule":"[{\"id\":1749638719627,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"17:45\",\"waktu_selesai\":\"19:45\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"nigutr iutriubgit\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}],\"denah_filename\":\"456692073_3508642322776413_1712171767507578024_n.jpg\"},{\"id\":1749639001871,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"17:45\",\"waktu_selesai\":\"19:45\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"nigutr iutriubgit\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"},{\"id\":1749639010803,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"17:45\",\"waktu_selesai\":\"19:45\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"nigutr iutriubgit\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"}]","penulis":"iehriu gituhrui","url_pendaftaran":"www.djnfuibreo.com","sutradara":"sonodw oiwjrowij","staff":"nfwoir ieojwoie","aktor":"neowioe iwoejwoi","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","daftar_mulai":"","daftar_berakhir":"","denah_mapping":["1749638719627"]}
+DEBUG - 2025-06-11 10:51:58 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"nuwifhi oerfhneiu","poster":"uploads\/posters\/1749639118_e2c64a47170e928f3cd2.jpg","sinopsis":"dojior ojtiorhfio","penulis":"iehriu gituhrui","sutradara":"sonodw oiwjrowij","staff":"nfwoir ieojwoie","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.djnfuibreo.com","daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-06-11 10:51:58 --> ID Teater yang dibuat: 123
+DEBUG - 2025-06-11 10:51:58 --> ID relasi user dengan teater yang dibuat: 37
+DEBUG - 2025-06-11 10:51:58 --> Data yang diterima: {"id_teater":123,"aktor":"neowioe iwoejwoi","durasi":"120","rating_umur":["Semua Umur (SU)"]}
+DEBUG - 2025-06-11 10:51:58 --> ID Penampilan yang dibuat: 102
+DEBUG - 2025-06-11 10:51:58 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 17:45, Selesai: 19:45, Kota: Jakarta, Tempat: nigutr iutriubgit
+DEBUG - 2025-06-11 10:51:58 --> Data lokasi yang akan disimpan: {"tempat":"nigutr iutriubgit","kota":"Jakarta"}
+DEBUG - 2025-06-11 10:51:58 --> ID Location yang didapat setelah insert: 186
+DEBUG - 2025-06-11 10:51:58 --> Data jadwal diterima: [{"id":1749638719627,"tanggal":"2025-06-14","waktu_mulai":"17:45","waktu_selesai":"19:45","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"nigutr iutriubgit","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749639001871,"tanggal":"2025-06-15","waktu_mulai":"17:45","waktu_selesai":"19:45","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"nigutr iutriubgit","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749639010803,"tanggal":"2025-06-16","waktu_mulai":"17:45","waktu_selesai":"19:45","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"nigutr iutriubgit","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+DEBUG - 2025-06-11 10:51:58 --> Jadwal ke-1: Tanggal: 2025-06-15, Mulai: 17:45, Selesai: 19:45, Kota: Jakarta, Tempat: nigutr iutriubgit
+DEBUG - 2025-06-11 10:51:58 --> Data lokasi yang akan disimpan: {"tempat":"nigutr iutriubgit","kota":"Jakarta"}
+DEBUG - 2025-06-11 10:51:58 --> Data jadwal diterima: [{"id":1749638719627,"tanggal":"2025-06-14","waktu_mulai":"17:45","waktu_selesai":"19:45","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"nigutr iutriubgit","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749639001871,"tanggal":"2025-06-15","waktu_mulai":"17:45","waktu_selesai":"19:45","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"nigutr iutriubgit","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749639010803,"tanggal":"2025-06-16","waktu_mulai":"17:45","waktu_selesai":"19:45","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"nigutr iutriubgit","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+DEBUG - 2025-06-11 10:51:58 --> Jadwal ke-2: Tanggal: 2025-06-16, Mulai: 17:45, Selesai: 19:45, Kota: Jakarta, Tempat: nigutr iutriubgit
+DEBUG - 2025-06-11 10:51:58 --> Data lokasi yang akan disimpan: {"tempat":"nigutr iutriubgit","kota":"Jakarta"}
+DEBUG - 2025-06-11 10:51:58 --> Data jadwal diterima: [{"id":1749638719627,"tanggal":"2025-06-14","waktu_mulai":"17:45","waktu_selesai":"19:45","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"nigutr iutriubgit","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749639001871,"tanggal":"2025-06-15","waktu_mulai":"17:45","waktu_selesai":"19:45","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"nigutr iutriubgit","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749639010803,"tanggal":"2025-06-16","waktu_mulai":"17:45","waktu_selesai":"19:45","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"nigutr iutriubgit","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+INFO - 2025-06-11 10:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 10:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 11:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 11:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 11:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 11:19:49 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\HTTP\SiteURI.php on line 407.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(381): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(59): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\templates\bodyPenampilanMitra.php(119): base_url(null)
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 7 APPPATH\Controllers\MitraTeater.php(624): view('templates/bodyPenampilanMitra', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-11 11:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 11:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 11:19:55 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\HTTP\SiteURI.php on line 407.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(381): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(59): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\templates\bodyPenampilanMitra.php(119): base_url(null)
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyPenampilanMitra.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyPenampilanMitra', [], true)
+ 7 APPPATH\Controllers\MitraTeater.php(624): view('templates/bodyPenampilanMitra', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-11 11:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 11:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 11:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 11:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 16:59:29 --> Last Query: NULL
+DEBUG - 2025-06-11 16:59:30 --> Poster name: download (1).jpeg
+DEBUG - 2025-06-11 16:59:30 --> Poster valid: yes
+DEBUG - 2025-06-11 16:59:30 --> Poster uploaded: uploads/posters/1749661170_897d5ff00d1767f63297.jpeg
+DEBUG - 2025-06-11 16:59:30 --> Request data: {"csrf_test_name":"8ba8185ad50091688c5455d6ab7e5ff9","id_teater":"","tipe_teater":"penampilan","judul":"neiwude wiuwuih","sinopsis":"iojio eoijiojdo","tanggal":"2025-06-16","waktu_mulai":"23:00","waktu_selesai":"01:00","tipe_harga":"Gratis","harga":"","nama_kategori":"","kota":["Jakarta",""],"kota_real":"Jakarta","tempat":"knfo oniofjoi","hidden_schedule":"[{\"id\":1749661050531,\"tanggal\":\"2025-06-14\",\"waktu_mulai\":\"23:00\",\"waktu_selesai\":\"01:00\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"VIP, Premium\",\"harga\":\"500000, 250000\",\"kota\":\"Jakarta\",\"tempat\":\"knfo oniofjoi\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"VIP\",\"harga\":\"500000\"},{\"kategori\":\"Premium\",\"harga\":\"250000\"}],\"denah_filename\":\"456692073_3508642322776413_1712171767507578024_n.jpg\"},{\"id\":1749661069222,\"tanggal\":\"2025-06-15\",\"waktu_mulai\":\"23:00\",\"waktu_selesai\":\"01:00\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Jakarta\",\"tempat\":\"knfo oniofjoi\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"},{\"id\":1749661075938,\"tanggal\":\"2025-06-16\",\"waktu_mulai\":\"23:00\",\"waktu_selesai\":\"01:00\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"knfo oniofjoi\",\"denah_seat\":null,\"seatDrafts\":[],\"denah_filename\":\"\"}]","penulis":"oiijfiore ornvior","url_pendaftaran":"www.ksndenfibr.com","sutradara":"jknfeonf rnorjio","staff":"nforjiof sodjeojoe","aktor":"neoifjoe odjoiwioe","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["1"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"","atur_periode":"1","daftar_mulai":"2025-06-12","daftar_berakhir":"2025-06-14","denah_mapping":["1749661050531"]}
+DEBUG - 2025-06-11 16:59:30 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"neiwude wiuwuih","poster":"uploads\/posters\/1749661170_897d5ff00d1767f63297.jpeg","sinopsis":"iojio eoijiojdo","penulis":"oiijfiore ornvior","sutradara":"jknfeonf rnorjio","staff":"nforjiof sodjeojoe","dibuat_oleh":"BINUS University","dimodif_oleh":null,"url_pendaftaran":"www.ksndenfibr.com","daftar_mulai":"2025-06-12","daftar_berakhir":"2025-06-14"}
+DEBUG - 2025-06-11 16:59:30 --> ID Teater yang dibuat: 124
+DEBUG - 2025-06-11 16:59:30 --> ID relasi user dengan teater yang dibuat: 38
+DEBUG - 2025-06-11 16:59:30 --> Data yang diterima: {"id_teater":124,"aktor":"neoifjoe odjoiwioe","durasi":"120","rating_umur":["Semua Umur (SU)"]}
+DEBUG - 2025-06-11 16:59:30 --> ID Penampilan yang dibuat: 103
+DEBUG - 2025-06-11 16:59:30 --> Jadwal ke-0: Tanggal: 2025-06-14, Mulai: 23:00, Selesai: 01:00, Kota: Jakarta, Tempat: knfo oniofjoi
+DEBUG - 2025-06-11 16:59:30 --> Data lokasi yang akan disimpan: {"tempat":"knfo oniofjoi","kota":"Jakarta"}
+DEBUG - 2025-06-11 16:59:30 --> ID Location yang didapat setelah insert: 187
+DEBUG - 2025-06-11 16:59:30 --> Data jadwal diterima: [{"id":1749661050531,"tanggal":"2025-06-14","waktu_mulai":"23:00","waktu_selesai":"01:00","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"knfo oniofjoi","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749661069222,"tanggal":"2025-06-15","waktu_mulai":"23:00","waktu_selesai":"01:00","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"knfo oniofjoi","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749661075938,"tanggal":"2025-06-16","waktu_mulai":"23:00","waktu_selesai":"01:00","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"knfo oniofjoi","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+DEBUG - 2025-06-11 16:59:30 --> Jadwal ke-1: Tanggal: 2025-06-15, Mulai: 23:00, Selesai: 01:00, Kota: Jakarta, Tempat: knfo oniofjoi
+DEBUG - 2025-06-11 16:59:30 --> Data lokasi yang akan disimpan: {"tempat":"knfo oniofjoi","kota":"Jakarta"}
+DEBUG - 2025-06-11 16:59:30 --> Data jadwal diterima: [{"id":1749661050531,"tanggal":"2025-06-14","waktu_mulai":"23:00","waktu_selesai":"01:00","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"knfo oniofjoi","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749661069222,"tanggal":"2025-06-15","waktu_mulai":"23:00","waktu_selesai":"01:00","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"knfo oniofjoi","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749661075938,"tanggal":"2025-06-16","waktu_mulai":"23:00","waktu_selesai":"01:00","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"knfo oniofjoi","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+DEBUG - 2025-06-11 16:59:30 --> Jadwal ke-2: Tanggal: 2025-06-16, Mulai: 23:00, Selesai: 01:00, Kota: Jakarta, Tempat: knfo oniofjoi
+DEBUG - 2025-06-11 16:59:30 --> Data lokasi yang akan disimpan: {"tempat":"knfo oniofjoi","kota":"Jakarta"}
+DEBUG - 2025-06-11 16:59:30 --> Data jadwal diterima: [{"id":1749661050531,"tanggal":"2025-06-14","waktu_mulai":"23:00","waktu_selesai":"01:00","tipe_harga":"Bayar","nama_kategori":"VIP, Premium","harga":"500000, 250000","kota":"Jakarta","tempat":"knfo oniofjoi","denah_seat":"uploaded","seatDrafts":[{"kategori":"VIP","harga":"500000"},{"kategori":"Premium","harga":"250000"}],"denah_filename":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"id":1749661069222,"tanggal":"2025-06-15","waktu_mulai":"23:00","waktu_selesai":"01:00","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Jakarta","tempat":"knfo oniofjoi","denah_seat":null,"seatDrafts":[],"denah_filename":""},{"id":1749661075938,"tanggal":"2025-06-16","waktu_mulai":"23:00","waktu_selesai":"01:00","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"knfo oniofjoi","denah_seat":null,"seatDrafts":[],"denah_filename":""}]
+ERROR - 2025-06-11 16:59:30 --> Error: foreach() argument must be of type array|object, null given
+INFO - 2025-06-11 17:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-11 17:19:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1712): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-11 17:19:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 61.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(61): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1712): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-11 17:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-11 17:20:13 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1712): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-11 17:20:13 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 61.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(61): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1712): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-11 17:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-11 17:25:35 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1712): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-11 17:25:35 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 61.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(61): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1712): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-11 17:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 17:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,117 @@
+/* Style Navigation Bar Start */
+.navbar-area {
+    padding: 5px 15px; /* Mengurangi padding untuk header agar lebih rapi */
+}
+
+.navbar {
+    background-color: #D8001B;
+    padding: 5px 15px; /* Mengurangi padding untuk header */
+    height: 60px; /* Membuat tinggi otomatis */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Sebar elemen secara merata */
+    flex-wrap: wrap; /* Mengatasi elemen bertumpuk ketika ruang tidak mencukupi */
+}
+
+.navbar .logo img {
+    width: 100px; /* Mengurangi ukuran logo agar lebih proporsional */
+    height: auto; /* Memastikan proporsi gambar tetap */
+    margin-right: 55px; /* Mengurangi jarak pada logo */
+}
+
+.navbar .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px; /* Mengurangi jarak antar menu agar lebih rapi */
+}
+
+.navbar .navbar-nav a {
+    text-decoration: none;
+    font-size: 16px; /* Mengurangi ukuran font menu */
+    color: #fff; /* Warna font putih */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600; /* Membuat font lebih tebal */
+    transition: color 0.3s;
+    padding: 8px 10px; /* Mengurangi padding agar tidak bertumpuk */
+}
+
+.navbar .navbar-nav a:hover {
+    color: #FF9FAB; /* Warna saat hover */
+}
+
+.navbar .menu-item-has-children {
+    position: relative;
+}
+
+/* Menghapus garis bawah dan memastikan warna seragam */
+.navbar .menu-item-has-children > a {
+    text-decoration: none;
+    color: #fff; /* Warna font putih untuk seragam */
+    font-size: 16px; /* Sesuaikan ukuran font */
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    padding: 8px 10px; /* Sesuaikan padding agar selaras */
+    transition: color 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar .menu-item-has-children > a::after {
+    content: "▼"; /* Menambahkan simbol dropdown */
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Hover untuk dropdown menu utama */
+.navbar .menu-item-has-children > a:hover {
+    color: #FF9FAB; /* Warna saat dihover */
+}
+
+.navbar .sub-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px 20px; /* Menambah padding horizontal untuk membuatnya lebih lebar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    min-width: 150px; /* Menentukan lebar minimum untuk submenu */
+}
+
+/* Hover untuk submenu */
+.navbar .sub-menu a {
+    display: block;
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: #000; /* Warna hitam untuk submenu */
+    font-size: 16px; /* Ukuran font submenu */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    padding: 5px 0; /* Tambahkan jarak antar elemen submenu */
+    transition: color 0.3s;
+}
+
+.navbar .menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+
+.navbar .sub-menu a:hover {
+    color: #C21F1C; /* Warna submenu saat dihover */
+}
+
+/* Menghapus garis bawah pada tombol */
+.navbar a.search-bar-btn {
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: #fff; /* Warna font putih */
+    padding: 8px 10px; /* Sesuaikan padding */
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar a.search-bar-btn:hover {
+    color: #FF9FAB; /* Warna saat dihover */
+}
+/* Style Navigation Bar End */

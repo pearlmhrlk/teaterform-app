@@ -1,0 +1,134 @@
+INFO - 2025-05-02 04:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-02 04:20:55 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/listPenampilan]
+in APPPATH\Views\templates\headerAdmin.php on line 88.
+ 1 APPPATH\Views\templates\headerAdmin.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 88)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(1306): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-02 04:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-02 04:20:58 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Views\templates\headerAdmin.php on line 88.
+ 1 APPPATH\Views\templates\headerAdmin.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 88)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(84): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-02 04:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-02 04:21:04 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Views\templates\headerAdmin.php on line 88.
+ 1 APPPATH\Views\templates\headerAdmin.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 88)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(84): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-02 04:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 04:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 04:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 04:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 04:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 04:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-02 04:24:46 --> Last Query: NULL
+DEBUG - 2025-05-02 04:24:47 --> Poster uploaded: uploads/posters/1746159887_d663528cb72deee7ba89.jpeg
+DEBUG - 2025-05-02 04:24:47 --> Request data: {"csrf_test_name":"52a238570f9df143104c31a45e0fd1e2","id_teater":"","tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"Tujuh kurcaci dalam hutan.","hidden_schedule":"[{\"tanggal\":\"2025-05-01\",\"waktu_mulai\":\"11:25\",\"waktu_selesai\":\"13:25\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"Premium, VIP\",\"harga\":\"250000, 500000\",\"kota\":\"Surabaya\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"456692073_3508642322776413_1712171767507578024_n.jpg\"},{\"tanggal\":\"2025-05-02\",\"waktu_mulai\":\"11:25\",\"waktu_selesai\":\"13:25\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Surabaya\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"\"},{\"tanggal\":\"2025-05-03\",\"waktu_mulai\":\"11:25\",\"waktu_selesai\":\"13:25\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"\"}]","penulis":"Jaya Wijaya","url_pendaftaran":"www.form-pendaftaran.com","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["13+"],"mitra_teater":"5","id_platform_sosmed":["2"],"acc_name":[""],"hidden_accounts":"[{\"platformId\":\"2\",\"platformName\":\"twitter\",\"account\":\"omas\"}]","judul_web":[""],"url_web":[""],"hidden_web":"[{\"title\":\"Binus Teater Official Web\",\"url\":\"www.binus-teater.com\"}]"}
+DEBUG - 2025-05-02 04:24:47 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1746159887_d663528cb72deee7ba89.jpeg","sinopsis":"Tujuh kurcaci dalam hutan.","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-05-02 04:24:47 --> ID Teater yang dibuat: 69
+DEBUG - 2025-05-02 04:24:47 --> ID Penampilan yang dibuat: 58
+DEBUG - 2025-05-02 04:24:47 --> Jadwal ke-0: Tanggal: 2025-05-01, Mulai: 11:25, Selesai: 13:25, Kota: Surabaya, Tempat: Balai Sarbini
+DEBUG - 2025-05-02 04:24:47 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Surabaya"}
+DEBUG - 2025-05-02 04:24:47 --> ID Location yang didapat setelah insert: 88
+DEBUG - 2025-05-02 04:24:47 --> Data jadwal diterima: [{"tanggal":"2025-05-01","waktu_mulai":"11:25","waktu_selesai":"13:25","tipe_harga":"Bayar","nama_kategori":"Premium, VIP","harga":"250000, 500000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"tanggal":"2025-05-02","waktu_mulai":"11:25","waktu_selesai":"13:25","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-03","waktu_mulai":"11:25","waktu_selesai":"13:25","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-02 04:24:47 --> Jadwal ke-1: Tanggal: 2025-05-02, Mulai: 11:25, Selesai: 13:25, Kota: Surabaya, Tempat: Balai Sarbini
+DEBUG - 2025-05-02 04:24:47 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Surabaya"}
+DEBUG - 2025-05-02 04:24:47 --> ID Location yang didapat setelah insert: 89
+DEBUG - 2025-05-02 04:24:47 --> Data jadwal diterima: [{"tanggal":"2025-05-01","waktu_mulai":"11:25","waktu_selesai":"13:25","tipe_harga":"Bayar","nama_kategori":"Premium, VIP","harga":"250000, 500000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"tanggal":"2025-05-02","waktu_mulai":"11:25","waktu_selesai":"13:25","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-03","waktu_mulai":"11:25","waktu_selesai":"13:25","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-02 04:24:47 --> Jadwal ke-2: Tanggal: 2025-05-03, Mulai: 11:25, Selesai: 13:25, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-05-02 04:24:47 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-05-02 04:24:47 --> ID Location yang didapat setelah insert: 90
+DEBUG - 2025-05-02 04:24:47 --> Data jadwal diterima: [{"tanggal":"2025-05-01","waktu_mulai":"11:25","waktu_selesai":"13:25","tipe_harga":"Bayar","nama_kategori":"Premium, VIP","harga":"250000, 500000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"tanggal":"2025-05-02","waktu_mulai":"11:25","waktu_selesai":"13:25","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-03","waktu_mulai":"11:25","waktu_selesai":"13:25","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-02 04:24:47 --> ID Web Teater yang diperoleh: 13
+INFO - 2025-05-02 04:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 04:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 04:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 04:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 04:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 04:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-02 04:55:27 --> Last Query: NULL
+DEBUG - 2025-05-02 04:55:27 --> Poster uploaded: uploads/posters/1746161727_390ed584983ca9cc79d6.jpeg
+DEBUG - 2025-05-02 04:55:27 --> Request data: {"csrf_test_name":"52a238570f9df143104c31a45e0fd1e2","id_teater":"","tipe_teater":"penampilan","judul":"Jaya Wijaya Show","sinopsis":"Tujuh kurcaci dalam hutan.","hidden_schedule":"[{\"tanggal\":\"2025-05-01\",\"waktu_mulai\":\"11:55\",\"waktu_selesai\":\"13:55\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"Premium, VIP\",\"harga\":\"250000, 500000\",\"kota\":\"Surabaya\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"456692073_3508642322776413_1712171767507578024_n.jpg\"},{\"tanggal\":\"2025-05-02\",\"waktu_mulai\":\"11:55\",\"waktu_selesai\":\"13:55\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"\",\"harga\":\"50000\",\"kota\":\"Surabaya\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"\"},{\"tanggal\":\"2025-05-03\",\"waktu_mulai\":\"11:55\",\"waktu_selesai\":\"13:55\",\"tipe_harga\":\"Gratis\",\"nama_kategori\":\"\",\"harga\":\"\",\"kota\":\"Jakarta\",\"tempat\":\"Balai Sarbini\",\"denah_seat\":\"\"}]","penulis":"Jaya Wijaya","url_pendaftaran":"www.form-pendaftaran.com","sutradara":"Willy Santoso","staff":"Toni Jojoni","aktor":"Jaya Wijaya, Lilith Purnawarman, Toni Jojoni","durasi":"120","rating_umur":["Semua Umur (SU)"],"mitra_teater":"5","id_platform_sosmed":["2"],"acc_name":[""],"hidden_accounts":"[{\"platformId\":\"2\",\"platformName\":\"twitter\",\"account\":\"omas\"}]","judul_web":[""],"url_web":[""],"hidden_web":"[{\"title\":\"Binus Teater Official Web\",\"url\":\"www.binus-teater.com\"}]"}
+DEBUG - 2025-05-02 04:55:27 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Jaya Wijaya Show","poster":"uploads\/posters\/1746161727_390ed584983ca9cc79d6.jpeg","sinopsis":"Tujuh kurcaci dalam hutan.","penulis":"Jaya Wijaya","sutradara":"Willy Santoso","staff":"Toni Jojoni","dibuat_oleh":"AdminGNCD","dimodif_oleh":null}
+DEBUG - 2025-05-02 04:55:27 --> ID Teater yang dibuat: 70
+DEBUG - 2025-05-02 04:55:27 --> ID Penampilan yang dibuat: 59
+DEBUG - 2025-05-02 04:55:27 --> Jadwal ke-0: Tanggal: 2025-05-01, Mulai: 11:55, Selesai: 13:55, Kota: Surabaya, Tempat: Balai Sarbini
+DEBUG - 2025-05-02 04:55:27 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Surabaya"}
+DEBUG - 2025-05-02 04:55:27 --> ID Location yang didapat setelah insert: 91
+DEBUG - 2025-05-02 04:55:27 --> Data jadwal diterima: [{"tanggal":"2025-05-01","waktu_mulai":"11:55","waktu_selesai":"13:55","tipe_harga":"Bayar","nama_kategori":"Premium, VIP","harga":"250000, 500000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"tanggal":"2025-05-02","waktu_mulai":"11:55","waktu_selesai":"13:55","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-03","waktu_mulai":"11:55","waktu_selesai":"13:55","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-02 04:55:27 --> Jadwal ke-1: Tanggal: 2025-05-02, Mulai: 11:55, Selesai: 13:55, Kota: Surabaya, Tempat: Balai Sarbini
+DEBUG - 2025-05-02 04:55:27 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Surabaya"}
+DEBUG - 2025-05-02 04:55:27 --> ID Location yang didapat setelah insert: 92
+DEBUG - 2025-05-02 04:55:27 --> Data jadwal diterima: [{"tanggal":"2025-05-01","waktu_mulai":"11:55","waktu_selesai":"13:55","tipe_harga":"Bayar","nama_kategori":"Premium, VIP","harga":"250000, 500000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"tanggal":"2025-05-02","waktu_mulai":"11:55","waktu_selesai":"13:55","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-03","waktu_mulai":"11:55","waktu_selesai":"13:55","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-02 04:55:27 --> Jadwal ke-2: Tanggal: 2025-05-03, Mulai: 11:55, Selesai: 13:55, Kota: Jakarta, Tempat: Balai Sarbini
+DEBUG - 2025-05-02 04:55:27 --> Data lokasi yang akan disimpan: {"tempat":"Balai Sarbini","kota":"Jakarta"}
+DEBUG - 2025-05-02 04:55:27 --> ID Location yang didapat setelah insert: 93
+DEBUG - 2025-05-02 04:55:27 --> Data jadwal diterima: [{"tanggal":"2025-05-01","waktu_mulai":"11:55","waktu_selesai":"13:55","tipe_harga":"Bayar","nama_kategori":"Premium, VIP","harga":"250000, 500000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":"456692073_3508642322776413_1712171767507578024_n.jpg"},{"tanggal":"2025-05-02","waktu_mulai":"11:55","waktu_selesai":"13:55","tipe_harga":"Bayar","nama_kategori":"","harga":"50000","kota":"Surabaya","tempat":"Balai Sarbini","denah_seat":""},{"tanggal":"2025-05-03","waktu_mulai":"11:55","waktu_selesai":"13:55","tipe_harga":"Gratis","nama_kategori":"","harga":"","kota":"Jakarta","tempat":"Balai Sarbini","denah_seat":""}]
+DEBUG - 2025-05-02 04:55:27 --> ID Web Teater yang diperoleh: 14
+INFO - 2025-05-02 07:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-02 07:38:45 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/listPenampilan]
+in APPPATH\Views\templates\headerAdmin.php on line 88.
+ 1 APPPATH\Views\templates\headerAdmin.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 88)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(1312): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->penampilan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-02 07:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-02 07:38:47 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: Admin/homepage]
+in APPPATH\Views\templates\headerAdmin.php on line 88.
+ 1 APPPATH\Views\templates\headerAdmin.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php', 88)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\headerAdmin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/headerAdmin', [], true)
+ 5 APPPATH\Controllers\Admin.php(84): view('templates/headerAdmin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->homepageAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-02 07:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 07:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 07:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 07:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 07:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 07:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 07:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 07:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-02 07:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
