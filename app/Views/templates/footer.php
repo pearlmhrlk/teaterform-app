@@ -27,18 +27,18 @@
     <!--End pagewrapper-->
 
     <!-- all plugins here -->
-    <script data-cfasync="false" src="<?= base_url('assets/js/email-decode.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/jquery.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/popper.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/isotope.pkgd.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/appear.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/imageload.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/jquery.magnific-popup.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/skill.bars.jquery.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/slick.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/wow.min.js') ?>"></script>
+    <script data-cfasync="false" src="<?= base_url('public/assets/js/email-decode.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/jquery.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/popper.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/bootstrap.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/isotope.pkgd.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/appear.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/imageload.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/jquery.magnific-popup.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/skill.bars.jquery.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/slick.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/wow.min.js') ?>"></script>
 
     <script>
         // Menambahkan event listener untuk dropdown secara manual
@@ -109,7 +109,7 @@
     </script>
 
     <!-- main js  -->
-    <script src="<?= base_url('assets/js/main.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/main.js') ?>"></script>
 </body>
 
 </html>

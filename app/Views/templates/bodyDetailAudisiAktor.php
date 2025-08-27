@@ -7,16 +7,14 @@
             <div class="audition-item">
                 <div class="poster">
                     <?php
-                    $posterPath = $teater['poster'];
+                    $posterPath = 'public/' . $teater['poster'];
                     $posterFullPath = FCPATH . $posterPath;
 
                     $posterSrc = file_exists($posterFullPath) && !empty($teater['poster'])
                         ? base_url($posterPath)
-                        : base_url('assets/img/default-poster.png');
+                        : base_url('public/assets/img/default-poster.png');
                     ?>
-                    <img class="poster"
-                        src="<?= esc($posterSrc) ?>"
-                        alt="<?= esc($teater['judul']) ?>">
+                    <img class="poster" src="<?= esc($posterSrc) ?>" alt="<?= esc($teater['judul']) ?>">
                     <p><a href="<?= base_url('MitraTeater/detailMitraTeater/' . $mitra['id_mitra']) ?>">
                             <?= esc($namaKomunitas['nama']) ?>
                         </a></p>
@@ -68,7 +66,7 @@
                             <th>Tempat</th>
                             <th>Tanggal</th>
                             <th>Waktu</th>
-                            <th>Harga</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -100,7 +98,17 @@
                                             <?php endif; ?>
 
                                             <td><?= $item['waktu']; ?></td>
-                                            <td><?= $item['harga_display']; ?></td>
+                                            <td>
+                                                <?php
+                                                $statusText = [
+                                                    'success' => 'Success',
+                                                    'pending' => 'Pending',
+                                                    'rejected' => 'Rejected'
+                                                ];
+
+                                                echo $statusText[$item['status'] ?? ''] ?? '-';
+                                                ?>
+                                            </td>
                                         </tr>
                                     <?php endforeach; ?>
                                 <?php endforeach; ?>
@@ -110,26 +118,79 @@
                 </table>
             </div>
             <div class="actions">
-                <button id="btnPesan">Pesan Tiket</button>
+                <button id="btnPesan" data-id="<?= $teater['id_teater'] ?>" data-tipe="audisi">Pesan Tiket</button>
             </div>
         </div>
 
-        <div class="overlay" id="overlay"></div>
+        <?php if (!empty($tiketAudisi)) : ?>
+            <div id="ticket-section" class="mt-5">
+                <h4 class="mb-3">Tiket Digital</h4>
+                <?php foreach ($tiketAudisi as $tiket) : ?>
+                    <div class="ticket-box p-3 border rounded mb-3 bg-light">
+                        <!-- Bagian Atas: Info Teater -->
+                        <div class="mb-2">
+                            <h5 class="mb-1"><?= esc($tiket['judul']) ?></h5>
+                            <div class="text-muted small">
+                                Diselenggarakan oleh <?= esc($tiket['nama_mitra']) ?> &middot;
+                                <?= esc($tiket['jenis_teater']) ?>
+                            </div>
+                        </div>
 
+                        <!-- Bagian Jadwal dan Lokasi -->
+                        <div class="mt-2">
+                            <p class="mb-1">
+                                <strong>Lokasi:</strong> <?= esc($tiket['tempat']) ?>, <?= esc($tiket['kota']) ?>
+                            </p>
+                            <p class="mb-1">
+                                <strong>Waktu:</strong>
+                                <?= date('d-m-Y', strtotime($tiket['tanggal'])) ?>,
+                                <?= date('H:i', strtotime($tiket['waktu_mulai'])) ?> - <?= date('H:i', strtotime($tiket['waktu_selesai'])) ?>
+                            </p>
+                            <p class="mb-0 text-muted small">
+                                Dipesan oleh <?= esc($tiket['nama_audiens']) ?> &middot;
+                                <?= date('d-m-Y H:i', strtotime($tiket['issue_date'])) ?>
+                            </p>
+                        </div>
+                    </div>
+                <?php endforeach ?>
+            </div>
+        <?php endif ?>
+
+        <div class="overlay" id="overlay"></div>
         <div class="popup" id="popupKonfirmasi">
             <h2>Konfirmasi Pendaftaran</h2>
-            <p>Apakah anda yakin ingin melakukan pendaftaran audisi aktor teater ini?</p>
-            <p>Harap upload bukti pembayaran setelah berhasil mendaftar di website tujuan.</p>
-            <button id="btnYa" class="btn-primary">Ya</button>
-            <button id="btnTidak" class="btn-secondary">Batal</button>
+            <p>Pilih jadwal pertunjukan sebelum lanjut:</p>
+            <select id="selectJadwal">
+                <option value="">-- Pilih Jadwal --</option>
+            </select>
+
+            <p id="linkQRCode" style="display:none; color:blue; cursor:pointer;">Lihat QR Code Pembayaran</p>
+
+            <div id="divUploadBukti" style="display:none; margin-top:10px;">
+                <p>Silakan upload bukti pembayaran:</p>
+                <form id="formUploadBukti" enctype="multipart/form-data">
+                    <input type="file" id="buktiPembayaran" name="bukti_pembayaran" required>
+                </form>
+            </div>
+
+            <div style="margin-top:10px;">
+                <button id="btnKonfirmasi">Lanjut</button>
+                <button id="btnTidak">Batal</button>
+            </div>
         </div>
 
-        <div class="popup" id="popupUpload">
-            <h2>Upload Bukti Pembayaran</h2>
-            <p>Silakan upload bukti pembayaran.</p>
-            <input type="file" id="buktiPembayaran">
-            <button id="btnUpload" class="btn-primary">Upload</button>
-            <button id="btnBatalUpload" class="btn-secondary">Batal</button>
+        <!-- Modal QR Code -->
+        <div class="popup" id="modalQRCode" style="display:none;">
+            <h3>QR Code Pembayaran</h3>
+            <img id="imgQRCode" src="" alt="QR Code" style="width:200px;height:200px;">
+            <button id="btnTutupQRCode">Tutup</button>
+        </div>
+
+        <div class="popup" id="popupGratis">
+            <h2>Konfirmasi Gratis</h2>
+            <p>Apakah anda sudah menyelesaikan pendaftaran hingga akhir?</p>
+            <button id="btnKonfirmasiGratis">Konfirmasi Pendaftaran</button>
+            <button id="btnBatalGratis">Batal</button>
         </div>
     </div>
 </body>

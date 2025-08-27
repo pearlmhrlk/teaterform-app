@@ -34,7 +34,7 @@ CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 
-app.baseURL = ''
+app.baseURL = 'http://localhost/CodeIgniter4/'
 
 # If you have trouble with `.`, you could also use `_`.
 

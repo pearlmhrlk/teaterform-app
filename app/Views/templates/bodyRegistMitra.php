@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<body style="background: url('<?= base_url('assets/images/login/login-bg4.png') ?>') no-repeat center center fixed; background-size: cover;">
+<body style="background: url('<?= base_url('public/assets/images/login/login-bg4.png') ?>') no-repeat center center fixed; background-size: cover;">
     <div class="container-fluid authentication-bg overflow-hidden">
         <div class="bg-overlay"></div>
         <div class="row align-items-center justify-content-center min-vh-100">
@@ -11,7 +11,7 @@
                         <div class="text-center">
                             <div>
                                 <a href="<?= base_url('/Audiens/homepage') ?>" class="logo-dark">
-                                    <img src="<?= base_url('assets/images/logos/logo-two.png') ?>" alt="" height="30" class="auth-logo logo-dark mx-auto">
+                                    <img src="<?= base_url('public/assets/images/logos/logo-two.png') ?>" alt="" height="30" class="auth-logo logo-dark mx-auto">
                                 </a>
                             </div>
 
@@ -160,11 +160,11 @@
         </div>
     </div>
 
-    <script src="<?= base_url('assets/js/jquery.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/metisMenu.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/simplebar.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/waves.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/jquery.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/metisMenu.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/simplebar.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/waves.min.js') ?>"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -289,7 +289,7 @@
         });
     </script>
 
-    <script src="<?= base_url('assets/js/app.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/app.js') ?>"></script>
 
 </body>
 

@@ -20,7 +20,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = '';
+    public string $baseURL = 'https://localhost/CodeIgniter4/';
 
     public function __construct()
     {

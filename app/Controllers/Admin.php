@@ -1017,7 +1017,6 @@ class Admin extends BaseController
         $data = $this->mitraModel
             ->select('m_mitra.id_mitra, m_user.nama')
             ->join('m_user', 'm_user.id_user = m_mitra.id_user')
-            ->where('m_mitra.approval_status', 'approved')
             ->findAll();
 
         return $this->response->setJSON($data);

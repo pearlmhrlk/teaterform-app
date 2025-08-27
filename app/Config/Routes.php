@@ -47,6 +47,9 @@ $routes->get('MitraTeater/getTeaterData', 'MitraTeater::getTeaterData');
 $routes->delete('MitraTeater/deleteSchedule', 'MitraTeater::deleteSchedule');
 
 $routes->get('MitraTeater/get-booking/(:segment)/(:num)', 'MitraTeater::getBookingBySchedule/$1/$2');
+$routes->post('update-booking-status/(:num)/(:alpha)', 'MitraTeater::updateBookingStatus/$1/$2');
+$routes->post('MitraTeater/validasi-bukti', 'MitraTeater::validasiBukti');
+$routes->get('bukti/(:any)', 'MitraTeater::showBuktiBayar/$1');
 
 $routes->get('teater/getMitraSosmed/(:num)', 'MitraTeater::getMitraSosmed/$1');
 $routes->post('teater-sosmed/add', 'MitraTeater::addSosmed');
@@ -69,17 +72,24 @@ $routes->get('Audiens/confirmation', 'Audiens::confirmation');
 
 $routes->get('Audiens/homepageAudiens', 'Audiens::homepageAfterLogin');
 
-$routes->get('Audiens/searchPenampilan', 'Audiens::searchPenampilan');
+$routes->get('user/searchPenampilan', 'Audiens::searchPenampilan');
+$routes->get('Audiens/searchPenampilan', 'Audiens::searchPenampilanAfterLogin');
+
 $routes->get('Audiens/penampilanAudiens', 'Audiens::penampilanAfterLogin');
 $routes->get('Audiens/detailPenampilan/(:num)', 'Audiens::DetailPenampilan/$1');
 
-$routes->get('Audiens/searchAudisi', 'Admin::searchAudisi');
+$routes->get('User/searchAudisi', 'Audiens::searchAudisi');
+$routes->get('Audiens/searchAudisi', 'Audiens::searchAudisiAfterLogin');
+
 $routes->get('Audiens/audisiAudiens', 'Audiens::audisiAfterLogin');
 $routes->get('Audiens/detailAudisiAktor/(:num)', 'Audiens::DetailAudisiAktor/$1');
 $routes->get('Audiens/detailAudisiStaff/(:num)', 'Audiens::DetailAudisiStaff/$1');
 
 $routes->get('Audiens/booking-popup/(:segment)/(:num)', 'Audiens::showBookingPopup/$1/$2');
 $routes->post('Booking/simpanBooking', 'Audiens::simpanBooking');
+$routes->post('Booking/konfirmasiUploadBukti/(:num)', 'Audiens::konfirmasiUploadBukti/$1');
+$routes->delete('Booking/hapusBookingPending/(:num)', 'Audiens::hapusBookingPending/$1');
+$routes->post('Booking/ubahStatusSuccess/(:num)', 'Audiens::ubahStatusSuccess/$1');
 
 $routes->post('Audiens/uploadBuktiPembayaran', 'Audiens::uploadBuktiPembayaran');
 
@@ -109,7 +119,7 @@ $routes->get('Admin/listPenampilan', 'Admin::penampilan');
 $routes->post('Admin/saveShow', 'Admin::saveShow');
 $routes->delete('Admin/deleteDenah', 'Admin::deleteDenah');
 
-$routes->get('teater/getApprovedMitra', 'Admin::getApprovedMitra');
+$routes->get('teater/getApprovedMitra', 'MitraTeater::getApprovedMitra');
 
 $routes->get('Admin/listAudisi', 'Admin::audisi');
 $routes->post('Admin/saveAuditionAktor', 'Admin::saveAuditionAktor');

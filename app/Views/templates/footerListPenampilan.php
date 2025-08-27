@@ -24,33 +24,41 @@
     <!-- footer area end -->
 
     <!-- all plugins here -->
-    <script data-cfasync="false" src="<?= base_url('assets/js/email-decode.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/jquery.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/popper.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/isotope.pkgd.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/appear.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/imageload.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/jquery.magnific-popup.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/skill.bars.jquery.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/slick.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/wow.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/search-filter-pertunjukan.js') ?>"></script>
-    <script src="<?= base_url('assets/js/dropdown-navbar.js') ?>"></script>
+    <script data-cfasync="false" src="<?= base_url('public/assets/js/email-decode.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/jquery.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/popper.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/bootstrap.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/isotope.pkgd.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/appear.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/imageload.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/jquery.magnific-popup.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/skill.bars.jquery.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/slick.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/wow.min.js') ?>"></script>
+
+    <script>
+        const searchUrl = <?= isset($searchUrl) ? json_encode($searchUrl) : 'null' ?>;
+    </script>
+
+    <script src="<?= base_url('public/assets/js/search-filter-pertunjukan.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/dropdown-navbar.js') ?>"></script>
 
     <script>
         $(document).ready(function() {
-            console.log("DOM ready:", $('.poster-carousel').length);
 
             function initSlickIfNeeded() {
                 $('.poster-carousel').each(function() {
                     const $carousel = $(this);
+                    const itemCount = $carousel.find('.teater-item').length;
 
+                    // Hindari init ulang
                     if (!$carousel.hasClass('slick-initialized')) {
+                        const slideCount = itemCount >= 4 ? 4 : itemCount; // ⬅️ Dinamis di sini
+
                         $carousel.slick({
                             infinite: false,
-                            slidesToShow: 4,
+                            slidesToShow: slideCount,
                             slidesToScroll: 1,
                             autoplay: false,
                             arrows: true,
@@ -88,7 +96,7 @@
             initSlickIfNeeded(); // ⬅️ Tambahkan baris ini di akhir $(document).ready
         });
 
-        document.querySelectorAll('.teater-item').forEach(item => {
+        document.querySelectorAll('.teater-item')?.forEach(item => {
             item.addEventListener('click', function(e) {
                 e.stopPropagation();
             });
@@ -127,12 +135,65 @@
     </script>
 
     <script>
+        // Tampilkan modal QR Code saat klik teks
+        const linkQRCode = document.getElementById("linkQRCode");
+        const modalQRCode = document.getElementById("modalQRCode");
+        const imgQRCode = document.getElementById("imgQRCode");
+        const btnTutupQRCode = document.getElementById("btnTutupQRCode");
+
+        linkQRCode.addEventListener("click", function() {
+            modalQRCode.style.display = "block";
+        });
+
+        // Tutup modal QR Code
+        btnTutupQRCode.addEventListener("click", function() {
+            modalQRCode.style.display = "none";
+        });
+
+        // Tutup modal kalau klik di overlay
+        window.addEventListener("click", function(event) {
+            if (event.target == modalQRCode) {
+                modalQRCode.style.display = "none";
+            }
+        });
+
+        window.onload = function() {
+            const pending = localStorage.getItem("pendingUpload");
+            const jadwal = localStorage.getItem("selectedJadwal");
+            const isFree = localStorage.getItem("isFree") === "1"; // true/false
+
+            const popup = document.getElementById("popupKonfirmasi");
+            const overlay = document.getElementById("overlay");
+            const divUpload = document.getElementById("divUploadBukti");
+
+            // reset semua elemen
+            divUpload.style.display = "none";
+            linkQRCode.style.display = "none";
+
+            if (pending === "true" && jadwal && !isNaN(isFree)) {
+                popup.style.display = "block";
+                overlay.style.display = "block";
+
+                if (isFree) { // cukup boolean check
+                    document.getElementById("popupGratis").style.display = "block";
+                    divUpload.style.display = "none";
+                    linkQRCode.style.display = "none";
+                } else {
+                    divUpload.style.display = "block";
+                    linkQRCode.style.display = "inline-block";
+                }
+            }
+        };
+
+        // Saat klik tombol Pesan
         document.getElementById("btnPesan").addEventListener("click", function() {
             const idTeater = this.dataset.id;
             const tipeJadwal = this.dataset.tipe;
+            const baseUrl = "<?= base_url() ?>";
+            const url = `${baseUrl}Audiens/booking-popup/${tipeJadwal}/${idTeater}`;
 
-            fetch(`<?= base_url('Audiens/booking-popup/${tipeJadwal}/${idTeater}') ?>`)
-                .then(response => response.json())
+            fetch(url)
+                .then(res => res.json())
                 .then(data => {
                     const jadwalSelect = document.getElementById("selectJadwal");
                     jadwalSelect.innerHTML = '<option value="">-- Pilih Jadwal --</option>';
@@ -140,156 +201,135 @@
                     data.jadwal.forEach(j => {
                         const mulai = j.waktu_mulai.slice(0, 5);
                         const selesai = j.waktu_selesai.slice(0, 5);
-
                         const option = document.createElement("option");
-                        option.value = j.id_jadwal; // Support audisi dan penampilan
+                        option.value = j.id_jadwal;
                         option.textContent = `${j.tanggal}, ${mulai} - ${selesai}`;
+                        option.dataset.isFree = j.is_free;
+                        option.dataset.qrcode = j.qrcode_bayar || '';
                         jadwalSelect.appendChild(option);
                     });
 
-                    // Simpan ke tombol YA
-                    document.getElementById("btnYa").onclick = function() {
-                        const selectedJadwal = jadwalSelect.value;
-                        if (!selectedJadwal) {
-                            alert("Silakan pilih jadwal terlebih dahulu.");
+                    document.getElementById("popupKonfirmasi").style.display = "block";
+                    document.getElementById("overlay").style.display = "block";
+
+                    const divUpload = document.getElementById("divUploadBukti");
+                    const linkQRCode = document.getElementById("linkQRCode");
+
+                    // reset awal saat popup dibuka
+                    divUpload.style.display = "none";
+                    linkQRCode.style.display = "none";
+
+                    jadwalSelect.onchange = function() {
+                        const selected = this.selectedOptions[0];
+                        if (!selected || !selected.value) {
+                            divUpload.style.display = "none";
+                            linkQRCode.style.display = "none";
                             return;
                         }
 
-                        localStorage.setItem("pendingUpload", "true");
-                        localStorage.setItem("selectedJadwal", selectedJadwal);
-                        localStorage.setItem("tipeJadwal", tipeJadwal);
+                        const isFree = selected.dataset.isFree === "1"; // ambil langsung dari option
+                        const qrcode = selected.dataset.qrcode;
 
-                        fetch('<?= base_url('Booking/simpanBooking') ?>', {
-                                method: 'POST',
-                                headers: {
-                                    'Content-Type': 'application/json'
-                                },
-                                body: JSON.stringify({
-                                    id_jadwal: selectedJadwal,
-                                    tipe_jadwal: tipeJadwal
-                                })
-                            })
-                            .then(response => response.json())
-                            .then(result => {
-                                if (result.success) {
-                                    // Pastikan server mengirimkan result.is_free
-                                    localStorage.setItem("isFree", result.is_free);
+                        localStorage.setItem("selectedJadwal", this.value);
+                        localStorage.setItem("isFree", isFree ? "1" : "0"); // update localStorage
 
-                                    let url = data.url_pendaftaran;
-                                    if (!/^https?:\/\//i.test(url)) {
-                                        url = 'https://' + url;
-                                    }
-                                    window.location.href = url;
-                                } else {
-                                    alert(result.message || "Gagal menyimpan booking.");
-                                }
-                            })
-                            .catch(error => {
-                                console.error("Error:", error);
-                                alert("Terjadi kesalahan.");
-                            });
+                        if (isFree) {
+                            divUpload.style.display = "none"; // tetap sembunyi untuk jadwal gratis
+                            linkQRCode.style.display = "none";
+                        } else {
+                            divUpload.style.display = "block"; // tampil untuk jadwal bayar
+                            linkQRCode.style.display = "inline-block";
+                            imgQRCode.src = qrcode || '';
+                        }
                     };
 
-                    document.getElementById("popupKonfirmasi").style.display = "block";
-                    document.getElementById("overlay").style.display = "block";
+                    document.getElementById("btnKonfirmasi").onclick = async function() {
+                        const selected = jadwalSelect.selectedOptions[0];
+                        if (!selected) return alert("Silakan pilih jadwal.");
+
+                        const idJadwal = selected.value;
+                        const isFree = selected.dataset.isFree == "1";
+
+                        // Simpan booking dulu
+                        const res = await fetch('<?= base_url("Booking/simpanBooking") ?>', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                id_jadwal: idJadwal,
+                                tipe_jadwal: tipeJadwal
+                            })
+                        });
+                        const result = await res.json();
+                        if (!result.success) return alert(result.message || "Gagal simpan booking");
+
+                        localStorage.setItem("idBooking", result.id_booking);
+
+                        if (isFree) {
+                            alert("Booking berhasil (gratis).");
+                            closePopup();
+                        } else {
+                            const fileInput = document.getElementById("buktiPembayaran");
+                            if (fileInput.files.length === 0) {
+                                return alert("Silakan upload bukti pembayaran.");
+                            }
+
+                            const formData = new FormData(document.getElementById("formUploadBukti"));
+                            const uploadRes = await fetch(`<?= base_url('Booking/konfirmasiUploadBukti/') ?>${result.id_booking}`, {
+                                method: 'POST',
+                                body: formData
+                            });
+                            const uploadResult = await uploadRes.json();
+
+                            if (uploadResult.success) {
+                                alert("Upload berhasil! Bukti pembayaran akan diperiksa.");
+                                closePopup();
+                            } else {
+                                alert("Upload gagal: " + uploadResult.message);
+                            }
+                        }
+                    };
+
+                    document.getElementById("btnTidak").onclick = closePopup;
+
+                    function closePopup() {
+                        document.getElementById("popupKonfirmasi").style.display = "none";
+                        document.getElementById("overlay").style.display = "none";
+                        divUpload.style.display = "none";
+                        localStorage.clear();
+                    }
                 });
         });
 
-        document.getElementById("btnTidak").addEventListener("click", function() {
-            document.getElementById("popupKonfirmasi").style.display = "none";
-            document.getElementById("overlay").style.display = "none";
+        // Tombol Konfirmasi Gratis
+        document.getElementById("btnKonfirmasiGratis").addEventListener("click", function() {
+            const idJadwal = localStorage.getItem("selectedJadwal");
+            fetch(`<?= base_url('Booking/ubahStatusSuccess/') ?>${idJadwal}`, {
+                    method: 'POST'
+                })
+                .then(res => res.json())
+                .then(() => {
+                    alert("Pendaftaran gratis berhasil dikonfirmasi!");
+                    document.getElementById("popupGratis").style.display = "none";
+                    document.getElementById("popupKonfirmasi").style.display = "none";
+                    document.getElementById("overlay").style.display = "none";
+                    localStorage.clear();
+                });
         });
 
-        window.onload = function() {
-            const pending = localStorage.getItem("pendingUpload");
-            const jadwal = localStorage.getItem("selectedJadwal");
-            const isFree = localStorage.getItem("isFree");
-
-            // Tampilkan popup HANYA jika semua data lengkap dan valid
-            if (pending === "true" && jadwal && isFree !== null) {
-                if (isFree === "1") {
-                    document.getElementById("popupGratis").style.display = "block";
-                } else {
-                    document.getElementById("popupUpload").style.display = "block";
-                }
-                document.getElementById("overlay").style.display = "block";
-            }
-        };
-
-        document.getElementById("btnBatalUpload").addEventListener("click", function() {
-            const idJadwal = localStorage.getItem("selectedJadwal");
-
-            // Kirim permintaan hapus booking pending ke server
-            fetch(`<?= base_url('Booking/hapusBookingPending/${idJadwal}') ?>`, {
+        // Tombol Batal Gratis
+        document.getElementById("btnBatalGratis").addEventListener("click", function() {
+            const idBooking = localStorage.getItem("idBooking");
+            fetch(`<?= base_url('Booking/hapusBookingPending/') ?>${idBooking}`, {
                     method: 'DELETE'
                 })
                 .then(res => res.json())
-                .then(data => {
-                    console.log("Booking dibatalkan:", data);
-                    // Tutup popup dan hapus localStorage
-                    document.getElementById("popupUpload").style.display = "none";
-                    document.getElementById("overlay").style.display = "none";
-                    localStorage.removeItem("pendingUpload");
-                    localStorage.removeItem("selectedJadwal");
-                    localStorage.removeItem("isFree");
-                });
-        });
-
-        document.getElementById("btnUpload").addEventListener("click", function() {
-            const idJadwal = localStorage.getItem("selectedJadwal");
-
-            fetch(`<?= base_url('Booking/ubahStatusSuccess/${idJadwal}') ?>`, {
-                    method: 'POST'
-                }).then(res => res.json())
-                .then(data => {
-                    console.log("Status booking berbayar berhasil diupdate:", data);
-
-                    document.getElementById("popupUpload").style.display = "none";
-                    document.getElementById("overlay").style.display = "none";
-                    localStorage.removeItem("pendingUpload");
-                    localStorage.removeItem("selectedJadwal");
-                    localStorage.removeItem("isFree");
-
-                    alert("Bukti pembayaran berhasil diupload!");
-                });
-        });
-
-        document.getElementById("btnBatalGratis").addEventListener("click", function() {
-            const idJadwal = localStorage.getItem("selectedJadwal");
-
-            fetch(`<?= base_url('Booking/hapusBookingPending/${idJadwal}') ?>`, {
-                    method: 'DELETE'
-                }).then(res => res.json())
-                .then(data => {
-                    console.log("Booking gratis dibatalkan:", data);
-                    // Tutup popup dan overlay
+                .then(() => {
                     document.getElementById("popupGratis").style.display = "none";
+                    document.getElementById("popupKonfirmasi").style.display = "none";
                     document.getElementById("overlay").style.display = "none";
-
-                    // Bersihkan localStorage
-                    localStorage.removeItem("pendingUpload");
-                    localStorage.removeItem("selectedJadwal");
-                    localStorage.removeItem("isFree");
-                });
-        });
-
-        document.getElementById("btnKonfirmasiGratis").addEventListener("click", function() {
-            const idJadwal = localStorage.getItem("selectedJadwal");
-
-            fetch(`<?= base_url('Booking/ubahStatusSuccess/${idJadwal}') ?>`, {
-                    method: 'POST'
-                }).then(res => res.json())
-                .then(data => {
-                    console.log("Status booking gratis berhasil diupdate:", data);
-
-                    // Tutup popup dan bersihkan localStorage
-                    document.getElementById("popupGratis").style.display = "none";
-                    document.getElementById("overlay").style.display = "none";
-                    localStorage.removeItem("pendingUpload");
-                    localStorage.removeItem("selectedJadwal");
-                    localStorage.removeItem("isFree");
-
-                    alert("Pendaftaran berhasil dikonfirmasi!");
+                    localStorage.clear();
                 });
         });
     </script>

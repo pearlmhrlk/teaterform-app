@@ -15,6 +15,7 @@ use App\Models\Penampilan;
 use App\Models\TeaterSosmed;
 use App\Models\TeaterWeb;
 use App\Models\UserTeater;
+use App\Models\AudisiStaff;
 use App\Models\AudisiAktor;
 use App\Models\AudisiPricing;
 use App\Models\ShowSeatPricing;
@@ -41,6 +42,7 @@ class Audiens extends BaseController
     protected $teaterSosmedModel;
     protected $teaterWebModel;
     protected $userTeaterModel;
+    protected $audisiStaffModel;
     protected $audisiAktorModel;
     protected $audisiPricingModel;
     protected $showSeatPricingModel;
@@ -65,6 +67,7 @@ class Audiens extends BaseController
         $this->teaterSosmedModel = new TeaterSosmed();
         $this->teaterWebModel = new TeaterWeb();
         $this->userTeaterModel = new UserTeater();
+        $this->audisiStaffModel = new AudisiStaff();
         $this->audisiAktorModel = new AudisiAktor();
         $this->audisiPricingModel = new AudisiPricing();
         $this->showSeatPricingModel = new ShowSeatPricing();
@@ -174,6 +177,11 @@ class Audiens extends BaseController
 
     public function homepageAfterLogin()
     {
+        if (!session()->has('id_user')) {
+            session()->setFlashdata('error', 'Sesi login Anda telah berakhir. Silakan login kembali.');
+            return redirect()->to(base_url('User/login'));
+        }
+
         // Ambil data user dari session (misal data user disimpan di session setelah login)
         $userId = session()->get('id_user'); // Misalnya user_id disimpan di session setelah login
         $user = $this->userModel->find($userId); // Ambil data user berdasarkan user_id
@@ -189,21 +197,25 @@ class Audiens extends BaseController
         $today = date('Y-m-d');
         $now = date('H:i:s');
 
+        $whereManual = "(m_teater.daftar_mulai IS NOT NULL AND m_teater.daftar_berakhir IS NOT NULL AND CURDATE() BETWEEN m_teater.daftar_mulai AND m_teater.daftar_berakhir)";
+        $whereOtomatis = "(m_teater.daftar_mulai IS NULL AND m_teater.daftar_berakhir IS NULL)";
+        $whereAll = "($whereManual OR $whereOtomatis)";
+
         // Ambil semua penampilan yang masih relevan (hari ini atau masa depan)
         $allPenampilan = $this->db->table('m_teater')
             ->select('
-        m_teater.id_teater,
-        m_penampilan.id_penampilan,
-        m_teater.judul,
-        m_teater.poster,
-        m_user.nama AS komunitas_teater,
-        m_lokasi_teater.tempat,
-        m_lokasi_teater.kota,
-        m_show_schedule.tanggal,
-        m_show_schedule.waktu_mulai,
-        m_show_schedule.waktu_selesai,
-        m_penampilan.rating_umur
-    ')
+    m_teater.id_teater,
+    m_penampilan.id_penampilan,
+    m_teater.judul,
+    m_teater.poster,
+    m_user.nama AS komunitas_teater,
+    m_lokasi_teater.tempat,
+    m_lokasi_teater.kota,
+    m_show_schedule.tanggal,
+    m_show_schedule.waktu_mulai,
+    m_show_schedule.waktu_selesai,
+    m_penampilan.rating_umur
+')
             ->join('r_user_teater', 'r_user_teater.id_teater = m_teater.id_teater')
             ->join('m_user', 'm_user.id_user = r_user_teater.id_user')
             ->join('m_show_schedule', 'm_show_schedule.id_teater = m_teater.id_teater')
@@ -270,8 +282,16 @@ class Audiens extends BaseController
         }
 
         return view('templates/headerUser',  ['title' => 'List Penampilan Teater']) .
-            view('templates/bodyListPenampilan', compact('sedangTayang', 'akanTayang')) .
-            view('templates/footerListPenampilan', ['needsDropdown' => true]);
+            view('templates/bodyListPenampilan', [
+                'sedangTayang' => $sedangTayang,
+                'akanTayang'   => $akanTayang,
+                'searchUrl'    => base_url('user/searchPenampilan'),
+                'page' => 'home'
+            ]) .
+            view('templates/footerListPenampilan', [
+                'needsDropdown' => true,
+                'searchUrl'     => base_url('user/searchPenampilan')
+            ]);
     }
 
     private function formatPenampilan($penampilan)
@@ -300,115 +320,153 @@ class Audiens extends BaseController
 
     public function ListAudisi()
     {
-        $audisiAktor = [
-            [
-                'judul' => 'The Princess from Knowhere',
-                'karakter_audisi' => 'Putri Liliput',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '17 Maret 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster2.jpeg')
-            ],
-            [
-                'judul' => 'Tung Tang Ting',
-                'karakter_audisi' => 'Lily Tulalit',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '17 April 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster1.jpg')
-            ],
-            [
-                'judul' => 'The Prince of Konoha',
-                'karakter_audisi' => 'Bangsawan Ethan',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '27 Maret 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster4.jpeg')
-            ],
-            [
-                'judul' => 'Bajak Sambal dan Laut',
-                'karakter_audisi' => 'Kapten Hulahoop',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '7 Maret 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster3.jpeg')
-            ],
-            [
-                'judul' => 'Hutang Piutang',
-                'karakter_audisi' => 'Mak Sukinem',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '27 Februari 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster2.jpeg')
-            ],
-        ];
+        $today = date('Y-m-d');
+        $now = date('H:i:s');
 
-        $audisiStaff = [
-            [
-                'judul' => 'The Princess from Knowhere',
-                'jenis_staff' => 'Tata Lampu',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '17 Maret 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster2.jpeg')
-            ],
-            [
-                'judul' => 'Tung Tang Ting',
-                'jenis_staff' => 'Tata Busana',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '17 April 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster1.jpg')
-            ],
-            [
-                'judul' => 'The Prince of Konoha',
-                'jenis_staff' => 'Tata Panggung',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '27 Maret 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster4.jpeg')
-            ],
-            [
-                'judul' => 'Bajak Sambal dan Laut',
-                'jenis_staff' => 'Asisten Sutradara',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '7 Maret 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster3.jpeg')
-            ],
-            [
-                'judul' => 'Hutang Piutang',
-                'jenis_staff' => 'Tata Properti',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '27 Februari 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster2.jpeg')
-            ],
-        ];
+        $whereManual = "(m_teater.daftar_mulai IS NOT NULL AND m_teater.daftar_berakhir IS NOT NULL AND CURDATE() BETWEEN m_teater.daftar_mulai AND m_teater.daftar_berakhir)";
+        $whereOtomatis = "(m_teater.daftar_mulai IS NULL AND m_teater.daftar_berakhir IS NULL)";
+        $whereAll = "($whereManual OR $whereOtomatis)";
+
+        $audisiAktor = $this->db->table('m_teater')
+            ->select('
+        m_teater.id_teater,
+        m_audisi.id_audisi,
+        m_teater.judul,
+        m_teater.poster,
+        m_user.nama AS komunitas_teater,
+        m_lokasi_teater.tempat,
+        m_lokasi_teater.kota,
+        m_show_schedule.tanggal,
+        m_show_schedule.waktu_mulai,
+        m_show_schedule.waktu_selesai,
+        m_audisi_aktor.karakter_audisi
+    ')
+            ->join('r_user_teater', 'r_user_teater.id_teater = m_teater.id_teater')
+            ->join('m_user', 'm_user.id_user = r_user_teater.id_user')
+            ->join('m_audisi', 'm_audisi.id_teater = m_teater.id_teater')
+            ->join('m_kategori_audisi', 'm_kategori_audisi.id_kategori = m_audisi.id_kategori')
+            ->join('m_audisi_aktor', 'm_audisi_aktor.id_audisi = m_audisi.id_audisi')
+            ->join('m_audisi_schedule', 'm_audisi_schedule.id_audisi = m_audisi.id_audisi')
+            ->join('r_audisi_schedule', 'r_audisi_schedule.id_pricing_audisi = m_audisi_schedule.id_pricing_audisi')
+            ->join('m_show_schedule', 'm_show_schedule.id_schedule = r_audisi_schedule.id_schedule')
+            ->join('m_lokasi_teater', 'm_lokasi_teater.id_location = m_show_schedule.id_location')
+            ->where('m_teater.tipe_teater', 'audisi')
+            ->where('m_show_schedule.tanggal >=', $today)
+            ->orderBy('m_show_schedule.tanggal', 'ASC')
+            ->get()
+            ->getResultArray();
+
+        $audisiStaff = $this->db->table('m_teater')
+            ->select('
+                    m_teater.id_teater,
+                    m_audisi.id_audisi,
+                    m_teater.judul,
+                    m_teater.poster,
+                    m_user.nama AS komunitas_teater,
+                    m_lokasi_teater.tempat,
+                    m_lokasi_teater.kota,
+                    m_show_schedule.tanggal,
+                    m_show_schedule.waktu_mulai,
+                    m_show_schedule.waktu_selesai,
+                    m_audisi_staff.jenis_staff
+                ')
+            ->join('r_user_teater', 'r_user_teater.id_teater = m_teater.id_teater')
+            ->join('m_user', 'm_user.id_user = r_user_teater.id_user')
+            ->join('m_audisi', 'm_audisi.id_teater = m_teater.id_teater')
+            ->join('m_kategori_audisi', 'm_kategori_audisi.id_kategori = m_audisi.id_kategori')
+            ->join('m_audisi_staff', 'm_audisi_staff.id_audisi = m_audisi.id_audisi')
+            ->join('m_audisi_schedule', 'm_audisi_schedule.id_audisi = m_audisi.id_audisi')
+            ->join('r_audisi_schedule', 'r_audisi_schedule.id_pricing_audisi = m_audisi_schedule.id_pricing_audisi')
+            ->join('m_show_schedule', 'm_show_schedule.id_schedule = r_audisi_schedule.id_schedule')
+            ->join('m_lokasi_teater', 'm_lokasi_teater.id_location = m_show_schedule.id_location')
+            ->where('m_teater.tipe_teater', 'audisi')
+            ->where('m_show_schedule.tanggal >=', $today)
+            ->orderBy('m_show_schedule.tanggal', 'ASC')
+            ->get()
+            ->getResultArray();
+
+        $nowFull = strtotime(date('Y-m-d H:i:s'));
+        $filteredAudisiAktor = [];
+
+        foreach ($audisiAktor as $audisi) {
+            if (!empty($audisi['daftar_mulai']) && !empty($audisi['daftar_berakhir'])) {
+                $filteredAudisiAktor[] = $this->formatAudisi($audisi); // ✅ format sebelum simpan
+            } else {
+                $jadwalAkhir = strtotime($audisi['tanggal'] . ' ' . $audisi['waktu_mulai']);
+
+                if ($nowFull <= $jadwalAkhir) {
+                    $filteredAudisiAktor[] = $this->formatAudisi($audisi); // ✅ format sebelum simpan
+                }
+            }
+        }
+
+        $finalAudisiAktor = [];
+
+        foreach ($filteredAudisiAktor as $audisi) {
+            $id = $audisi['id_teater'];
+
+            // Pecah tanggal dan waktu
+            $jadwalTimestamp = strtotime($audisi['tanggal'] . ' ' . explode(' - ', $audisi['waktu'])[0]);
+
+            if (!isset($finalAudisiAktor[$id]) || $jadwalTimestamp < strtotime($finalAudisiAktor[$id]['tanggal'] . ' ' . explode(' - ', $finalAudisiAktor[$id]['waktu'])[0])) {
+                $finalAudisiAktor[$id] = $audisi;
+            }
+        }
+
+        $filteredAudisiStaff = [];
+
+        foreach ($audisiStaff as $audisi) {
+            if (!empty($audisi['daftar_mulai']) && !empty($audisi['daftar_berakhir'])) {
+                $filteredAudisiStaff[] = $this->formatAudisi($audisi); // ✅ format sebelum simpan
+            } else {
+                $jadwalAkhir = strtotime($audisi['tanggal'] . ' ' . $audisi['waktu_mulai']);
+
+                if ($nowFull <= $jadwalAkhir) {
+                    $filteredAudisiStaff[] = $this->formatAudisi($audisi); // ✅ format sebelum simpan
+                }
+            }
+        }
+
+        $finalAudisiStaff = [];
+
+        foreach ($filteredAudisiStaff as $audisi) {
+            $id = $audisi['id_teater'];
+
+            $jadwalTimestamp = strtotime($audisi['tanggal'] . ' ' . explode(' - ', $audisi['waktu'])[0]);
+
+            if (!isset($finalAudisiStaff[$id]) || $jadwalTimestamp < strtotime($finalAudisiStaff[$id]['tanggal'] . ' ' . explode(' - ', $finalAudisiStaff[$id]['waktu'])[0])) {
+                $finalAudisiStaff[$id] = $audisi;
+            }
+        }
 
         return view('templates/headerUser',  ['title' => 'List Audisi Teater']) .
-            view('templates/bodyAudisi', compact('audisiAktor', 'audisiStaff')) .
-            view('templates/footerListPenampilan');
+            view('templates/bodyAudisi', [
+                'audisiAktor' => $finalAudisiAktor,
+                'audisiStaff' => $finalAudisiStaff,
+                'searchUrl'  => base_url('User/searchAudisi'),
+                'page' => 'home'
+            ]) .
+            view('templates/footerListPenampilan', [
+                'needsDropdown' => true,
+                'searchUrl' => base_url('User/searchAudisi')
+            ]);
+    }
+
+    private function formatAudisi($audisi)
+    {
+        return [
+            'id_teater' => $audisi['id_teater'],
+            'karakter_audisi' => $audisi['karakter_audisi'] ?? null,
+            'jenis_staff' => $audisi['jenis_staff'] ?? null,
+            'role' => $audisi['role'] ?? null, // gabungan karakter_audisi / jenis_staff
+            'role_type' => $audisi['role_type'] ?? null, // "aktor" atau "staff"
+            'judul' => $audisi['judul'],
+            'komunitas_teater' => $audisi['komunitas_teater'],
+            'lokasi_teater' => $audisi['tempat'],
+            'tanggal' => $this->formatTanggalIndoLengkap($audisi['tanggal']),
+            'waktu' => $this->formatJam($audisi['waktu_mulai']) . ' - ' . $this->formatJam($audisi['waktu_selesai']),
+            'poster' => $audisi['poster'],
+        ];
     }
 
     public function getApprovedMitra()
@@ -416,7 +474,6 @@ class Audiens extends BaseController
         $data = $this->mitraModel
             ->select('m_mitra.id_mitra, m_user.nama')
             ->join('m_user', 'm_user.id_user = m_mitra.id_user')
-            ->where('m_mitra.approval_status', 'approved')
             ->findAll();
 
         return $this->response->setJSON($data);
@@ -431,15 +488,18 @@ class Audiens extends BaseController
 
         $userId = session()->get('id_user');
         $user = $this->userModel->find($userId);
+        $audiens = $this->audiensModel->where('id_user', $userId)->first();
+        $sessionAudiensId = $audiens ? $audiens['id_audiens'] : null;
 
         // 1. Ambil data umum teater
         $teater = $this->teaterModel
             ->where('id_teater', $id_teater)
+            ->where('tipe_teater', 'penampilan')
             ->first();
 
         // 2. Ambil data penampilan (aktor, durasi, rating)
         $penampilan = $this->penampilanModel
-            ->where('id_teater', $id_teater)
+            ->where('id_teater', $teater['id_teater'])
             ->first();
 
         // 3. Ambil data sosial media (IG & FB)
@@ -488,6 +548,27 @@ class Audiens extends BaseController
             ->where('m_seat_pricing.id_penampilan', $penampilanId)
             ->findAll();
 
+        $tiketBookingAll = [];
+        if ($sessionAudiensId) {
+            $tiketBookingAll = $this->bookingModel
+                ->select('
+            t_booking.id_booking,
+            t_booking.status,
+            s.tanggal,
+            s.waktu_mulai,
+            s.waktu_selesai,
+            m_lokasi_teater.tempat,
+            m_lokasi_teater.kota
+        ')
+                ->join('r_show_schedule', 't_booking.id_jadwal = r_show_schedule.id_schedule_show')
+                ->join('m_show_schedule AS s', 'r_show_schedule.id_schedule = s.id_schedule')
+                ->join('m_lokasi_teater', 's.id_location = m_lokasi_teater.id_location')
+                ->where('t_booking.id_audiens', $sessionAudiensId)
+                ->where('t_booking.tipe_jadwal', 'penampilan')
+                ->where('s.id_teater', $id_teater)
+                ->findAll();
+        }
+
         $groupedSchedule = [];
 
         foreach ($jadwal as $row) {
@@ -496,13 +577,62 @@ class Audiens extends BaseController
             $tanggal = $row['tanggal'];
             $waktu = $row['waktu'];
 
-            // Kelompokkan berdasarkan kota → tempat → tanggal → waktu
+            // Kelompokkan harga dan denah seperti sebelumnya
             $groupedSchedule[$kota][$tempat][$tanggal][$waktu]['harga'][] = [
                 'nama_kategori' => $row['nama_kategori'],
                 'harga' => $row['harga'],
                 'tipe_harga' => $row['tipe_harga'],
             ];
             $groupedSchedule[$kota][$tempat][$tanggal][$waktu]['denah'] = $row['denah_seat'];
+
+            // Default status null, nanti diisi kalau audiens punya tiket
+            $groupedSchedule[$kota][$tempat][$tanggal][$waktu]['status'] = [];
+        }
+
+        $tiketPenampilan = [];
+        if ($sessionAudiensId) {
+            $tiketPenampilan = $this->bookingModel
+                ->select('
+        t_booking.id_booking,
+        t_booking.created_at AS issue_date,
+        t_booking.status,
+        user_audiens.nama AS nama_audiens,
+        m_teater.judul,
+        m_teater.tipe_teater AS jenis_teater,
+        user_mitra.nama AS nama_mitra,
+        m_lokasi_teater.tempat,
+        m_lokasi_teater.kota,
+        s.tanggal,
+        s.waktu_mulai,
+        s.waktu_selesai
+    ')
+                ->join('m_audiens', 't_booking.id_audiens = m_audiens.id_audiens')
+                ->join('m_user AS user_audiens', 'm_audiens.id_user = user_audiens.id_user')
+                ->join('r_show_schedule', 't_booking.id_jadwal = r_show_schedule.id_schedule_show')
+                ->join('m_show_schedule AS s', 'r_show_schedule.id_schedule = s.id_schedule')
+                ->join('m_lokasi_teater', 's.id_location = m_lokasi_teater.id_location')
+                ->join('m_teater', 's.id_teater = m_teater.id_teater')
+                ->join('r_user_teater', 'm_teater.id_teater = r_user_teater.id_teater')
+                ->join('m_user AS user_mitra', 'r_user_teater.id_user = user_mitra.id_user')
+                ->where('t_booking.id_audiens', $sessionAudiensId)
+                ->where('t_booking.tipe_jadwal', 'penampilan')
+                ->where('t_booking.status', 'success')
+                ->where('s.id_teater', $id_teater)   // 🔥 filter tambahan
+                ->findAll();
+        }
+
+        // Loop tiket audiens untuk mengisi status
+        if (!empty($tiketBookingAll)) {
+            foreach ($tiketBookingAll as $tiket) {
+                $kota = $tiket['kota'];
+                $tempat = $tiket['tempat'];
+                $tanggal = $tiket['tanggal'];
+                $waktu = date('H:i', strtotime($tiket['waktu_mulai'])) . ' - ' . date('H:i', strtotime($tiket['waktu_selesai']));
+
+                if (isset($groupedSchedule[$kota][$tempat][$tanggal][$waktu])) {
+                    $groupedSchedule[$kota][$tempat][$tanggal][$waktu]['status'][] = $tiket['status'];
+                }
+            }
         }
 
         return view('templates/headerAudiens',  ['title' => 'Detail Penampilan Teater', 'user'  => $user]) .
@@ -514,6 +644,7 @@ class Audiens extends BaseController
                 'namaKomunitas' => $namaKomunitas,
                 'mitraTeater' => $mitra,
                 'groupedSchedule' => $groupedSchedule,
+                'tiketPenampilan' => $tiketPenampilan
             ]) .
             view('templates/footerListPenampilan');
     }
@@ -521,34 +652,71 @@ class Audiens extends BaseController
     public function showBookingPopup($tipe, $id)
     {
         if ($tipe === 'penampilan') {
-            $teater = $this->teaterModel->find($id);
+            // Ambil semua jadwal untuk teater ini
+            $jadwal = $this->db->table('r_show_schedule rs')
+                ->select('
+                rs.id_schedule_show AS id_jadwal,
+                rs.id_schedule,
+                ms.tanggal,
+                ms.waktu_mulai,
+                ms.waktu_selesai
+            ')
+                ->join('m_show_schedule ms', 'rs.id_schedule = ms.id_schedule')
+                ->where('ms.id_teater', $id)
+                ->get()
+                ->getResultArray();
 
-            $jadwal = $this->db->table('r_show_schedule')
-                ->select('r_show_schedule.id_schedule_show AS id_jadwal, m_show_schedule.tanggal, m_show_schedule.waktu_mulai, m_show_schedule.waktu_selesai')
-                ->join('m_show_schedule', 'r_show_schedule.id_schedule = m_show_schedule.id_schedule')
-                ->join('m_teater', 'm_show_schedule.id_teater = m_teater.id_teater')
-                ->where('m_teater.id_teater', $id)
-                ->groupBy('r_show_schedule.id_schedule')
-                ->get()->getResultArray();
+            foreach ($jadwal as &$j) {
+                $j['is_free'] = "1"; // default gratis
+                $j['qrcode_bayar'] = '';
+
+                // Ambil semua id_pricing yang terkait dengan jadwal ini
+                $pricings = $this->db->table('r_show_schedule')
+                    ->select('id_pricing')
+                    ->where('id_schedule', $j['id_schedule'])
+                    ->get()
+                    ->getResultArray();
+
+                foreach ($pricings as $pricing) {
+                    // Ambil penampilan dari id_pricing
+                    $penampilan = $this->db->table('m_seat_pricing sp')
+                        ->select('p.id_penampilan, p.qrcode_bayar, sp.tipe_harga')
+                        ->join('m_penampilan p', 'sp.id_penampilan = p.id_penampilan')
+                        ->where('sp.id_pricing', $pricing['id_pricing'])
+                        ->get()
+                        ->getRowArray();
+
+                    if ($penampilan) {
+                        // Jika ada tipe_harga Bayar → jadwal bayar
+                        if ($penampilan['tipe_harga'] === 'Bayar') {
+                            $j['is_free'] = "0";
+                            $j['qrcode_bayar'] = $penampilan['qrcode_bayar'] ?? '';
+                            break; // cukup 1 tipe bayar → jadwal bayar
+                        }
+                    }
+                }
+            }
 
             return $this->response->setJSON([
-                'jadwal' => $jadwal,
-                'url_pendaftaran' => $teater['url_pendaftaran']
+                'jadwal' => $jadwal
             ]);
         } elseif ($tipe === 'audisi') {
-            $audisi = $this->teaterModel->find($id);
-
+            // Audisi selalu gratis
             $jadwal = $this->db->table('r_audisi_schedule')
-                ->select('r_audisi_schedule.id_audisi_schedule AS id_jadwal, m_show_schedule.tanggal, m_show_schedule.waktu_mulai, m_show_schedule.waktu_selesai')
-                ->join('m_show_schedule', 'r_audisi_schedule.id_schedule = m_show_schedule.id_schedule')
-                ->join('m_teater', 'm_show_schedule.id_teater = m_teater.id_teater')
-                ->where('m_teater.id_teater', $id)
+                ->select('r_audisi_schedule.id_audisi_schedule AS id_jadwal, ms.tanggal, ms.waktu_mulai, ms.waktu_selesai')
+                ->join('m_show_schedule ms', 'r_audisi_schedule.id_schedule = ms.id_schedule')
+                ->join('m_teater t', 'ms.id_teater = t.id_teater')
+                ->where('t.id_teater', $id)
                 ->groupBy('r_audisi_schedule.id_schedule')
-                ->get()->getResultArray();
+                ->get()
+                ->getResultArray();
+
+            foreach ($jadwal as &$j) {
+                $j['is_free'] = "1";
+            }
 
             return $this->response->setJSON([
-                'jadwal' => $jadwal,
-                'url_pendaftaran' => $audisi['url_pendaftaran']
+                'jadwal' => $jadwal
             ]);
         }
     }
@@ -559,29 +727,30 @@ class Audiens extends BaseController
         $idJadwal = $data->id_jadwal;
         $tipeJadwal = $data->tipe_jadwal;
 
-        if ($tipeJadwal === 'penampilan') {
-            $jadwal = $this->showSeatPricingModel->getScheduleWithPrice($idJadwal);
-            $isFree = isset($jadwal['harga']) && $jadwal['harga'] == 0 ? 1 : 0;
-        } elseif ($tipeJadwal === 'audisi') {
-            $jadwal = $this->audisiScheduleModel->getScheduleWithPrice($idJadwal);
-            $isFree = isset($jadwal['harga']) && $jadwal['harga'] == 0 ? 1 : 0;
-        }
-
         // Ambil user dari session
         $idUser = session()->get('id_user');
 
-        // Cari id_audiens dari m_audiens berdasarkan id_user
-        $audiens = $this->audiensModel
-            ->where('id_user', $idUser)
-            ->first();
-
+        // Cari id_audiens
+        $audiens = $this->audiensModel->where('id_user', $idUser)->first();
         if (!$audiens) {
             return $this->response->setJSON(['success' => false, 'message' => 'Audiens tidak ditemukan.']);
         }
-
         $idAudiens = $audiens['id_audiens'];
 
-        // Cek apakah user sudah booking jadwal ini sebelumnya
+        // Tentukan apakah gratis
+        if ($tipeJadwal === 'penampilan') {
+            $jadwal = $this->showSeatPricingModel->getScheduleWithPrice($idJadwal);
+
+            if (!$jadwal) {
+                $isFree = 1; // default gratis kalau tidak ada harga
+            } else {
+                $isFree = ($jadwal['harga'] == 0 || $jadwal['harga'] === null) ? 1 : 0; // **gunakan $isFree**
+            }
+        } else { // audisi selalu gratis
+            $isFree = 1;
+        }
+
+        // Cek booking lama
         $bookingLama = $this->bookingModel
             ->where('id_audiens', $idAudiens)
             ->where('id_jadwal', $idJadwal)
@@ -589,45 +758,74 @@ class Audiens extends BaseController
             ->first();
 
         if ($bookingLama) {
-            return $this->response->setJSON([
-                'success' => false,
-                'message' => 'Kamu sudah melakukan booking untuk jadwal ini.'
-            ]);
+            if ($bookingLama['isValid'] == 1) {
+                return $this->response->setJSON([
+                    'success' => false,
+                    'message' => 'Booking sudah valid, tidak bisa ulang.'
+                ]);
+            } elseif ($bookingLama['isValid'] == 0) {
+                return $this->response->setJSON([
+                    'success' => false,
+                    'message' => 'Booking sedang diverifikasi.'
+                ]);
+            } elseif ($bookingLama['isValid'] == 2) {
+                // Ditolak, hapus dulu
+                $this->bookingModel->delete($bookingLama['id_booking']);
+            }
         }
 
-        // Simpan ke t_booking
-        $this->bookingModel->save([
+        // Tentukan status & isValid berdasarkan gratis / bayar
+        if ($isFree) {
+            $status = 'success';
+            $isValid = 1;
+        } else {
+            $status = 'pending';
+            $isValid = 0;
+        }
+
+        $this->bookingModel->insert([
             'id_audiens' => $idAudiens,
             'id_jadwal' => $idJadwal,
             'tipe_jadwal' => $tipeJadwal,
             'is_free' => $isFree,
-            'status' => 'pending'
+            'status' => $status,
+            'isValid' => $isValid
         ]);
 
-        return $this->response->setJSON(['success' => true]);
+        $idBookingBaru = $this->bookingModel->getInsertID();
+
+        return $this->response->setJSON([
+            'success' => true,
+            'is_free' => $isFree,
+            'id_booking' => $idBookingBaru
+        ]);
     }
 
     public function konfirmasiUploadBukti($id_booking)
     {
-        // Ambil data file upload
         $file = $this->request->getFile('bukti_pembayaran');
         if ($file && $file->isValid() && !$file->hasMoved()) {
             $newName = $file->getRandomName();
             $file->move(ROOTPATH . 'public/uploads/bukti/', $newName);
 
-            // Update data
             $this->bookingModel->update($id_booking, [
                 'bukti_pembayaran' => $newName,
-                'status' => 'success'
+                'isValid' => 0 // bukti baru diupload, perlu diverifikasi
             ]);
 
-            return redirect()->back()->with('success', 'Bukti pembayaran berhasil diunggah.');
+            return $this->response->setJSON([
+                'success' => true,
+                'message' => 'Bukti pembayaran berhasil diunggah.'
+            ]);
         }
 
-        return redirect()->back()->with('error', 'Upload bukti pembayaran gagal.');
+        return $this->response->setJSON([
+            'success' => false,
+            'message' => 'Upload bukti pembayaran gagal.'
+        ]);
     }
 
-    public function hapusBookingPending($id_jadwal)
+    public function hapusBookingPending($id_booking)
     {
         $idUser = session()->get('id_user');
 
@@ -636,11 +834,17 @@ class Audiens extends BaseController
             return $this->response->setJSON(['success' => false, 'message' => 'Audiens tidak ditemukan.']);
         }
 
-        $this->bookingModel->where([
-            'id_audiens' => $audiens['id_audiens'],
-            'id_jadwal' => $id_jadwal,
-            'status' => 'pending'
-        ])->delete();
+        $booking = $this->bookingModel
+            ->where('id_audiens', $audiens['id_audiens'])
+            ->where('id_booking', $id_booking)
+            ->where('status', 'pending')
+            ->first();
+
+        if (!$booking) {
+            return $this->response->setJSON(['success' => false, 'message' => 'Data booking tidak ditemukan atau bukan status pending.']);
+        }
+
+        $this->bookingModel->delete($booking['id_booking']);
 
         return $this->response->setJSON(['success' => true]);
     }
@@ -660,12 +864,22 @@ class Audiens extends BaseController
 
         $idAudiens = $audiens['id_audiens'];
 
-        // Update status booking
-        $this->bookingModel->where([
+        $booking = $this->bookingModel->where([
             'id_jadwal' => $idJadwal,
             'id_audiens' => $idAudiens,
-            'status' => 'pending'
-        ])->set(['status' => 'success'])->update();
+            'status' => 'pending',
+            'isValid' => 0
+        ])->first();
+
+        if (!$booking) {
+            return $this->response->setJSON(['success' => false, 'message' => 'Booking yang valid tidak ditemukan.']);
+        }
+
+        // Update hanya 1 booking
+        $this->bookingModel->update($booking['id_booking'], [
+            'status' => 'success',
+            'isValid' => 1
+        ]);
 
         return $this->response->setJSON(['success' => true]);
     }
@@ -768,125 +982,165 @@ class Audiens extends BaseController
             // kalau semua sudah lewat, abaikan
         }
 
-        return view('templates/headerAudiens',  ['title' => 'List Penampilan Teater', 'user' => $user]) .
-            view('templates/bodyListPenampilan', compact('sedangTayang', 'akanTayang')) .
-            view('templates/footerListPenampilan', ['needsDropdown' => true]);
+        return view('templates/headerAudiens', [
+            'title' => 'List Penampilan Teater',
+            'user'  => $user
+        ]) .
+            view('templates/bodyListPenampilan', [
+                'sedangTayang' => $sedangTayang,
+                'akanTayang'   => $akanTayang,
+                'searchUrl'    => base_url('Audiens/searchPenampilan'),
+                'page' => 'home'
+            ]) .
+            view('templates/footerListPenampilan', [
+                'needsDropdown' => true,
+                'searchUrl'     => base_url('Audiens/searchPenampilan')
+            ]);
     }
 
     public function AudisiAfterLogin()
     {
+        if (!session()->has('id_user')) {
+            session()->setFlashdata('error', 'Sesi login Anda telah berakhir. Silakan login kembali.');
+            return redirect()->to(base_url('User/login'));
+        }
+
         $userId = session()->get('id_user'); // Misalnya user_id disimpan di session setelah login
         $user = $this->userModel->find($userId); // Ambil data user berdasarkan user_id
 
-        $audisiAktor = [
-            [
-                'judul' => 'The Princess from Knowhere',
-                'karakter_audisi' => 'Putri Liliput',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '17 Maret 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster2.jpeg')
-            ],
-            [
-                'judul' => 'Tung Tang Ting',
-                'karakter_audisi' => 'Lily Tulalit',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '17 April 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster1.jpg')
-            ],
-            [
-                'judul' => 'The Prince of Konoha',
-                'karakter_audisi' => 'Bangsawan Ethan',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '27 Maret 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster4.jpeg')
-            ],
-            [
-                'judul' => 'Bajak Sambal dan Laut',
-                'karakter_audisi' => 'Kapten Hulahoop',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '7 Maret 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster3.jpeg')
-            ],
-            [
-                'judul' => 'Hutang Piutang',
-                'karakter_audisi' => 'Mak Sukinem',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '27 Februari 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster2.jpeg')
-            ],
-        ];
+        $today = date('Y-m-d');
+        $now = date('H:i:s');
 
-        $audisiStaff = [
-            [
-                'judul' => 'The Princess from Knowhere',
-                'jenis_staff' => 'Tata Lampu',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '17 Maret 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster2.jpeg')
-            ],
-            [
-                'judul' => 'Tung Tang Ting',
-                'jenis_staff' => 'Tata Busana',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '17 April 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster1.jpg')
-            ],
-            [
-                'judul' => 'The Prince of Konoha',
-                'jenis_staff' => 'Tata Panggung',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '27 Maret 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster4.jpeg')
-            ],
-            [
-                'judul' => 'Bajak Sambal dan Laut',
-                'jenis_staff' => 'Asisten Sutradara',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '7 Maret 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster3.jpeg')
-            ],
-            [
-                'judul' => 'Hutang Piutang',
-                'jenis_staff' => 'Tata Properti',
-                'komunitas_teater' => 'Pria Bercerita Production',
-                'lokasi_teater' => 'Ciputra Artpreneur Theater',
-                'hari' => 'Sabtu',
-                'tanggal' => '27 Februari 2025',
-                'jam' => '18:00 WIB',
-                'poster' => base_url('assets/images/poster/poster2.jpeg')
-            ],
-        ];
+        $whereManual = "(m_teater.daftar_mulai IS NOT NULL AND m_teater.daftar_berakhir IS NOT NULL AND CURDATE() BETWEEN m_teater.daftar_mulai AND m_teater.daftar_berakhir)";
+        $whereOtomatis = "(m_teater.daftar_mulai IS NULL AND m_teater.daftar_berakhir IS NULL)";
+        $whereAll = "($whereManual OR $whereOtomatis)";
 
-        return view('templates/headerAudiens',  ['title' => 'List Audisi Teater', 'user' => $user]) .
-            view('templates/bodyAudisi', compact('audisiAktor', 'audisiStaff')) .
-            view('templates/footerListPenampilan');
+        $audisiAktor = $this->db->table('m_teater')
+            ->select('
+        m_teater.id_teater,
+        m_audisi.id_audisi,
+        m_teater.judul,
+        m_teater.poster,
+        m_user.nama AS komunitas_teater,
+        m_lokasi_teater.tempat,
+        m_lokasi_teater.kota,
+        m_show_schedule.tanggal,
+        m_show_schedule.waktu_mulai,
+        m_show_schedule.waktu_selesai,
+        m_audisi_aktor.karakter_audisi
+    ')
+            ->join('r_user_teater', 'r_user_teater.id_teater = m_teater.id_teater')
+            ->join('m_user', 'm_user.id_user = r_user_teater.id_user')
+            ->join('m_audisi', 'm_audisi.id_teater = m_teater.id_teater')
+            ->join('m_kategori_audisi', 'm_kategori_audisi.id_kategori = m_audisi.id_kategori')
+            ->join('m_audisi_aktor', 'm_audisi_aktor.id_audisi = m_audisi.id_audisi')
+            ->join('m_audisi_schedule', 'm_audisi_schedule.id_audisi = m_audisi.id_audisi')
+            ->join('r_audisi_schedule', 'r_audisi_schedule.id_pricing_audisi = m_audisi_schedule.id_pricing_audisi')
+            ->join('m_show_schedule', 'm_show_schedule.id_schedule = r_audisi_schedule.id_schedule')
+            ->join('m_lokasi_teater', 'm_lokasi_teater.id_location = m_show_schedule.id_location')
+            ->where('m_teater.tipe_teater', 'audisi')
+            ->where('m_show_schedule.tanggal >=', $today)
+            ->orderBy('m_show_schedule.tanggal', 'ASC')
+            ->get()
+            ->getResultArray();
+
+        $audisiStaff = $this->db->table('m_teater')
+            ->select('
+                    m_teater.id_teater,
+                    m_audisi.id_audisi,
+                    m_teater.judul,
+                    m_teater.poster,
+                    m_user.nama AS komunitas_teater,
+                    m_lokasi_teater.tempat,
+                    m_lokasi_teater.kota,
+                    m_show_schedule.tanggal,
+                    m_show_schedule.waktu_mulai,
+                    m_show_schedule.waktu_selesai,
+                    m_audisi_staff.jenis_staff
+                ')
+            ->join('r_user_teater', 'r_user_teater.id_teater = m_teater.id_teater')
+            ->join('m_user', 'm_user.id_user = r_user_teater.id_user')
+            ->join('m_audisi', 'm_audisi.id_teater = m_teater.id_teater')
+            ->join('m_kategori_audisi', 'm_kategori_audisi.id_kategori = m_audisi.id_kategori')
+            ->join('m_audisi_staff', 'm_audisi_staff.id_audisi = m_audisi.id_audisi')
+            ->join('m_audisi_schedule', 'm_audisi_schedule.id_audisi = m_audisi.id_audisi')
+            ->join('r_audisi_schedule', 'r_audisi_schedule.id_pricing_audisi = m_audisi_schedule.id_pricing_audisi')
+            ->join('m_show_schedule', 'm_show_schedule.id_schedule = r_audisi_schedule.id_schedule')
+            ->join('m_lokasi_teater', 'm_lokasi_teater.id_location = m_show_schedule.id_location')
+            ->where('m_teater.tipe_teater', 'audisi')
+            ->where('m_show_schedule.tanggal >=', $today)
+            ->orderBy('m_show_schedule.tanggal', 'ASC')
+            ->get()
+            ->getResultArray();
+
+        $nowFull = strtotime(date('Y-m-d H:i:s'));
+        $filteredAudisiAktor = [];
+
+        foreach ($audisiAktor as $audisi) {
+            if (!empty($audisi['daftar_mulai']) && !empty($audisi['daftar_berakhir'])) {
+                $filteredAudisiAktor[] = $this->formatAudisi($audisi); // ✅ format sebelum simpan
+            } else {
+                $jadwalAkhir = strtotime($audisi['tanggal'] . ' ' . $audisi['waktu_mulai']);
+
+                if ($nowFull <= $jadwalAkhir) {
+                    $filteredAudisiAktor[] = $this->formatAudisi($audisi); // ✅ format sebelum simpan
+                }
+            }
+        }
+
+        $finalAudisiAktor = [];
+
+        foreach ($filteredAudisiAktor as $audisi) {
+            $id = $audisi['id_teater'];
+
+            // Pecah tanggal dan waktu
+            $jadwalTimestamp = strtotime($audisi['tanggal'] . ' ' . explode(' - ', $audisi['waktu'])[0]);
+
+            if (!isset($finalAudisiAktor[$id]) || $jadwalTimestamp < strtotime($finalAudisiAktor[$id]['tanggal'] . ' ' . explode(' - ', $finalAudisiAktor[$id]['waktu'])[0])) {
+                $finalAudisiAktor[$id] = $audisi;
+            }
+        }
+
+        $filteredAudisiStaff = [];
+
+        foreach ($audisiStaff as $audisi) {
+            if (!empty($audisi['daftar_mulai']) && !empty($audisi['daftar_berakhir'])) {
+                $filteredAudisiStaff[] = $this->formatAudisi($audisi); // ✅ format sebelum simpan
+            } else {
+                $jadwalAkhir = strtotime($audisi['tanggal'] . ' ' . $audisi['waktu_mulai']);
+
+                if ($nowFull <= $jadwalAkhir) {
+                    $filteredAudisiStaff[] = $this->formatAudisi($audisi); // ✅ format sebelum simpan
+                }
+            }
+        }
+
+        $finalAudisiStaff = [];
+
+        foreach ($filteredAudisiStaff as $audisi) {
+            $id = $audisi['id_teater'];
+
+            $jadwalTimestamp = strtotime($audisi['tanggal'] . ' ' . explode(' - ', $audisi['waktu'])[0]);
+
+            if (!isset($finalAudisiStaff[$id]) || $jadwalTimestamp < strtotime($finalAudisiStaff[$id]['tanggal'] . ' ' . explode(' - ', $finalAudisiStaff[$id]['waktu'])[0])) {
+                $finalAudisiStaff[$id] = $audisi;
+            }
+        }
+
+        return view('templates/headerAudiens', [
+            'title' => 'List Audisi Teater',
+            'user'  => $user
+        ]) .
+            view('templates/bodyAudisi', [
+                'audisiAktor' => $finalAudisiAktor,
+                'audisiStaff' => $finalAudisiStaff,
+                'searchUrl'    => base_url('Audiens/searchAudisi'),
+                'page' => 'home'
+            ]) .
+            view('templates/footerListPenampilan', [
+                'needsDropdown' => true,
+                'searchUrl'     => base_url('Audiens/searchAudisi')
+            ]);
     }
 
     public function DetailAudisiAktor($id_teater)
@@ -898,6 +1152,8 @@ class Audiens extends BaseController
 
         $userId = session()->get('id_user');
         $user = $this->userModel->find($userId);
+        $audiens = $this->audiensModel->where('id_user', $userId)->first();
+        $sessionAudiensId = $audiens ? $audiens['id_audiens'] : null;
 
         // 1. Ambil data umum teater
         $teater = $this->teaterModel
@@ -912,6 +1168,138 @@ class Audiens extends BaseController
 
         // 3. Ambil karakter dan deskripsi audisi aktor
         $aktorAudisi = $this->audisiAktorModel
+            ->where('id_audisi', $audisi['id_audisi'])
+            ->first();
+
+        // 4. Ambil sosial media, website, nama komunitas, mitra
+        $sosmed = $this->teaterSosmedModel
+            ->select('m_platform_sosmed.platform_name, r_teater_sosmed.acc_teater')
+            ->join('m_platform_sosmed', 'r_teater_sosmed.id_platform_sosmed = m_platform_sosmed.id_platform_sosmed')
+            ->where('r_teater_sosmed.id_teater', $id_teater)
+            ->findAll();
+
+        $website = $this->teaterWebModel->where('id_teater', $id_teater)->first();
+        $userTeater = $this->userTeaterModel->where('id_teater', $id_teater)->first();
+        $namaKomunitas = $this->userModel->where('id_user', $userTeater['id_user'])->first();
+        $mitra = $this->mitraModel->where('id_user', $namaKomunitas['id_user'])->first();
+
+        // 5. Ambil jadwal audisi (gabungan r_audisi_schedule → m_show_schedule)
+        $jadwalAudisi = $this->audisiScheduleModel
+            ->select('
+            m_show_schedule.id_schedule,
+            m_show_schedule.tanggal,
+            CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu,
+            m_lokasi_teater.kota,
+            m_lokasi_teater.tempat
+        ')
+            ->join('r_audisi_schedule', 'r_audisi_schedule.id_pricing_audisi = m_audisi_schedule.id_pricing_audisi')
+            ->join('m_show_schedule', 'r_audisi_schedule.id_schedule = m_show_schedule.id_schedule')
+            ->join('m_lokasi_teater', 'm_show_schedule.id_location = m_lokasi_teater.id_location')
+            ->where('m_audisi_schedule.id_audisi', $audisi['id_audisi'])
+            ->orderBy('m_lokasi_teater.kota')
+            ->findAll();
+
+        // 6. Ambil semua booking audisi audiens (untuk status di jadwal)
+        $tiketBookingAll = [];
+        if ($sessionAudiensId) {
+            $tiketBookingAll = $this->bookingModel
+                ->select('t_booking.id_jadwal, t_booking.status, r_audisi_schedule.id_schedule AS schedule_id')
+                ->join('r_audisi_schedule', 't_booking.id_jadwal = r_audisi_schedule.id_audisi_schedule')
+                ->where('t_booking.id_audiens', $sessionAudiensId)
+                ->where('t_booking.tipe_jadwal', 'audisi')
+                ->findAll();
+        }
+
+        // 7. Ambil tiket digital (hanya success)
+        $tiketAudisi = [];
+        if ($sessionAudiensId) {
+            $tiketAudisi = $this->bookingModel
+                ->select('
+                t_booking.id_booking,
+                t_booking.created_at AS issue_date,
+                user_audiens.nama AS nama_audiens,
+                m_teater.judul,
+                m_teater.tipe_teater AS jenis_teater,
+                user_mitra.nama AS nama_mitra,
+                m_lokasi_teater.tempat,
+                m_lokasi_teater.kota,
+                s.tanggal,
+                s.waktu_mulai,
+                s.waktu_selesai
+            ')
+                ->join('m_audiens', 't_booking.id_audiens = m_audiens.id_audiens')
+                ->join('m_user AS user_audiens', 'm_audiens.id_user = user_audiens.id_user')
+                ->join('r_audisi_schedule', 't_booking.id_jadwal = r_audisi_schedule.id_audisi_schedule')
+                ->join('m_show_schedule AS s', 'r_audisi_schedule.id_schedule = s.id_schedule')
+                ->join('m_lokasi_teater', 's.id_location = m_lokasi_teater.id_location')
+                ->join('m_teater', 's.id_teater = m_teater.id_teater')
+                ->join('r_user_teater', 'm_teater.id_teater = r_user_teater.id_teater')
+                ->join('m_user AS user_mitra', 'r_user_teater.id_user = user_mitra.id_user')
+                ->where('t_booking.id_audiens', $sessionAudiensId)
+                ->where('t_booking.tipe_jadwal', 'audisi')
+                ->where('t_booking.status', 'success')
+                ->where('s.id_teater', $id_teater)
+                ->findAll();
+        }
+
+        // 8. Bangun groupedSchedule dengan status booking
+        $groupedSchedule = [];
+        foreach ($jadwalAudisi as $row) {
+            $statusBooking = '-';
+            foreach ($tiketBookingAll as $tiket) {
+                if ($tiket['schedule_id'] == $row['id_schedule']) {
+                    $statusBooking = $tiket['status'];
+                    break;
+                }
+            }
+
+            $groupedSchedule[$row['kota']][$row['tempat']][$row['tanggal']][] = [
+                'waktu' => $row['waktu'],
+                'status' => $statusBooking
+            ];
+        }
+
+        return view('templates/headerAudiens',  ['title' => 'Detail Audisi Aktor Teater', 'user'  => $this->user]) .
+            view('templates/bodyDetailAudisiAktor', [
+                'teater'         => $teater,
+                'audisi'         => $audisi,
+                'aktorAudisi'    => $aktorAudisi,
+                'sosmed'         => $sosmed,
+                'website'        => $website,
+                'namaKomunitas'  => $namaKomunitas,
+                'mitra'          => $mitra,
+                'groupedSchedule' => $groupedSchedule,
+                'tiketAudisi'    => $tiketAudisi
+            ]) .
+            view('templates/footerListPenampilan');
+    }
+
+    public function detailAudisiStaff($id_teater)
+    {
+
+        if (!session()->has('id_user')) {
+            session()->setFlashdata('error', 'Sesi login Anda telah berakhir. Silakan login kembali.');
+            return redirect()->to(base_url('User/login'));
+        }
+
+        $userId = session()->get('id_user');
+        $user = $this->userModel->find($userId);
+        $audiens = $this->audiensModel->where('id_user', $userId)->first();
+        $sessionAudiensId = $audiens ? $audiens['id_audiens'] : null;
+
+        // 1. Ambil data umum teater
+        $teater = $this->teaterModel
+            ->where('id_teater', $id_teater)
+            ->where('tipe_teater', 'audisi')
+            ->first();
+
+        // 2. Ambil data audisi utama
+        $audisi = $this->audisiModel
+            ->where('id_teater', $teater['id_teater'])
+            ->first();
+
+        // 3. Ambil karakter dan deskripsi audisi aktor
+        $staffAudisi = $this->audisiStaffModel
             ->where('id_audisi', $audisi['id_audisi'])
             ->first();
 
@@ -945,91 +1333,95 @@ class Audiens extends BaseController
             ->where('id_user', $namaKomunitas['id_user'])
             ->first();
 
-        // 5. Ambil jadwal audisi (gabung dari r_audisi_schedule dan m_show_schedule)
-        $jadwalAudisi = $this->audisiPricingModel
+        // 5. Ambil jadwal audisi (gabungan r_audisi_schedule → m_show_schedule)
+        $jadwalAudisi = $this->audisiScheduleModel
             ->select('
-    m_show_schedule.tanggal,
-    CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu,
-    m_lokasi_teater.kota,
-    m_lokasi_teater.tempat,
-    m_audisi_schedule.harga, m_audisi_schedule.tipe_harga
-')
+            m_show_schedule.id_schedule,
+            m_show_schedule.tanggal,
+            CONCAT(DATE_FORMAT(m_show_schedule.waktu_mulai, "%H:%i"), " - ", DATE_FORMAT(m_show_schedule.waktu_selesai, "%H:%i")) AS waktu,
+            m_lokasi_teater.kota,
+            m_lokasi_teater.tempat
+        ')
+            ->join('r_audisi_schedule', 'r_audisi_schedule.id_pricing_audisi = m_audisi_schedule.id_pricing_audisi')
             ->join('m_show_schedule', 'r_audisi_schedule.id_schedule = m_show_schedule.id_schedule')
             ->join('m_lokasi_teater', 'm_show_schedule.id_location = m_lokasi_teater.id_location')
-            ->join('m_audisi_schedule', 'r_audisi_schedule.id_pricing_audisi = m_audisi_schedule.id_pricing_audisi')
-            ->join('m_audisi', 'm_audisi_schedule.id_audisi = m_audisi.id_audisi')
-            ->where('m_audisi.id_teater', $id_teater)
+            ->where('m_audisi_schedule.id_audisi', $audisi['id_audisi'])
             ->orderBy('m_lokasi_teater.kota')
             ->findAll();
 
-        $groupedSchedule = [];
+        // 6. Ambil semua booking audisi audiens (untuk status di jadwal)
+        $tiketBookingAll = [];
+        if ($sessionAudiensId) {
+            $tiketBookingAll = $this->bookingModel
+                ->select('t_booking.id_jadwal, t_booking.status, r_audisi_schedule.id_schedule AS schedule_id')
+                ->join('r_audisi_schedule', 't_booking.id_jadwal = r_audisi_schedule.id_audisi_schedule')
+                ->where('t_booking.id_audiens', $sessionAudiensId)
+                ->where('t_booking.tipe_jadwal', 'audisi')
+                ->findAll();
+        }
 
+        // 7. Ambil tiket digital (hanya success)
+        $tiketAudisi = [];
+        if ($sessionAudiensId) {
+            $tiketAudisi = $this->bookingModel
+                ->select('
+                t_booking.id_booking,
+                t_booking.created_at AS issue_date,
+                user_audiens.nama AS nama_audiens,
+                m_teater.judul,
+                m_teater.tipe_teater AS jenis_teater,
+                user_mitra.nama AS nama_mitra,
+                m_lokasi_teater.tempat,
+                m_lokasi_teater.kota,
+                s.tanggal,
+                s.waktu_mulai,
+                s.waktu_selesai
+            ')
+                ->join('m_audiens', 't_booking.id_audiens = m_audiens.id_audiens')
+                ->join('m_user AS user_audiens', 'm_audiens.id_user = user_audiens.id_user')
+                ->join('r_audisi_schedule', 't_booking.id_jadwal = r_audisi_schedule.id_audisi_schedule')
+                ->join('m_show_schedule AS s', 'r_audisi_schedule.id_schedule = s.id_schedule')
+                ->join('m_lokasi_teater', 's.id_location = m_lokasi_teater.id_location')
+                ->join('m_teater', 's.id_teater = m_teater.id_teater')
+                ->join('r_user_teater', 'm_teater.id_teater = r_user_teater.id_teater')
+                ->join('m_user AS user_mitra', 'r_user_teater.id_user = user_mitra.id_user')
+                ->where('t_booking.id_audiens', $sessionAudiensId)
+                ->where('t_booking.tipe_jadwal', 'audisi')
+                ->where('t_booking.status', 'success')
+                ->where('s.id_teater', $id_teater)
+                ->findAll();
+        }
+
+        // 8. Bangun groupedSchedule dengan status booking
+        $groupedSchedule = [];
         foreach ($jadwalAudisi as $row) {
-            $formattedHarga = $row['harga'] == 0 ? '-' : number_format($row['harga'], 0, ',', '.');
+            $statusBooking = '-';
+            foreach ($tiketBookingAll as $tiket) {
+                if ($tiket['schedule_id'] == $row['id_schedule']) {
+                    $statusBooking = $tiket['status'];
+                    break;
+                }
+            }
 
             $groupedSchedule[$row['kota']][$row['tempat']][$row['tanggal']][] = [
                 'waktu' => $row['waktu'],
-                'harga_display' => $formattedHarga
+                'status' => $statusBooking
             ];
         }
 
-        return view('templates/headerAudiens',  ['title' => 'Detail Audisi Aktor Teater', 'user'  => $this->user]) .
-            view('templates/bodyDetailAudisiAktor', [
+        return view('templates/headerAudiens',  ['title' => 'Detail Audisi Staff Teater', 'user'  => $this->user]) .
+            view('templates/bodyDetailAudisiStaff', [
                 'teater' => $teater,
                 'audisi' => $audisi,
-                'aktorAudisi' => $aktorAudisi,
+                'staffAudisi' => $staffAudisi,
                 'sosmed' => $sosmed,
                 'website' => $website,
                 'namaKomunitas' => $namaKomunitas,
                 'mitra' => $mitra,
-                'groupedSchedule' => $groupedSchedule
+                'groupedSchedule' => $groupedSchedule,
+                'tiketAudisi' => $tiketAudisi
             ]) .
             view('templates/footerListPenampilan');
-    }
-
-    public function detailAudisiStaff()
-    {
-
-        $session = session();
-
-        // Cek apakah user sudah login
-        if (!$session->has('id_user')) {
-            return redirect()->to(base_url('User/login'))->with('error', 'Silakan login untuk melihat detail.');
-        }
-
-        // Data dummy untuk jadwal pertunjukan
-        $scheduleData = [
-            [
-                'kota' => 'Jakarta',
-                'tempat' => 'Aula Teater Garuda Krisna',
-                'tanggal' => '2024-09-12',
-                'waktu' => ['Sesi I 15:00 - 17:00 WIB', 'Sesi II 19:00 - 21:00 WIB'],
-            ],
-            [
-                'kota' => 'Bandung',
-                'tempat' => 'Teater Budaya',
-                'tanggal' => '2024-09-13',
-                'waktu' => ['Sesi I 16:00 - 18:00 WIB', 'Sesi II 19:30 - 21:30 WIB'],
-            ],
-            [
-                'kota' => 'Bandung',
-                'tempat' => 'Teater Pusaka',
-                'tanggal' => '2024-09-14',
-                'waktu' => ['19:30 - 21:30 WIB'],
-            ],
-        ];
-
-        $groupedSchedule = [];
-
-        foreach ($scheduleData as $row) {
-            foreach ($row['waktu'] as $waktu) {
-                $groupedSchedule[$row['kota']][$row['tempat']][$row['tanggal']][] = $waktu;
-            }
-        }
-
-        return view('templates/headerAudiens',  ['title' => 'Detail Audisi Staff Teater', 'user'  => $this->user]) .
-            view('templates/bodyDetailAudisiStaff', ['groupedSchedule' => $groupedSchedule]) .
-            view('templates/footerListPenampilan', ['needsDropdown' => true]);
     }
 
     public function tentangKami()
@@ -1049,12 +1441,10 @@ class Audiens extends BaseController
             view('templates/footer');
     }
 
-
-
     public function mitraTeater()
     {
         // Ambil data mitra teater dengan informasi user (nama)
-        $mitraList = $this->mitraModel->getApprovedMitraWithUser();
+        $mitraList = $this->mitraModel->getMitraWithUser();
 
         // Kirim data ke view
         return view('templates/headerUser', ['title' => 'Daftar Mitra Teater']) .
@@ -1069,7 +1459,7 @@ class Audiens extends BaseController
         $user = $this->userModel->find($userId); // Ambil data user berdasarkan user_id
 
         // Ambil data mitra teater dengan informasi user (nama)
-        $mitraList = $this->mitraModel->getApprovedMitraWithUser();
+        $mitraList = $this->mitraModel->getMitraWithUser();
 
         // Kirim data ke view
         return view('templates/headerAudiens', ['title' => 'Daftar Mitra Teater', 'user' => $user]) .
@@ -1094,6 +1484,20 @@ class Audiens extends BaseController
             view('templates/footer');
     }
 
+    public function detail($id)
+    {
+        // Ambil detail mitra berdasarkan ID
+        $mitra = $this->mitraModel->getMitraDetail($id);
+
+        // Ambil data sosial media mitra
+        $sosial_media = $this->mitraModel->getMitraSosmed($id);
+
+        // Kirim data ke view
+        return view('templates/headerUser', ['title' => 'Detail Mitra Teater']) .
+            view('templates/detailMitraTeater', ['mitra' => $mitra, 'sosial_media' => $sosial_media]) .
+            view('templates/footer');
+    }
+
     public function profile()
     {
         $userId = session()->get('id_user');
@@ -1106,250 +1510,353 @@ class Audiens extends BaseController
 
     public function searchPenampilan()
     {
-        // Ambil filter dari request
-        $category = $this->request->getGet('category'); // Ambil kategori pencarian
-        $searchValue = $this->request->getGet('searchInput'); // Untuk kategori yang pakai input tunggal
-        $durasiMin = $this->request->getGet('minDurasi');
-        $durasiMax = $this->request->getGet('maxDurasi');
-        $hargaMin = $this->request->getGet('minHarga');
-        $hargaMax = $this->request->getGet('maxHarga');
+        // Ambil filter dari request (langsung sesuai JS)
+        $searchTanggal = $this->request->getGet('searchTanggal');
+        $searchWaktu   = $this->request->getGet('searchWaktu');
+        $searchKota    = $this->request->getGet('searchKota');
+        $searchRating  = $this->request->getGet('searchRating');
+        $durasiMin     = $this->request->getGet('minDurasi');
+        $durasiMax     = $this->request->getGet('maxDurasi');
+        $hargaMin      = $this->request->getGet('minHarga');
+        $hargaMax      = $this->request->getGet('maxHarga');
 
-        // Query utama menggunakan JOIN
+        // Query utama
         $query = $this->penampilanModel
             ->select('
-        m_teater.judul, 
-        m_teater.poster, 
-        m_teater.sinopsis, 
-        m_teater.penulis, 
-        m_teater.sutradara, 
-        m_teater.staff,
+            m_penampilan.id_penampilan,
+            t.id_teater,
+            t.judul,
+            t.poster,
+            m_user.nama AS komunitas_teater,
+            ml.tempat,
+            ml.kota,
+            m_penampilan.rating_umur,
+            m_penampilan.durasi,
+            s.tanggal,
+            s.waktu_mulai,
+            s.waktu_selesai
+        ', false)
+            ->join('m_teater t', 't.id_teater = m_penampilan.id_teater')
+            ->join('r_user_teater rut', 'rut.id_teater = t.id_teater', 'left')
+            ->join('m_user', 'm_user.id_user = rut.id_user', 'left')
+            ->join('m_show_schedule s', 's.id_teater = t.id_teater', 'left')
+            ->join('m_lokasi_teater ml', 'ml.id_location = s.id_location', 'left')
+            ->join('m_seat_pricing mp1', 'mp1.id_penampilan = m_penampilan.id_penampilan', 'left')
+            ->where('t.tipe_teater', 'penampilan');
 
-        m_teater_website.judul_web, 
-        m_teater_website.url_web,
+        // Filter sesuai param dari JS
+        if (!empty($searchTanggal)) {
+            $query->where('s.tanggal', $searchTanggal);
+        }
 
-        m_show_schedule.tanggal, 
-        m_show_schedule.waktu_mulai, 
-        m_show_schedule.waktu_selesai,
+        if (!empty($searchWaktu)) {
+            $query->where('s.waktu_mulai', $searchWaktu);
+        }
 
-        m_lokasi_teater.tempat, 
-        m_lokasi_teater.kota,
+        if (!empty($searchKota)) {
+            $query->where('ml.kota', $searchKota);
+        }
 
-        m_penampilan.aktor, 
-        m_penampilan.durasi, 
-        m_penampilan.rating_umur,
+        if (!empty($searchRating)) {
+            $query->where('m_penampilan.rating_umur', $searchRating);
+        }
 
-        MIN(m_seat_pricing.harga) as harga_terendah, 
-        MAX(m_seat_pricing.harga) as harga_tertinggi,
+        if (!empty($durasiMin) && !empty($durasiMax)) {
+            $query->where('m_penampilan.durasi >=', $durasiMin)
+                ->where('m_penampilan.durasi <=', $durasiMax);
+        }
 
-        m_seat_category.nama_kategori, 
-        m_seat_category.denah_seat,
-
-        m_sosmed_platform.platform_name, 
-
-        r_teater_sosmed.acc_teater, 
-        r_mitra_sosmed.acc_mitra, 
-
-        m_user.nama as nama_creator
-    ')
-
-            // **Relasi Penampilan dan Teater**
-            ->join('m_teater', 'm_teater.id_teater = m_penampilan.id_teater')
-
-            // **Relasi Show Schedule & Lokasi**
-            ->join('m_show_schedule', 'm_show_schedule.id_teater = m_teater.id_teater')
-            ->join('m_lokasi_teater', 'm_lokasi_teater.id_location = m_show_schedule.id_location')
-            ->join('m_seat_pricing', 'm_seat_pricing.id_penampilan = m_penampilan.id_penampilan')
-
-            // **Relasi Penampilan dan Harga Seat**
-            ->join('r_show_schedule', 'r_show_schedule.id_schedule = m_show_schedule.id_schedule')
-            ->join('m_seat_pricing', 'm_seat_pricing.id_pricing = r_show_schedule.id_pricing')
-            ->join('m_seat_category', 'm_seat_category.id_kategori_seat = m_seat_pricing.id_kategori_seat')
-
-            // **Relasi Website Teater**
-            ->join('m_teater_website', 'm_teater_website.id_teater = m_teater.id_teater', 'left')
-
-            // **Relasi Sosial Media Teater**
-            ->join('r_teater_sosmed', 'r_teater_sosmed.id_teater = m_teater.id_teater', 'left')
-            ->join('m_sosmed_platform', 'm_sosmed_platform.id_platform_sosmed = r_teater_sosmed.id_platform_sosmed', 'left')
-
-            // **Relasi Sosial Media Mitra**
-            ->join('r_teater_mitra_sosmed', 'r_teater_mitra_sosmed.id_teater_sosmed = r_teater_sosmed.id_teater_sosmed', 'left')
-            ->join('r_mitra_sosmed', 'r_mitra_sosmed.id_mitra_sosmed = r_teater_mitra_sosmed.id_mitra_sosmed', 'left')
-
-            // **Relasi User & Mitra**
-            ->join('r_user_teater', 'r_user_teater.id_teater = m_teater.id_teater', 'left')
-            ->join('m_user', 'm_user.id_user = r_user_teater.id_user', 'left')
-
-            ->groupBy('m_penampilan.id_penampilan'); // Mencegah duplikasi hasil
-
-        // Filter berdasarkan kategori yang dipilih
-        switch ($category) {
-            case 'tanggal':
-                if (!empty($searchValue)) {
-                    $query->where('m_show_schedule.tanggal', $searchValue);
-                }
-                break;
-
-            case 'waktu':
-                if (!empty($searchValue)) {
-                    $query->where('m_show_schedule.waktu_mulai', $searchValue);
-                }
-                break;
-
-            case 'kota':
-                if (!empty($searchValue)) {
-                    $query->where('m_lokasi_teater.kota', $searchValue);
-                }
-                break;
-
-            case 'harga':
-                if (!empty($hargaMin) && !empty($hargaMax)) {
-                    $query->having('harga_terendah <=', $hargaMax);
-                    // Tidak perlu filter harga_min karena teater tetap harus ditampilkan
-                }
-                break;
-
-            case 'durasi':
-                if (!empty($durasiMin) && !empty($durasiMax)) {
-                    $query->where('m_penampilan.durasi >=', $durasiMin)
-                        ->where('m_penampilan.durasi <=', $durasiMax);
-                }
-                break;
-
-            case 'rating':
-                if (!empty($searchValue)) {
-                    $query->where('m_penampilan.rating_umur', $searchValue);
-                }
-                break;
+        if (!empty($hargaMin) && !empty($hargaMax)) {
+            $query->where('mp1.harga >=', $hargaMin)
+                ->where('mp1.harga <=', $hargaMax);
         }
 
         // Jalankan query
-        $penampilan = $query->findAll();
+        $penampilanRaw = $query->groupBy('m_penampilan.id_penampilan')->findAll();
 
-        return view('templates/headerUser', ['title' => 'List Penampilan Teater']) .
-            view('templates/bodyListPenampilan', ['penampilan' => $penampilan]) .
-            view('templates/footerListPenampilan');
+        // Format hasil dengan fungsi bantu
+        $penampilan = array_map(function ($row) {
+            return $this->formatPenampilan($row);
+        }, $penampilanRaw);
+
+        // Kirim ke view
+        return view('templates/headerUser', ['title' => 'Hasil Pencarian']) .
+            view('templates/bodyListPenampilan', [
+                'penampilan' => $penampilan,
+                'searchUrl'  => base_url('user/searchPenampilan'),
+                'page' => 'search'
+            ]) .
+            view('templates/footerListPenampilan', [
+                'needsDropdown' => true,
+                'searchUrl' => base_url('user/searchPenampilan')
+            ]);
+    }
+
+    public function searchPenampilanAfterLogin()
+    {
+
+        if (!session()->has('id_user')) {
+            session()->setFlashdata('error', 'Sesi login Anda telah berakhir. Silakan login kembali.');
+            return redirect()->to(base_url('User/login'));
+        }
+
+        $userId = session()->get('id_user'); // Misalnya user_id disimpan di session setelah login
+        $user = $this->userModel->find($userId); // Ambil data user berdasarkan user_id
+
+        // Ambil filter dari request (langsung sesuai JS)
+        $searchTanggal = $this->request->getGet('searchTanggal');
+        $searchWaktu   = $this->request->getGet('searchWaktu');
+        $searchKota    = $this->request->getGet('searchKota');
+        $searchRating  = $this->request->getGet('searchRating');
+        $durasiMin     = $this->request->getGet('minDurasi');
+        $durasiMax     = $this->request->getGet('maxDurasi');
+        $hargaMin      = $this->request->getGet('minHarga');
+        $hargaMax      = $this->request->getGet('maxHarga');
+
+        // Query utama
+        $query = $this->penampilanModel
+            ->select('
+            m_penampilan.id_penampilan,
+            t.id_teater,
+            t.judul,
+            t.poster,
+            m_user.nama AS komunitas_teater,
+            ml.tempat,
+            ml.kota,
+            m_penampilan.rating_umur,
+            m_penampilan.durasi,
+            s.tanggal,
+            s.waktu_mulai,
+            s.waktu_selesai
+        ', false)
+            ->join('m_teater t', 't.id_teater = m_penampilan.id_teater')
+            ->join('r_user_teater rut', 'rut.id_teater = t.id_teater', 'left')
+            ->join('m_user', 'm_user.id_user = rut.id_user', 'left')
+            ->join('m_show_schedule s', 's.id_teater = t.id_teater', 'left')
+            ->join('m_lokasi_teater ml', 'ml.id_location = s.id_location', 'left')
+            ->join('m_seat_pricing mp1', 'mp1.id_penampilan = m_penampilan.id_penampilan', 'left')
+            ->where('t.tipe_teater', 'penampilan');
+
+        // Filter sesuai param dari JS
+        if (!empty($searchTanggal)) {
+            $query->where('s.tanggal', $searchTanggal);
+        }
+
+        if (!empty($searchWaktu)) {
+            $query->where('s.waktu_mulai', $searchWaktu);
+        }
+
+        if (!empty($searchKota)) {
+            $query->where('ml.kota', $searchKota);
+        }
+
+        if (!empty($searchRating)) {
+            $query->where('m_penampilan.rating_umur', $searchRating);
+        }
+
+        if (!empty($durasiMin) && !empty($durasiMax)) {
+            $query->where('m_penampilan.durasi >=', $durasiMin)
+                ->where('m_penampilan.durasi <=', $durasiMax);
+        }
+
+        if (!empty($hargaMin) && !empty($hargaMax)) {
+            $query->where('mp1.harga >=', $hargaMin)
+                ->where('mp1.harga <=', $hargaMax);
+        }
+
+        // Jalankan query
+        $penampilan = $query->groupBy('m_penampilan.id_penampilan')->findAll();
+
+        // Kirim ke view
+        return view('templates/headerAudiens',  ['title' => 'List Penampilan Teater', 'user' => $user]) .
+            view('templates/bodyListPenampilan', ['penampilan' => $penampilan, 'searchUrl'  => base_url('Audiens/searchPenampilan'), 'page' => 'search']) .
+            view('templates/footerListPenampilan', ['needsDropdown' => true, 'searchUrl' => base_url('Audiens/searchPenampilan')]);
     }
 
     public function searchAudisi()
     {
-        // Ambil filter dari request
-        $category = $this->request->getGet('category');
-        $searchInput = $this->request->getGet('searchInput');
-        $minHarga = $this->request->getGet('minHarga');
-        $maxHarga = $this->request->getGet('maxHarga');
-        $minGaji = $this->request->getGet('minGaji');
-        $maxGaji = $this->request->getGet('maxGaji');
+        $today = date('Y-m-d');
 
-        // Query dasar dengan JOIN
-        $query = $this->showScheduleModel
-            ->select('
-        m_teater.judul, 
-        m_teater.poster, 
-        m_teater.sinopsis, 
-        m_teater.penulis, 
-        m_teater.sutradara, 
-        m_teater.staff,
+        $searchTanggal = $this->request->getGet('searchTanggal');
+        $searchWaktu   = $this->request->getGet('searchWaktu');
+        $searchKota    = $this->request->getGet('searchKota');
+        $minGaji       = $this->request->getGet('minGaji');
+        $maxGaji       = $this->request->getGet('maxGaji');
 
-        m_teater_website.judul_web, 
-        m_teater_website.url_web,
+        // ==== BASE BUILDER AKTOR ====
+        $builderAktor = $this->db->table('m_teater t')
+            ->select("t.id_teater, a.id_audisi, a.id_kategori, 
+                  ak.karakter_audisi AS role, 'aktor' AS role_type, 
+                  a.gaji, l.kota, l.tempat, 
+                  ss.tanggal, ss.waktu_mulai, ss.waktu_selesai, 
+                  t.judul, u.nama AS komunitas_teater, t.poster")
+            ->join('m_audisi a', 'a.id_teater = t.id_teater')
+            ->join('m_audisi_aktor ak', 'ak.id_audisi = a.id_audisi')
+            ->join('m_audisi_schedule asch', 'asch.id_audisi = a.id_audisi', 'left')
+            ->join('r_audisi_schedule ras', 'ras.id_pricing_audisi = asch.id_pricing_audisi', 'left')
+            ->join('m_show_schedule ss', 'ss.id_schedule = ras.id_schedule', 'left')
+            ->join('m_lokasi_teater l', 'l.id_location = ss.id_location', 'left')
+            ->join('r_user_teater rut', 'rut.id_teater = t.id_teater', 'left')
+            ->join('m_user u', 'u.id_user = rut.id_user', 'left')
+            ->where('t.tipe_teater', 'audisi');
 
-        m_show_schedule.tanggal, 
-        m_show_schedule.waktu_mulai, 
-        m_show_schedule.waktu_selesai,
+        // ==== BASE BUILDER STAFF ====
+        $builderStaff = $this->db->table('m_teater t')
+            ->select("t.id_teater, a.id_audisi, a.id_kategori, 
+                  sff.jenis_staff AS role, 'staff' AS role_type, 
+                  a.gaji, l.kota, l.tempat, 
+                  ss.tanggal, ss.waktu_mulai, ss.waktu_selesai, 
+                  t.judul, u.nama AS komunitas_teater, t.poster")
+            ->join('m_audisi a', 'a.id_teater = t.id_teater')
+            ->join('m_audisi_staff sff', 'sff.id_audisi = a.id_audisi')
+            ->join('m_audisi_schedule asch', 'asch.id_audisi = a.id_audisi', 'left')
+            ->join('r_audisi_schedule ras', 'ras.id_pricing_audisi = asch.id_pricing_audisi', 'left')
+            ->join('m_show_schedule ss', 'ss.id_schedule = ras.id_schedule', 'left')
+            ->join('m_lokasi_teater l', 'l.id_location = ss.id_location', 'left')
+            ->join('r_user_teater rut', 'rut.id_teater = t.id_teater', 'left')
+            ->join('m_user u', 'u.id_user = rut.id_user', 'left')
+            ->where('t.tipe_teater', 'audisi');
 
-        m_lokasi_teater.tempat, 
-        m_lokasi_teater.kota,
-
-        m_audisi.syarat, 
-        m_audisi.syarat_dokumen, 
-        m_audisi.gaji,
-        m_audisi.komitmen,
-
-        m_kategori_audisi.nama_kategori,
-
-        m_audisi_aktor.karakter_audisi,
-        m_audisi_aktor.deskripsi_karakter,
-
-        m_audisi_staff.jenis_staff,
-        m_audisi_staff.jobdesc_staff,
-
-        m_audisi_schedule.harga,
-
-        m_sosmed_platform.platform_name, 
-
-        r_teater_sosmed.acc_teater, 
-        r_mitra_sosmed.acc_mitra, 
-
-        m_user.nama as nama_creator
-    ')
-
-            ->join('m_teater', 'm_teater.id_teater = m_audisi.id_teater')
-            ->join('m_kategori_audisi', 'm_audisi.id_kategori = m_kategori_audisi.id_kategori')
-            ->join('m_audisi_aktor', 'm_audisi_aktor.id_audisi = m_audisi.id_audisi', 'left')
-            ->join('m_audisi_staff', 'm_audisi_staff.id_audisi = m_audisi.id_audisi', 'left')
-
-            // **Relasi Show Schedule & Lokasi**
-            ->join('m_show_schedule', 'm_show_schedule.id_teater = m_teater.id_teater')
-            ->join('m_lokasi_teater', 'm_lokasi_teater.id_location = m_show_schedule.id_location')
-
-            // **Relasi Penampilan dan Harga Seat**
-            ->join('r_audisi_schedule', 'r_audisi_schedule.id_schedule = m_show_schedule.id_schedule')
-            ->join('m_audisi_schedule', 'm_audisi_schedule.id_pricing_audisi = r_audisi_schedule.id_pricing_audisi')
-
-            // **Relasi Website Teater**
-            ->join('m_teater_website', 'm_teater_website.id_teater = m_teater.id_teater', 'left')
-
-            // **Relasi Sosial Media Teater**
-            ->join('r_teater_sosmed', 'r_teater_sosmed.id_teater = m_teater.id_teater', 'left')
-            ->join('m_sosmed_platform', 'm_sosmed_platform.id_platform_sosmed = r_teater_sosmed.id_platform_sosmed', 'left')
-
-            // **Relasi Sosial Media Mitra**
-            ->join('r_teater_mitra_sosmed', 'r_teater_mitra_sosmed.id_teater_sosmed = r_teater_sosmed.id_teater_sosmed', 'left')
-            ->join('r_mitra_sosmed', 'r_mitra_sosmed.id_mitra_sosmed = r_teater_mitra_sosmed.id_mitra_sosmed', 'left')
-
-            // **Relasi User & Mitra**
-            ->join('r_user_teater', 'r_user_teater.id_teater = m_teater.id_teater', 'left')
-            ->join('m_user', 'm_user.id_user = r_user_teater.id_user', 'left')
-
-            ->join('m_audisi', 'm_audisi_schedule.id_audisi = m_audisi.id_audisi', 'left');
-
-        // Terapkan filter berdasarkan kategori
-        switch ($category) {
-            case 'tanggal':
-                if (!empty($searchInput)) {
-                    $query->where('m_show_schedule.tanggal', $searchInput);
-                }
-                break;
-            case 'waktu':
-                if (!empty($searchInput)) {
-                    $query->where('m_show_schedule.waktu_mulai', $searchInput);
-                }
-                break;
-            case 'kota':
-                if (!empty($searchInput)) {
-                    $query->where('m_lokasi_teater.kota', $searchInput);
-                }
-                break;
-            case 'harga':
-                if (!empty($minHarga) && !empty($maxHarga)) {
-                    $query->where('m_audisi_schedule.harga >=', $minHarga)
-                        ->where('m_audisi_schedule.harga <=', $maxHarga);
-                }
-                break;
-            case 'gaji':
-                if (!empty($minGaji) && !empty($maxGaji)) {
-                    $query->where('m_audisi.gaji >=', $minGaji)
-                        ->where('m_audisi.gaji <=', $maxGaji);
-                }
-                break;
+        // ==== FILTERS ====
+        if ($searchTanggal) {
+            $builderAktor->where('ss.tanggal', $searchTanggal);
+            $builderStaff->where('ss.tanggal', $searchTanggal);
+        }
+        if ($searchWaktu) {
+            $builderAktor->where('ss.waktu_mulai', $searchWaktu);
+            $builderStaff->where('ss.waktu_mulai', $searchWaktu);
+        }
+        if ($searchKota) {
+            $builderAktor->like('l.kota', $searchKota);
+            $builderStaff->like('l.kota', $searchKota);
+        }
+        if ($minGaji && $maxGaji) {
+            $builderAktor->groupStart()
+                ->where('a.gaji >=', $minGaji)
+                ->where('a.gaji <=', $maxGaji)
+                ->orWhere('a.gaji IS NULL')
+                ->groupEnd();
+            $builderStaff->groupStart()
+                ->where('a.gaji >=', $minGaji)
+                ->where('a.gaji <=', $maxGaji)
+                ->orWhere('a.gaji IS NULL')
+                ->groupEnd();
         }
 
-        // Eksekusi query
-        $results = $query->groupBy('m_show_schedule.id_schedule')->findAll();
+        // ==== UNION ====
+        $query = $builderAktor->unionAll($builderStaff)->get();
+        $results = $query->getResultArray();
 
-        return view('templates/headerUser', ['title' => 'List Audisi Teater']) .
-            view('templates/bodyAudisi', ['results' => $results]) .
-            view('templates/footerListPenampilan');
+        // ==== FORMAT ====
+        $formattedResults = [];
+        foreach ($results as $a) {
+            $formattedResults[$a['id_audisi']] = $this->formatAudisi($a);
+        }
+        $formattedResults = array_values($formattedResults);
+
+        return view('templates/headerUser', ['title' => 'List Audisi Teater'])
+            . view('templates/bodyAudisi', [
+                'results' => $formattedResults,
+                'searchUrl' => base_url('User/searchAudisi'),
+                'page' => 'search'
+            ])
+            . view('templates/footerListPenampilan', [
+                'needsDropdown' => true,
+                'searchUrl' => base_url('User/searchAudisi')
+            ]);
+    }
+
+    public function searchAudisiAfterLogin()
+    {
+        $today = date('Y-m-d');
+
+        if (!session()->has('id_user')) {
+            session()->setFlashdata('error', 'Sesi login Anda telah berakhir. Silakan login kembali.');
+            return redirect()->to(base_url('User/login'));
+        }
+
+        $userId = session()->get('id_user'); // Misalnya user_id disimpan di session setelah login
+        $user = $this->userModel->find($userId); // Ambil data user berdasarkan user_id
+
+        $searchTanggal = $this->request->getGet('searchTanggal');
+        $searchWaktu   = $this->request->getGet('searchWaktu');
+        $searchKota    = $this->request->getGet('searchKota');
+        $minGaji       = $this->request->getGet('minGaji');
+        $maxGaji       = $this->request->getGet('maxGaji');
+
+        // ==== BASE BUILDER AKTOR ====
+        $builderAktor = $this->db->table('m_teater t')
+            ->select("t.id_teater, a.id_audisi, a.id_kategori, 
+                  ak.karakter_audisi AS role, 'aktor' AS role_type, 
+                  a.gaji, l.kota, l.tempat, 
+                  ss.tanggal, ss.waktu_mulai, ss.waktu_selesai, 
+                  t.judul, u.nama AS komunitas_teater, t.poster")
+            ->join('m_audisi a', 'a.id_teater = t.id_teater')
+            ->join('m_audisi_aktor ak', 'ak.id_audisi = a.id_audisi')
+            ->join('m_audisi_schedule asch', 'asch.id_audisi = a.id_audisi', 'left')
+            ->join('r_audisi_schedule ras', 'ras.id_pricing_audisi = asch.id_pricing_audisi', 'left')
+            ->join('m_show_schedule ss', 'ss.id_schedule = ras.id_schedule', 'left')
+            ->join('m_lokasi_teater l', 'l.id_location = ss.id_location', 'left')
+            ->join('r_user_teater rut', 'rut.id_teater = t.id_teater', 'left')
+            ->join('m_user u', 'u.id_user = rut.id_user', 'left')
+            ->where('t.tipe_teater', 'audisi');
+
+        // ==== BASE BUILDER STAFF ====
+        $builderStaff = $this->db->table('m_teater t')
+            ->select("t.id_teater, a.id_audisi, a.id_kategori, 
+                  sff.jenis_staff AS role, 'staff' AS role_type, 
+                  a.gaji, l.kota, l.tempat, 
+                  ss.tanggal, ss.waktu_mulai, ss.waktu_selesai, 
+                  t.judul, u.nama AS komunitas_teater, t.poster")
+            ->join('m_audisi a', 'a.id_teater = t.id_teater')
+            ->join('m_audisi_staff sff', 'sff.id_audisi = a.id_audisi')
+            ->join('m_audisi_schedule asch', 'asch.id_audisi = a.id_audisi', 'left')
+            ->join('r_audisi_schedule ras', 'ras.id_pricing_audisi = asch.id_pricing_audisi', 'left')
+            ->join('m_show_schedule ss', 'ss.id_schedule = ras.id_schedule', 'left')
+            ->join('m_lokasi_teater l', 'l.id_location = ss.id_location', 'left')
+            ->join('r_user_teater rut', 'rut.id_teater = t.id_teater', 'left')
+            ->join('m_user u', 'u.id_user = rut.id_user', 'left')
+            ->where('t.tipe_teater', 'audisi');
+
+        // ==== FILTERS ====
+        if ($searchTanggal) {
+            $builderAktor->where('ss.tanggal', $searchTanggal);
+            $builderStaff->where('ss.tanggal', $searchTanggal);
+        }
+        if ($searchWaktu) {
+            $builderAktor->where('ss.waktu_mulai', $searchWaktu);
+            $builderStaff->where('ss.waktu_mulai', $searchWaktu);
+        }
+        if ($searchKota) {
+            $builderAktor->like('l.kota', $searchKota);
+            $builderStaff->like('l.kota', $searchKota);
+        }
+        if ($minGaji && $maxGaji) {
+            $builderAktor->groupStart()
+                ->where('a.gaji >=', $minGaji)
+                ->where('a.gaji <=', $maxGaji)
+                ->orWhere('a.gaji IS NULL')
+                ->groupEnd();
+            $builderStaff->groupStart()
+                ->where('a.gaji >=', $minGaji)
+                ->where('a.gaji <=', $maxGaji)
+                ->orWhere('a.gaji IS NULL')
+                ->groupEnd();
+        }
+
+        // ==== UNION ====
+        $query = $builderAktor->unionAll($builderStaff)->get();
+        $results = $query->getResultArray();
+
+        // ==== FORMAT ====
+        $formattedResults = [];
+        foreach ($results as $a) {
+            $formattedResults[$a['id_audisi']] = $this->formatAudisi($a);
+        }
+        $formattedResults = array_values($formattedResults);
+
+        return view('templates/headerAudiens',  ['title' => 'List Audisi Teater', 'user' => $user]) .
+            view('templates/bodyAudisi', ['results' => $formattedResults, 'searchUrl'  => base_url('Audiens/searchAudisi'), 'page' => 'search']) .
+            view('templates/footerListPenampilan', ['needsDropdown' => true, 'searchUrl' => base_url('Audiens/searchAudisi')]);
     }
 }

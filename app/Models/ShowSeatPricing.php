@@ -15,7 +15,7 @@ class ShowSeatPricing extends Model
         return $this->db->table('r_show_schedule rss')
             ->select('s.*, p.harga, p.nama_kategori')
             ->join('m_show_schedule s', 's.id_schedule = rss.id_schedule')
-            ->join('m_seat_pricing p', 'rss.id_pricing = p.id_pricing')
+            ->join('m_seat_pricing p', 'rss.id_pricing = p.id_pricing', 'left')
             ->where('rss.id_schedule_show', $idShowSchedule)
             ->get()
             ->getRowArray();

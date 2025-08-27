@@ -7,16 +7,14 @@
             <div class="show-item">
                 <div class="poster">
                     <?php
-                    $posterPath = $teater['poster'];
+                    $posterPath = 'public/' . $teater['poster'];
                     $posterFullPath = FCPATH . $posterPath;
 
                     $posterSrc = file_exists($posterFullPath) && !empty($teater['poster'])
                         ? base_url($posterPath)
-                        : base_url('assets/img/default-poster.png');
+                        : base_url('public/assets/img/default-poster.png');
                     ?>
-                    <img class="poster"
-                        src="<?= esc($posterSrc) ?>"
-                        alt="<?= esc($teater['judul']) ?>">
+                    <img class="poster" src="<?= esc($posterSrc) ?>" alt="<?= esc($teater['judul']) ?>">
                     <p><a href="<?= base_url('MitraTeater/detailMitraTeater/' . $mitraTeater['id_mitra']) ?>">
                             <?= esc($namaKomunitas['nama']) ?>
                         </a></p>
@@ -48,8 +46,14 @@
                 </div>
                 <div class="web">
                     <?php if (isset($website['url_web'], $website['judul_web'])): ?>
+                        <?php
+                        $url = $website['url_web'];
+                        if (!preg_match('/^https?:\/\//i', $url)) {
+                            $url = 'https://' . $url; // default pake https
+                        }
+                        ?>
                         <p><span class="label">Web:</span>
-                            <a href="<?= esc($website['url_web']) ?>" target="_blank"><?= esc($website['judul_web']) ?></a>
+                            <a href="<?= esc($url) ?>" target="_blank"><?= esc($website['judul_web']) ?></a>
                         </p>
                     <?php endif; ?>
                 </div>
@@ -69,6 +73,7 @@
                             <th>Waktu</th>
                             <th>Harga</th>
                             <th>Denah Seat</th>
+                            <th>Status Booking</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -114,12 +119,23 @@
                                                 foreach ($hargaList as $h) {
                                                     $hargaFormatted .= "<b>{$h['nama_kategori']}</b>: " . number_format($h['harga'], 0, ',', '.') . "<br>";
                                                 }
-                                                $denahFormatted = '<a href="#" class="openSeatMap" data-image="' . base_url('assets/images/' . $info['denah']) . '">Lihat Denah</a>';
+                                                $denahFormatted = '<a href="#" class="openSeatMap" data-image="' . base_url('public/assets/images/' . $info['denah']) . '">Lihat Denah</a>';
                                             }
                                             ?>
 
                                             <td><?= $hargaFormatted; ?></td>
                                             <td><?= $denahFormatted; ?></td>
+
+                                            <td>
+                                                <?php
+                                                $statuses = $info['status'] ?? [];
+                                                if (empty($statuses)) {
+                                                    echo "-";
+                                                } else {
+                                                    echo implode(', ', $statuses);
+                                                }
+                                                ?>
+                                            </td>
                                         </tr>
                                     <?php endforeach; ?>
                                 <?php endforeach; ?>
@@ -134,37 +150,86 @@
             </div>
         </div>
 
-        <div class="overlay" id="overlay"></div>
+        <?php if (!empty($tiketPenampilan)) : ?>
+            <div id="ticket-section" class="mt-5">
+                <h4 class="mb-3">Tiket Digital</h4>
+                <?php foreach ($tiketPenampilan as $tiket) : ?>
+                    <div class="ticket-box p-3 border rounded mb-3 bg-light">
+                        <!-- Bagian Atas: Info Teater -->
+                        <div class="mb-2">
+                            <h5 class="mb-1"><?= esc($tiket['judul']) ?></h5>
+                            <div class="text-muted small">
+                                Diselenggarakan oleh <?= esc($tiket['nama_mitra']) ?> &middot;
+                                <?= esc($tiket['jenis_teater']) ?>
+                            </div>
+                        </div>
+
+                        <!-- Bagian Jadwal dan Lokasi -->
+                        <div class="mt-2">
+                            <p class="mb-1">
+                                <strong>Lokasi:</strong> <?= esc($tiket['tempat']) ?>, <?= esc($tiket['kota']) ?>
+                            </p>
+                            <p class="mb-1">
+                                <strong>Waktu:</strong>
+                                <?= date('d-m-Y', strtotime($tiket['tanggal'])) ?>,
+                                <?= date('H:i', strtotime($tiket['waktu_mulai'])) ?> - <?= date('H:i', strtotime($tiket['waktu_selesai'])) ?>
+                            </p>
+                            <p class="mb-0 text-muted small">
+                                Dipesan oleh <?= esc($tiket['nama_audiens']) ?> &middot;
+                                <?= date('d-m-Y H:i', strtotime($tiket['issue_date'])) ?>
+                            </p>
+                        </div>
+                    </div>
+                <?php endforeach ?>
+            </div>
+        <?php endif ?>
 
         <div class="overlay" id="overlay"></div>
+
         <div class="popup" id="popupKonfirmasi">
             <h2>Konfirmasi Pendaftaran</h2>
             <p>Pilih jadwal pertunjukan sebelum lanjut:</p>
-
             <select id="selectJadwal">
                 <option value="">-- Pilih Jadwal --</option>
-                <!-- Diisi lewat JS -->
             </select>
 
-            <p>Apakah Anda yakin ingin mendaftar? Setelah klik "Ya", Anda akan diarahkan ke situs pendaftaran.</p>
+            <p id="linkQRCode" style="display:none; color:blue; cursor:pointer;">Lihat QR Code Pembayaran</p>
 
-            <button id="btnYa">Ya</button>
-            <button id="btnTidak">Batal</button>
+            <div id="divUploadBukti" style="display:none; margin-top:10px;">
+                <p>Silakan upload bukti pembayaran:</p>
+                <form id="formUploadBukti" enctype="multipart/form-data">
+                    <input type="file" id="buktiPembayaran" name="bukti_pembayaran" required>
+                </form>
+            </div>
+
+            <div style="margin-top:10px;">
+                <button id="btnKonfirmasi">Lanjut</button>
+                <button id="btnTidak">Batal</button>
+            </div>
         </div>
 
-        <div class="popup" id="popupUpload">
-            <h2>Upload Bukti Pembayaran</h2>
-            <p>Silakan upload bukti pembayaran.</p>
-            <input type="file" id="buktiPembayaran">
-            <button id="btnUpload" class="btn-primary">Upload</button>
-            <button id="btnBatalUpload" class="btn-secondary">Batal</button>
+        <!-- Modal QR Code -->
+        <div class="popupQRCode" id="modalQRCode" style="display:none;">
+            <div class="popup-content-qrcode">
+                <h3>QR Code Pembayaran</h3>
+                <?php
+                $QRPath = 'public/' . $penampilan['qrcode_bayar'];
+                $QRFullPath = FCPATH . $QRPath;
+
+                $QRSrc = file_exists($QRFullPath) && !empty($penampilan['qrcode_bayar'])
+                    ? base_url($QRPath)
+                    : base_url('public/assets/img/default-poster.png');
+                ?>
+                <img class="qrcode_bayar" src="<?= esc($QRSrc) ?>" alt="QR Pembayaran">
+                <button id="btnTutupQRCode">Tutup</button>
+            </div>
         </div>
 
         <div class="popup" id="popupGratis">
             <h2>Konfirmasi Gratis</h2>
             <p>Apakah anda sudah menyelesaikan pendaftaran hingga akhir?</p>
             <button id="btnKonfirmasiGratis">Konfirmasi Pendaftaran</button>
-            <button id="btnBatalGratis" class="btn-secondary">Batal</button>
+            <button id="btnBatalGratis">Batal</button>
         </div>
 
         <!-- Popup Denah Seat -->

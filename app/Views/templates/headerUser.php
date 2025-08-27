@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?= esc($title) ?></title>
-    <link rel="icon" href="<?= base_url('assets/images/favicon.png') ?>" sizes="20x20" type="image/png">
+    <link rel="icon" href="<?= base_url('public/assets/images/favicon.png') ?>" sizes="20x20" type="image/png">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css?v=1.0.1') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/animate.min.css?v=1.0.3') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/bootstrap.min.css?v=1.0.1') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/animate.min.css?v=1.0.3') ?>">
     <script src="https://kit.fontawesome.com/2bbd03827e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="<?= base_url('assets/css/magnific-popup.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/slick.css?v=1.0.1') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/slick-theme.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/navbar-before-login.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/penampilan-audiens.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/audisi-audiens.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/homepage-audiens.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/list-mitrateater.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/detail-mitrateater.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/tentang-kami.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/magnific-popup.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/slick.css?v=1.0.1') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/slick-theme.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/navbar-before-login.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/penampilan-audiens.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/audisi-audiens.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/homepage-audiens.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/list-mitrateater.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/detail-mitrateater.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/tentang-kami.css') ?>">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,7 +104,7 @@
             <div class="container nav-container">
                 <div class="logo">
                     <a href="<?= base_url('Audiens/homepage') ?>">
-                        <img src="<?= base_url('assets/images/logos/logo-one.png') ?>" alt="img">
+                        <img src="<?= base_url('public/assets/images/logos/logo-one.png') ?>" alt="img">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="Iitechie_main_menu">
@@ -116,9 +116,6 @@
                         </li>
                         <li>
                             <a href="<?= base_url('Audiens/listPenampilan') ?>">Penampilan</a>
-                        </li>
-                        <li>
-                            <a href="<?= base_url('MitraTeater/cekStatusView') ?>">Cek Status Akun</a>
                         </li>
                         <li>
                             <a href="<?= base_url('User/mitraTeater') ?>">Mitra Teater</a>

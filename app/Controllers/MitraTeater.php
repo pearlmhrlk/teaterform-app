@@ -195,10 +195,7 @@ class MitraTeater extends BaseController
                 'deskripsi' => $data['deskripsi'],
                 'logo' => $logoUrl,
                 'history_show' => $data['history_show'],
-                'prestasi' => $data['prestasi'],
-                'approval_status' => 'pending', // Default approval status
-                'tgl_approved' => null,
-                'alasan' => null,
+                'prestasi' => $data['prestasi']
             ];
 
             if (!$this->mitraModel->save($mitraData)) {
@@ -527,10 +524,16 @@ class MitraTeater extends BaseController
 
         $teaterIds = array_column($relasiTeater, 'id_teater');
 
-        $teaterList = $this->teaterModel
-            ->whereIn('id_teater', $teaterIds)
-            ->where('tipe_teater', 'penampilan')
-            ->findAll();
+        $teaterList = [];
+
+        if (!empty($teaterIds)) {
+            $teaterList = $this->teaterModel
+                ->whereIn('id_teater', $teaterIds)
+                ->where('tipe_teater', 'penampilan')
+                ->findAll();
+        } else {
+            $teaterList = []; // atau findAll() semua penampilan, tergantung kebutuhan
+        }
 
         //dd($teaterList); // untuk pastikan ini benar-benar ada isinya
 
@@ -547,6 +550,9 @@ class MitraTeater extends BaseController
 
             foreach ($penampilans as $penampilan) {
                 $penampilanId = $penampilan['id_penampilan'];
+
+                $tiketResult = $this->bookingModel->getBookingDataAndCount('penampilan', $penampilanId);
+                $tiketTerjual = $tiketResult['tiket_terjual'] ?? 0;
 
                 $jadwal = $this->showSeatPricingModel
                     ->select('
@@ -609,23 +615,73 @@ class MitraTeater extends BaseController
                     ->where('id_user', $namaKomunitas['id_user'])
                     ->first();
 
-                $dataPenampilan[] = [
-                    'penampilan' => $penampilan,
-                    'groupedSchedule' => $groupedSchedule,
-                    'teater' => $teater,
-                    'sosial_media' => $sosmedFormatted,
-                    'website' => $formattedWeb,
-                    'namaKomunitas' => $namaKomunitas,
-                    'mitra' => $mitra
-                ];
+                if (!empty($penampilan)) {
+                    $dataPenampilan[] = [
+                        'penampilan' => $penampilan,
+                        'groupedSchedule' => $groupedSchedule,
+                        'teater' => $teater,
+                        'sosial_media' => $sosmedFormatted,
+                        'website' => $formattedWeb,
+                        'namaKomunitas' => $namaKomunitas,
+                        'mitra' => $mitra,
+                        'tiket_terjual' => $tiketTerjual
+                    ];
+                }
             }
         }
-
-        //dd($dataPenampilan); // akan tampil di browser dan menghentikan eksekusi
 
         return view('templates/headerMitra', ['title' => 'List Penampilan Mitra Teater', 'user' => $user]) .
             view('templates/bodyPenampilanMitra',  ['dataPenampilan' => $dataPenampilan]) .
             view('templates/footerPenampilanMitra');
+    }
+
+    public function getBookingBySchedule($tipe, $id)
+    {
+        $result = $this->bookingModel->getBookingDataAndCount($tipe, $id);
+        return $this->response->setJSON($result); // baru kirim sebagai JSON
+    }
+
+    public function showBuktiBayar($filename)
+    {
+        $path = ROOTPATH . 'public/uploads/bukti/' . $filename;
+
+        if (!file_exists($path)) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound("File tidak ditemukan");
+        }
+
+        $mime = mime_content_type($path);
+
+        return $this->response
+            ->setHeader('Content-Type', $mime)
+            ->setBody(file_get_contents($path));
+    }
+
+    public function validasiBukti()
+    {
+        $request = $this->request->getJSON(true);
+        $idBooking = $request['id_booking'] ?? null;
+        $isValid = $request['is_valid'] ?? null;
+
+        if (!$idBooking || !in_array($isValid, [1, 2])) {
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'Data tidak valid'
+            ]);
+        }
+
+        // Ubah status sesuai nilai isValid
+        $status = $isValid == 1 ? 'success' : 'rejected';
+
+        // Update isValid dan status sekaligus
+        $updated = $this->bookingModel->update($idBooking, [
+            'isValid' => $isValid,
+            'status'  => $status
+        ]);
+
+        return $this->response->setJSON([
+            'success' => $updated,
+            'message' => $updated ? 'Status berhasil diperbarui.' : 'Gagal memperbarui status.'
+        ]);
     }
 
     public function saveShow()
@@ -753,8 +809,7 @@ class MitraTeater extends BaseController
                     'sutradara'    => $data['sutradara'],
                     'staff'        => $data['staff'],
                     'dibuat_oleh'  => $user['nama'],
-                    'dimodif_oleh' => $isEdit ? $user['nama'] : null,
-                    'url_pendaftaran' => $data['url_pendaftaran']
+                    'dimodif_oleh' => $isEdit ? $user['nama'] : null
                 ];
 
                 if ($this->request->getPost('atur_periode')) {
@@ -816,17 +871,61 @@ class MitraTeater extends BaseController
                     log_message('debug', 'ID relasi user dengan teater yang dibuat: ' . $idUserTeater);
                 }
 
+                $penampilan = $isEdit ? $this->penampilanModel->find($data['id_penampilan']) : null;
+
+                $qrBayar = $this->request->getFile('qrcode_bayar');
+                $qrBayarUrl = $isEdit ? $penampilan['qrcode_bayar'] : null;
+
+                log_message('debug', 'Qr Code valid: ' . ($qrBayar->isValid() ? 'yes' : 'no'));
+
+                if ($qrBayar->getError() == UPLOAD_ERR_INI_SIZE) {
+                    return $this->response->setJSON([
+                        'status' => 'error',
+                        'message' => 'Ukuran file melebihi batas PHP (php.ini).'
+                    ]);
+                }
+
+                // Periksa apakah file sudah diproses sebelumnya
+                if ($qrBayar->hasMoved()) {
+                    return $this->response->setJSON([
+                        'status'  => 'error',
+                        'message' => 'File sudah diproses sebelumnya.'
+                    ]);
+                }
+
+                if ($qrBayar && $qrBayar->isValid()) {
+                    // Pastikan folder tujuan ada
+                    $uploadPath = ROOTPATH . 'public/uploads/qrcodeBayar/';
+                    if (!is_dir($uploadPath)) {
+                        mkdir($uploadPath, 0777, true);
+                    }
+
+                    // Buat nama file baru dan pindahkan file
+                    $newName = $qrBayar->getRandomName();
+                    if (!$qrBayar->move($uploadPath, $newName)) {
+                        return $this->response->setJSON([
+                            'status'  => 'error',
+                            'message' => 'Gagal mengunggah qr code pembayaran.'
+                        ]);
+                    }
+
+                    // Simpan path relatif
+                    $qrBayarUrl = 'uploads/qrcodeBayar/' . $newName;
+                    log_message('debug', 'QR Code uploaded: ' . $qrBayarUrl);
+                }
+
                 // Simpan data penampilan ke m_penampilan
                 $penampilanData = [
                     'id_teater'   => $idTeater,
                     'aktor'       => $data['aktor'],
                     'durasi'      => $data['durasi'],
                     'rating_umur' => $data['rating_umur'],
+                    'qrcode_bayar' => $qrBayarUrl
                 ];
 
                 // Tambahkan ID saat edit agar `save()` menjadi update
                 if ($isEdit) {
-                    $audisiData['id_penampilan'] = $data['id_penampilan']; // pastikan 'id_audisi' ada di form saat edit
+                    $penampilanData['id_penampilan'] = $data['id_penampilan']; // pastikan 'id_audisi' ada di form saat edit
                 }
 
                 if (!$this->penampilanModel->save($penampilanData)) {
@@ -909,6 +1008,27 @@ class MitraTeater extends BaseController
                 // Ambil file dari form (multiple upload)
                 $mappingIds = $this->request->getPost('denah_mapping');
                 $allDenah = $this->request->getFileMultiple('denah_seat');
+
+                // Ambil semua denah lama (dari <input type="hidden" name="denah_lama_url[]">)
+                $allDenahLama = $this->request->getPost('denah_lama_url');
+
+                foreach ($mappingIds as $index => $jadwalIndex) {
+                    $file = $allDenah[$index] ?? null;
+                    $oldFile = $allDenahLama[$index] ?? null;
+                    $filename = '';
+
+                    if ($file && $file->isValid() && !$file->hasMoved()) {
+                        $filename = $file->getRandomName();
+                        $file->move(WRITEPATH . 'uploads/denah/', $filename);
+                        $finalURL = base_url('uploads/denah/' . $filename);
+                    } else {
+                        // Gunakan file lama jika tidak upload baru
+                        $finalURL = $oldFile;
+                    }
+
+                    // Simpan $finalURL sesuai dengan $jadwalIndex
+                    $denahMapping[$jadwalIndex] = $finalURL;
+                }
 
                 foreach ($hiddenSchedule as $index => $schedule) {
                     $tanggal = $schedule['tanggal'];
@@ -1147,17 +1267,7 @@ class MitraTeater extends BaseController
                 }
 
                 //7. Simpan sosial media teater ke r_teater_sosmed
-                $deletedAccounts = json_decode($data['deleted_accounts'], true);
-
-                if (json_last_error() !== JSON_ERROR_NONE || !is_array($deletedAccounts)) {
-                    return $this->response->setJSON(['status' => 'error', 'message' => 'Format data deleted_accounts tidak valid.']);
-                }
-
-                if (is_array($deletedAccounts)) {
-                    foreach ($deletedAccounts as $id) {
-                        $this->sosmedModel->delete($id); // atau ->where('id_teater_sosmed', $id)->delete();
-                    }
-                }
+                $this->sosmedModel->where('id_teater', $idTeater)->delete();
 
                 $accounts = json_decode($this->request->getPost('hidden_accounts'), true);
                 if ($accounts) {
@@ -1170,12 +1280,7 @@ class MitraTeater extends BaseController
                     }
                 }
 
-                $deletedWebs = json_decode($data['deleted_webs'], true);
-                if (is_array($deletedWebs)) {
-                    foreach ($deletedWebs as $id) {
-                        $this->teaterWebModel->delete($id);
-                    }
-                }
+                $this->teaterWebModel->where('id_teater', $idTeater)->delete();
 
                 // **8. Simpan data website teater ke m_teater_web**
                 $websites = json_decode($this->request->getPost('hidden_web'), true);
@@ -1410,84 +1515,6 @@ class MitraTeater extends BaseController
         ]);
     }
 
-    public function getBookingBySchedule($tipe, $id)
-    {
-        $bookingModel = $this->bookingModel;
-
-        // Join dasar untuk semua tipe
-        $bookingModel
-            ->select('
-            m_user.nama, 
-            m_user.email, 
-            m_audiens.tgl_lahir AS tanggal_lahir, 
-            m_audiens.gender AS jenis_kelamin,
-            m_show_schedule.tanggal, 
-            m_show_schedule.waktu_mulai,
-            m_show_schedule.waktu_selesai,
-            t_booking.status,
-            t_booking.is_free,
-            t_booking.bukti_pembayaran,
-            t_booking.created_at
-        ')
-            ->join('m_audiens', 'm_audiens.id_audiens = t_booking.id_audiens')
-            ->join('m_user', 'm_user.id_user = m_audiens.id_user')
-            ->join('r_show_schedule', 'r_show_schedule.id_schedule_show = t_booking.id_jadwal')
-            ->join('m_show_schedule', 'm_show_schedule.id_schedule = r_show_schedule.id_schedule');
-
-        if ($tipe === 'penampilan') {
-            // Tambahan join untuk lacak id_penampilan
-            $bookingModel
-                ->join('m_seat_pricing', 'm_seat_pricing.id_pricing = r_show_schedule.id_pricing')
-                ->where('m_seat_pricing.id_penampilan', $id);
-        } elseif ($tipe === 'audisi') {
-            $bookingModel
-                ->join('m_audisi_schedule', 'm_audisi_schedule.id_pricing_audisi = r_audisi_schedule.id_pricing_audisi')
-                ->where('m_audisi_schedule.id_audisi', $id);
-        }
-
-        // Filter status cancel
-        //$bookingModel->where('t_booking.status !=', 'cancel');
-
-        // Ambil datanya
-        $data = $bookingModel->findAll();
-
-        // Format untuk frontend
-        foreach ($data as &$row) {
-            $row['tanggal_lahir'] = date('d-m-Y', strtotime($row['tanggal_lahir']));
-            $row['jadwal'] = date('d-m-Y', strtotime($row['tanggal'])) . ', ' . substr($row['waktu_mulai'], 0, 5) . ' - ' . substr($row['waktu_selesai'], 0, 5);
-            $row['bukti_pembayaran'] = $row['is_free'] ? 'Gratis' : ($row['bukti_pembayaran'] ?? '-');
-            $row['tanggal_daftar'] = date('d-m-Y H:i', strtotime($row['created_at']));
-        }
-
-        log_message('debug', 'Booking Data: ' . print_r($data, true));
-
-        // Hitung jumlah tiket dengan status success
-        $tiketQuery = $this->bookingModel
-            ->where('status', 'success')
-            ->where('tipe_jadwal', $tipe);
-
-        if ($tipe === 'penampilan') {
-            $tiketQuery
-                ->join('m_show_schedule', 'm_show_schedule.id_schedule = t_booking.id_jadwal')
-                ->join('r_show_schedule', 'r_show_schedule.id_schedule = m_show_schedule.id_schedule')
-                ->join('m_seat_pricing', 'm_seat_pricing.id_pricing = r_show_schedule.id_pricing')
-                ->where('m_seat_pricing.id_penampilan', $id);
-        } elseif ($tipe === 'audisi') {
-            $tiketQuery
-                ->join('m_show_schedule', 'm_show_schedule.id_schedule = t_booking.id_jadwal')
-                ->join('r_audisi_schedule', 'r_audisi_schedule.id_schedule = m_show_schedule.id_schedule')
-                ->join('m_audisi_schedule', 'm_audisi_schedule.id_pricing_audisi = r_audisi_schedule.id_pricing_audisi')
-                ->where('m_audisi_schedule.id_audisi', $id);
-        }
-
-        $tiketTerjual = $tiketQuery->countAllResults();
-
-        return $this->response->setJSON([
-            'data' => $data,
-            'tiket_terjual' => $tiketTerjual
-        ]);
-    }
-
     public function AudisiAfterLogin()
     {
         if (!session()->has('id_user')) {
@@ -1717,10 +1744,16 @@ class MitraTeater extends BaseController
         $relasiTeater = $this->userTeaterModel->where('id_user', $userId)->findAll();
         $teaterIds = array_column($relasiTeater, 'id_teater');
 
-        $teaterList = $this->teaterModel
-            ->whereIn('id_teater', $teaterIds)
-            ->where('tipe_teater', 'audisi')
-            ->findAll();
+        $teaterList = [];
+
+        if (!empty($teaterIds)) {
+            $teaterList = $this->teaterModel
+                ->whereIn('id_teater', $teaterIds)
+                ->where('tipe_teater', 'audisi')
+                ->findAll();
+        } else {
+            $teaterList = []; // atau findAll() semua penampilan, tergantung kebutuhan
+        }
 
         $dataAudisi = [];
 
@@ -1735,6 +1768,8 @@ class MitraTeater extends BaseController
                 ->findAll();
 
             foreach ($auditions as $audisi) {
+                $audisiId = $audisi['id_audisi'];
+
                 // Ambil data aktor jika ada
                 $aktor = $this->audisiAktorModel
                     ->where('id_audisi', $audisi['id_audisi'])
@@ -1744,6 +1779,9 @@ class MitraTeater extends BaseController
                 $staff = $this->audisiStaffModel
                     ->where('id_audisi', $audisi['id_audisi'])
                     ->first();
+
+                $tiketResult = $this->bookingModel->getBookingDataAndCount('audisi', $audisiId);
+                $tiketTerjual = $tiketResult['tiket_terjual'] ?? 0;
 
                 $audisiPricing = $this->audisiScheduleModel
                     ->where('id_audisi', $audisi['id_audisi'])
@@ -1797,7 +1835,8 @@ class MitraTeater extends BaseController
                     'sosial_media' => $sosmedFormatted,
                     'website' => $formattedWeb,
                     'namaKomunitas' => $namaKomunitas,
-                    'mitra' => $mitra
+                    'mitra' => $mitra,
+                    'tiket_terjual' => $tiketTerjual
                 ];
             }
         }
@@ -1909,7 +1948,8 @@ class MitraTeater extends BaseController
                     'tipe_teater'     => 'required|in_list[penampilan,audisi]',
                     'judul'           => 'required',
                     'penulis'         => 'required',
-                    'sutradara'       => 'required'
+                    'sutradara'       => 'required',
+                    'syarat'          => 'required'
                 ];
 
                 if (!$isEdit) {
@@ -1971,8 +2011,7 @@ class MitraTeater extends BaseController
                     'sutradara'    => $data['sutradara'],
                     'staff'        => $data['staff'] ?? null,
                     'dibuat_oleh'  => $user['nama'],
-                    'dimodif_oleh' => $isEdit ? $user['nama'] : null,
-                    'url_pendaftaran' => $data['url_pendaftaran']
+                    'dimodif_oleh' => $isEdit ? $user['nama'] : null
                 ];
 
                 if ($this->request->getPost('atur_periode')) {
@@ -2144,7 +2183,7 @@ class MitraTeater extends BaseController
                 $hiddenSchedule = json_decode($data['hidden_schedule'], true);
 
                 if (json_last_error() !== JSON_ERROR_NONE || !is_array($hiddenSchedule)) {
-                    return $this->response->setJSON(['status' => 'error', 'message' => 'Format jadwal penampilan tidak valid.']);
+                    return $this->response->setJSON(['status' => 'error', 'message' => 'Format jadwal audisi tidak valid.']);
                 }
 
                 if (empty($hiddenSchedule)) {
@@ -2240,38 +2279,54 @@ class MitraTeater extends BaseController
                         return $this->response->setJSON(['status' => 'error', 'message' => 'Gagal mendapatkan ID Schedule penampilan teater.']);
                     }
 
-                    // Simpan ke m_audisi_schedule (harga)
-                    $auditionPricingData = [
-                        'id_audisi'   => $idAudisi,
-                        'tipe_harga'  => $tipe_harga,
-                        'harga'       => $tipe_harga === 'Bayar' ? $harga : null,
-                    ];
+                    // Cek tipe harga
+                    if ($schedule['tipe_harga'] === 'Bayar') {
+                        if (!isset($schedule['harga']) || !is_numeric($schedule['harga'])) {
+                            return $this->response->setJSON(['status' => 'error', 'message' => 'Data harga tidak valid.']);
+                        }
 
-                    if (!$this->audisiScheduleModel->save($auditionPricingData)) {
-                        return $this->response->setJSON(['status' => 'error', 'message' => 'Gagal menyimpan data harga audisi.']);
-                    }
+                        $auditionPricingData = [
+                            'id_audisi'    => $idAudisi,
+                            'tipe_harga'       => 'Bayar',
+                            'harga'            => $harga,
+                        ];
 
-                    $idAuditionPricing = $this->audisiScheduleModel->getInsertID();
+                        $this->audisiScheduleModel->save($auditionPricingData);
+                        $idAuditionPricing = $this->audisiScheduleModel->getInsertID();
 
-                    // Simpan ke r_audisi_schedule
-                    if (!$this->db->table('r_audisi_schedule')->insert([
-                        'id_schedule'         => $idSchedule,
-                        'id_pricing_audisi'   => $idAuditionPricing
-                    ])) {
-                        return $this->response->setJSON(['status' => 'error', 'message' => 'Gagal menyimpan relasi jadwal dan harga.']);
+                        if ($idSchedule && $idAuditionPricing) {
+                            if (!$this->db->table('r_audisi_schedule')->insert([
+                                'id_schedule' => $idSchedule,
+                                'id_pricing_audisi'  => $idAuditionPricing
+                            ])) {
+                                return $this->response->setJSON(['status' => 'error', 'message' => 'Gagal menyimpan relasi jadwal dan harga.']);
+                            }
+                        }
+                    } elseif ($schedule['tipe_harga'] === 'Gratis') {
+                        $auditionPricingData = [
+                            'id_audisi'    => $idAudisi,
+                            'tipe_harga'       => 'Gratis',
+                            'harga'            => null
+                        ];
+
+                        if (!$this->audisiScheduleModel->save($auditionPricingData)) {
+                            return $this->response->setJSON(['status' => 'error', 'message' => 'Gagal menyimpan harga gratis.']);
+                        }
+
+                        $idAuditionPricing = $this->audisiScheduleModel->getInsertID();
+
+                        if ($idSchedule && $idAuditionPricing) {
+                            if (!$this->db->table('r_audisi_schedule')->insert([
+                                'id_schedule' => $idSchedule,
+                                'id_pricing_audisi'  => $idAuditionPricing
+                            ])) {
+                                return $this->response->setJSON(['status' => 'error', 'message' => 'Gagal menyimpan relasi jadwal dan harga.']);
+                            }
+                        }
                     }
                 }
 
-                // **7. Simpan sosial media teater ke r_teater_sosmed**
-                //$deletedAccounts = json_decode($data['deleted_accounts'], true);
-
-                //if (json_last_error() !== JSON_ERROR_NONE || !is_array($deletedAccounts)) {
-                //    return $this->response->setJSON(['status' => 'error', 'message' => 'Format data deleted_accounts tidak valid.']);
-                //}
-
-                //foreach ($deletedAccounts as $id) {
-                //    $this->sosmedModel->delete($id); // atau ->where('id_teater_sosmed', $id)->delete();
-                //}
+                $this->sosmedModel->where('id_teater', $idTeater)->delete();
 
                 $accounts = json_decode($this->request->getPost('hidden_accounts'), true);
                 if ($accounts) {
@@ -2284,10 +2339,7 @@ class MitraTeater extends BaseController
                     }
                 }
 
-                //$deletedWebs = json_decode($data['deleted_webs'], true);
-                //foreach ($deletedWebs as $id) {
-                //$this->teaterWebModel->delete($id);
-                //}
+                $this->teaterWebModel->where('id_teater', $idTeater)->delete();
 
                 // **8. Simpan data website teater ke m_teater_web**
                 $websites = json_decode($this->request->getPost('hidden_web'), true);
@@ -2354,7 +2406,13 @@ class MitraTeater extends BaseController
             $isEdit = isset($data['id_teater']) && !empty($data['id_teater']);
             $teater = $isEdit ? $this->teaterModel->find($data['id_teater']) : null;
 
-            if ($isEdit && (!$teater || $teater['id_user'] != $userId)) {
+            // Cek apakah user punya relasi ke teater (r_user_teater)
+            $hasAccess = $isEdit ? $this->userTeaterModel
+                ->where('id_user', $userId)
+                ->where('id_teater', $data['id_teater'])
+                ->first() : true;
+
+            if ($isEdit && (!$teater || !$hasAccess)) {
                 return $this->response->setJSON([
                     'status' => 'error',
                     'message' => 'Data teater tidak ditemukan atau Anda tidak memiliki akses.'
@@ -2367,13 +2425,7 @@ class MitraTeater extends BaseController
                     'judul'           => 'required',
                     'penulis'         => 'required',
                     'sutradara'       => 'required',
-                    'syarat'          => 'required',
-                    'url_pendaftaran' => [
-                        'rules' => 'required|regex_match[/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/]',
-                        'errors' => [
-                            'regex_match' => 'Format URL tidak valid.'
-                        ]
-                    ]
+                    'syarat'          => 'required'
                 ];
 
                 if (!$isEdit) {
@@ -2432,8 +2484,7 @@ class MitraTeater extends BaseController
                     'penulis'         => $data['penulis'],
                     'sutradara'       => $data['sutradara'],
                     'dibuat_oleh'     => $user['nama'],
-                    'dimodif_oleh'    => $isEdit ? $user['nama'] : null,
-                    'url_pendaftaran' => $data['url_pendaftaran']
+                    'dimodif_oleh'    => $isEdit ? $user['nama'] : null
                 ];
 
                 if ($this->request->getPost('atur_periode')) {
@@ -2604,47 +2655,44 @@ class MitraTeater extends BaseController
 
                 // ✅ Simpan Jadwal Audisi ke m_show_schedule
                 $hiddenSchedule = json_decode($data['hidden_schedule'], true);
-                $deleted = json_decode($data['deleted_schedules'], true);
-
-                if (json_last_error() !== JSON_ERROR_NONE || !is_array($deleted)) {
-                    return $this->response->setJSON(['status' => 'error', 'message' => 'Format data deleted_schedules tidak valid.']);
-                }
-
-                foreach ($deleted as $id_schedule) {
-                    $relasi = $this->db->table('r_audisi_schedule')
-                        ->where('id_schedule', $id_schedule)
-                        ->get()
-                        ->getRow();
-
-                    if ($relasi) {
-                        $pricingId = $relasi->id_pricing_audisi;
-
-                        // Hapus relasi dulu
-                        $this->db->table('r_audisi_schedule')
-                            ->where('id_schedule', $id_schedule)
-                            ->delete();
-
-                        // Hapus jadwalnya
-                        $this->showScheduleModel->delete($id_schedule);
-
-                        // Cek apakah pricing masih dipakai
-                        $stillUsed = $this->db->table('r_audisi_schedule')
-                            ->where('id_pricing_audisi', $pricingId)
-                            ->countAllResults();
-
-                        if ($stillUsed === 0) {
-                            // Sudah tidak dipakai, aman dihapus
-                            $this->db->table('m_audisi_schedule')
-                                ->where('id', $pricingId)
-                                ->delete();
-                        }
-                    }
+                if (json_last_error() !== JSON_ERROR_NONE || !is_array($hiddenSchedule)) {
+                    return $this->response->setJSON(['status' => 'error', 'message' => 'Format jadwal audisi tidak valid.']);
                 }
 
                 if (empty($hiddenSchedule)) {
                     return $this->response->setJSON(['status' => 'error', 'message' => 'Jadwal audisi tidak boleh kosong.']);
                 }
 
+                // =============================
+                // Hapus semua data lama terlebih dahulu
+                // =============================
+
+                // 1. Ambil semua relasi yang berhubungan dengan audisi ini
+                $oldRelations = $this->db->table('r_audisi_schedule ra')
+                    ->select('ra.id_schedule, ra.id_pricing_audisi')
+                    ->join('m_audisi_schedule mas', 'ra.id_pricing_audisi = mas.id_pricing_audisi')
+                    ->where('mas.id_audisi', $idAudisi)
+                    ->get()
+                    ->getResult();
+
+                foreach ($oldRelations as $relasi) {
+                    // Hapus relasi
+                    $this->db->table('r_audisi_schedule')
+                        ->where('id_schedule', $relasi->id_schedule)
+                        ->delete();
+
+                    // Hapus jadwal penampilan
+                    $this->showScheduleModel->delete($relasi->id_schedule);
+                }
+
+                // 2. Hapus semua harga/tipe audisi terkait
+                $this->db->table('m_audisi_schedule')
+                    ->where('id_audisi', $idAudisi)
+                    ->delete();
+
+                // =============================
+                // Simpan ulang semua data baru
+                // =============================
                 foreach ($hiddenSchedule as $index => $schedule) {
                     $tanggal = $schedule['tanggal'];
                     $waktu_mulai = $schedule['waktu_mulai'];
@@ -2693,10 +2741,10 @@ class MitraTeater extends BaseController
 
                     // Simpan data jadwal pertunjukan ke m_show_schedule
                     $scheduleData = [
-                        'id_teater'   => $idTeater,
-                        'id_location' => $idLocation,
-                        'tanggal'     => $tanggal,
-                        'waktu_mulai' => $waktu_mulai,
+                        'id_teater'     => $idTeater,
+                        'id_location'   => $idLocation,
+                        'tanggal'       => $tanggal,
+                        'waktu_mulai'   => $waktu_mulai,
                         'waktu_selesai' => $waktu_selesai,
                     ];
 
@@ -2760,20 +2808,10 @@ class MitraTeater extends BaseController
                             }
                         }
                     }
-
-                    log_message('debug', 'Data jadwal diterima: ' . json_encode($hiddenSchedule));
                 }
 
                 // **7. Simpan sosial media teater ke r_teater_sosmed**
-                $deletedAccounts = json_decode($data['deleted_accounts'], true);
-
-                if (json_last_error() !== JSON_ERROR_NONE || !is_array($deletedAccounts)) {
-                    return $this->response->setJSON(['status' => 'error', 'message' => 'Format data deleted_accounts tidak valid.']);
-                }
-
-                foreach ($deletedAccounts as $id) {
-                    $this->sosmedModel->delete($id); // atau ->where('id_teater_sosmed', $id)->delete();
-                }
+                $this->sosmedModel->where('id_teater', $idTeater)->delete();
 
                 $accounts = json_decode($this->request->getPost('hidden_accounts'), true);
                 if ($accounts) {
@@ -2787,19 +2825,18 @@ class MitraTeater extends BaseController
                 }
 
                 // **8. Simpan data website teater ke m_teater_web**
-                $deletedWebs = json_decode($data['deleted_webs'], true);
-                foreach ($deletedWebs as $id) {
-                    $this->teaterWebModel->delete($id);
-                }
+                $this->teaterWebModel->where('id_teater', $idTeater)->delete();
 
                 $websites = json_decode($this->request->getPost('hidden_web'), true);
-                if ($websites) {
+                if (is_array($websites)) {
                     foreach ($websites as $website) {
-                        $this->teaterWebModel->insert([
-                            'id_teater' => $idTeater,
-                            'judul_web' => $website['title'],
-                            'url_web' => $website['url']
-                        ]);
+                        if (!empty($website['title']) && !empty($website['url'])) {
+                            $this->teaterWebModel->insert([
+                                'id_teater' => $idTeater,
+                                'judul_web' => $website['title'],
+                                'url_web' => $website['url']
+                            ]);
+                        }
                     }
                 }
 
@@ -2823,40 +2860,11 @@ class MitraTeater extends BaseController
         }
     }
 
-    private function saveTeaterSosmed($idTeater, $idMitra, $platforms)
-    {
-        foreach ($platforms as $platform) {
-            if (!empty($platform['id_platform_sosmed']) && !empty($platform['acc_teater'])) {
-                // Simpan ke sosial media teater
-                $idTeaterSosmed = $this->sosmedModel->insert([
-                    'id_teater' => $idTeater,
-                    'id_platform_sosmed' => $platform['id_platform_sosmed'],
-                    'acc_teater' => $platform['acc_teater'],
-                ], true); // Return last insert ID
-
-                // Cek apakah sosial media mitra sudah ada di r_teater_mitra_sosmed
-                $mitraSosmed = $this->mitraSosmedModel
-                    ->where('id_mitra', $idMitra)
-                    ->where('id_platform_sosmed', $platform['id_platform_sosmed'])
-                    ->first();
-
-                if ($mitraSosmed) {
-                    // Hubungkan sosial media mitra dengan sosial media teater
-                    $this->teaterMitraSosmedModel->insert([
-                        'id_mitra_sosmed' => $mitraSosmed['id_mitra_sosmed'],
-                        'id_teater_sosmed' => $idTeaterSosmed
-                    ]);
-                }
-            }
-        }
-    }
-
     public function getApprovedMitra()
     {
         $data = $this->mitraModel
             ->select('m_mitra.id_mitra, m_user.nama')
             ->join('m_user', 'm_user.id_user = m_mitra.id_user')
-            ->where('m_mitra.approval_status', 'approved')
             ->findAll();
 
         return $this->response->setJSON($data);
@@ -2894,50 +2902,6 @@ class MitraTeater extends BaseController
         return $this->response->setJSON([
             'status' => 'success',
             'data'   => $sosmedList
-        ]);
-    }
-
-    public function addSosmed()
-    {
-        header("Content-Type: application/json");
-        $validation = \Config\Services::validation();
-
-        $validation->setRules([
-            'id_platform_sosmed' => 'required|integer',
-            'acc_teater' => 'required|min_length[3]|max_length[255]',
-            'id_teater' => 'required|integer'
-        ]);
-
-        log_message('debug', 'addSosmed function is triggered.');
-        log_message('debug', 'Request Data: ' . json_encode($this->request->getPost()));
-
-        if (!$validation->withRequest($this->request)->run()) {
-            return $this->response->setJSON([
-                'status' => 'error',
-                'errors' => $validation->getErrors()
-            ]);
-        }
-
-        $idTeater = $this->request->getPost('id_teater');
-        $idPlatformSosmed = $this->request->getPost('id_platform_sosmed');
-        $accTeater = $this->request->getPost('acc_teater');
-
-        // Simpan sosial media teater
-        $idTeaterSosmed = $this->sosmedModel->insert([
-            'id_teater' => $idTeater,
-            'id_platform_sosmed' => $idPlatformSosmed,
-            'acc_teater' => $accTeater
-        ], true);
-
-        return $this->response->setJSON([
-            'status' => 'success',
-            'message' => 'Sosial media berhasil ditambahkan',
-            'data' => [
-                'id_teater_sosmed' => $idTeaterSosmed,
-                'id_teater' => $idTeater,
-                'id_platform_sosmed' => $idPlatformSosmed,
-                'acc_teater' => $accTeater
-            ]
         ]);
     }
 
@@ -2987,6 +2951,7 @@ class MitraTeater extends BaseController
         $jadwalAudisi = [];
         $sosmed = [];
         $website = [];
+        $accounts_komunitas = [];
 
         if ($audisi) {
             $id_audisi = $audisi['id_audisi'];
@@ -3001,6 +2966,16 @@ class MitraTeater extends BaseController
                 ->select('m_platform_sosmed.id_platform_sosmed, m_platform_sosmed.platform_name, r_teater_sosmed.acc_teater')
                 ->join('m_platform_sosmed', 'r_teater_sosmed.id_platform_sosmed = m_platform_sosmed.id_platform_sosmed')
                 ->where('r_teater_sosmed.id_teater', $id_teater)
+                ->findAll();
+
+            $accounts_komunitas = $this->mitraSosmedModel
+                ->select('m_platform_sosmed.id_platform_sosmed, m_platform_sosmed.platform_name, r_mitra_sosmed.acc_mitra')
+                ->join('m_platform_sosmed', 'r_mitra_sosmed.id_platform_sosmed = m_platform_sosmed.id_platform_sosmed')
+                ->join('m_mitra', 'r_mitra_sosmed.id_mitra = m_mitra.id_mitra')
+                ->join('m_user', 'm_mitra.id_user = m_user.id_user')
+                ->join('r_user_teater', 'm_user.id_user = r_user_teater.id_user')
+                ->join('m_teater', 'r_user_teater.id_teater = m_teater.id_teater')
+                ->where('m_teater.id_teater', $id_teater)
                 ->findAll();
 
             // 5. Website
@@ -3039,6 +3014,14 @@ class MitraTeater extends BaseController
                 'audisi' => $audisi,
                 'aktorAudisi' => $aktorAudisi,
                 'sosmed' => $sosmed,
+                'accounts_komunitas' => array_map(function ($item) {
+                    return [
+                        'platformId' => $item['id_platform_sosmed'],
+                        'platformName' => $item['platform_name'],
+                        'account' => $item['acc_mitra']
+                    ];
+                }, $accounts_komunitas),
+
                 'website' => $website,
                 'jadwal' => $jadwalAudisi
             ]
@@ -3182,6 +3165,16 @@ class MitraTeater extends BaseController
                 ->where('r_teater_sosmed.id_teater', $id_teater)
                 ->findAll();
 
+            $accounts_komunitas = $this->mitraSosmedModel
+                ->select('m_platform_sosmed.id_platform_sosmed, m_platform_sosmed.platform_name, r_mitra_sosmed.acc_mitra')
+                ->join('m_platform_sosmed', 'r_mitra_sosmed.id_platform_sosmed = m_platform_sosmed.id_platform_sosmed')
+                ->join('m_mitra', 'r_mitra_sosmed.id_mitra = m_mitra.id_mitra')
+                ->join('m_user', 'm_mitra.id_user = m_user.id_user')
+                ->join('r_user_teater', 'm_user.id_user = r_user_teater.id_user')
+                ->join('m_teater', 'r_user_teater.id_teater = m_teater.id_teater')
+                ->where('m_teater.id_teater', $id_teater)
+                ->findAll();
+
             // 5. Website
             $website = $this->teaterWebModel
                 ->where('id_teater', $teater['id_teater'])
@@ -3217,6 +3210,13 @@ class MitraTeater extends BaseController
                 'audisi' => $audisi,
                 'staffAudisi' => $staffAudisi,
                 'sosmed' => $sosmed,
+                'accounts_komunitas' => array_map(function ($item) {
+                    return [
+                        'platformId' => $item['id_platform_sosmed'],
+                        'platformName' => $item['platform_name'],
+                        'account' => $item['acc_mitra']
+                    ];
+                }, $accounts_komunitas),
                 'website' => $website,
                 'jadwal' => $jadwalAudisi
             ]
@@ -3275,7 +3275,7 @@ class MitraTeater extends BaseController
         $user = $this->userModel->find($userId); // Ambil data user berdasarkan user_id
 
         // Ambil data mitra teater dengan informasi user (nama)
-        $mitraList = $this->mitraModel->getApprovedMitraWithUser();
+        $mitraList = $this->mitraModel->getMitraWithUser();
 
         // Kirim data ke view
         return view('templates/headerMitra', ['title' => 'Daftar Mitra Teater', 'user' => $user]) .

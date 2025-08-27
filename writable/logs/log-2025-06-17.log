@@ -25,3 +25,893 @@ INFO - 2025-06-17 06:57:12 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2025-06-17 06:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-06-17 06:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-06-17 07:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 09:33:56 --> Booking Data: Array
+(
+    [0] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-14
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => -
+            [created_at] => 2025-06-16 18:20:32
+            [jadwal] => 14-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 16-06-2025 18:20
+        )
+
+)
+
+INFO - 2025-06-17 09:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 09:36:07 --> Booking Data: Array
+(
+    [0] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-14
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => -
+            [created_at] => 2025-06-16 18:20:32
+            [jadwal] => 14-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 16-06-2025 18:20
+        )
+
+)
+
+INFO - 2025-06-17 09:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-17 09:43:41 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "${tipeJadwal}"
+[Method: GET, Route: Audiens/booking-popup/$%7BtipeJadwal%7D/$%7BidTeater%7D]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('Audiens/booking-popup/${tipeJadwal}/${idTeater}')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('Audiens/booking-popup/${tipeJadwal}/${idTeater}')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-17 09:43:56 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "${tipeJadwal}"
+[Method: GET, Route: Audiens/booking-popup/$%7BtipeJadwal%7D/$%7BidTeater%7D]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('Audiens/booking-popup/${tipeJadwal}/${idTeater}')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('Audiens/booking-popup/${tipeJadwal}/${idTeater}')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-17 09:44:29 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "${tipeJadwal}"
+[Method: GET, Route: Audiens/booking-popup/$%7BtipeJadwal%7D/$%7BidTeater%7D]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('Audiens/booking-popup/${tipeJadwal}/${idTeater}')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('Audiens/booking-popup/${tipeJadwal}/${idTeater}')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-17 09:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 09:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 09:56:17 --> Booking Data: Array
+(
+    [0] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-20
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => -
+            [created_at] => 2025-06-16 18:20:32
+            [jadwal] => 20-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 16-06-2025 18:20
+        )
+
+)
+
+CRITICAL - 2025-06-17 12:47:41 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "${idTeater}"
+[Method: GET, Route: MitraTeater/editShow/$%7BidTeater%7D]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('MitraTeater/editShow/${idTeater}')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('MitraTeater/editShow/${idTeater}')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-17 12:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 12:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 12:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 12:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 12:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-17 12:48:16 --> ErrorException: Undefined array key "id_teater"
+[Method: GET, Route: Audiens/audisiAudiens]
+in APPPATH\Views\templates\bodyAudisi.php on line 40.
+ 1 APPPATH\Views\templates\bodyAudisi.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_teater"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisi.php', 40)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisi.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisi', [], true)
+ 5 APPPATH\Controllers\Audiens.php(888): view('templates/bodyAudisi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->AudisiAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-17 12:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 12:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 12:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 12:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 12:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-17 13:48:25 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "${tipeJadwal}"
+[Method: GET, Route: Audiens/booking-popup/$%7BtipeJadwal%7D/$%7BidTeater%7D]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('Audiens/booking-popup/${tipeJadwal}/${idTeater}')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('Audiens/booking-popup/${tipeJadwal}/${idTeater}')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-17 13:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 13:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-17 13:57:17 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "${idJadwal}"
+[Method: DELETE, Route: Booking/hapusBookingPending/$%7BidJadwal%7D]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('Booking/hapusBookingPending/${idJadwal}')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('Booking/hapusBookingPending/${idJadwal}')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-17 16:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 16:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 16:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 16:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 16:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 16:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 16:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 16:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 16:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 16:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 16:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 16:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 16:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 16:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-17 17:18:15 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "${idJadwal}"
+[Method: POST, Route: Booking/ubahStatusSuccess/$%7BidJadwal%7D]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('Booking/ubahStatusSuccess/${idJadwal}')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('Booking/ubahStatusSuccess/${idJadwal}')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-17 17:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 17:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 17:48:59 --> Booking Data: Array
+(
+    [0] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-20
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => -
+            [created_at] => 2025-06-16 18:20:32
+            [jadwal] => 20-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 16-06-2025 18:20
+        )
+
+    [1] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-16
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => success
+            [is_free] => 1
+            [bukti_pembayaran] => Gratis
+            [created_at] => 2025-06-17 17:32:42
+            [jadwal] => 16-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:32
+        )
+
+    [2] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-15
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => 1750182063_cf7b16248f3d95ed7fea.jpeg
+            [created_at] => 2025-06-17 17:40:45
+            [jadwal] => 15-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:40
+        )
+
+)
+
+INFO - 2025-06-17 17:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 17:52:30 --> Booking Data: Array
+(
+    [0] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-20
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => -
+            [created_at] => 2025-06-16 18:20:32
+            [jadwal] => 20-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 16-06-2025 18:20
+        )
+
+    [1] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-16
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => success
+            [is_free] => 1
+            [bukti_pembayaran] => Gratis
+            [created_at] => 2025-06-17 17:32:42
+            [jadwal] => 16-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:32
+        )
+
+    [2] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-15
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => 1750182063_cf7b16248f3d95ed7fea.jpeg
+            [created_at] => 2025-06-17 17:40:45
+            [jadwal] => 15-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:40
+        )
+
+)
+
+INFO - 2025-06-17 18:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 18:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 18:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 18:00:36 --> Booking Data: Array
+(
+    [0] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-20
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => -
+            [created_at] => 2025-06-16 18:20:32
+            [jadwal] => 20-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 16-06-2025 18:20
+        )
+
+    [1] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-16
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => success
+            [is_free] => 1
+            [bukti_pembayaran] => Gratis
+            [created_at] => 2025-06-17 17:32:42
+            [jadwal] => 16-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:32
+        )
+
+    [2] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-15
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => 1750182063_cf7b16248f3d95ed7fea.jpeg
+            [created_at] => 2025-06-17 17:40:45
+            [jadwal] => 15-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:40
+        )
+
+)
+
+INFO - 2025-06-17 18:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 18:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 18:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 18:00:51 --> Booking Data: Array
+(
+    [0] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-20
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => -
+            [created_at] => 2025-06-16 18:20:32
+            [jadwal] => 20-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 16-06-2025 18:20
+        )
+
+    [1] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-16
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => success
+            [is_free] => 1
+            [bukti_pembayaran] => Gratis
+            [created_at] => 2025-06-17 17:32:42
+            [jadwal] => 16-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:32
+        )
+
+    [2] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-15
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => 1750182063_cf7b16248f3d95ed7fea.jpeg
+            [created_at] => 2025-06-17 17:40:45
+            [jadwal] => 15-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:40
+        )
+
+)
+
+INFO - 2025-06-17 18:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-17 18:05:53 --> BadMethodCallException: Call to undefined method App\Models\Booking::getBookingBySchedule
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\MitraTeater.php(552): CodeIgniter\Model->__call('getBookingBySchedule', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-17 18:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 18:11:24 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:24 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:24 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:24 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:24 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:24 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:24 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:24 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:24 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:24 --> Booking Data: Array
+(
+    [0] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-20
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => -
+            [created_at] => 2025-06-16 18:20:32
+            [jadwal] => 20-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 16-06-2025 18:20
+        )
+
+    [1] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-16
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => success
+            [is_free] => 1
+            [bukti_pembayaran] => Gratis
+            [created_at] => 2025-06-17 17:32:42
+            [jadwal] => 16-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:32
+        )
+
+    [2] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-15
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => 1750182063_cf7b16248f3d95ed7fea.jpeg
+            [created_at] => 2025-06-17 17:40:45
+            [jadwal] => 15-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:40
+        )
+
+)
+
+INFO - 2025-06-17 18:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 18:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 18:11:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:11:32 --> Booking Data: Array
+(
+    [0] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-20
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => -
+            [created_at] => 2025-06-16 18:20:32
+            [jadwal] => 20-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 16-06-2025 18:20
+        )
+
+    [1] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-16
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => success
+            [is_free] => 1
+            [bukti_pembayaran] => Gratis
+            [created_at] => 2025-06-17 17:32:42
+            [jadwal] => 16-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:32
+        )
+
+    [2] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-15
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => 1750182063_cf7b16248f3d95ed7fea.jpeg
+            [created_at] => 2025-06-17 17:40:45
+            [jadwal] => 15-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:40
+        )
+
+)
+
+INFO - 2025-06-17 18:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-17 18:11:45 --> BadMethodCallException: Call to undefined method App\Models\Booking::getBookingBySchedule
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\MitraTeater.php(552): CodeIgniter\Model->__call('getBookingBySchedule', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-17 18:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 18:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 18:16:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 18:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 18:16:47 --> Booking Data: Array
+(
+    [0] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-20
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => -
+            [created_at] => 2025-06-16 18:20:32
+            [jadwal] => 20-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 16-06-2025 18:20
+        )
+
+    [1] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-16
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => success
+            [is_free] => 1
+            [bukti_pembayaran] => Gratis
+            [created_at] => 2025-06-17 17:32:42
+            [jadwal] => 16-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:32
+        )
+
+    [2] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-15
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => 1750182063_cf7b16248f3d95ed7fea.jpeg
+            [created_at] => 2025-06-17 17:40:45
+            [jadwal] => 15-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:40
+        )
+
+)
+
+INFO - 2025-06-17 18:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-17 18:26:59 --> Error: Call to a member function select() on null
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Models\Booking.php on line 32.
+ 1 APPPATH\Controllers\MitraTeater.php(551): App\Models\Booking->getBookingBySchedule('penampilan', '79')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-17 18:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-17 18:27:47 --> Error: Call to a member function select() on null
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Models\Booking.php on line 31.
+ 1 APPPATH\Controllers\MitraTeater.php(551): App\Models\Booking->getBookingBySchedule('penampilan', '79')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-17 18:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 18:30:37 --> Booking Data: Array
+(
+)
+
+CRITICAL - 2025-06-17 18:30:37 --> Error: Call to a member function select() on null
+[Method: GET, Route: MitraTeater/crudPenampilan]
+in APPPATH\Models\Booking.php on line 74.
+ 1 APPPATH\Controllers\MitraTeater.php(551): App\Models\Booking->getBookingBySchedule('penampilan', '79')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->penampilan()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-17 18:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 18:34:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:34:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:34:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:34:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:34:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:34:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:34:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:34:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:34:32 --> Booking Data: Array
+(
+)
+
+DEBUG - 2025-06-17 18:34:32 --> Booking Data: Array
+(
+    [0] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-20
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => -
+            [created_at] => 2025-06-16 18:20:32
+            [jadwal] => 20-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 16-06-2025 18:20
+        )
+
+    [1] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-16
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => success
+            [is_free] => 1
+            [bukti_pembayaran] => Gratis
+            [created_at] => 2025-06-17 17:32:42
+            [jadwal] => 16-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:32
+        )
+
+    [2] => Array
+        (
+            [nama] => Pearla Zahra Maharlika
+            [email] => zmaharlika@gmail.com
+            [tanggal_lahir] => 01-12-2024
+            [jenis_kelamin] => female
+            [tanggal] => 2025-06-15
+            [waktu_mulai] => 23:00:00
+            [waktu_selesai] => 01:00:00
+            [status] => pending
+            [is_free] => 0
+            [bukti_pembayaran] => 1750182063_cf7b16248f3d95ed7fea.jpeg
+            [created_at] => 2025-06-17 17:40:45
+            [jadwal] => 15-06-2025, 23:00 - 01:00
+            [tanggal_daftar] => 17-06-2025 17:40
+        )
+
+)
+
+INFO - 2025-06-17 18:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 18:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 18:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 18:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 18:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -9,7 +9,7 @@
 
                 <!-- Search and Filter -->
                 <div class="search-filter">
-                    <select class="form-select w-25" id="searchCategory">
+                    <select class="form-select" id="searchCategory">
                         <option value="" selected disabled>Cari berdasarkan</option>
                         <option value="kategori">Cari berdasarkan Kategori Audisi</option>
                         <option value="tanggal">Cari berdasarkan Tanggal</option>
@@ -20,9 +20,9 @@
                     </select>
 
                     <!-- Input pencarian yang akan berubah sesuai pilihan -->
-                    <div id="searchInputContainer">
-                        <input type="text" class="form-control w-50" id="searchInput" placeholder="Cari...">
-                    </div>
+
+                    <input type="text" class="form-control" id="searchInput" placeholder="Cari...">
+
                     <button class="btn btn-primary" id="filterBtn">Cari</button>
                 </div>
 
@@ -32,113 +32,126 @@
                 </div>
             </div>
 
-            <?php foreach ($dataAudisi as $audition) : ?>
-                <div class="audition-item">
-                    <div class="poster">
-                        <?php
-                        $posterPath = $audition['teater']['poster'];
-                        $posterFullPath = FCPATH . $posterPath;
-
-                        $posterSrc = file_exists($posterFullPath) && !empty($posterPath)
-                            ? base_url($posterPath)
-                            : base_url('assets/img/default-poster.png');
-                        ?>
-                        <img class="poster"
-                            src="<?= $posterSrc ?>"
-                            alt="<?= $audition['teater']['judul'] ?>">
-                    </div>
-                    <div class="audition-info">
-                        <span class="badge badge-category"><?= $audition['audisi']['nama_kategori'] ?></span>
-
-                        <h4><?= $audition['teater']['judul'] ?></h4>
-                        <div class="details">
-                            <p><span class="label">Komunitas/Perusahaan Teater:</span> <?= $audition['namaKomunitas']['nama'] ?></p>
-
-                            <?php if ($audition['audisi']['id_kategori'] == '2') : ?>
-                                <p><span class="label">Jenis Staff:</span> <?= $audition['staff']['jenis_staff'] ?: 'Terbuka untuk semua staff' ?></p>
-                                <p><span class="label">Deskripsi Pekerjaan:</span> <?= $audition['staff']['jobdesc_staff'] ?: '-' ?></p>
-                                <p><span class="label">Persyaratan Staff:</span> <?= $audition['audisi']['syarat'] ?></p>
-                                <p><span class="label">Gaji Staff:</span> Rp<?= number_format($audition['audisi']['gaji'], 0, ',', '.') ?></p>
-                            <?php elseif ($audition['audisi']['id_kategori'] == '1') : ?>
-                                <p><span class="label">Terbuka untuk karakter:</span> <?= $audition['aktor']['karakter_audisi'] ?: 'Terbuka untuk semua karakter' ?></p>
-                                <p><span class="label">Deskripsi Karakter:</span> <?= $audition['aktor']['deskripsi_karakter'] ?: '-' ?></p>
-                                <p><span class="label">Persyaratan Aktor:</span> <?= $audition['audisi']['syarat'] ?></p>
-                                <p><span class="label">Gaji Aktor:</span> Rp<?= number_format($audition['audisi']['gaji'], 0, ',', '.') ?>,-</p>
-                            <?php endif; ?>
-
-                            <p><span class="label">Persyaratan Dokumen:</span> <?= $audition['audisi']['syarat_dokumen'] ?: '-' ?></p>
-                            <p><span class="label">Sutradara:</span> <?= $audition['teater']['sutradara'] ?></p>
-                            <p><span class="label">Penulis:</span> <?= $audition['teater']['penulis'] ?></p>
-                            <p><span class="label">Staff:</span> <?= $audition['teater']['staff'] ?: '-' ?></p>
-                            <p><span class="label">Komitmen:</span> <?= $audition['audisi']['komitmen'] ?: '-' ?></p>
-                            <p><span class="label">Sinopsis:</span> <?= $audition['teater']['sinopsis'] ?: '-' ?></p>
-                            <p><span class="label">Sosial Media:</span> <?= $audition['sosial_media'] ?: '-' ?></p>
-                            <p><span class="label">Website:</span> <?= $audition['website'] ?: '-' ?></p>
+            <?php
+            $realData = array_filter($dataAudisi, function ($a) {
+                return !empty($a['audisi']) && !empty($a['teater']);
+            });
+            ?>
+            <?php if (!empty($realData)): ?>
+                <?php foreach ($realData as $audition): ?>
+                    <div class="audition-item">
+                        <div class="poster">
+                            <?php
+                            $posterPath = $audition['teater']['poster'];
+                            $posterFullPath = FCPATH . $posterPath;
+                            $posterSrc = file_exists($posterFullPath) && !empty($posterPath)
+                                ? base_url($posterPath)
+                                : base_url('public/assets/img/default-poster.png');
+                            ?>
+                            <img class="poster"
+                                src="<?= $posterSrc ?>"
+                                alt="<?= $audition['teater']['judul'] ?>">
                         </div>
+                        <div class="audition-info">
+                            <span class="badge badge-category"><?= $audition['audisi']['nama_kategori'] ?></span>
 
-                        <!-- Tabel Jadwal Audisi -->
-                        <div class="schedule-table">
-                            <h5>Jadwal Audisi Aktor</h5>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Kota</th>
-                                        <th>Tempat</th>
-                                        <th>Tanggal</th>
-                                        <th>Waktu</th>
-                                        <th>Harga</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php foreach ($audition['grouped_schedule'] as $kota => $tempatList): ?>
-                                        <?php $firstKota = true; ?>
-                                        <?php foreach ($tempatList as $tempat => $tanggalList): ?>
-                                            <?php $firstTempat = true; ?>
-                                            <?php foreach ($tanggalList as $tanggal => $waktuList): ?>
-                                                <?php foreach ($waktuList as $index => $item): ?>
-                                                    <tr>
-                                                        <?php if ($firstKota): ?>
-                                                            <td rowspan="<?= array_sum(array_map(fn($t) => array_reduce($t, fn($carry, $val) => $carry + count($val), 0), $tempatList)); ?>">
-                                                                <?= $kota; ?>
-                                                            </td>
-                                                            <?php $firstKota = false; ?>
-                                                        <?php endif; ?>
+                            <h4><?= $audition['teater']['judul'] ?></h4>
+                            <div class="details">
+                                <p><span class="label">Komunitas/Perusahaan Teater:</span> <?= $audition['namaKomunitas']['nama'] ?></p>
 
-                                                        <?php if ($firstTempat): ?>
-                                                            <td rowspan="<?= array_reduce($tanggalList, fn($carry, $val) => $carry + count($val), 0); ?>">
-                                                                <?= $tempat; ?>
-                                                            </td>
-                                                            <?php $firstTempat = false; ?>
-                                                        <?php endif; ?>
+                                <?php if ($audition['audisi']['id_kategori'] == '2') : ?>
+                                    <p><span class="label">Jenis Staff:</span> <?= $audition['staff']['jenis_staff'] ?: 'Terbuka untuk semua staff' ?></p>
+                                    <p><span class="label">Deskripsi Pekerjaan:</span> <?= $audition['staff']['jobdesc_staff'] ?: '-' ?></p>
+                                    <p><span class="label">Persyaratan Staff:</span> <?= $audition['audisi']['syarat'] ?></p>
+                                    <p><span class="label">Gaji Staff:</span> Rp<?= number_format($audition['audisi']['gaji'], 0, ',', '.') ?></p>
+                                <?php elseif ($audition['audisi']['id_kategori'] == '1') : ?>
+                                    <p><span class="label">Terbuka untuk karakter:</span> <?= $audition['aktor']['karakter_audisi'] ?: 'Terbuka untuk semua karakter' ?></p>
+                                    <p><span class="label">Deskripsi Karakter:</span> <?= $audition['aktor']['deskripsi_karakter'] ?: '-' ?></p>
+                                    <p><span class="label">Persyaratan Aktor:</span> <?= $audition['audisi']['syarat'] ?></p>
+                                    <p><span class="label">Gaji Aktor:</span> Rp<?= number_format($audition['audisi']['gaji'], 0, ',', '.') ?>,-</p>
+                                <?php endif; ?>
 
-                                                        <?php if ($index === 0): ?>
-                                                            <td rowspan="<?= count($waktuList); ?>">
-                                                                <?= date('d F Y', strtotime($tanggal)); ?>
-                                                            </td>
-                                                        <?php endif; ?>
+                                <p><span class="label">Persyaratan Dokumen:</span> <?= $audition['audisi']['syarat_dokumen'] ?: '-' ?></p>
+                                <p><span class="label">Sutradara:</span> <?= $audition['teater']['sutradara'] ?></p>
+                                <p><span class="label">Penulis:</span> <?= $audition['teater']['penulis'] ?></p>
+                                <p><span class="label">Staff:</span> <?= $audition['teater']['staff'] ?: '-' ?></p>
+                                <p><span class="label">Komitmen:</span> <?= $audition['audisi']['komitmen'] ?: '-' ?></p>
+                                <p><span class="label">Sinopsis:</span> <?= $audition['teater']['sinopsis'] ?: '-' ?></p>
+                                <p><span class="label">Sosial Media:</span> <?= $audition['sosial_media'] ?: '-' ?></p>
+                                <p><span class="label">Website:</span> <?= $audition['website'] ?: '-' ?></p>
+                            </div>
 
-                                                        <td><?= $item['waktu']; ?></td>
-                                                        <td><?= $item['harga_display']; ?></td>
-                                                    </tr>
+                            <!-- Tabel Jadwal Audisi -->
+                            <div class="schedule-table">
+                                <h5>Jadwal Audisi Aktor</h5>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Kota</th>
+                                            <th>Tempat</th>
+                                            <th>Tanggal</th>
+                                            <th>Waktu</th>
+                                            <th>Harga</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach ($audition['grouped_schedule'] as $kota => $tempatList): ?>
+                                            <?php $firstKota = true; ?>
+                                            <?php foreach ($tempatList as $tempat => $tanggalList): ?>
+                                                <?php $firstTempat = true; ?>
+                                                <?php foreach ($tanggalList as $tanggal => $waktuList): ?>
+                                                    <?php foreach ($waktuList as $index => $item): ?>
+                                                        <tr>
+                                                            <?php if ($firstKota): ?>
+                                                                <td rowspan="<?= array_sum(array_map(fn($t) => array_reduce($t, fn($carry, $val) => $carry + count($val), 0), $tempatList)); ?>">
+                                                                    <?= $kota; ?>
+                                                                </td>
+                                                                <?php $firstKota = false; ?>
+                                                            <?php endif; ?>
+
+                                                            <?php if ($firstTempat): ?>
+                                                                <td rowspan="<?= array_reduce($tanggalList, fn($carry, $val) => $carry + count($val), 0); ?>">
+                                                                    <?= $tempat; ?>
+                                                                </td>
+                                                                <?php $firstTempat = false; ?>
+                                                            <?php endif; ?>
+
+                                                            <?php if ($index === 0): ?>
+                                                                <td rowspan="<?= count($waktuList); ?>">
+                                                                    <?= date('d F Y', strtotime($tanggal)); ?>
+                                                                </td>
+                                                            <?php endif; ?>
+
+                                                            <td><?= $item['waktu']; ?></td>
+                                                            <td><?= $item['harga_display']; ?></td>
+                                                        </tr>
+                                                    <?php endforeach; ?>
                                                 <?php endforeach; ?>
                                             <?php endforeach; ?>
                                         <?php endforeach; ?>
-                                    <?php endforeach; ?>
-                                </tbody>
-                            </table>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <button class="editBtn" data-id="<?= $audition['teater']['id_teater'] ?>" data-kategori="<?= $audition['audisi']['id_kategori'] ?>">
+                                Edit Audisi
+                            </button>
+                            <button class="deleteBtn" data-id="<?= $audition['teater']['id_teater'] ?>">Hapus Audisi</button>
+                            <button type="button" class="btn btn-info openPopupTiketTerjual"
+                                data-id="<?= $audition['audisi']['id_audisi'] ?>" data-tipe="audisi">
+                                <i class="fas fa-eye"></i> <?= $audition['tiket_terjual'] ?? 0 ?> Tiket Terjual
+                            </button>
                         </div>
                     </div>
-                    <div class="actions">
-                        <button class="editBtn" data-id="<?= $audition['teater']['id_teater'] ?>" data-kategori="<?= $audition['audisi']['id_kategori'] ?>">
-                            Edit Audisi
-                        </button>
-                        <button class="deleteBtn" data-id="<?= $audition['teater']['id_teater'] ?>">Hapus Audisi</button>
-                        <button><i class="fas fa-eye"></i> </?= $audition['tiket_terjual'] ?> Tiket Terjual</button>
-                    </div>
-                </div>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
 
-            <div class="audition-count">2 Shows</div>
+                <div class="audition-count"><?= count($realData) ?> Show<?= count($realData) > 1 ? 's' : '' ?></div>
+            <?php else: ?>
+                <div class="no-show-message text-center text-muted py-5" style="min-height: 300px;">
+                    <h4>Belum ada audisi yang tersedia.</h4>
+                </div>
+            <?php endif; ?>
         </div>
 
         <!-- Popup Form -->
@@ -234,10 +247,6 @@
 
                         <!-- Right Side (Form Fields) -->
                         <div class="popup-right">
-                            <div class="form-group">
-                                <label for="url_pendaftaran_aktor">URL Pendaftaran</label>
-                                <input type="text" name="url_pendaftaran" id="url_pendaftaran_aktor" class="form-control" placeholder="Masukkan url web">
-                            </div>
                             <div class="form-group">
                                 <label for="syarat_aktor">Persyaratan aktor</label>
                                 <textarea id="syarat_aktor" name="syarat" class="form-control" placeholder="Masukkan persyaratan aktor" required></textarea>
@@ -441,11 +450,6 @@
                         <!-- ✅ RIGHT SIDE -->
                         <div class="popup-right">
                             <div class="form-group">
-                                <label for="url_pendaftaran_staff">URL Pendaftaran</label>
-                                <input type="text" name="url_pendaftaran" id="url_pendaftaran_staff" class="form-control" placeholder="Masukkan URL Web">
-                            </div>
-
-                            <div class="form-group">
                                 <label for="syarat_staff">Persyaratan Staff</label>
                                 <textarea id="syarat_staff" name="syarat" class="form-control" placeholder="Masukkan persyaratan staff" required></textarea>
                             </div>
@@ -607,8 +611,6 @@
                                 <label for="tanggal_aktor_edit" class="form-label">Jadwal Audisi</label>
                                 <div id="schedule-aktor-edit">
                                     <div class="schedule-audition">
-                                        <input type="hidden" name="id_schedule[]" id="id_schedule_aktor_edit" value="">
-
                                         <input type="date" name="tanggal" id="tanggal_aktor_edit" class="form-control">
                                         <input type="time" name="waktu_mulai" id="waktu_mulai_aktor_edit" class="form-control">
                                         <input type="time" name="waktu_selesai" id="waktu_selesai_aktor_edit" class="form-control">
@@ -657,10 +659,6 @@
 
                         <!-- Right Side (Form Fields) -->
                         <div class="popup-right">
-                            <div class="form-group">
-                                <label for="url_pendaftaran_aktor_edit">URL Pendaftaran</label>
-                                <input type="text" name="url_pendaftaran" id="url_pendaftaran_aktor_edit" class="form-control" value="">
-                            </div>
                             <div class="form-group">
                                 <label for="syarat_aktor_edit">Persyaratan aktor</label>
                                 <textarea id="syarat_aktor_edit" name="syarat" class="form-control" value=""></textarea>
@@ -721,6 +719,7 @@
                                 </div>
                                 <div id="draft-accounts-aktor-edit"></div>
                                 <input type="hidden" name="hidden_accounts" id="hidden_accounts_aktor_edit">
+                                <input type="hidden" name="deleted_accounts" id="deleted_accounts_aktor">
                             </div>
                             <div class="form-group">
                                 <label for="judul_web_aktor_edit" class="form-label">Website Teater (opsional)</label>
@@ -734,6 +733,7 @@
                                 </div>
                                 <div id="draft-web-aktor-edit"></div>
                                 <input type="hidden" name="hidden_web" id="hidden_web_aktor_edit">
+                                <input type="hidden" name="deleted_webs" id="deleted_webs_aktor">
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" id="aturPeriodeCheckboxAktorEdit" name="atur_periode" value="1"
@@ -868,11 +868,6 @@
                         <!-- ✅ RIGHT SIDE -->
                         <div class="popup-right">
                             <div class="form-group">
-                                <label for="url_pendaftaran_staff_edit">URL Pendaftaran</label>
-                                <input type="text" name="url_pendaftaran" id="url_pendaftaran_staff_edit" class="form-control" value="">
-                            </div>
-
-                            <div class="form-group">
                                 <label for="syarat_staff_edit">Persyaratan Staff</label>
                                 <textarea id="syarat_staff_edit" name="syarat" class="form-control" value=""></textarea>
                             </div>
@@ -936,6 +931,7 @@
                                 </div>
                                 <div id="draft-accounts-staff-edit"></div>
                                 <input type="hidden" name="hidden_accounts" id="hidden_accounts_staff_edit">
+                                <input type="hidden" name="deleted_accounts" id="deleted_accounts_staff">
                             </div>
 
                             <!-- ✅ Website -->
@@ -952,6 +948,7 @@
                                 </div>
                                 <div id="draft-web-staff-edit"></div>
                                 <input type="hidden" name="hidden_web" id="hidden_web_staff_edit">
+                                <input type="hidden" name="deleted_webs" id="deleted_webs_staff">
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" id="aturPeriodeCheckboxStaffEdit" name="atur_periode" value="1"
@@ -984,6 +981,55 @@
                         </div>
                     </div>
                 </form>
+            </div>
+        </div>
+
+        <div id="deletePopup" class="popup-overlay">
+            <div class="popup-box">
+                <h3>Konfirmasi Penghapusan</h3>
+                <p>Apakah Anda yakin ingin menghapus pertunjukan teater ini?</p>
+                <div class="popup-actions">
+                    <button id="confirmDelete" class="confirm-btn">Ya, Hapus</button>
+                    <button id="cancelDelete" class="cancel-btn">Batal</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Popup -->
+        <div id="popupTiketTerjual" class="custom-modal" style="display: none;">
+            <div class="custom-modal-content">
+                <button class="closePopup">&times;</button>
+                <h5>Daftar Audiens yang Mendaftar</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="tableBookingList">
+                        <thead>
+                            <tr>
+                                <th>Nama</th>
+                                <th>Email</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Jenis Kelamin</th>
+                                <th>Status</th>
+                                <th>Bukti Pembayaran</th>
+                                <th>Tanggal Mendaftar</th>
+                                <th>Aksi</th> <!-- Tambahkan ini -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="8" class="text-center">Klik tombol untuk melihat data...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="totalTiketTerjual" class="mt-3 fw-bold text-end"></div>
+            </div>
+        </div>
+
+        <!-- Modal Preview Bukti (Custom, bukan Bootstrap) -->
+        <div id="customPreviewModal" class="custom-modal" style="display: none;">
+            <div class="custom-modal-content">
+                <span class="custom-close" onclick="closePreview()">&times;</span>
+                <img id="customImgPreview" src="" alt="Bukti Pembayaran" style="max-width: 100%;">
             </div>
         </div>
     </div>

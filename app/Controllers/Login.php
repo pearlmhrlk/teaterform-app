@@ -18,39 +18,21 @@ class Login extends BaseController
     public function login()
     {
         if ($this->request->getMethod() === 'POST') {
-            $usernameOrEmail = trim($this->request->getPost('username')); // Bisa username atau email
+            $username = trim($this->request->getPost('username')); // Bisa username atau email
             $password = trim($this->request->getPost('password'));
 
             // Validasi input tidak boleh kosong
-            if (empty($usernameOrEmail) || empty($password)) {
+            if (empty($username) || empty($password)) {
                 session()->setFlashdata('error', 'Username/Email dan Password harus diisi.');
                 return redirect()->to(base_url('User/login'));
             }
 
             // Cari user berdasarkan username atau email
-            $user = $this->userModel->where('username', $usernameOrEmail)
-                ->orWhere('email', $usernameOrEmail)
+            $user = $this->userModel->where('username', $username)
+                ->orWhere('email', $username)
                 ->first();
 
             if ($user) {
-                // Jika pengguna adalah mitra teater, cek statusnya di tabel m_mitra
-                if ($user['id_role'] == 2) { // id_role 2 = Mitra Teater
-                    $mitraModel = new \App\Models\MitraModel();
-                    $mitra = $mitraModel->where('id_user', $user['id_user'])->first();
-
-                    if ($mitra) {
-                        if ($mitra['approval_status'] == 'pending') {
-                            session()->setFlashdata('error', 'Akun Anda masih dalam proses verifikasi oleh admin.');
-                            return redirect()->to(base_url('User/login'));
-                        } elseif ($mitra['approval_status'] == 'rejected') {
-                            session()->setFlashdata('error', 'Akun Anda ditolak. Alasan: ' . $mitra['alasan']);
-                            return redirect()->to(base_url('User/login'));
-                        }
-                    } else {
-                        session()->setFlashdata('error', 'Akun Mitra tidak ditemukan.');
-                        return redirect()->to(base_url('User/login'));
-                    }
-                }
 
                 // Verifikasi password
                 if (password_verify($password, $user['password'])) {

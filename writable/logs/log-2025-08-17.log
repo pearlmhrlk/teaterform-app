@@ -1,0 +1,811 @@
+INFO - 2025-08-17 03:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-17 03:22:44 --> ErrorException: Undefined variable $searchUrl
+[Method: GET, Route: Audiens/penampilanAudiens]
+in APPPATH\Views\templates\bodyListPenampilan.php on line 22.
+ 1 APPPATH\Views\templates\bodyListPenampilan.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $searchUrl', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyListPenampilan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyListPenampilan', [], true)
+ 5 APPPATH\Controllers\Audiens.php(969): view('templates/bodyListPenampilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->penampilanAfterLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-17 03:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 03:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 04:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-17 05:02:31 --> ErrorException: Undefined array key "karakter_audisi"
+[Method: GET, Route: Audiens/listAudisi]
+in APPPATH\Views\templates\bodyAudisi.php on line 52.
+ 1 APPPATH\Views\templates\bodyAudisi.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "karakter_audisi"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisi.php', 52)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisi.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisi', [], true)
+ 5 APPPATH\Controllers\Audiens.php(445): view('templates/bodyAudisi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->ListAudisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-17 05:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-17 05:19:18 --> ErrorException: Undefined array key "jenis_staff"
+[Method: GET, Route: Audiens/listAudisi]
+in APPPATH\Controllers\Audiens.php on line 461.
+ 1 APPPATH\Controllers\Audiens.php(461): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jenis_staff"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php', 461)
+ 2 APPPATH\Controllers\Audiens.php(399): App\Controllers\Audiens->formatAudisi([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->ListAudisi()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-17 05:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-17 05:47:14 --> Error: [] operator not supported for strings
+[Method: GET, Route: User/searchAudisi]
+in APPPATH\Controllers\Audiens.php on line 1740.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-17 05:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-17 05:48:38 --> ErrorException: Array to string conversion
+[Method: GET, Route: User/searchAudisi]
+in APPPATH\Views\templates\bodyAudisi.php on line 151.
+ 1 APPPATH\Views\templates\bodyAudisi.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisi.php', 151)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisi.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisi', [], true)
+ 5 APPPATH\Controllers\Audiens.php(1750): view('templates/bodyAudisi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-17 05:50:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 05:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-17 06:01:40 --> ErrorException: Array to string conversion
+[Method: GET, Route: User/searchAudisi]
+in APPPATH\Views\templates\bodyAudisi.php on line 151.
+ 1 APPPATH\Views\templates\bodyAudisi.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisi.php', 151)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisi.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisi', [], true)
+ 5 APPPATH\Controllers\Audiens.php(1757): view('templates/bodyAudisi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-17 06:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-17 06:50:57 --> mysqli_sql_exception: Unknown column 'CASE WHEN m_audisi.id_kategori = 1 THEN "aktor" WHEN m_audisi.id_kategori = 2 THEN "staff" ELSE "lain" END' in 'field list' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_teate...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_teate...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_teate...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_teate...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Audiens.php(1722): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+#6 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\CodeIgniter4\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-08-17 06:50:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'CASE WHEN m_audisi.id_kategori = 1 THEN "aktor" WHEN m_audisi.id_kategori = 2 THEN "staff" ELSE "lain" END' in 'field list'
+[Method: GET, Route: User/searchAudisi]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_teater`.`id_teater`, `m_audisi`.`id_audisi`, `m_teater`.`judul`, `m_teater`.`poster`, `m_user`.`nama` AS `komunitas_teater`, `m_lokasi_teater`.`tempat`, `m_lokasi_teater`.`kota`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_audisi`.`gaji`, COALESCE(m_audisi_aktor.karakter_audisi, m_audisi_staff.jenis_staff) AS role, `CASE WHEN m_audisi`.`id_kategori = 1 THEN "aktor" WHEN m_audisi`.`id_kategori = 2 THEN "staff" ELSE "lain" END` AS `role_type`
+FROM `m_teater`
+JOIN `r_user_teater` ON `r_user_teater`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_user`.`id_user` = `r_user_teater`.`id_user`
+JOIN `m_audisi` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi_aktor`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi_staff`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_schedule` ON `m_audisi_schedule`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `r_audisi_schedule` ON `r_audisi_schedule`.`id_pricing_audisi` = `m_audisi_schedule`.`id_pricing_audisi`
+LEFT JOIN `m_show_schedule` ON `m_show_schedule`.`id_schedule` = `r_audisi_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_lokasi_teater`.`id_location` = `m_show_schedule`.`id_location`
+WHERE `m_teater`.`tipe_teater` = :m_teater.tipe_teater:
+AND `m_show_schedule`.`tanggal` >= :m_show_schedule.tanggal:
+AND  `m_lokasi_teater`.`kota` LIKE :m_lokasi_teater.kota: ESCAPE \'!\'
+ORDER BY `m_show_schedule`.`tanggal` ASC', [...], false)
+ 2 APPPATH\Controllers\Audiens.php(1722): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-17 06:50:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'CASE WHEN m_audisi.id_kategori = 1 THEN "aktor" WHEN m_audisi.id_kategori = 2 THEN "staff" ELSE "lain" END' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_teater`.`id_teater`, `m_audisi`.`id_audisi`, `m_teater`.`judul`, `m_teater`.`poster`, `m_user`.`nama` AS `komunitas_teater`, `m_lokasi_teater`.`tempat`, `m_lokasi_teater`.`kota`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_audisi`.`gaji`, COALESCE(m_audisi_aktor.karakter_audisi, m_audisi_staff.jenis_staff) AS role, `CASE WHEN m_audisi`.`id_kategori = 1 THEN "aktor" WHEN m_audisi`.`id_kategori = 2 THEN "staff" ELSE "lain" END` AS `role_type`
+FROM `m_teater`
+JOIN `r_user_teater` ON `r_user_teater`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_user`.`id_user` = `r_user_teater`.`id_user`
+JOIN `m_audisi` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi_aktor`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi_staff`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_schedule` ON `m_audisi_schedule`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `r_audisi_schedule` ON `r_audisi_schedule`.`id_pricing_audisi` = `m_audisi_schedule`.`id_pricing_audisi`
+LEFT JOIN `m_show_schedule` ON `m_show_schedule`.`id_schedule` = `r_audisi_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_lokasi_teater`.`id_location` = `m_show_schedule`.`id_location`
+WHERE `m_teater`.`tipe_teater` = \'audisi\'
+AND `m_show_schedule`.`tanggal` >= \'2025-08-17\'
+AND  `m_lokasi_teater`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\'
+ORDER BY `m_show_schedule`.`tanggal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_teater`.`id_teater`, `m_audisi`.`id_audisi`, `m_teater`.`judul`, `m_teater`.`poster`, `m_user`.`nama` AS `komunitas_teater`, `m_lokasi_teater`.`tempat`, `m_lokasi_teater`.`kota`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_audisi`.`gaji`, COALESCE(m_audisi_aktor.karakter_audisi, m_audisi_staff.jenis_staff) AS role, `CASE WHEN m_audisi`.`id_kategori = 1 THEN "aktor" WHEN m_audisi`.`id_kategori = 2 THEN "staff" ELSE "lain" END` AS `role_type`
+FROM `m_teater`
+JOIN `r_user_teater` ON `r_user_teater`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_user`.`id_user` = `r_user_teater`.`id_user`
+JOIN `m_audisi` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi_aktor`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi_staff`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_schedule` ON `m_audisi_schedule`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `r_audisi_schedule` ON `r_audisi_schedule`.`id_pricing_audisi` = `m_audisi_schedule`.`id_pricing_audisi`
+LEFT JOIN `m_show_schedule` ON `m_show_schedule`.`id_schedule` = `r_audisi_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_lokasi_teater`.`id_location` = `m_show_schedule`.`id_location`
+WHERE `m_teater`.`tipe_teater` = \'audisi\'
+AND `m_show_schedule`.`tanggal` >= \'2025-08-17\'
+AND  `m_lokasi_teater`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\'
+ORDER BY `m_show_schedule`.`tanggal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_teater`.`id_teater`, `m_audisi`.`id_audisi`, `m_teater`.`judul`, `m_teater`.`poster`, `m_user`.`nama` AS `komunitas_teater`, `m_lokasi_teater`.`tempat`, `m_lokasi_teater`.`kota`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_audisi`.`gaji`, COALESCE(m_audisi_aktor.karakter_audisi, m_audisi_staff.jenis_staff) AS role, `CASE WHEN m_audisi`.`id_kategori = 1 THEN "aktor" WHEN m_audisi`.`id_kategori = 2 THEN "staff" ELSE "lain" END` AS `role_type`
+FROM `m_teater`
+JOIN `r_user_teater` ON `r_user_teater`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_user`.`id_user` = `r_user_teater`.`id_user`
+JOIN `m_audisi` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi_aktor`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi_staff`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_schedule` ON `m_audisi_schedule`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `r_audisi_schedule` ON `r_audisi_schedule`.`id_pricing_audisi` = `m_audisi_schedule`.`id_pricing_audisi`
+LEFT JOIN `m_show_schedule` ON `m_show_schedule`.`id_schedule` = `r_audisi_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_lokasi_teater`.`id_location` = `m_show_schedule`.`id_location`
+WHERE `m_teater`.`tipe_teater` = :m_teater.tipe_teater:
+AND `m_show_schedule`.`tanggal` >= :m_show_schedule.tanggal:
+AND  `m_lokasi_teater`.`kota` LIKE :m_lokasi_teater.kota: ESCAPE \'!\'
+ORDER BY `m_show_schedule`.`tanggal` ASC', [...], false)
+ 4 APPPATH\Controllers\Audiens.php(1722): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-17 06:50:57 --> [Caused by] mysqli_sql_exception: Unknown column 'CASE WHEN m_audisi.id_kategori = 1 THEN "aktor" WHEN m_audisi.id_kategori = 2 THEN "staff" ELSE "lain" END' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `m_teater`.`id_teater`, `m_audisi`.`id_audisi`, `m_teater`.`judul`, `m_teater`.`poster`, `m_user`.`nama` AS `komunitas_teater`, `m_lokasi_teater`.`tempat`, `m_lokasi_teater`.`kota`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_audisi`.`gaji`, COALESCE(m_audisi_aktor.karakter_audisi, m_audisi_staff.jenis_staff) AS role, `CASE WHEN m_audisi`.`id_kategori = 1 THEN "aktor" WHEN m_audisi`.`id_kategori = 2 THEN "staff" ELSE "lain" END` AS `role_type`
+FROM `m_teater`
+JOIN `r_user_teater` ON `r_user_teater`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_user`.`id_user` = `r_user_teater`.`id_user`
+JOIN `m_audisi` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi_aktor`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi_staff`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_schedule` ON `m_audisi_schedule`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `r_audisi_schedule` ON `r_audisi_schedule`.`id_pricing_audisi` = `m_audisi_schedule`.`id_pricing_audisi`
+LEFT JOIN `m_show_schedule` ON `m_show_schedule`.`id_schedule` = `r_audisi_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_lokasi_teater`.`id_location` = `m_show_schedule`.`id_location`
+WHERE `m_teater`.`tipe_teater` = \'audisi\'
+AND `m_show_schedule`.`tanggal` >= \'2025-08-17\'
+AND  `m_lokasi_teater`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\'
+ORDER BY `m_show_schedule`.`tanggal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m_teater`.`id_teater`, `m_audisi`.`id_audisi`, `m_teater`.`judul`, `m_teater`.`poster`, `m_user`.`nama` AS `komunitas_teater`, `m_lokasi_teater`.`tempat`, `m_lokasi_teater`.`kota`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_audisi`.`gaji`, COALESCE(m_audisi_aktor.karakter_audisi, m_audisi_staff.jenis_staff) AS role, `CASE WHEN m_audisi`.`id_kategori = 1 THEN "aktor" WHEN m_audisi`.`id_kategori = 2 THEN "staff" ELSE "lain" END` AS `role_type`
+FROM `m_teater`
+JOIN `r_user_teater` ON `r_user_teater`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_user`.`id_user` = `r_user_teater`.`id_user`
+JOIN `m_audisi` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi_aktor`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi_staff`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_schedule` ON `m_audisi_schedule`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `r_audisi_schedule` ON `r_audisi_schedule`.`id_pricing_audisi` = `m_audisi_schedule`.`id_pricing_audisi`
+LEFT JOIN `m_show_schedule` ON `m_show_schedule`.`id_schedule` = `r_audisi_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_lokasi_teater`.`id_location` = `m_show_schedule`.`id_location`
+WHERE `m_teater`.`tipe_teater` = \'audisi\'
+AND `m_show_schedule`.`tanggal` >= \'2025-08-17\'
+AND  `m_lokasi_teater`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\'
+ORDER BY `m_show_schedule`.`tanggal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m_teater`.`id_teater`, `m_audisi`.`id_audisi`, `m_teater`.`judul`, `m_teater`.`poster`, `m_user`.`nama` AS `komunitas_teater`, `m_lokasi_teater`.`tempat`, `m_lokasi_teater`.`kota`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_audisi`.`gaji`, COALESCE(m_audisi_aktor.karakter_audisi, m_audisi_staff.jenis_staff) AS role, `CASE WHEN m_audisi`.`id_kategori = 1 THEN "aktor" WHEN m_audisi`.`id_kategori = 2 THEN "staff" ELSE "lain" END` AS `role_type`
+FROM `m_teater`
+JOIN `r_user_teater` ON `r_user_teater`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_user`.`id_user` = `r_user_teater`.`id_user`
+JOIN `m_audisi` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi_aktor`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi_staff`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_schedule` ON `m_audisi_schedule`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `r_audisi_schedule` ON `r_audisi_schedule`.`id_pricing_audisi` = `m_audisi_schedule`.`id_pricing_audisi`
+LEFT JOIN `m_show_schedule` ON `m_show_schedule`.`id_schedule` = `r_audisi_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_lokasi_teater`.`id_location` = `m_show_schedule`.`id_location`
+WHERE `m_teater`.`tipe_teater` = \'audisi\'
+AND `m_show_schedule`.`tanggal` >= \'2025-08-17\'
+AND  `m_lokasi_teater`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\'
+ORDER BY `m_show_schedule`.`tanggal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `m_teater`.`id_teater`, `m_audisi`.`id_audisi`, `m_teater`.`judul`, `m_teater`.`poster`, `m_user`.`nama` AS `komunitas_teater`, `m_lokasi_teater`.`tempat`, `m_lokasi_teater`.`kota`, `m_show_schedule`.`tanggal`, `m_show_schedule`.`waktu_mulai`, `m_show_schedule`.`waktu_selesai`, `m_audisi`.`gaji`, COALESCE(m_audisi_aktor.karakter_audisi, m_audisi_staff.jenis_staff) AS role, `CASE WHEN m_audisi`.`id_kategori = 1 THEN "aktor" WHEN m_audisi`.`id_kategori = 2 THEN "staff" ELSE "lain" END` AS `role_type`
+FROM `m_teater`
+JOIN `r_user_teater` ON `r_user_teater`.`id_teater` = `m_teater`.`id_teater`
+JOIN `m_user` ON `m_user`.`id_user` = `r_user_teater`.`id_user`
+JOIN `m_audisi` ON `m_audisi`.`id_teater` = `m_teater`.`id_teater`
+LEFT JOIN `m_audisi_aktor` ON `m_audisi_aktor`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_staff` ON `m_audisi_staff`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `m_audisi_schedule` ON `m_audisi_schedule`.`id_audisi` = `m_audisi`.`id_audisi`
+LEFT JOIN `r_audisi_schedule` ON `r_audisi_schedule`.`id_pricing_audisi` = `m_audisi_schedule`.`id_pricing_audisi`
+LEFT JOIN `m_show_schedule` ON `m_show_schedule`.`id_schedule` = `r_audisi_schedule`.`id_schedule`
+JOIN `m_lokasi_teater` ON `m_lokasi_teater`.`id_location` = `m_show_schedule`.`id_location`
+WHERE `m_teater`.`tipe_teater` = :m_teater.tipe_teater:
+AND `m_show_schedule`.`tanggal` >= :m_show_schedule.tanggal:
+AND  `m_lokasi_teater`.`kota` LIKE :m_lokasi_teater.kota: ESCAPE \'!\'
+ORDER BY `m_show_schedule`.`tanggal` ASC', [...], false)
+ 5 APPPATH\Controllers\Audiens.php(1722): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-17 06:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 06:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 07:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 07:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 07:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 07:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 07:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 07:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-17 07:41:52 --> mysqli_sql_exception: Unknown column 't.komunitas_teater' in 'field list' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM (...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Audiens.php(1726): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+#6 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\CodeIgniter4\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-08-17 07:41:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 't.komunitas_teater' in 'field list'
+[Method: GET, Route: User/searchAudisi]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+WHERE `t`.`tipe_teater` = :t.tipe_teater:
+AND  `l`.`kota` LIKE :l.kota: ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`', [...], false)
+ 2 APPPATH\Controllers\Audiens.php(1726): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-17 07:41:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 't.komunitas_teater' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+WHERE `t`.`tipe_teater` = \'audisi\'
+AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+WHERE `t`.`tipe_teater` = \'audisi\'
+AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+WHERE `t`.`tipe_teater` = :t.tipe_teater:
+AND  `l`.`kota` LIKE :l.kota: ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`', [...], false)
+ 4 APPPATH\Controllers\Audiens.php(1726): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-17 07:41:52 --> [Caused by] mysqli_sql_exception: Unknown column 't.komunitas_teater' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+WHERE `t`.`tipe_teater` = \'audisi\'
+AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+WHERE `t`.`tipe_teater` = \'audisi\'
+AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+WHERE `t`.`tipe_teater` = \'audisi\'
+AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+WHERE `t`.`tipe_teater` = :t.tipe_teater:
+AND  `l`.`kota` LIKE :l.kota: ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `t`.`komunitas_teater`, `t`.`lokasi_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`', [...], false)
+ 5 APPPATH\Controllers\Audiens.php(1726): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-17 07:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-17 07:45:19 --> mysqli_sql_exception: Unknown column 'l.id_lokasi' in 'on clause' in C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM (...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Audiens.php(1735): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+#6 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\CodeIgniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\CodeIgniter4\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-08-17 07:45:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'l.id_lokasi' in 'on clause'
+[Method: GET, Route: User/searchAudisi]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user`
+WHERE `t`.`tipe_teater` = :t.tipe_teater:
+AND  `l`.`kota` LIKE :l.kota: ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`', [...], false)
+ 2 APPPATH\Controllers\Audiens.php(1735): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-17 07:45:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'l.id_lokasi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user`
+WHERE `t`.`tipe_teater` = \'audisi\'
+AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user`
+WHERE `t`.`tipe_teater` = \'audisi\'
+AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user`
+WHERE `t`.`tipe_teater` = :t.tipe_teater:
+AND  `l`.`kota` LIKE :l.kota: ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`', [...], false)
+ 4 APPPATH\Controllers\Audiens.php(1735): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-17 07:45:19 --> [Caused by] mysqli_sql_exception: Unknown column 'l.id_lokasi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user`
+WHERE `t`.`tipe_teater` = \'audisi\'
+AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user`
+WHERE `t`.`tipe_teater` = \'audisi\'
+AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user`
+WHERE `t`.`tipe_teater` = \'audisi\'
+AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `ak`.`karakter_audisi` AS `role`, \'aktor\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster`
+FROM `m_teater` `t`
+JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater`
+JOIN `m_audisi_aktor` `ak` ON `ak`.`id_audisi` = `a`.`id_audisi`
+LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater`
+LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater`
+LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user`
+WHERE `t`.`tipe_teater` = :t.tipe_teater:
+AND  `l`.`kota` LIKE :l.kota: ESCAPE \'!\') `uwrp0`
+UNION ALL SELECT * FROM (SELECT `t`.`id_teater`, `a`.`id_audisi`, `a`.`id_kategori`, `sff`.`jenis_staff` AS `role`, \'staff\' AS role_type, `a`.`gaji`, `l`.`kota`, `l`.`tempat` AS `lokasi_teater`, `s`.`tanggal`, `s`.`waktu_mulai`, `t`.`judul`, `u`.`nama` AS `komunitas_teater`, `t`.`poster` FROM `m_teater` `t` JOIN `m_audisi` `a` ON `a`.`id_teater` = `t`.`id_teater` JOIN `m_audisi_staff` `sff` ON `sff`.`id_audisi` = `a`.`id_audisi` LEFT JOIN `m_show_schedule` `s` ON `s`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_lokasi_teater` `l` ON `l`.`id_lokasi` = `t`.`id_lokasi_teater` LEFT JOIN `r_user_teater` `rut` ON `rut`.`id_teater` = `t`.`id_teater` LEFT JOIN `m_user` `u` ON `u`.`id_user` = `rut`.`id_user` WHERE `t`.`tipe_teater` = \'audisi\' AND  `l`.`kota` LIKE \'%Jakarta%\' ESCAPE \'!\') `uwrp1`', [...], false)
+ 5 APPPATH\Controllers\Audiens.php(1735): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-17 07:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-17 07:49:39 --> ErrorException: Undefined array key "tempat"
+[Method: GET, Route: User/searchAudisi]
+in APPPATH\Controllers\Audiens.php on line 465.
+ 1 APPPATH\Controllers\Audiens.php(465): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tempat"', 'C:\\xampp\\htdocs\\CodeIgniter4\\app\\Controllers\\Audiens.php', 465)
+ 2 APPPATH\Controllers\Audiens.php(1745): App\Controllers\Audiens->formatAudisi([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Audiens->searchAudisi()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audiens))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-17 07:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 07:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 07:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 07:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 07:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 08:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 12:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-17 14:32:51 --> Logo name: uploads/logo/1755441171_29d170cd51688cfa94aa.png
+DEBUG - 2025-08-17 14:32:51 --> Form data: {"csrf_test_name":"f09249b55d974087892ee11c92b13fca","id_role":"2","username":"TeaterSimantika","nama":"Teater Simantika","email":"hiewbiobwoe@gmail.com","password":"maharlika","acc_mitra":["teatersimantika","teatersimantika"],"hidden_accounts":"[{\"platformId\":\"1\",\"account\":\"teatersimantika\"},{\"platformId\":\"2\",\"account\":\"teatersimantika\"}]","alamat":"Jl. Silabus merdeka 31, Kemang, Jakarta.","berdiri_sejak":"2025-08-01","deskripsi":"Sebuah teater yang berprinsip.","history_show":"","prestasi":""}
+DEBUG - 2025-08-17 14:32:51 --> Hidden Accounts Data: [{"platformId":"1","account":"teatersimantika"},{"platformId":"2","account":"teatersimantika"}]
+DEBUG - 2025-08-17 14:32:51 --> Raw hidden_accounts from request: [{"platformId":"1","account":"teatersimantika"},{"platformId":"2","account":"teatersimantika"}]
+DEBUG - 2025-08-17 14:32:51 --> Hidden Accounts (Decoded): Array
+(
+    [0] => Array
+        (
+            [platformId] => 1
+            [account] => teatersimantika
+        )
+
+    [1] => Array
+        (
+            [platformId] => 2
+            [account] => teatersimantika
+        )
+
+)
+
+DEBUG - 2025-08-17 14:32:51 --> Account Name Length: 15
+DEBUG - 2025-08-17 14:32:51 --> Processing platformId: 1, account: teatersimantika
+DEBUG - 2025-08-17 14:32:51 --> Account Name Length: 15
+DEBUG - 2025-08-17 14:32:51 --> Processing platformId: 2, account: teatersimantika
+DEBUG - 2025-08-17 14:32:51 --> Final Data to Insert: Array
+(
+    [0] => Array
+        (
+            [id_mitra] => 27
+            [id_platform_sosmed] => 1
+            [acc_mitra] => teatersimantika
+        )
+
+    [1] => Array
+        (
+            [id_mitra] => 27
+            [id_platform_sosmed] => 2
+            [acc_mitra] => teatersimantika
+        )
+
+)
+
+DEBUG - 2025-08-17 14:32:51 --> All POST Data: Array
+(
+    [csrf_test_name] => f09249b55d974087892ee11c92b13fca
+    [id_role] => 2
+    [username] => TeaterSimantika
+    [nama] => Teater Simantika
+    [email] => hiewbiobwoe@gmail.com
+    [password] => maharlika
+    [acc_mitra] => Array
+        (
+            [0] => teatersimantika
+            [1] => teatersimantika
+        )
+
+    [hidden_accounts] => [{"platformId":"1","account":"teatersimantika"},{"platformId":"2","account":"teatersimantika"}]
+    [alamat] => Jl. Silabus merdeka 31, Kemang, Jakarta.
+    [berdiri_sejak] => 2025-08-01
+    [deskripsi] => Sebuah teater yang berprinsip.
+    [history_show] => 
+    [prestasi] => 
+)
+
+INFO - 2025-08-17 14:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-08-17 14:40:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1845): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-17 14:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 14:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-17 15:02:04 --> Last Query: NULL
+DEBUG - 2025-08-17 15:02:04 --> Poster name: travel-4001428_1280.png
+DEBUG - 2025-08-17 15:02:04 --> Poster uploaded: uploads/posters/1755442924_a3c9c96f536299cf2271.png
+DEBUG - 2025-08-17 15:02:04 --> Request data: {"csrf_test_name":"f09249b55d974087892ee11c92b13fca","tipe_teater":"audisi","id_kategori":"2","judul":"Sleeping Beauty","sinopsis":"Seorang putri tidur","jenis_staff":"Tata busana","jobdesc_staff":"Merancang desain kostum","tanggal":"2025-08-24","waktu_mulai":"21:55","waktu_selesai":"23:55","tipe_harga":"Gratis","harga":"","kota":["Bogor",""],"kota_real":"Bogor","tempat":"Online","hidden_schedule":"[{\"tanggal\":\"2025-08-23\",\"waktu_mulai\":\"21:55\",\"waktu_selesai\":\"23:55\",\"tipe_harga\":\"Gratis\",\"harga\":null,\"kota\":\"Bogor\",\"tempat\":\"Online\"}]","penulis":"Jerome","syarat":"Memiliki pengalaman mendesain kostum untuk pertunjukan","syarat_dokumen":"","sutradara":"Kamiya Hiroshi","gaji_dirahasiakan":"on","komitmen":"Harus menaati peraturan","mitra_teater":"5","id_platform_sosmed":["2"],"acc_name":[""],"hidden_accounts":"[]","judul_web":[""],"url_web":[""],"hidden_web":"","atur_periode":"1","daftar_mulai":"2025-08-15","daftar_berakhir":"2025-08-22"}
+DEBUG - 2025-08-17 15:02:04 --> Data yang diterima: {"tipe_teater":"audisi","judul":"Sleeping Beauty","poster":"uploads\/posters\/1755442924_a3c9c96f536299cf2271.png","sinopsis":"Seorang putri tidur","penulis":"Jerome","sutradara":"Kamiya Hiroshi","dibuat_oleh":"BINUS University","dimodif_oleh":null,"daftar_mulai":"2025-08-15","daftar_berakhir":"2025-08-22"}
+DEBUG - 2025-08-17 15:02:04 --> ID Teater yang dibuat: 125
+DEBUG - 2025-08-17 15:02:04 --> ID relasi user dengan teater yang dibuat: 39
+DEBUG - 2025-08-17 15:02:04 --> Data yang diterima: {"id_teater":125,"id_kategori":"2","syarat":"Memiliki pengalaman mendesain kostum untuk pertunjukan","syarat_dokumen":"","gaji":null,"status_gaji":"secret","komitmen":"Harus menaati peraturan"}
+DEBUG - 2025-08-17 15:02:04 --> ID Audisi yang dibuat: 14
+DEBUG - 2025-08-17 15:02:04 --> Data yang diterima: {"id_audisi":14,"jenis_staff":"Tata busana","jobdesc_staff":"Merancang desain kostum"}
+DEBUG - 2025-08-17 15:02:04 --> ID Staff yang dibuat: 2
+DEBUG - 2025-08-17 15:02:04 --> Jadwal ke-0: Tanggal: 2025-08-23, Mulai: 21:55, Selesai: 23:55, Kota: Bogor, Tempat: Online, Harga: 
+DEBUG - 2025-08-17 15:02:04 --> Data lokasi yang akan disimpan: {"tempat":"Online","kota":"Bogor"}
+DEBUG - 2025-08-17 15:02:04 --> ID Location yang didapat setelah insert: 188
+INFO - 2025-08-17 15:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-08-17 15:02:06 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1845): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-08-17 15:02:06 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\templates\bodyAudisiMitra.php on line 66.
+ 1 APPPATH\Views\templates\bodyAudisiMitra.php(66): number_format(null, 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\CodeIgniter4\\app\\Views\\templates\\bodyAudisiMitra.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('templates/bodyAudisiMitra', [], true)
+ 5 APPPATH\Controllers\MitraTeater.php(1845): view('templates/bodyAudisiMitra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MitraTeater->audisi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MitraTeater))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-17 15:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-17 15:26:59 --> Last Query: NULL
+DEBUG - 2025-08-17 15:27:00 --> Poster name: travel-4001428_1280.png
+DEBUG - 2025-08-17 15:27:00 --> Poster valid: yes
+DEBUG - 2025-08-17 15:27:00 --> Poster uploaded: uploads/posters/1755444420_bdd292691bef18c260f0.png
+DEBUG - 2025-08-17 15:27:00 --> Request data: {"csrf_test_name":"f09249b55d974087892ee11c92b13fca","id_teater":"","tipe_teater":"penampilan","judul":"Spain","sinopsis":"Sebuah negara yang indah dan terkenal dengan pemandangannya","tanggal":"2025-08-25","waktu_mulai":"22:10","waktu_selesai":"00:10","tipe_harga":"Bayar","harga":"","nama_kategori":"","seat_kategori":["Premium","VIP"],"seat_harga":["250000","500000"],"kota":["Depok",""],"kota_real":"Depok","tempat":"Studio Janus Harapan","hidden_schedule":"[{\"id\":1755444038511,\"tanggal\":\"2025-08-25\",\"waktu_mulai\":\"22:10\",\"waktu_selesai\":\"00:10\",\"tipe_harga\":\"Bayar\",\"nama_kategori\":\"Premium, VIP\",\"harga\":\"250000, 500000\",\"kota\":\"Depok\",\"tempat\":\"Studio Janus Harapan\",\"denah_seat\":\"uploaded\",\"seatDrafts\":[{\"kategori\":\"Premium\",\"harga\":\"250000\"},{\"kategori\":\"VIP\",\"harga\":\"500000\"}],\"denah_filename\":\"images.jpeg\"}]","penulis":"Sungyun Park","sutradara":"Kamerunidunin","staff":"Gaga Lili, Sukinem Tjahyo","aktor":"Tsumira, Kaya Naya, Luis Hartono","durasi":"120","rating_umur":["13+"],"mitra_teater":"5","id_platform_sosmed":["4"],"acc_name":[""],"hidden_accounts":"","judul_web":[""],"url_web":[""],"hidden_web":"[{\"title\":\"Official teater website\",\"url\":\"www.binusteater.com\"}]","daftar_mulai":"","daftar_berakhir":"","denah_mapping":["1755444038511"]}
+DEBUG - 2025-08-17 15:27:00 --> Data yang diterima: {"tipe_teater":"penampilan","judul":"Spain","poster":"uploads\/posters\/1755444420_bdd292691bef18c260f0.png","sinopsis":"Sebuah negara yang indah dan terkenal dengan pemandangannya","penulis":"Sungyun Park","sutradara":"Kamerunidunin","staff":"Gaga Lili, Sukinem Tjahyo","dibuat_oleh":"BINUS University","dimodif_oleh":null,"daftar_mulai":null,"daftar_berakhir":null}
+DEBUG - 2025-08-17 15:27:00 --> ID Teater yang dibuat: 126
+DEBUG - 2025-08-17 15:27:00 --> ID relasi user dengan teater yang dibuat: 40
+DEBUG - 2025-08-17 15:27:00 --> Qr Code valid: yes
+DEBUG - 2025-08-17 15:27:00 --> QR Code uploaded: uploads/qrcodeBayar/1755444420_6fae837e37cc751470f0.jpg
+DEBUG - 2025-08-17 15:27:00 --> Data yang diterima: {"id_teater":126,"aktor":"Tsumira, Kaya Naya, Luis Hartono","durasi":"120","rating_umur":["13+"],"qrcode_bayar":"uploads\/qrcodeBayar\/1755444420_6fae837e37cc751470f0.jpg"}
+DEBUG - 2025-08-17 15:27:00 --> ID Penampilan yang dibuat: 104
+DEBUG - 2025-08-17 15:27:00 --> Jadwal ke-0: Tanggal: 2025-08-25, Mulai: 22:10, Selesai: 00:10, Kota: Depok, Tempat: Studio Janus Harapan
+DEBUG - 2025-08-17 15:27:00 --> Data lokasi yang akan disimpan: {"tempat":"Studio Janus Harapan","kota":"Depok"}
+DEBUG - 2025-08-17 15:27:00 --> ID Location yang didapat setelah insert: 189
+DEBUG - 2025-08-17 15:27:00 --> Data jadwal diterima: [{"id":1755444038511,"tanggal":"2025-08-25","waktu_mulai":"22:10","waktu_selesai":"00:10","tipe_harga":"Bayar","nama_kategori":"Premium, VIP","harga":"250000, 500000","kota":"Depok","tempat":"Studio Janus Harapan","denah_seat":"uploaded","seatDrafts":[{"kategori":"Premium","harga":"250000"},{"kategori":"VIP","harga":"500000"}],"denah_filename":"images.jpeg"}]
+INFO - 2025-08-17 15:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 15:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-17 16:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

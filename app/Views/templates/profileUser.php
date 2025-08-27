@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile User</title>
-    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css?v=1.0.1') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/bootstrap.min.css?v=1.0.1') ?>">
     <style>
         body {
             background-color: #f8f9fa;
@@ -44,7 +44,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-4 text-center">
-                        <img src="<?= base_url('assets/images/logos/avatar-6.png') ?>" class="img-fluid rounded-circle mb-3" alt="Profile Image" style="width: 150px; height: 150px;">
+                        <img src="<?= base_url('public/assets/images/logos/avatar-6.png') ?>" class="img-fluid rounded-circle mb-3" alt="Profile Image" style="width: 150px; height: 150px;">
                     </div>
                     <div class="col-md-8">
                         <h4>Username: <span id="username"><?= esc($user['username']) ?></span></h4>
@@ -55,7 +55,7 @@
             </div>
         </div>
     </div>
-    <script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/bootstrap.min.js') ?>"></script>
 </body>
 
 </html>

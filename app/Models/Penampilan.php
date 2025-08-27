@@ -14,7 +14,8 @@ class Penampilan extends Model
         'id_teater',
         'aktor',
         'durasi',
-        'rating_umur'
+        'rating_umur',
+        'qrcode_bayar'
     ];
 
     protected $useTimestamps = false;

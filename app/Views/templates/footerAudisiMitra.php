@@ -30,19 +30,19 @@
     <!-- back to top area end -->
 
     <!-- all plugins here -->
-    <script data-cfasync="false" src="<?= base_url('assets/js/email-decode.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/jquery.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/popper.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/isotope.pkgd.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/appear.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/imageload.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/jquery.magnific-popup.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/skill.bars.jquery.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/slick.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/wow.min.js') ?>"></script>
-    <script src="<?= base_url('assets/js/dropdown-navbar.js') ?>"></script>
+    <script data-cfasync="false" src="<?= base_url('public/assets/js/email-decode.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/jquery.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/popper.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/bootstrap.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/isotope.pkgd.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/appear.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/imageload.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/jquery.magnific-popup.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/skill.bars.jquery.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/slick.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/wow.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/dropdown-navbar.js') ?>"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -1339,9 +1339,33 @@
         });
 
         document.addEventListener("DOMContentLoaded", function() {
-            let currentSchedulesEdit = []; // untuk menampung draft jadwal di popup edit
-            let deletedSchedules = []; // untuk menyimpan id jadwal yang akan dihapus
-            updateDeletedSchedulesInput(); // fungsi untuk update input hidden
+
+            const deletedSchedulesMap = {
+                aktor: [],
+                staff: []
+            };
+
+            const currentSchedulesEditMap = {
+                aktor: [],
+                staff: []
+            };
+
+            function updateDeletedSchedulesInputByType(type) {
+                const input = document.getElementById(`deleted_schedules_${type}_edit`);
+                if (input && deletedSchedulesMap[type]) {
+                    input.value = JSON.stringify(deletedSchedulesMap[type]);
+                }
+            }
+
+            function updateCurrentSchedulesInputByType(type) {
+                const input = document.getElementById(`hidden_schedule_${type}_edit`);
+                if (input && currentSchedulesEditMap[type]) {
+                    input.value = JSON.stringify(currentSchedulesEditMap[type]);
+                }
+            }
+
+            updateDeletedSchedulesInputByType('aktor');
+            updateDeletedSchedulesInputByType('staff');
 
             const popupAktorEdit = document.getElementById("auditionPopupAktorEdit");
             const popupStaffEdit = document.getElementById("auditionPopupStaffEdit");
@@ -1358,6 +1382,10 @@
                     e.preventDefault();
 
                     let formData = new FormData(this);
+                    formData.append(
+                        'deleted_schedules',
+                        document.getElementById('deleted_schedules_staff_edit')?.value || '[]'
+                    );
 
                     fetch("<?= base_url('MitraTeater/saveAuditionStaff') ?>", {
                             method: "POST",
@@ -1388,6 +1416,13 @@
                     e.preventDefault();
 
                     let formData = new FormData(this);
+
+                    for (let [key, value] of formData.entries()) {
+                        console.log(`${key}: ${value}`);
+                    }
+
+                    console.log('Final data sosmed:', document.getElementById('hidden_accounts_aktor_edit')?.value);
+
                     formData.append(
                         'deleted_schedules',
                         document.getElementById('deleted_schedules_aktor_edit')?.value || '[]'
@@ -1431,7 +1466,6 @@
                         }
 
                         popupTitleAktorEdit.textContent = "Edit Audisi Aktor";
-                        popupAktorEdit.style.display = "flex";
                         formAktorEdit.reset();
 
                         // Tambahkan input hidden id_audisi (cek dulu apakah sudah ada)
@@ -1446,7 +1480,7 @@
                             inputHidden.value = idAudisi;
                         }
 
-                        fetch(`<?= base_url('MitraTeater/editAudisiAktor/${idTeater}') ?>`)
+                        fetch(`<?= base_url('MitraTeater/editAudisiAktor') ?>/${idTeater}`)
                             .then(response => response.json())
                             .then(result => {
                                 if (result.status === "success") {
@@ -1455,7 +1489,13 @@
                                     resetFormAktorEdit();
                                     popupAktorEdit.style.display = "flex";
 
-                                    prefillFormAktor(data.teater, data.audisi, data.aktorAudisi, data.jadwal, data.user);
+                                    prefillFormAktor(data.teater, data.audisi, data.aktorAudisi, data.jadwal, data.user, data.website, data.sosmed, data.accounts_komunitas);
+
+                                    // 4. Render ulang innerHTML draft sosmed
+                                    requestAnimationFrame(() => {
+                                        initSosmedEdit();
+                                    });
+
                                 } else {
                                     alert(result.message || "Gagal mengambil data audisi.");
                                     popupAktorEdit.style.display = "none";
@@ -1467,179 +1507,269 @@
                                 popupAktorEdit.style.display = "none";
                             });
 
-                        // === Prefill data ke form ===
-                        function prefillFormAktor(teater, audisi, aktorAudisi, jadwal, user) {
+                        try {
 
-                            // Hidden inputs
-                            resetFormAktorEdit();
-                            updateDeletedSchedulesInput();
+                            // === Prefill data ke form ===
+                            function prefillFormAktor(teater, audisi, aktorAudisi, jadwal, user, website, sosmed, accounts_komunitas) {
+                                if (!audisi) return;
 
-                            document.querySelector('input[name="id_teater"]').value = teater.id_teater;
-                            document.getElementById('tipe_teater_aktor_edit').value = 'audisi';
-                            document.getElementById('id_kategori_aktor_edit').value = '1';
-                            document.getElementById('id_aktor_audisi_edit').value = aktorAudisi.id_aktor_audisi;
-                            document.getElementById('id_schedule_aktor_edit').value = jadwal.id_schedule;
-                            document.querySelector('input[name="id_user"]').value = user.id_user;
-                            document.querySelector('input[name="id_audisi"]').value = audisi.id_audisi;
+                                // Hidden inputs
+                                resetFormAktorEdit();
+                                updateDeletedSchedulesInputByType('aktor');
 
-                            // Input Teks
-                            document.getElementById('judul_aktor_edit').value = teater.judul;
-                            document.getElementById('sinopsis_aktor_edit').value = teater.sinopsis || '';
+                                document.querySelector('input[name="id_teater"]').value = teater.id_teater;
+                                document.getElementById('tipe_teater_aktor_edit').value = 'audisi';
+                                document.getElementById('id_kategori_aktor_edit').value = '1';
+                                document.getElementById('id_aktor_audisi_edit').value = aktorAudisi.id_aktor_audisi;
+                                document.querySelector('input[name="id_user"]').value = user.id_user;
+                                document.querySelector('input[name="id_audisi"]').value = audisi.id_audisi;
 
-                            if (aktorAudisi) {
-                                document.getElementById('karakter_audisi_edit').value = aktorAudisi.karakter_audisi || '';
-                                document.getElementById('deskripsi_karakter_edit').value = aktorAudisi.deskripsi_karakter || '';
+                                // Input Teks
+                                document.getElementById('judul_aktor_edit').value = teater.judul;
+                                document.getElementById('sinopsis_aktor_edit').value = teater.sinopsis || '';
 
-                                if (aktorAudisi.karakter_audisi || aktorAudisi.deskripsi_karakter) {
-                                    document.getElementById('all-chara-edit').checked = false;
-                                } else {
-                                    document.getElementById('all-chara-edit').checked = true;
+                                if (aktorAudisi) {
+                                    document.getElementById('karakter_audisi_edit').value = aktorAudisi.karakter_audisi || '';
+                                    document.getElementById('deskripsi_karakter_edit').value = aktorAudisi.deskripsi_karakter || '';
+
+                                    if (aktorAudisi.karakter_audisi || aktorAudisi.deskripsi_karakter) {
+                                        document.getElementById('all-chara-edit').checked = false;
+                                    } else {
+                                        document.getElementById('all-chara-edit').checked = true;
+                                    }
+
+                                    updateCharacterOptionsEdit();
                                 }
 
-                                updateCharacterOptionsEdit();
-                            }
+                                const tipeHargaSelect = document.getElementById('tipe_harga_aktor_edit');
+                                const nominalContainer = document.getElementById('nominal-harga-aktor-edit');
+                                const hargaInput = document.getElementById('harga_aktor_edit');
 
-                            const tipeHargaSelect = document.getElementById('tipe_harga_aktor_edit');
-                            const nominalContainer = document.getElementById('nominal-harga-aktor-edit');
-                            const hargaInput = document.getElementById('harga_aktor_edit');
+                                const firstSchedule = jadwal[0] || {};
+                                const firstTipeHarga = firstSchedule.tipe_harga;
+                                const isAllSameTipeHarga = jadwal.every(j => j.tipe_harga === firstTipeHarga);
 
-                            if (jadwal.tipe_harga === 'Bayar' && jadwal.harga) {
-                                tipeHargaSelect.value = 'Bayar';
-                                nominalContainer.style.display = 'block';
-                                hargaInput.value = jadwal.harga; // atau audisi.nominal_bayar kalau beda
-                            } else {
-                                tipeHargaSelect.value = 'Gratis';
-                                nominalContainer.style.display = 'none';
-                                hargaInput.value = '';
-                            }
+                                if (isAllSameTipeHarga && firstTipeHarga === 'Bayar' && firstSchedule.harga) {
+                                    tipeHargaSelect.value = 'Bayar';
+                                    nominalContainer.style.display = 'block';
+                                    hargaInput.value = firstSchedule.harga;
+                                } else {
+                                    tipeHargaSelect.value = 'Gratis';
+                                    nominalContainer.style.display = 'none';
+                                    hargaInput.value = '';
+                                }
 
-                            const kotaSelect = document.getElementById("kota-select-aktor");
-                            const kotaInput = document.getElementById("kota-input-aktor");
-                            const lainnyaContainer = document.getElementById("lainnya-container-aktor");
-                            const hiddenKota = document.getElementById("hidden-kota-aktor");
+                                const kotaSelect = document.getElementById("kota-select-aktor-edit");
+                                const kotaInput = document.getElementById("kota-edit-aktor");
+                                const lainnyaContainer = document.getElementById("lainnya-container-aktor-edit");
+                                const hiddenKota = document.getElementById("hidden-kota-aktor-edit");
 
-                            const jabodetabek = ['Jakarta', 'Bogor', 'Depok', 'Tangerang', 'Bekasi'];
-                            const kotaDariDB = jadwal.kota?.trim();
+                                const jabodetabek = ['Jakarta', 'Bogor', 'Depok', 'Tangerang', 'Bekasi'];
+                                const kotaDariDB = jadwal[0]?.kota?.trim();
 
-                            if (jabodetabek.includes(kotaDariDB)) {
-                                // Pilih dari select
-                                kotaSelect.value = kotaDariDB;
-                                kotaInput.value = '';
-                                hiddenKota.value = kotaDariDB;
-                                lainnyaContainer.style.display = 'none';
-                                kotaInput.required = false;
-                            } else {
-                                // Pilih "lainnya" dan tampilkan input
-                                kotaSelect.value = 'lainnya';
-                                kotaInput.value = kotaDariDB || '';
-                                hiddenKota.value = kotaDariDB || '';
-                                lainnyaContainer.style.display = 'block';
-                                kotaInput.required = true;
-                            }
+                                if (jabodetabek.includes(kotaDariDB)) {
+                                    // Pilih dari select
+                                    kotaSelect.value = kotaDariDB;
+                                    kotaInput.value = '';
+                                    hiddenKota.value = kotaDariDB;
+                                    lainnyaContainer.style.display = 'none';
+                                    kotaInput.required = false;
+                                } else {
+                                    // Pilih "lainnya" dan tampilkan input
+                                    kotaSelect.value = 'lainnya';
+                                    kotaInput.value = kotaDariDB || '';
+                                    hiddenKota.value = kotaDariDB || '';
+                                    lainnyaContainer.style.display = 'block';
+                                    kotaInput.required = true;
+                                }
 
-                            const draftContainer = document.getElementById('draft-schedule-aktor-edit');
-                            const hiddenInput = document.getElementById('hidden_schedule_aktor_edit');
+                                const draftContainer = document.getElementById('draft-schedule-aktor-edit');
+                                const hiddenInput = document.getElementById('hidden_schedule_aktor_edit');
 
-                            // Kosongkan kontainer & array sebelum isi ulang
-                            draftContainer.innerHTML = '';
-                            currentSchedulesEdit = [];
-                            deletedSchedules = [];
+                                // Kosongkan kontainer & array sebelum isi ulang
+                                draftContainer.innerHTML = '';
+                                currentSchedulesEditMap['aktor'] = [];
+                                deletedSchedulesMap['aktor'] = [];
 
-                            jadwal.forEach((j) => {
-                                const schedule = {
-                                    id: j.id || null,
-                                    tanggal: j.tanggal,
-                                    waktu_mulai: formatTimeToHHMM(j.waktu_mulai),
-                                    waktu_selesai: formatTimeToHHMM(j.waktu_selesai),
-                                    tipe_harga: j.tipe_harga,
-                                    harga: j.harga || null,
-                                    kota: j.kota,
-                                    tempat: j.tempat
-                                };
+                                jadwal.forEach((j) => {
+                                    const schedule = {
+                                        id: j.id || null,
+                                        tanggal: j.tanggal,
+                                        waktu_mulai: formatTimeToHHMM(j.waktu_mulai),
+                                        waktu_selesai: formatTimeToHHMM(j.waktu_selesai),
+                                        tipe_harga: j.tipe_harga,
+                                        harga: j.harga || null,
+                                        kota: j.kota,
+                                        tempat: j.tempat
+                                    };
 
-                                currentSchedulesEdit.push(schedule);
+                                    currentSchedulesEditMap['aktor'].push(schedule);
 
-                                const scheduleItem = document.createElement('div');
-                                scheduleItem.classList.add('draft-schedule-item');
+                                    const scheduleItem = document.createElement('div');
+                                    scheduleItem.classList.add('draft-schedule-item');
 
-                                // Pakai ID unik sementara (timestamp atau gabungan data)
-                                const uniqueId = `${schedule.tanggal}-${schedule.waktu_mulai}-${schedule.tempat}-${schedule.kota}`;
-                                scheduleItem.setAttribute('data-id', uniqueId);
+                                    // Pakai ID unik sementara (timestamp atau gabungan data)
+                                    const uniqueId = `${schedule.tanggal}-${schedule.waktu_mulai}-${schedule.tempat}-${schedule.kota}`;
+                                    scheduleItem.setAttribute('data-id', uniqueId);
 
-                                scheduleItem.innerHTML = `
+                                    scheduleItem.innerHTML = `
                                     <p><strong>${schedule.tanggal}, ${schedule.waktu_mulai} - ${schedule.waktu_selesai}</strong></p>
                                     <p>${schedule.kota} - ${schedule.tempat}</p>
                                     <button type="button" class="delete-draft-btn delete-schedule-btn">x</button>
                                 `;
 
-                                scheduleItem.querySelector('.delete-draft-btn').addEventListener('click', function() {
-                                    draftContainer.removeChild(scheduleItem);
+                                    scheduleItem.querySelector('.delete-draft-btn').addEventListener('click', function() {
+                                        draftContainer.removeChild(scheduleItem);
 
-                                    // Hapus item dari currentSchedulesEdit
-                                    const indexToRemove = currentSchedulesEdit.findIndex(item =>
-                                        `${item.tanggal}-${item.waktu_mulai}-${item.tempat}-${item.kota}` === uniqueId
-                                    );
-                                    if (indexToRemove > -1) {
-                                        // Kalau ada id asli, simpan ke deletedSchedules
-                                        if (currentSchedulesEdit[indexToRemove].id) {
-                                            deletedSchedules.push(currentSchedulesEdit[indexToRemove].id);
+                                        // Hapus item dari currentSchedulesEdit
+                                        const indexToRemove = currentSchedulesEditMap['aktor'].findIndex(item =>
+                                            `${item.tanggal}-${item.waktu_mulai}-${item.tempat}-${item.kota}` === uniqueId
+                                        );
+                                        if (indexToRemove > -1) {
+                                            // Kalau ada id asli, simpan ke deletedSchedules
+                                            if (currentSchedulesEditMap['aktor'][indexToRemove].id) {
+                                                deletedSchedulesMap['aktor'].push(currentSchedulesEditMap['aktor'][indexToRemove].id);
+                                            }
+                                            currentSchedulesEditMap['aktor'].splice(indexToRemove, 1);
                                         }
-                                        currentSchedulesEdit.splice(indexToRemove, 1);
-                                    }
 
-                                    // Update hidden inputs
-                                    hiddenInput.value = JSON.stringify(currentSchedulesEdit);
-                                    document.getElementById('deleted_schedules_aktor_edit').value = JSON.stringify(deletedSchedules);
-                                    updateDeletedSchedulesInput();
+                                        // Update hidden inputs
+                                        hiddenInput.value = JSON.stringify(currentSchedulesEditMap['aktor']);
+                                        document.getElementById('deleted_schedules_aktor_edit').value = JSON.stringify(deletedSchedulesMap['aktor']);
+                                        updateDeletedSchedulesInputByType('aktor');
+                                    });
+
+                                    draftContainer.appendChild(scheduleItem);
                                 });
 
-                                draftContainer.appendChild(scheduleItem);
-                            });
+                                hiddenInput.value = JSON.stringify(currentSchedulesEditMap['aktor']);
 
-                            hiddenInput.value = JSON.stringify(currentSchedulesEdit);
+                                document.getElementById('penulis_aktor_edit').value = teater.penulis;
+                                document.getElementById('syarat_aktor_edit').value = audisi.syarat;
+                                document.getElementById('syarat_dokumen_aktor_edit').value = audisi.syarat_dokumen || '';
+                                document.getElementById('sutradara_aktor_edit').value = teater.sutradara;
+                                document.getElementById('staff_aktor_edit').value = teater.staff || '';
 
-                            document.getElementById('penulis_aktor_edit').value = teater.penulis;
-                            document.getElementById('url_pendaftaran_aktor_edit').value = teater.url_pendaftaran;
-                            document.getElementById('syarat_aktor_edit').value = audisi.syarat;
-                            document.getElementById('syarat_dokumen_aktor_edit').value = audisi.syarat_dokumen || '';
-                            document.getElementById('sutradara_aktor_edit').value = teater.sutradara;
-                            document.getElementById('staff_aktor_edit').value = teater.staff || '';
+                                const gajiEdit = document.getElementById('gaji_aktor_edit');
+                                const gajiCheck = document.getElementById('gaji_dirahasiakan_aktor_edit')
+                                const allowedGajiStatus = ['shown', 'secret', 'no'];
+                                const statusGaji = allowedGajiStatus.includes(audisi.status_gaji) ? audisi.status_gaji : 'no';
 
-                            const gajiEdit = document.getElementById('gaji_aktor_edit');
-                            const gajiCheck = document.getElementById('gaji_dirahasiakan_aktor_edit')
+                                gajiCheck.checked = statusGaji === 'secret';
+                                gajiEdit.disabled = statusGaji === 'secret';
 
-                            gajiCheck.checked = audisi.status_gaji === 'secret';
-                            gajiEdit.disabled = audisi.status_gaji === 'secret';
+                                if (statusGaji === 'secret') {
+                                    gajiEdit.value = '';
+                                    gajiEdit.placeholder = '';
+                                    gajiEdit.classList.add('input-disabled');
+                                } else if (statusGaji === 'shown') {
+                                    gajiEdit.value = audisi.gaji || '';
+                                    gajiEdit.placeholder = 'Masukkan nominal gaji';
+                                    gajiEdit.classList.remove('input-disabled');
+                                } else if (statusGaji === 'no') {
+                                    gajiEdit.value = '';
+                                    gajiEdit.placeholder = 'Masukkan nominal gaji';
+                                    gajiEdit.classList.remove('input-disabled');
+                                }
 
-                            if (audisi.status_gaji === 'secret') {
-                                gajiEdit.value = '';
-                                gajiEdit.placeholder = '';
-                                gajiEdit.classList.add('input-disabled');
-                            } else if (audisi.status_gaji === 'shown') {
-                                gajiEdit.value = audisi.gaji || ''; // kalau ada datanya
-                                gajiEdit.placeholder = 'Masukkan nominal gaji';
-                                gajiEdit.classList.remove('input-disabled');
-                            } else {
-                                // status_gaji === 'no'
-                                gajiEdit.value = '';
-                                gajiEdit.placeholder = 'Masukkan nominal gaji';
-                                gajiEdit.classList.remove('input-disabled');
+                                document.getElementById('komitmen_aktor_edit').value = audisi.komitmen || '';
+
+                                //Dropdown Mitra Teater (set selected option)
+                                const mitraSelect = document.getElementById('mitra_teater_aktor_edit');
+                                if (mitraSelect) {
+                                    for (const option of mitraSelect.options) {
+                                        if (parseInt(option.value) === parseInt(audisi.id_mitra)) {
+                                            option.selected = true;
+                                            break;
+                                        }
+                                    }
+                                }
+
+                                // 1. Prefill sosmed teater (yang akan bisa diedit)
+                                if (sosmed && Array.isArray(sosmed)) {
+                                    const hiddenInput = document.getElementById('hidden_accounts_aktor_edit');
+
+                                    const formattedSosmed = sosmed.map(item => ({
+                                        platformId: item.id_platform_sosmed,
+                                        platformName: item.platform_name,
+                                        account: item.acc_teater
+                                    }));
+
+                                    hiddenInput.value = JSON.stringify(formattedSosmed);
+                                    hiddenDataEdit = formattedSosmed;
+
+                                    requestAnimationFrame(() => {
+                                        initSosmedEdit();
+                                    });
+
+                                    window.originalSosmedTeater = formattedSosmed;
+                                }
+
+                                // 2. Prefill sosmed dari mitra komunitas (hanya sebagai referensi, tidak diedit langsung)
+                                if (accounts_komunitas && Array.isArray(accounts_komunitas)) {
+                                    // Simpan ke variabel global agar bisa dipakai saat centang "Sama dengan Mitra Komunitas"
+                                    window.audisiGlobal = {
+                                        accounts_komunitas: accounts_komunitas
+                                    };
+                                } else {
+                                    window.audisiGlobal = null; // default kalau kosong
+                                }
+
+                                document.getElementById('same-sosmed-aktor-edit').addEventListener('change', function() {
+                                    lastRenderedSosmed = null; // paksa rerender karena data berubah
+                                    const hiddenInput = document.getElementById('hidden_accounts_aktor_edit');
+
+                                    let currentData = [];
+                                    try {
+                                        currentData = JSON.parse(hiddenInput.value || '[]');
+                                    } catch (e) {}
+
+                                    if (this.checked && window.audisiGlobal?.accounts_komunitas) {
+                                        const mitraSosmed = window.audisiGlobal.accounts_komunitas;
+
+                                        const merged = [...currentData];
+                                        mitraSosmed.forEach(mitraItem => {
+                                            const exists = merged.some(item => item.platformId === mitraItem.platformId);
+                                            if (!exists) {
+                                                merged.push(mitraItem);
+                                            }
+                                        });
+
+                                        hiddenInput.value = JSON.stringify(merged);
+
+                                        requestAnimationFrame(() => {
+                                            initSosmedEdit();
+                                        });
+
+                                    } else if (!this.checked && window.originalSosmedTeater) {
+                                        // Jika centang dicabut, kembalikan ke data sosmed awal teater
+                                        hiddenInput.value = JSON.stringify(window.originalSosmedTeater);
+                                        requestAnimationFrame(() => {
+                                            initSosmedEdit();
+                                        });
+                                    }
+                                });
+
+                                hiddenWebEdit = [];
+                                deletedWebs = [];
+
+                                if (Array.isArray(website) && website.length > 0) {
+                                    hiddenWebEdit = website.map(item => ({
+                                        id: item.id || null,
+                                        title: item.title,
+                                        url: item.url
+                                    }));
+                                    renderWebDrafts();
+                                } else {
+                                    // Pastikan tetap kosong dan tidak error
+                                    renderWebDrafts(); // Tetap render biar bisa reset isi sebelumnya
+                                }
+
+                                togglePeriodeFieldsEdit(); // Panggil agar sinkron
                             }
-
-                            document.getElementById('komitmen_aktor_edit').value = audisi.komitmen || '';
-
-                            // Dropdown Mitra Teater (set selected option)
-                            // const mitraSelect = document.getElementById('mitra_teater_aktor_edit');
-                            // if (mitraSelect) {
-                            //     for (const option of mitraSelect.options) {
-                            //         if (parseInt(option.value) === parseInt(audisi.id_mitra_teater)) {
-                            //             option.selected = true;
-                            //             break;
-                            //         }
-                            //     }
-                            // }
-
-                            togglePeriodeFieldsEdit(); // Panggil agar sinkron
+                        } catch (e) {
+                            console.error("Gagal mengisi data form:", e);
+                            alert("Terjadi kesalahan saat mengisi data.");
                         }
                     }
 
@@ -1651,7 +1781,6 @@
                         }
 
                         popupTitleStaffEdit.textContent = "Edit Audisi Staff";
-                        popupStaffEdit.style.display = "flex";
                         formStaffEdit.reset();
 
                         // Tambahkan input hidden id_audisi (cek dulu apakah sudah ada)
@@ -1666,12 +1795,20 @@
                             inputHidden.value = idAudisi;
                         }
 
-                        fetch(`<?= base_url('MitraTeater/editAudisiStaff/${idTeater}') ?>`)
+                        fetch(`<?= base_url('MitraTeater/editAudisiStaff') ?>/${idTeater}`)
                             .then(response => response.json())
                             .then(result => {
                                 if (result.status === "success") {
                                     const data = result.data;
-                                    prefillFormStaff(data.teater, data.audisi, data.staffAudisi, data.jadwal);
+                                    formStaffEdit.reset();
+                                    resetFormStaffEdit();
+                                    popupStaffEdit.style.display = "flex";
+
+                                    prefillFormStaff(data.teater, data.audisi, data.staffAudisi, data.jadwal, data.user, data.website, data.sosmed, data.accounts_komunitas);
+
+                                    requestAnimationFrame(() => {
+                                        initSosmedStaffEdit();
+                                    });
                                 } else {
                                     alert(result.message || "Gagal mengambil data audisi.");
                                     popupStaffEdit.style.display = "none";
@@ -1683,162 +1820,260 @@
                                 popupStaffEdit.style.display = "none";
                             });
 
-                        // === Prefill data ke form untuk Audisi Staff ===
-                        function prefillFormStaff(teater, audisi, staffAudisi, jadwal) {
+                        try {
 
-                            // Hidden inputs
-                            document.querySelector('input[name="id_teater"]').value = teater.id_teater;
-                            document.getElementById('tipe_teater_staff_edit').value = 'audisi';
-                            document.getElementById('id_kategori_staff_edit').value = '2'; // misal kategori 2 untuk staff
-                            document.getElementById('id_staff_audisi_edit').value = staffAudisi.id_staff_audisi;
+                            // === Prefill data ke form untuk Audisi Staff ===
+                            function prefillFormStaff(teater, audisi, staffAudisi, jadwal, user, website, sosmed, accounts_komunitas) {
+                                if (!audisi) return;
 
-                            // Input Teks
-                            document.getElementById('judul_staff_edit').value = teater.judul;
-                            document.getElementById('sinopsis_staff_edit').value = teater.sinopsis || '';
+                                // Hidden inputs
+                                resetFormStaffEdit();
+                                updateDeletedSchedulesInputByType('staff');
 
-                            if (staffAudisi) {
-                                document.getElementById('jenis_staff_edit').value = staffAudisi.jenis_staff || '';
-                                document.getElementById('jobdesc_staff_edit').value = staffAudisi.jobdesc_staff || '';
+                                document.querySelector('input[name="id_teater"]').value = teater.id_teater;
+                                document.getElementById('tipe_teater_staff_edit').value = 'audisi';
+                                document.getElementById('id_kategori_staff_edit').value = '2'; // misal kategori 2 untuk staff
+                                document.getElementById('id_staff_audisi_edit').value = staffAudisi.id_staff_audisi;
+                                document.querySelector('input[name="id_user"]').value = user.id_user;
+                                document.querySelector('input[name="id_audisi"]').value = audisi.id_audisi;
 
-                                if (staffAudisi.jenis_staff || staffAudisi.jobdesc_staff) {
-                                    document.getElementById('all-chara-staff-edit').checked = false;
-                                } else {
-                                    document.getElementById('all-chara-staff-edit').checked = true;
-                                }
+                                // Input Teks
+                                document.getElementById('judul_staff_edit').value = teater.judul;
+                                document.getElementById('sinopsis_staff_edit').value = teater.sinopsis || '';
 
-                                updateCharacterOptionsEditStaff(); // asumsi fungsi ini bisa dipakai juga untuk staff
-                            }
+                                if (staffAudisi) {
+                                    document.getElementById('jenis_staff_edit').value = staffAudisi.jenis_staff || '';
+                                    document.getElementById('jobdesc_staff_edit').value = staffAudisi.jobdesc_staff || '';
 
-                            document.getElementById('id_schedule_staff_edit').value = jadwal.id_schedule;
-
-                            const tipeHargaSelect = document.getElementById('tipe_harga_staff_edit');
-                            const nominalContainer = document.getElementById('nominal-harga-staff-edit');
-                            const hargaInput = document.getElementById('harga_staff_edit');
-
-                            if (jadwal.tipe_harga === 'Bayar' && jadwal.harga) {
-                                tipeHargaSelect.value = 'Bayar';
-                                nominalContainer.style.display = 'block';
-                                hargaInput.value = jadwal.harga;
-                            } else {
-                                tipeHargaSelect.value = 'Gratis';
-                                nominalContainer.style.display = 'none';
-                                hargaInput.value = '';
-                            }
-
-                            const kotaSelect = document.getElementById("kota-select-staff");
-                            const kotaInput = document.getElementById("kota-input-staff");
-                            const lainnyaContainer = document.getElementById("lainnya-container-staff");
-                            const hiddenKota = document.getElementById("hidden-kota-staff");
-
-                            const jabodetabek = ['Jakarta', 'Bogor', 'Depok', 'Tangerang', 'Bekasi'];
-                            const kotaDariDB = jadwal.kota?.trim();
-
-                            if (jabodetabek.includes(kotaDariDB)) {
-                                kotaSelect.value = kotaDariDB;
-                                kotaInput.value = '';
-                                hiddenKota.value = kotaDariDB;
-                                lainnyaContainer.style.display = 'none';
-                                kotaInput.required = false;
-                            } else {
-                                kotaSelect.value = 'lainnya';
-                                kotaInput.value = kotaDariDB || '';
-                                hiddenKota.value = kotaDariDB || '';
-                                lainnyaContainer.style.display = 'block';
-                                kotaInput.required = true;
-                            }
-
-                            const draftContainer = document.getElementById('draft-schedule-staff-edit');
-                            const hiddenInput = document.getElementById('hidden_schedule_staff_edit');
-                            deletedSchedules = []; // Array untuk simpan id jadwal yang dihapus
-
-                            draftContainer.innerHTML = '';
-                            currentSchedulesEdit = [];
-
-                            jadwal.forEach((j, index) => {
-                                const schedule = {
-                                    id: j.id || null,
-                                    tanggal: j.tanggal,
-                                    waktu_mulai: j.waktu,
-                                    waktu_selesai: j.waktu_selesai || '',
-                                    tipe_harga: j.tipe_harga,
-                                    harga: j.harga || null,
-                                    kota: j.kota,
-                                    tempat: j.tempat
-                                };
-
-                                currentSchedulesEdit.push(schedule);
-
-                                const scheduleItem = document.createElement('div');
-                                scheduleItem.classList.add('draft-schedule-item');
-
-                                const uniqueId = `${j.tanggal}-${j.waktu}-${j.tempat}-${j.kota}`;
-                                scheduleItem.setAttribute('data-id', uniqueId);
-
-                                scheduleItem.innerHTML = `
-        <p><strong>${schedule.tanggal}, ${schedule.waktu_mulai} - ${schedule.waktu_selesai}</strong></p>
-        <p>${schedule.kota} - ${schedule.tempat}</p>
-        <button type="button" class="delete-draft-btn delete-schedule-btn">x</button>
-    `;
-
-                                scheduleItem.querySelector('.delete-draft-btn').addEventListener('click', function() {
-                                    draftContainer.removeChild(scheduleItem);
-
-                                    const indexToRemove = currentSchedulesEdit.findIndex(item =>
-                                        `${item.tanggal}-${item.waktu_mulai}-${item.tempat}-${item.kota}` === uniqueId
-                                    );
-                                    if (indexToRemove > -1) {
-                                        if (currentSchedulesEdit[indexToRemove].id) {
-                                            deletedSchedules.push(currentSchedulesEdit[indexToRemove].id);
-                                        }
-                                        currentSchedulesEdit.splice(indexToRemove, 1);
+                                    if (staffAudisi.jenis_staff || staffAudisi.jobdesc_staff) {
+                                        document.getElementById('all-staff-edit').checked = false;
+                                    } else {
+                                        document.getElementById('all-staff-edit').checked = true;
                                     }
 
-                                    hiddenInput.value = JSON.stringify(currentSchedulesEdit);
-                                    document.getElementById('deleted_schedules_staff_edit').value = JSON.stringify(deletedSchedules);
+                                    updateStaffOptionsEdit(); // asumsi fungsi ini bisa dipakai juga untuk staff
+                                }
+
+                                const tipeHargaSelect = document.getElementById('tipe_harga_staff_edit');
+                                const nominalContainer = document.getElementById('nominal-harga-staff-edit');
+                                const hargaInput = document.getElementById('harga_staff_edit');
+
+                                const firstSchedule = jadwal[0] || {};
+                                const firstTipeHarga = firstSchedule.tipe_harga;
+                                const isAllSameTipeHarga = jadwal.every(j => j.tipe_harga === firstTipeHarga);
+
+                                if (isAllSameTipeHarga && firstTipeHarga === 'Bayar' && firstSchedule.harga) {
+                                    tipeHargaSelect.value = 'Bayar';
+                                    nominalContainer.style.display = 'block';
+                                    hargaInput.value = firstSchedule.harga;
+                                } else {
+                                    tipeHargaSelect.value = 'Gratis';
+                                    nominalContainer.style.display = 'none';
+                                    hargaInput.value = '';
+                                }
+
+                                const kotaSelect = document.getElementById("kota-select-staff-edit");
+                                const kotaInput = document.getElementById("kota-edit-staff");
+                                const lainnyaContainer = document.getElementById("lainnya-container-staff-edit");
+                                const hiddenKota = document.getElementById("hidden-kota-staff-edit");
+
+                                const jabodetabek = ['Jakarta', 'Bogor', 'Depok', 'Tangerang', 'Bekasi'];
+                                const kotaDariDB = jadwal[0]?.kota?.trim();
+
+                                if (jabodetabek.includes(kotaDariDB)) {
+                                    kotaSelect.value = kotaDariDB;
+                                    kotaInput.value = '';
+                                    hiddenKota.value = kotaDariDB;
+                                    lainnyaContainer.style.display = 'none';
+                                    kotaInput.required = false;
+                                } else {
+                                    kotaSelect.value = 'lainnya';
+                                    kotaInput.value = kotaDariDB || '';
+                                    hiddenKota.value = kotaDariDB || '';
+                                    lainnyaContainer.style.display = 'block';
+                                    kotaInput.required = true;
+                                }
+
+                                const draftContainer = document.getElementById('draft-schedule-staff-edit');
+                                const hiddenInput = document.getElementById('hidden_schedule_staff_edit');
+
+                                draftContainer.innerHTML = '';
+                                currentSchedulesEditMap['staff'] = [];
+                                deletedSchedulesMap['staff'] = [];
+
+                                jadwal.forEach((j) => {
+                                    const schedule = {
+                                        id: j.id || null,
+                                        tanggal: j.tanggal,
+                                        waktu_mulai: formatTimeToHHMM(j.waktu_mulai),
+                                        waktu_selesai: formatTimeToHHMM(j.waktu_selesai),
+                                        tipe_harga: j.tipe_harga,
+                                        harga: j.harga || null,
+                                        kota: j.kota,
+                                        tempat: j.tempat
+                                    };
+
+                                    currentSchedulesEditMap['staff'].push(schedule);
+
+                                    const scheduleItem = document.createElement('div');
+                                    scheduleItem.classList.add('draft-schedule-item');
+
+                                    // Pakai ID unik sementara (timestamp atau gabungan data)
+                                    const uniqueId = `${schedule.tanggal}-${schedule.waktu_mulai}-${schedule.tempat}-${schedule.kota}`;
+                                    scheduleItem.setAttribute('data-id', uniqueId);
+
+                                    scheduleItem.innerHTML = `
+                                    <p><strong>${schedule.tanggal}, ${schedule.waktu_mulai} - ${schedule.waktu_selesai}</strong></p>
+                                    <p>${schedule.kota} - ${schedule.tempat}</p>
+                                    <button type="button" class="delete-draft-btn delete-schedule-btn">x</button>
+                                `;
+
+                                    scheduleItem.querySelector('.delete-draft-btn').addEventListener('click', function() {
+                                        draftContainer.removeChild(scheduleItem);
+
+                                        const indexToRemove = currentSchedulesEditMap['staff'].findIndex(item =>
+                                            `${item.tanggal}-${item.waktu_mulai}-${item.tempat}-${item.kota}` === uniqueId
+                                        );
+                                        if (indexToRemove > -1) {
+                                            if (currentSchedulesEditMap['staff'][indexToRemove].id) {
+                                                deletedSchedulesMap['staff'].push(currentSchedulesEditMap['staff'][indexToRemove].id);
+                                            }
+                                            currentSchedulesEditMap['staff'].splice(indexToRemove, 1);
+                                        }
+
+                                        hiddenInput.value = JSON.stringify(currentSchedulesEditMap['staff']);
+                                        document.getElementById('deleted_schedules_staff_edit').value = JSON.stringify(deletedSchedulesMap['staff']);
+                                        updateDeletedSchedulesInputByType('staff');
+                                    });
+
+                                    draftContainer.appendChild(scheduleItem);
                                 });
 
-                                draftContainer.appendChild(scheduleItem);
-                            });
+                                hiddenInput.value = JSON.stringify(currentSchedulesEditMap['staff']);
 
-                            hiddenInput.value = JSON.stringify(currentSchedulesEdit);
+                                document.getElementById('penulis_staff_edit').value = teater.penulis;
+                                document.getElementById('syarat_staff_edit').value = audisi.syarat;
+                                document.getElementById('syarat_dokumen_staff_edit').value = audisi.syarat_dokumen || '';
+                                document.getElementById('sutradara_staff_edit').value = teater.sutradara;
 
-                            document.getElementById('penulis_staff_edit').value = teater.penulis;
-                            document.getElementById('url_pendaftaran_staff_edit').value = teater.url_pendaftaran;
-                            document.getElementById('syarat_staff_edit').value = audisi.syarat;
-                            document.getElementById('syarat_dokumen_staff_edit').value = audisi.syarat_dokumen || '';
-                            document.getElementById('sutradara_staff_edit').value = teater.sutradara;
+                                const gajiEdit = document.getElementById('gaji_staff_edit');
+                                const gajiCheck = document.getElementById('gaji_dirahasiakan_staff_edit');
+                                const allowedGajiStatus = ['shown', 'secret', 'no'];
+                                const statusGaji = allowedGajiStatus.includes(audisi.status_gaji) ? audisi.status_gaji : 'no';
 
-                            const gajiEdit = document.getElementById('gaji_staff_edit');
-                            const gajiCheck = document.getElementById('gaji_dirahasiakan_staff_edit');
+                                gajiCheck.checked = statusGaji === 'secret';
+                                gajiEdit.disabled = statusGaji === 'secret';
 
-                            gajiCheck.checked = audisi.status_gaji === 'secret';
-                            gajiEdit.disabled = audisi.status_gaji === 'secret';
+                                if (statusGaji === 'secret') {
+                                    gajiEdit.value = '';
+                                    gajiEdit.placeholder = '';
+                                    gajiEdit.classList.add('input-disabled');
+                                } else if (statusGaji === 'shown') {
+                                    gajiEdit.value = audisi.gaji || '';
+                                    gajiEdit.placeholder = 'Masukkan nominal gaji';
+                                    gajiEdit.classList.remove('input-disabled');
+                                } else if (statusGaji === 'no') {
+                                    gajiEdit.value = '';
+                                    gajiEdit.placeholder = 'Masukkan nominal gaji';
+                                    gajiEdit.classList.remove('input-disabled');
+                                }
 
-                            if (audisi.status_gaji === 'secret') {
-                                gajiEdit.value = '';
-                                gajiEdit.placeholder = '';
-                                gajiEdit.classList.add('input-disabled');
-                            } else if (audisi.status_gaji === 'shown') {
-                                gajiEdit.value = audisi.gaji || '';
-                                gajiEdit.placeholder = 'Masukkan nominal gaji';
-                                gajiEdit.classList.remove('input-disabled');
-                            } else {
-                                gajiEdit.value = '';
-                                gajiEdit.placeholder = 'Masukkan nominal gaji';
-                                gajiEdit.classList.remove('input-disabled');
+                                document.getElementById('komitmen_staff_edit').value = audisi.komitmen || '';
+
+                                //Dropdown Mitra Teater (set selected option)
+                                const mitraSelect = document.getElementById('mitra_teater_staff_edit');
+                                if (mitraSelect) {
+                                    for (const option of mitraSelect.options) {
+                                        if (parseInt(option.value) === parseInt(audisi.id_mitra)) {
+                                            option.selected = true;
+                                            break;
+                                        }
+                                    }
+                                }
+
+                                // 1. Prefill sosmed teater (yang akan bisa diedit)
+                                if (sosmed && Array.isArray(sosmed)) {
+                                    const hiddenInput = document.getElementById('hidden_accounts_staff_edit');
+
+                                    const formattedSosmed = sosmed.map(item => ({
+                                        platformId: item.id_platform_sosmed,
+                                        platformName: item.platform_name,
+                                        account: item.acc_teater
+                                    }));
+
+                                    hiddenInput.value = JSON.stringify(formattedSosmed);
+
+                                    requestAnimationFrame(() => {
+                                        initSosmedStaffEdit();
+                                    });
+
+                                    window.originalSosmedTeater = formattedSosmed;
+                                }
+
+                                // 2. Prefill sosmed dari mitra komunitas (hanya sebagai referensi, tidak diedit langsung)
+                                if (accounts_komunitas && Array.isArray(accounts_komunitas)) {
+                                    // Simpan ke variabel global agar bisa dipakai saat centang "Sama dengan Mitra Komunitas"
+                                    window.audisiGlobal = {
+                                        accounts_komunitas: accounts_komunitas
+                                    };
+                                } else {
+                                    window.audisiGlobal = null; // default kalau kosong
+                                }
+
+                                document.getElementById('same-sosmed-staff-edit').addEventListener('change', function() {
+                                    lastRenderedSosmed = null;
+                                    const hiddenInput = document.getElementById('hidden_accounts_staff_edit');
+
+                                    let currentData = [];
+                                    try {
+                                        currentData = JSON.parse(hiddenInput.value || '[]');
+                                    } catch (e) {}
+
+                                    if (this.checked && window.audisiGlobal?.accounts_komunitas) {
+                                        const mitraSosmed = window.audisiGlobal.accounts_komunitas;
+
+                                        const merged = [...currentData];
+                                        mitraSosmed.forEach(mitraItem => {
+                                            const exists = merged.some(item => item.platformId === mitraItem.platformId);
+                                            if (!exists) {
+                                                merged.push(mitraItem);
+                                            }
+                                        });
+
+                                        hiddenInput.value = JSON.stringify(merged);
+
+                                        requestAnimationFrame(() => {
+                                            initSosmedStaffEdit();
+                                        });
+                                    } else if (!this.checked && window.originalSosmedTeater) {
+                                        // Jika centang dicabut, kembalikan ke data sosmed awal teater
+                                        hiddenInput.value = JSON.stringify(window.originalSosmedTeater);
+
+                                        requestAnimationFrame(() => {
+                                            initSosmedStaffEdit();
+                                        });
+                                    }
+                                });
+
+                                hiddenWebEdit = [];
+                                deletedWebs = [];
+
+                                if (Array.isArray(website) && website.length > 0) {
+                                    hiddenWebEdit = website.map(item => ({
+                                        id: item.id || null,
+                                        title: item.title,
+                                        url: item.url
+                                    }));
+                                    renderWebStaffDrafts();
+                                } else {
+                                    renderWebStaffDrafts();
+                                }
+
+                                togglePeriodeFieldsStaffEdit(); // Panggil agar sinkron
                             }
-
-                            document.getElementById('komitmen_staff_edit').value = audisi.komitmen || '';
-
-                            const periodeCheckboxEdit = document.getElementById('aturPeriodeCheckboxStaffEdit');
-
-                            periodeCheckboxEdit.checked = teater.daftar_mulai && teater.daftar_berakhir ? true : false;
-                            togglePeriodeFieldsEditStaff();
-
-                            if (periodeCheckboxEdit.checked) {
-                                document.getElementById('daftar_mulai_staff_edit').value = teater.daftar_mulai;
-                                document.getElementById('daftar_berakhir_staff_edit').value = teater.daftar_berakhir;
-                            }
+                        } catch (e) {
+                            console.error("Gagal mengisi data form:", e);
+                            alert("Terjadi kesalahan saat mengisi data.");
                         }
                     } else {
                         alert("Kategori audisi tidak dikenali.");
@@ -1847,14 +2082,15 @@
             });
 
             function resetFormAktorEdit() {
+                if (typeof window.audisiGlobal !== 'undefined') window.audisiGlobal = null;
 
                 // Bersihkan draft schedule container & reset array jadwal
                 const draftContainer = document.getElementById('draft-schedule-aktor-edit');
                 if (draftContainer) draftContainer.innerHTML = '';
 
                 // Reset variabel jadwal (pastikan variabel global/let di scope)
-                if (typeof currentSchedulesEdit !== 'undefined') currentSchedulesEdit.length = 0;
-                if (typeof deletedSchedules !== 'undefined') deletedSchedules.length = 0;
+                if (typeof currentSchedulesEditMap['aktor'] !== 'undefined') currentSchedulesEditMap['aktor'].length = 0;
+                if (typeof deletedSchedulesMap['aktor'] !== 'undefined') deletedSchedulesMap['aktor'].length = 0;
 
                 // Reset hidden input jadwal
                 const hiddenScheduleInput = document.getElementById('hidden_schedule_aktor_edit');
@@ -1876,10 +2112,10 @@
                 if (hargaInput) hargaInput.value = '';
 
                 // Reset kota select & input, dan hidden kota
-                const kotaSelect = document.getElementById('kota-select-aktor');
-                const kotaInput = document.getElementById('kota-input-aktor');
-                const lainnyaContainer = document.getElementById('lainnya-container-aktor');
-                const hiddenKota = document.getElementById('hidden-kota-aktor');
+                const kotaSelect = document.getElementById('kota-select-aktor-edit');
+                const kotaInput = document.getElementById('kota-input-aktor-edit');
+                const lainnyaContainer = document.getElementById('lainnya-container-aktor-edit');
+                const hiddenKota = document.getElementById('hidden-kota-aktor-edit');
                 if (kotaSelect) kotaSelect.value = '';
                 if (kotaInput) {
                     kotaInput.value = '';
@@ -1899,6 +2135,24 @@
                 }
                 if (gajiCheck) gajiCheck.checked = false;
 
+                // Reset sosial media (sosmed)
+                initSosmedEdit();
+
+                // Reset data website
+                hiddenWebEdit = [];
+                deletedWebs = [];
+
+                const draftWebEdit = document.getElementById('draft-web-aktor-edit');
+                if (draftWebEdit) draftWebEdit.innerHTML = '';
+                const hiddenInputWeb = document.getElementById('hidden_web_aktor_edit');
+                if (hiddenInputWeb) hiddenInputWeb.value = '';
+                const deletedInputWeb = document.getElementById('deleted_webs_aktor');
+                if (deletedInputWeb) deletedInputWeb.value = '';
+                const judulInput = document.getElementById('judul_web_aktor_edit');
+                if (judulInput) judulInput.value = '';
+                const urlInput = document.getElementById('url_web_aktor_edit');
+                if (urlInput) urlInput.value = '';
+
                 // Reset periode checkbox dan tanggal periode
                 const periodeCheckboxEdit = document.getElementById('aturPeriodeCheckboxAktorEdit')
                 if (periodeCheckboxEdit) periodeCheckboxEdit.checked = false;
@@ -1917,11 +2171,13 @@
             }
 
             function resetFormStaffEdit() {
+                if (typeof window.audisiGlobal !== 'undefined') window.audisiGlobal = null;
+
                 const draftContainer = document.getElementById('draft-schedule-staff-edit');
                 if (draftContainer) draftContainer.innerHTML = '';
 
-                if (typeof currentSchedulesEdit !== 'undefined') currentSchedulesEdit.length = 0;
-                if (typeof deletedSchedules !== 'undefined') deletedSchedules.length = 0;
+                if (typeof currentSchedulesEditMap['staff'] !== 'undefined') currentSchedulesEditMap['staff'].length = 0;
+                if (typeof deletedSchedulesMap['staff'] !== 'undefined') deletedSchedulesMap['staff'].length = 0;
 
                 const hiddenScheduleInput = document.getElementById('hidden_schedule_staff_edit');
                 if (hiddenScheduleInput) hiddenScheduleInput.value = '';
@@ -1929,8 +2185,8 @@
                 const deletedSchedulesInput = document.getElementById('deleted_schedules_staff_edit');
                 if (deletedSchedulesInput) deletedSchedulesInput.value = '';
 
-                const allCharaCheckbox = document.getElementById('all-chara-edit-staff');
-                if (allCharaCheckbox) allCharaCheckbox.checked = true;
+                const allStaffCheckbox = document.getElementById('all-staff-edit');
+                if (allStaffCheckbox) allStaffCheckbox.checked = true;
 
                 const tipeHargaSelect = document.getElementById('tipe_harga_staff_edit');
                 const nominalContainer = document.getElementById('nominal-harga-staff-edit');
@@ -1961,11 +2217,29 @@
                 }
                 if (gajiCheck) gajiCheck.checked = false;
 
+                // Reset sosial media (sosmed)
+                initSosmedStaffEdit();
+
+                // Reset data website
+                hiddenWebEdit = [];
+                deletedWebs = [];
+
+                const draftWebEdit = document.getElementById('draft-web-staff-edit');
+                if (draftWebEdit) draftWebEdit.innerHTML = '';
+                const hiddenInputWeb = document.getElementById('hidden_web_staff_edit');
+                if (hiddenInputWeb) hiddenInputWeb.value = '';
+                const deletedInputWeb = document.getElementById('deleted_webs_staff');
+                if (deletedInputWeb) deletedInputWeb.value = '';
+                const judulInput = document.getElementById('judul_web_staff_edit');
+                if (judulInput) judulInput.value = '';
+                const urlInput = document.getElementById('url_web_staff_edit');
+                if (urlInput) urlInput.value = '';
+
                 const periodeCheckboxEdit = document.getElementById('periode_checkbox_edit_staff');
                 if (periodeCheckboxEdit) periodeCheckboxEdit.checked = false;
-                togglePeriodeFieldsEditStaff(); // Fungsi ini perlu Anda buat jika belum
+                togglePeriodeFieldsStaffEdit(); // Fungsi ini perlu Anda buat jika belum
 
-                updateCharacterOptionsEditStaff();
+                updateStaffOptionsEdit();
             }
 
             // === TOMBOL BATAL STAFF ===
@@ -1975,10 +2249,6 @@
                     popupStaffEdit.style.display = "none";
                     resetFormStaffEdit();
                 });
-            }
-
-            function updateDeletedSchedulesInput() {
-                document.getElementById('deleted_schedules_aktor_edit').value = JSON.stringify(deletedSchedules);
             }
 
             function formatTimeToHHMM(timeStr) {
@@ -2148,10 +2418,10 @@
 
                 // Update currentSchedulesEdit dari hidden input, kalau ada
                 let hiddenInput = document.getElementById('hidden_schedule_aktor_edit');
-                currentSchedulesEdit = hiddenInput.value ? JSON.parse(hiddenInput.value) : [];
+                currentSchedulesEditMap['aktor'] = hiddenInput.value ? JSON.parse(hiddenInput.value) : [];
 
-                currentSchedulesEdit.push(newSchedule);
-                hiddenInput.value = JSON.stringify(currentSchedulesEdit);
+                currentSchedulesEditMap['aktor'].push(newSchedule);
+                hiddenInput.value = JSON.stringify(currentSchedulesEditMap['aktor']);
 
                 // Render ke draft container
                 let draftSchedule = document.getElementById('draft-schedule-aktor-edit');
@@ -2173,22 +2443,22 @@
 
                     // Cari index berdasarkan unique key untuk hapus dari array
                     const uuidToRemove = scheduleItem.dataset.uuid;
-                    const indexToRemove = currentSchedulesEdit.findIndex(item => item.uuid === uuidToRemove);
+                    const indexToRemove = currentSchedulesEditMap['aktor'].findIndex(item => item.uuid === uuidToRemove);
 
                     if (indexToRemove > -1) {
                         // Jika jadwal lama (ada ID), simpan ke deletedSchedules
-                        if (currentSchedulesEdit[indexToRemove].id) {
-                            deletedSchedules.push(currentSchedulesEdit[indexToRemove].id);
+                        if (currentSchedulesEditMap['aktor'][indexToRemove].id) {
+                            deletedSchedulesMap['aktor'].push(currentSchedulesEditMap['aktor'][indexToRemove].id);
                         }
 
-                        currentSchedulesEdit.splice(indexToRemove, 1);
+                        currentSchedulesEditMap['aktor'].splice(indexToRemove, 1);
 
                         // Update hidden input deleted_schedules
-                        updateDeletedSchedulesInput();
+                        updateDeletedSchedulesInputByType('aktor');
                     }
 
                     // Update hidden input jadwal yang tersisa
-                    hiddenInput.value = JSON.stringify(currentSchedulesEdit);
+                    hiddenInput.value = JSON.stringify(currentSchedulesEditMap['aktor']);
                 });
             });
 
@@ -2229,10 +2499,10 @@
                 };
 
                 let hiddenInput = document.getElementById('hidden_schedule_staff_edit');
-                currentSchedulesEdit = hiddenInput.value ? JSON.parse(hiddenInput.value) : [];
+                currentSchedulesEditMap['staff'] = hiddenInput.value ? JSON.parse(hiddenInput.value) : [];
 
-                currentSchedulesEdit.push(newSchedule);
-                hiddenInput.value = JSON.stringify(currentSchedulesEdit);
+                currentSchedulesEditMap['staff'].push(newSchedule);
+                hiddenInput.value = JSON.stringify(currentSchedulesEditMap['staff']);
 
                 let draftSchedule = document.getElementById('draft-schedule-staff-edit');
                 let scheduleItem = document.createElement('div');
@@ -2252,17 +2522,17 @@
                     draftSchedule.removeChild(scheduleItem);
 
                     const uuidToRemove = scheduleItem.dataset.uuid;
-                    const indexToRemove = currentSchedulesEdit.findIndex(item => item.uuid === uuidToRemove);
+                    const indexToRemove = currentSchedulesEditMap['staff'].findIndex(item => item.uuid === uuidToRemove);
 
                     if (indexToRemove > -1) {
-                        if (currentSchedulesEdit[indexToRemove].id) {
-                            deletedSchedules.push(currentSchedulesEdit[indexToRemove].id);
+                        if (currentSchedulesEditMap['staff'][indexToRemove].id) {
+                            deletedSchedulesMap['staff'].push(currentSchedulesEditMap['staff'][indexToRemove].id);
                         }
-                        currentSchedulesEdit.splice(indexToRemove, 1);
-                        document.getElementById('deleted_schedules_staff_edit').value = JSON.stringify(deletedSchedules);
+                        currentSchedulesEditMap['staff'].splice(indexToRemove, 1);
+                        document.getElementById('deleted_schedules_staff_edit').value = JSON.stringify(deletedSchedulesMap['staff']);
                     }
 
-                    hiddenInput.value = JSON.stringify(currentSchedulesEdit);
+                    hiddenInput.value = JSON.stringify(currentSchedulesEditMap['staff']);
                 });
             });
 
@@ -2281,6 +2551,423 @@
                     gajiEdit.placeholder = 'Masukkan nominal gaji';
                     gajiEdit.classList.remove('input-disabled');
                 }
+            });
+
+            let lastRenderedSosmed = null;
+            let hiddenDataEdit = [];
+
+            function initSosmedEdit() {
+                const draftAccountEdit = document.getElementById('draft-accounts-aktor-edit');
+                const hiddenAccountEdit = document.getElementById('hidden_accounts_aktor_edit');
+                const checkboxEdit = document.getElementById('same-sosmed-aktor-edit');
+                const addAccountBtn = document.getElementById('add-account-btn-aktor-edit');
+                const platformSelect = document.getElementById('platform_name_aktor_edit');
+                const accountInput = document.getElementById('acc_name_aktor_edit');
+
+                console.log('initSosmedEdit DIPANGGIL');
+
+                // Data lokal yang disimpan sementara
+                hiddenDataEdit = [];
+
+                // Ambil data dari hidden input kalau ada
+                if (hiddenAccountEdit && hiddenAccountEdit.value) {
+                    try {
+                        const parsedData = JSON.parse(hiddenAccountEdit.value);
+                        if (Array.isArray(parsedData)) {
+                            hiddenDataEdit = parsedData;
+                        }
+                    } catch (e) {
+                        console.warn('Format hiddenAccountEdit tidak valid:', e);
+                    }
+                }
+
+                // Cegah render ulang jika data sama
+                if (
+                    JSON.stringify(hiddenDataEdit) === JSON.stringify(lastRenderedSosmed) &&
+                    draftAccountEdit.children.length > 0
+                ) {
+                    return; // Sudah sama dan sudah dirender
+                }
+
+                lastRenderedSosmed = hiddenDataEdit;
+
+                // Bersihkan tampilan draft
+                draftAccountEdit.innerHTML = '';
+
+                hiddenDataEdit.forEach(item => {
+                    const draftItem = createDraftItem(
+                        item.platformId,
+                        item.platformName,
+                        item.account,
+                        hiddenDataEdit,
+                        hiddenAccountEdit,
+                        draftAccountEdit
+                    );
+                    if (draftItem) {
+                        draftAccountEdit.appendChild(draftItem);
+                    } else {
+                        console.warn('createDraftItem gagal atau tidak mengembalikan elemen:', item);
+                    }
+                });
+
+                console.log('Data untuk render sosmed:', hiddenDataEdit);
+
+                // Jika checkbox dicentang, ambil dari data komunitas
+                checkboxEdit.onchange = function() {
+                    if (!checkboxEdit.checked) return;
+
+                    if (!audisiGlobal || !audisiGlobal.accounts_komunitas) {
+                        alert('Data sosial media mitra tidak ditemukan.');
+                        checkboxEdit.checked = false;
+                        return;
+                    }
+
+                    let added = false;
+
+                    audisiGlobal.accounts_komunitas.forEach(item => {
+                        const exists = hiddenDataEdit.some(d => d.platformId === item.platformId && d.account === item.account);
+                        if (exists) return;
+
+                        added = true;
+
+                        const draftItem = createDraftItem(
+                            item.platformId,
+                            item.platformName,
+                            item.account,
+                            hiddenDataEdit,
+                            hiddenAccountEdit,
+                            draftAccountEdit
+                        );
+                        draftAccountEdit.appendChild(draftItem);
+
+                        hiddenDataEdit.push({
+                            platformId: item.platformId,
+                            platformName: item.platformName,
+                            account: item.account
+                        });
+                    });
+
+                    hiddenAccountEdit.value = JSON.stringify(hiddenDataEdit);
+
+                    if (!added) {
+                        alert('Semua sosial media mitra sudah ada dalam draft.');
+                        checkboxEdit.checked = false;
+                    }
+                };
+
+                // Event tombol tambah akun manual
+                addAccountBtn.onclick = function() {
+                    const platformId = platformSelect.value;
+                    const platformName = platformSelect.options[platformSelect.selectedIndex].getAttribute('data-nama');
+                    const accountName = accountInput.value.trim();
+
+                    if (!platformId || !accountName) {
+                        alert('Pilih platform dan isi nama akun!');
+                        return;
+                    }
+
+                    const exists = hiddenDataEdit.some(d => d.account === accountName && d.platformId === platformId);
+                    if (exists) {
+                        alert('Akun ini sudah ada dalam daftar untuk platform yang sama!');
+                        return;
+                    }
+
+                    const draftItem = createDraftItem(
+                        platformId,
+                        platformName,
+                        accountName,
+                        hiddenDataEdit,
+                        hiddenAccountEdit,
+                        draftAccountEdit
+                    );
+                    draftAccountEdit.appendChild(draftItem);
+
+                    hiddenDataEdit.push({
+                        platformId,
+                        platformName,
+                        account: accountName
+                    });
+
+                    hiddenAccountEdit.value = JSON.stringify(hiddenDataEdit);
+                    accountInput.value = '';
+                };
+            }
+
+            function initSosmedStaffEdit() {
+                const draftAccountStaffEdit = document.getElementById('draft-accounts-staff-edit');
+                const hiddenAccountStaffEdit = document.getElementById('hidden_accounts_staff_edit');
+                const checkboxStaffEdit = document.getElementById('same-sosmed-staff-edit');
+                const addAccountBtnStaffEdit = document.getElementById('add-account-btn-staff-edit');
+                const platformSelectStaffEdit = document.getElementById('platform_name_staff_edit');
+                const accountInputStaff = document.getElementById('acc_name_staff_edit');
+
+                let hiddenDataStaffEdit = [];
+
+                draftAccountStaffEdit.innerHTML = '';
+
+                if (hiddenAccountStaffEdit && hiddenAccountStaffEdit.value) {
+                    try {
+                        hiddenDataStaffEdit = JSON.parse(hiddenAccountStaffEdit.value);
+
+                        hiddenDataStaffEdit.forEach(item => {
+                            const draftItemStaff = createDraftItem(
+                                item.platformId,
+                                item.platformName,
+                                item.account,
+                                hiddenDataStaffEdit,
+                                hiddenAccountStaffEdit,
+                                draftAccountStaffEdit
+                            );
+
+                            draftAccountStaffEdit.appendChild(draftItemStaff);
+                        });
+                    } catch (e) {
+                        console.error('Gagal parsing data sosmed edit:', e);
+                    }
+                }
+
+                checkboxStaffEdit.onchange = function() {
+                    if (!checkboxStaffEdit.checked) return;
+
+                    if (!audisiGlobal || !audisiGlobal.accounts_komunitas) {
+                        alert('Data sosial media mitra tidak ditemukan.');
+                        checkboxStaffEdit.checked = false;
+                        return;
+                    }
+
+                    let added = false;
+
+                    audisiGlobal.accounts_komunitas.forEach(item => {
+                        const exists = hiddenDataStaffEdit.some(d => d.platformId === item.platformId);
+                        if (exists) return;
+
+                        added = true;
+                        const draftItemStaff = createDraftItem(
+                            item.platformId,
+                            item.platformName,
+                            item.account,
+                            hiddenDataStaffEdit,
+                            hiddenAccountStaffEdit,
+                            draftAccountStaffEdit
+                        );
+
+                        draftAccountStaffEdit.appendChild(draftItemStaff);
+
+                        hiddenDataStaffEdit.push({
+                            platformId: item.platformId,
+                            platformName: item.platformName,
+                            account: item.account
+                        });
+                    });
+
+                    hiddenAccountStaffEdit.value = JSON.stringify(hiddenDataStaffEdit);
+
+                    if (!added) {
+                        alert('Semua sosial media mitra sudah ada dalam draft.');
+                        checkboxStaffEdit.checked = false;
+                    }
+                };
+
+                addAccountBtnStaffEdit.onclick = function() {
+                    const platformIdStaff = platformSelectStaffEdit.value;
+                    const platformNameStaff = platformSelectStaffEdit.options[platformSelectStaffEdit.selectedIndex].getAttribute('data-nama');
+                    const accountNameStaff = accountInputStaff.value.trim();
+
+                    if (!platformIdStaff || !accountNameStaff) {
+                        alert('Pilih platform dan isi nama akun!');
+                        return;
+                    }
+
+                    const exists = hiddenDataStaffEdit.some(d => d.account === accountNameStaff && d.platformName === platformNameStaff);
+                    if (exists) {
+                        alert('Akun ini sudah ada dalam daftar untuk platform yang sama!');
+                        return;
+                    }
+
+                    const draftItemStaff = createDraftItem(
+                        platformIdStaff,
+                        platformNameStaff,
+                        accountNameStaff,
+                        hiddenDataStaffEdit,
+                        hiddenAccountStaffEdit,
+                        draftAccountStaffEdit
+                    );
+
+                    draftAccountStaffEdit.appendChild(draftItemStaff);
+
+                    hiddenDataStaffEdit.push({
+                        platformId: platformIdStaff,
+                        platformName: platformNameStaff,
+                        account: accountNameStaff
+                    });
+
+                    hiddenAccountStaffEdit.value = JSON.stringify(hiddenDataStaffEdit);
+                    accountInputStaff.value = '';
+                };
+            }
+
+            // Fungsi pembantu untuk membuat elemen draft item dan event delete-nya
+            function createDraftItem(platformId, platformName, accountName, dataArr, hiddenInput, container) {
+                const draftItem = document.createElement('div');
+                draftItem.classList.add('draft-item');
+                draftItem.setAttribute('data-platform-id', platformId);
+                draftItem.innerHTML = `
+        <span title="${platformName}">${platformName}</span> -
+        <span title="${accountName}">${accountName}</span>
+        <button type="button" class="delete-draft-btn delete-sosmed-btn">x</button>
+    `;
+                draftItem.querySelector('.delete-draft-btn').addEventListener('click', function() {
+                    draftItem.remove();
+                    const index = dataArr.findIndex(d => d.account === accountName && d.platformName === platformName);
+
+                    if (index !== -1) {
+                        dataArr.splice(index, 1);
+                        console.log('Draft item dihapus:', accountName, 'dari platform ID:', platformId);
+                    } else {
+                        console.warn('Draft item tidak ditemukan saat mau dihapus:', accountName, platformId);
+                    }
+
+                    hiddenInput.value = JSON.stringify(dataArr);
+                });
+                return draftItem;
+            }
+
+            let hiddenWebEdit = [];
+            let deletedWebs = [];
+
+            const draftWebEdit = document.getElementById('draft-web-aktor-edit');
+            const hiddenInputWeb = document.getElementById('hidden_web_aktor_edit');
+            const deletedInputWeb = document.getElementById('deleted_webs_aktor');
+            const addWebBtn = document.getElementById('add-web-btn-aktor-edit');
+            const judulInput = document.getElementById('judul_web_aktor_edit');
+            const urlInput = document.getElementById('url_web_aktor_edit');
+
+            // Fungsi render ulang
+            function renderWebDrafts() {
+                if (!draftWebEdit || !hiddenInputWeb || !deletedInputWeb) return;
+
+                draftWebEdit.innerHTML = '';
+                hiddenWebEdit.forEach((item, index) => {
+                    const draftItem = document.createElement('div');
+                    draftItem.classList.add('draft-item');
+                    draftItem.innerHTML = `
+            <span title="${item.title}">${item.title}</span> - 
+            <a href="${item.url}" target="_blank">${item.url}</a>
+            <button type="button" class="delete-draft-btn delete-web-btn">x</button>
+        `;
+
+                    draftItem.querySelector('.delete-draft-btn').addEventListener('click', function() {
+                        // Simpan ke deleted jika ada ID dari DB
+                        if (item.id) {
+                            deletedWebs.push(item.id);
+                            deletedInputWeb.value = JSON.stringify(deletedWebs);
+                        }
+
+                        // Hapus dari array dan DOM
+                        const itemIndex = hiddenWebEdit.indexOf(item);
+                        if (itemIndex !== -1) hiddenWebEdit.splice(itemIndex, 1);
+
+                        renderWebDrafts(); // render ulang
+                    });
+
+                    draftWebEdit.appendChild(draftItem);
+                });
+
+                hiddenInputWeb.value = JSON.stringify(hiddenWebEdit);
+            }
+
+            // Tombol tambah
+            addWebBtn.addEventListener('click', function() {
+                const title = judulInput.value.trim();
+                const url = urlInput.value.trim();
+
+                if (!title || !url) {
+                    alert('Harap isi judul dan URL web!');
+                    return;
+                }
+
+                const exists = hiddenWebEdit.some(d => d.title === title && d.url === url);
+                if (exists) {
+                    alert('Website ini sudah ada dalam daftar!');
+                    return;
+                }
+
+                hiddenWebEdit.push({
+                    title,
+                    url
+                }); // ID tidak ada karena baru ditambah
+                renderWebDrafts();
+
+                // Reset input
+                judulInput.value = '';
+                urlInput.value = '';
+            });
+
+            let hiddenWebStaffEdit = [];
+            let deletedWebsStaff = [];
+
+            const draftWebStaffEdit = document.getElementById('draft-web-staff-edit');
+            const hiddenInputWebStaff = document.getElementById('hidden_web_staff_edit');
+            const deletedInputWebStaff = document.getElementById('deleted_webs_staff');
+            const addWebBtnStaff = document.getElementById('add-web-btn-staff-edit');
+            const judulInputStaff = document.getElementById('judul_web_staff_edit');
+            const urlInputStaff = document.getElementById('url_web_staff_edit');
+
+            // Fungsi render ulang staff
+            function renderWebDraftsStaff() {
+                draftWebStaffEdit.innerHTML = '';
+                hiddenWebStaffEdit.forEach((item, index) => {
+                    const draftItem = document.createElement('div');
+                    draftItem.classList.add('draft-item');
+                    draftItem.innerHTML = `
+            <span title="${item.title}">${item.title}</span> - 
+            <a href="${item.url}" target="_blank">${item.url}</a>
+            <button type="button" class="delete-draft-btn delete-web-btn">x</button>
+        `;
+
+                    draftItem.querySelector('.delete-draft-btn').addEventListener('click', function() {
+                        if (item.id) {
+                            deletedWebsStaff.push(item.id);
+                            deletedInputWebStaff.value = JSON.stringify(deletedWebsStaff);
+                        }
+
+                        const itemIndex = hiddenWebStaffEdit.indexOf(item);
+                        if (itemIndex !== -1) hiddenWebStaffEdit.splice(itemIndex, 1);
+
+                        renderWebDraftsStaff();
+                    });
+
+                    draftWebStaffEdit.appendChild(draftItem);
+                });
+
+                hiddenInputWebStaff.value = JSON.stringify(hiddenWebStaffEdit);
+            }
+
+            // Tombol tambah
+            addWebBtnStaff.addEventListener('click', function() {
+                const title = judulInputStaff.value.trim();
+                const url = urlInputStaff.value.trim();
+
+                if (!title || !url) {
+                    alert('Harap isi judul dan URL web!');
+                    return;
+                }
+
+                const exists = hiddenWebStaffEdit.some(d => d.title === title && d.url === url);
+                if (exists) {
+                    alert('Website ini sudah ada dalam daftar!');
+                    return;
+                }
+
+                hiddenWebStaffEdit.push({
+                    title,
+                    url
+                }); // ID tidak ada karena baru ditambah
+                renderWebDraftsStaff();
+
+                // Reset input
+                judulInputStaff.value = '';
+                urlInputStaff.value = '';
             });
 
             function togglePeriodeFieldsEdit() {
@@ -2345,217 +3032,182 @@
             periodeCheckboxEditStaff?.addEventListener('change', togglePeriodeFieldsEditStaff);
         });
 
-        document.addEventListener('DOMContentLoaded', function() {
-            $('.deleteBtn').on('click', function() {
-                const idTeater = $(this).data('id');
+        const popup = document.getElementById('deletePopup');
 
-                if (confirm('Yakin ingin menghapus seluruh data audisi dari teater ini?')) {
-                    $.ajax({
-                        url: '<?= base_url('MitraTeater/deleteAudisiByTeater') ?>',
-                        method: 'POST',
-                        data: {
-                            id_teater: idTeater
-                        },
-                        success: function(response) {
-                            if (response.success) {
-                                alert(response.message);
-                                location.reload();
-                            } else {
-                                alert('Gagal menghapus audisi.');
-                            }
-                        }
-                    });
-                }
-            });
+        $('.deleteBtn').on('click', function() {
+            idTeaterToDelete = $(this).data('id');
+            popup.classList.add('active'); // Tambahkan class 'active'
         });
 
-        // Open popup for "Edit Pertunjukan"
-        document.addEventListener('DOMContentLoaded', function() {
-            document.addEventListener('click', function(event) {
-                if (event.target.classList.contains('editBtn')) {
-                    console.log("Tombol Edit ditekan");
+        document.getElementById('cancelDelete').addEventListener('click', function() {
+            popup.classList.remove('active'); // Hilangkan class 'active'
+            idTeaterToDelete = null;
+        });
 
-                    const teaterId = event.target.getAttribute('data-id');
-                    const popup = document.getElementById('editPopup');
-                    const popupTitle = document.getElementById('popupTitle');
-                    const form = document.getElementById('editForm');
-                    const submitBtn = document.getElementById('submitBtn');
+        document.getElementById('confirmDelete').addEventListener('click', function() {
+            if (!idTeaterToDelete) return;
 
-                    if (!popup) {
-                        console.error("Elemen popup tidak ditemukan!");
-                        return;
+            $.ajax({
+                url: '<?= base_url('MitraTeater/deleteAudisiByTeater') ?>',
+                method: 'POST',
+                data: {
+                    id_teater: idTeaterToDelete
+                },
+                success: function(response) {
+                    if (response.success) {
+                        alert(response.message);
+                        location.reload();
+                    } else {
+                        alert('Gagal menghapus audisi.');
                     }
-
-                    popupTitle.textContent = 'Edit Pertunjukan';
-                    submitBtn.textContent = 'Update';
-                    form.setAttribute('action', `<?= base_url('Admin/updateAuditionAdmin') ?>/${teaterId}`);
-                    document.getElementById('id_teater').value = teaterId;
-
-                    // Kosongkan semua draft terlebih dahulu
-                    document.getElementById('draft-schedule').innerHTML = '';
-                    document.getElementById('draft-web').innerHTML = '';
-                    document.querySelector('input[name="hidden_schedule"]').value = '';
-                    document.querySelector('input[name="hidden_web"]').value = '';
-
-                    fetch(`<?= base_url('Admin/getTeaterData'); ?>?id_teater=${teaterId}`)
-                        .then(response => response.json())
-                        .then(data => {
-                            if (data.status === 'success') {
-                                const teater = data.data.teater;
-                                const penampilan = data.data.penampilan;
-                                const schedules = data.data.schedule;
-                                const webs = data.data.web;
-
-                                // Isikan data teater
-                                document.getElementById('judul').value = teater.judul;
-                                document.getElementById('sinopsis').value = teater.sinopsis;
-                                document.getElementById('sutradara').value = teater.sutradara;
-                                document.getElementById('penulis').value = teater.penulis;
-                                document.getElementById('staff').value = teater.staff;
-                                document.getElementById('url_pendaftaran').value = teater.url_pendaftaran;
-
-                                // Isikan data penampilan
-                                document.getElementById('aktor').value = penampilan.aktor;
-                                document.getElementById('durasi').value = penampilan.durasi;
-                                document.getElementById('rating_umur').value = penampilan.rating_umur;
-
-                                // Tampilkan semua schedule sebagai card
-                                const draftSchedule = document.getElementById('draft-schedule');
-                                const hiddenScheduleInput = document.querySelector('input[name="hidden_schedule"]');
-                                let scheduleList = [];
-
-                                schedules.forEach(schedule => {
-                                    const card = document.createElement('div');
-                                    card.classList.add('draft-schedule-item');
-                                    card.innerHTML = `
-                                        <p><strong>${schedule.tanggal}, ${schedule.waktu_mulai} - ${schedule.waktu_selesai}</strong></p>
-                                        <p>${schedule.kota} - ${schedule.tempat}</p>
-                                        <button type="button" class="delete-draft-btn delete-schedule-btn" data-id="${schedule.id_schedule}">x</button>
-                                    `;
-                                    draftSchedule.appendChild(card);
-
-                                    // Simpan dalam array untuk hidden input
-                                    scheduleList.push({
-                                        id_schedule: schedule.id_schedule,
-                                        tanggal: schedule.tanggal,
-                                        waktu_mulai: schedule.waktu_mulai,
-                                        waktu_selesai: schedule.waktu_selesai,
-                                        kota: schedule.kota,
-                                        tempat: schedule.tempat
-                                    });
-
-                                    card.querySelector('.delete-schedule-btn').addEventListener('click', function() {
-                                        const idToDelete = this.getAttribute('data-id');
-                                        fetch(`<?= base_url('Admin/deleteSchedule') ?>?id_schedule=${idToDelete}`, {
-                                            method: 'DELETE'
-                                        }).then(res => res.json()).then(result => {
-                                            if (result.status === 'success') {
-                                                card.remove();
-                                                scheduleList = scheduleList.filter(item => item.id_schedule != idToDelete);
-                                                hiddenScheduleInput.value = JSON.stringify(scheduleList);
-                                            }
-                                        });
-                                    });
-                                });
-                                hiddenScheduleInput.value = JSON.stringify(scheduleList);
-
-                                // Tampilkan website
-                                const draftWeb = document.getElementById('draft-web');
-                                const hiddenWeb = document.querySelector('input[name="hidden_web"]');
-                                let webList = [];
-
-                                webs.forEach(web => {
-                                    const webItem = document.createElement('div');
-                                    webItem.classList.add('draft-item');
-                                    webItem.setAttribute('data-title', web.judul_web);
-                                    webItem.setAttribute('data-url', web.url_web);
-                                    webItem.innerHTML = `
-                                        <span>${web.judul_web}</span> - 
-                                        <span>${web.url_web}</span>
-                                        <button type="button" class="delete-draft-btn delete-web-btn" data-id="${web.id_teater_web}">x</button>
-                                    `;
-                                    draftWeb.appendChild(webItem);
-
-                                    webList.push({
-                                        title: web.judul_web,
-                                        url: web.url_web
-                                    });
-
-                                    webItem.querySelector('.delete-web-btn').addEventListener('click', function() {
-                                        const idToDelete = this.getAttribute('data-id');
-                                        fetch(`<?= base_url('Admin/deleteWeb') ?>?id_teater_web=${idToDelete}`, {
-                                                method: 'DELETE'
-                                            })
-                                            .then(res => res.json())
-                                            .then(result => {
-                                                if (result.status === 'success') {
-                                                    webItem.remove();
-                                                    webList = webList.filter(item => item.title !== web.judul_web);
-                                                    hiddenWeb.value = JSON.stringify(webList);
-                                                }
-                                            });
-                                    });
-                                });
-                                hiddenWeb.value = JSON.stringify(webList);
-
-
-
-                                popup.style.display = 'flex';
-                            } else {
-                                alert("Gagal mengambil data.");
-                            }
-                        })
-                        .catch(err => {
-                            console.error("Error fetch:", err);
-                        });
+                },
+                error: function() {
+                    alert('Terjadi kesalahan saat menghapus data.');
+                },
+                complete: function() {
+                    popup.classList.remove('active'); // Tutup popup
+                    idTeaterToDelete = null;
                 }
-            });
-
-            // Tombol batal -> reset semua
-            document.getElementById('cancelBtn').addEventListener('click', function() {
-                const popup = document.getElementById('editPopup');
-                popup.style.display = 'none';
-
-                const form = document.getElementById('editForm');
-                form.reset();
-
-                form.setAttribute('action', `<?= base_url('Admin/saveAuditionAdmin') ?>`);
-                document.getElementById('submitBtn').textContent = 'Simpan';
-
-                // Bersihkan draft dan hidden inputs
-                document.getElementById('draft-schedule').innerHTML = '';
-                document.querySelector('input[name="hidden_schedule"]').value = '';
-                document.getElementById('draft-web').innerHTML = '';
-                document.querySelector('input[name="hidden_web"]').value = '';
-                document.getElementById('id_teater').value = '';
             });
         });
 
-        document.addEventListener('DOMContentLoaded', function() {
-            $('.deleteBtn').on('click', function() {
-                const idTeater = $(this).data('id');
+        function previewBukti(src) {
+            document.getElementById("customImgPreview").src = src;
+            document.getElementById("customPreviewModal").style.display = "block";
+        }
 
-                if (confirm('Yakin ingin menghapus seluruh data pertunjukan dari teater ini?')) {
-                    $.ajax({
-                        url: '<?= base_url('MitraTeater/deleteShowByTeater') ?>',
-                        method: 'POST',
-                        data: {
-                            id_teater: idTeater
-                        },
-                        success: function(response) {
-                            if (response.success) {
-                                alert(response.message);
-                                location.reload();
-                            } else {
-                                alert('Gagal menghapus pertunjukan.');
-                            }
-                        },
-                        error: function() {
-                            alert('Terjadi kesalahan saat menghubungi server.');
+        function closePreview() {
+            document.getElementById("customPreviewModal").style.display = "none";
+            document.getElementById("customImgPreview").src = "";
+        }
+
+        // Kalau ingin klik luar modal untuk menutup:
+        window.onclick = function(event) {
+            const modal = document.getElementById("customPreviewModal");
+            if (event.target === modal) {
+                closePreview();
+            }
+        };
+
+        function updateValidasi(idBooking, status) {
+            const confirmMsg = status === 1 ? "Terima bukti pembayaran?" : "Tolak bukti pembayaran?";
+            if (!confirm(confirmMsg)) return;
+
+            fetch(`<?= base_url('/MitraTeater/validasi-bukti') ?>`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-Requested-With": "XMLHttpRequest", // Optional, for CodeIgniter check
+                    },
+                    body: JSON.stringify({
+                        id_booking: idBooking,
+                        is_valid: status
+                    })
+                })
+                .then(res => res.json())
+                .then(result => {
+                    alert(result.message);
+                    if (result.success) {
+                        // Cari baris (row) berdasarkan ID booking
+                        const row = document.querySelector(`[data-booking-id="${idBooking}"]`);
+                        if (row) {
+                            // Update kolom status
+                            const statusCell = row.querySelector(".booking-status");
+                            statusCell.textContent = status === 1 ? "success" : "rejected";
+
+                            // Hapus tombol aksi
+                            const aksiCell = row.querySelector(".booking-action");
+                            aksiCell.innerHTML = "-";
                         }
-                    });
+                    }
+                })
+                .catch(err => {
+                    console.error(err);
+                    alert("Terjadi kesalahan saat memproses.");
+                });
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const modal = document.getElementById("popupTiketTerjual");
+            const closeBtn = modal.querySelector(".closePopup");
+
+            // Tombol buka modal
+            document.querySelectorAll(".openPopupTiketTerjual").forEach(button => {
+                button.addEventListener("click", function() {
+                    const auditionId = button.getAttribute("data-id");
+                    const tipe = button.getAttribute("data-tipe");
+
+                    modal.style.display = "flex"; // tampilkan modal
+                    fetchData(auditionId, tipe);
+                });
+            });
+
+            // Tombol tutup
+            closeBtn.addEventListener("click", function() {
+                modal.style.display = "none";
+            });
+
+            // Tutup modal jika klik di luar kontennya
+            modal.addEventListener("click", function(event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
                 }
             });
+
+            function fetchData(auditionId, tipe) {
+                const tbody = document.querySelector("#tableBookingList tbody");
+                const totalEl = document.getElementById("totalTiketTerjual");
+
+                tbody.innerHTML = '<tr><td colspan="7" class="text-center">Memuat data...</td></tr>';
+                totalEl.textContent = "";
+
+                fetch(`get-booking/${tipe}/${auditionId}`)
+                    .then(res => res.json())
+                    .then(result => {
+                        if (!result || !result.data) throw new Error("Format data salah");
+
+                        const data = result.data;
+                        const count = result.tiket_terjual ?? 0;
+
+                        if (data.length === 0) {
+                            tbody.innerHTML = '<tr><td colspan="7" class="text-center">Belum ada audiens yang mendaftar.</td></tr>';
+                        } else {
+                            tbody.innerHTML = '';
+                            data.forEach(row => {
+                                const isFree = Number(row.is_free) === 1;
+
+                                const buktiPembayaran = (!isFree && row.bukti_pembayaran && row.bukti_pembayaran !== '-') ?
+                                    `<a href="javascript:void(0)" onclick="previewBukti('/bukti/${row.bukti_pembayaran}')">Lihat Bukti</a>` :
+                                    (isFree ? 'Gratis' : '-');
+
+                                const actionButtons = (row.status === 'pending' && row.bukti_pembayaran !== '-' && !isFree) ?
+                                    `
+            <button class="btn btn-sm btn-success" onclick="updateValidasi('${row.id_booking}', 1)">Accept</button>
+            <button class="btn btn-sm btn-danger" onclick="updateValidasi('${row.id_booking}', 2)">Reject</button>
+          ` :
+                                    '-';
+
+                                tbody.innerHTML += `
+        <tr>
+            <td>${row.nama}</td>
+            <td>${row.email}</td>
+            <td>${row.tanggal_lahir}</td>
+            <td>${row.jenis_kelamin}</td>
+            <td class="booking-status">${row.status}</td>
+            <td>${buktiPembayaran}</td>
+            <td>${row.tanggal_daftar}</td>
+            <td class="booking-action">${actionButtons}</td>
+        </tr>`;
+                            });
+                        }
+
+                        totalEl.textContent = `Total Tiket Terjual: ${count}`;
+                    })
+                    .catch(err => {
+                        console.error(err);
+                        tbody.innerHTML = '<tr><td colspan="7" class="text-center text-danger">Gagal memuat data.</td></tr>';
+                    });
+            }
         });
     </script>
 </body>

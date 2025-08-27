@@ -18,7 +18,6 @@ class Teater extends Model
         'penulis',
         'sutradara',
         'staff',
-        'url_pendaftaran',
         'dibuat_oleh',
         'tgl_dibuat',
         'dimodif_oleh',

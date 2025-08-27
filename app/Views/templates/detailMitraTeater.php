@@ -9,7 +9,7 @@
                     <?php
                     $logoSrc = isset($mitra['logo']) && file_exists(FCPATH . 'public/' . $mitra['logo'])
                         ? base_url('public/' . $mitra['logo'])
-                        : base_url('assets/images/logos/mitra1.jpg');
+                        : base_url('public/assets/images/logos/mitra1.jpg');
                     ?>
                     <img src="<?= esc($logoSrc) ?>" alt="<?= esc($mitra['nama_teater']) ?>">
                 </div>

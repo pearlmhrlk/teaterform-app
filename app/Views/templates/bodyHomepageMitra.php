@@ -9,7 +9,7 @@
             <div class="main-slider-active">
                 <!-- Slide Pertama -->
                 <div class="slider-single-item slider-1">
-                    <img src="<?= base_url('assets/images/slider/slider4.jpg') ?>" alt="Slider Image">
+                    <img src="<?= base_url('public/assets/images/slider/slider4.jpg') ?>" alt="Slider Image">
                     <div class="container">
                         <div class="slide-content">
                             <h1>Penampilan Teater</h1>
@@ -23,7 +23,7 @@
                 </div>
                 <!-- Slide Kedua -->
                 <div class="slider-single-item slider-2">
-                    <img src="<?= base_url('assets/images/slider/slide2.jpg') ?>" alt="Slider Image">
+                    <img src="<?= base_url('public/assets/images/slider/slide2.jpg') ?>" alt="Slider Image">
                     <div class="container">
                         <div class="slide-content">
                             <h1>Audisi Teater</h1>
