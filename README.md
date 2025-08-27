@@ -1,60 +1,48 @@
-# CodeIgniter 4 Framework
+# 🎭 Theaterform App
 
-## What is CodeIgniter?
+Theaterform merupakan gabungan dari dua kata dalam bahasa inggris, yaitu ‘Theater’ dan ‘Perform’. Makna sejatinya adalah sebuah aplikasi yang mendukung berkembangnya seni teater dengan menyediakan informasi terkait pertunjukan maupun audisi teater di beberapa kota di wilayah Jabodetabek.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+---
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## ✨ Fitur Utama
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+- ✅ Menampilkan daftar dan detail penampilan  atau audisi teater.
+- 🔄 Melakukan booking tiket pendaftaran untuk penampilan atau audisi teater.
+- 🗂️ Melakukan pengaturan terhadap data penampilan atau audisi oleh komunitas teater (CRUD).
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+---
 
-## Important Change with index.php
+## ⚙️ Teknologi yang Digunakan
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+- **Framework CodeIgniter 4**
+- **PHP**
+- **HTML CSS**
+- **JavaScript**
+- **MYSQL**
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+---
 
-**Please** read the user guide for a better explanation of how CI4 works!
+## 🚀 Cara Menjalankan Proyek
 
-## Repository Management
+1. Clone repositori ini:
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+   ```bash
+   git clone https://github.com/username kamu/teaterform-app.git
+   cd teaterform-app
+   
+   ```
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+2. Install dependencies:
+   npm install
 
-## Contributing
+3. Jalankan aplikasi:
+   npm run dev
 
-We welcome contributions from the community.
+4. Buka di browser:
+   http://localhost:8080
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+---
 
-## Server Requirements
+## 🧑‍💻 Author
 
-PHP version 8.1 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Dibuat oleh Pearla Zahra M. untuk portfolio dan tugas akhir universitas
